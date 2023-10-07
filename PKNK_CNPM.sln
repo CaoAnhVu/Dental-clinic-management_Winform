@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34009.444
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKNK_CNPM", "quanlyphongkhamnhakhoa\PKNK_CNPM.csproj", "{8361BD63-2025-4C92-BD85-742965A2193B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8361BD63-2025-4C92-BD85-742965A2193B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8361BD63-2025-4C92-BD85-742965A2193B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8361BD63-2025-4C92-BD85-742965A2193B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8361BD63-2025-4C92-BD85-742965A2193B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B1734C72-04BC-41CD-A44F-E835484B6467}
+	EndGlobalSection
+EndGlobal

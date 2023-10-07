@@ -1,0 +1,42 @@
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe.config
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.AssemblyReference.cache
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.Form1.resources
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.Properties.Resources.resources
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.GenerateResource.cache
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.CoreCompileInputs.cache
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\minh7\source\repos\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe.config
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.Form1.resources
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.Properties.Resources.resources
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\admin\source\repos\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe.config
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.Properties.Resources.resources
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmManager.resources
+C:\Users\admin\source\repos\Đồ án Nha khoa\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmLoginPage.resources
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmLoginPage.resources
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmManager.resources
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.Properties.Resources.resources
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.pdb
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe.config
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.exe
+C:\Users\admin\source\repos\Do An Nha Khoa Smile\Clinic_CNPM\quanlyphongkhamnhakhoa\quanlyphongkhamnhakhoa\bin\Debug\quanlyphongkhamnhakhoa.pdb

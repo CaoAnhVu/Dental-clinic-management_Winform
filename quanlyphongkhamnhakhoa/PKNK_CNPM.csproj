@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8361BD63-2025-4C92-BD85-742965A2193B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PKNK_CNPM</RootNamespace>
+    <AssemblyName>PKNK_CNPM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginPage.Designer.cs">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Giaodien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Giaodien.Designer.cs">
+      <DependentUpon>Giaodien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="LoginPage.resx">
+      <DependentUpon>LoginPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Giaodien.resx">
+      <DependentUpon>Giaodien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 2005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image 62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\single-man-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visible.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiplication-math-symbol-circle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e0011.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-send-envelope.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-send-envelope %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-square-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_tZCrFpSNiIQ.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_tZCrFpSNiIQ1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e0012.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 22.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsplash_tZCrFpSNiIQ2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-square-11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-square-1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-send-envelope %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-send-envelope %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail-send-envelope %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock-square-1 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mail %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMMIT _ Login Page %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\COMMIT _ Login Page %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop - 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide 16_9 - 1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Form.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rectangle 001 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Desktop - 1 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Group 52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-desk.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-desk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\house2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-desk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\about1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\browser3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\calendar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\team-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pros-and-cons.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
