@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormDesktop.Designer.cs">
+      <DependentUpon>FormDesktop.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\FormDesktop.resx">
+      <DependentUpon>FormDesktop.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -343,6 +352,102 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\doctor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membrane.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\membrane1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\order-delivery1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delivery1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer-service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salary2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\money1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-report.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business-report1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\info1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\prescription.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a53.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a5-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\svg %282%291.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
