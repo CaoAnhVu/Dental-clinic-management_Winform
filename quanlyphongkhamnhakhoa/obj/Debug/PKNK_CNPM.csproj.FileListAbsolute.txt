@@ -39,3 +39,14 @@ D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.xml
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.CopyComplete
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.SqlServer.dll
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.BUS.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.DAL.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.BUS.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.BUS.dll.config
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.DAL.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.DAL.dll.config
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.CopyComplete

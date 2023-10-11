@@ -27,6 +27,7 @@ namespace quanlyphongkhamnhakhoa
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+
             try
             {
                 Auth user = authService.Login(txtUsername.Text, txtPassword.Text);
@@ -39,14 +40,16 @@ namespace quanlyphongkhamnhakhoa
                 f.ShowDialog();
                 clearValue();
                 MessageBox.Show("Đăng nhập thành công!");
-            }catch (Exception ex){
+            }
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message);
             }
-        }
 
+        }
         private bool checkValid()
         {
-            if(txtUsername.Text != "" || txtPassword.Text != "")
+            if (txtUsername.Text != "" || txtPassword.Text != "")
             {
                 return true;
             }
@@ -59,3 +62,4 @@ namespace quanlyphongkhamnhakhoa
         }
     }
 }
+
