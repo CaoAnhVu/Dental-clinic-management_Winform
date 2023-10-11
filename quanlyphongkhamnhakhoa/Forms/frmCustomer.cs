@@ -34,8 +34,6 @@ namespace PKNK_CNPM.Forms
                     
                 }
             }
-            label1.ForeColor = Themecolor.SecondaryColor;
-            label2.ForeColor = Themecolor.PrimaryColor;
         }
     }
 }
