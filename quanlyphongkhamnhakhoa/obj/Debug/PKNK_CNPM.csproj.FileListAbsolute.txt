@@ -3,7 +3,6 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Deb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK_CNPM.pdb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.AssemblyReference.cache
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmLoginPage.resources
-C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmManager.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Properties.Resources.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.GenerateResource.cache
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.CoreCompileInputs.cache
@@ -50,3 +49,4 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Deb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.xml
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.CopyComplete
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmHomeScreen.resources

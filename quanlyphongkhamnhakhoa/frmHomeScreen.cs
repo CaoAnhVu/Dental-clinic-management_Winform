@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace quanlyphongkhamnhakhoa
 {
-    public partial class frmManager : Form
+    public partial class frmHomeScreen : Form
     {
         bool sidebarExpand;
         bool customerCollapse;
@@ -26,7 +26,7 @@ namespace quanlyphongkhamnhakhoa
         private int tempIndex;
         /*public object SiderbarTimer { get; private set; }*/
         //contruction
-        public frmManager()
+        public frmHomeScreen()
         {
             
             InitializeComponent();
