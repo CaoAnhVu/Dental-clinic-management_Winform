@@ -35,11 +35,9 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtTenDangNhap = new System.Windows.Forms.TextBox();
-            this.txtMatKhau = new System.Windows.Forms.TextBox();
+            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.cbNhoMK = new System.Windows.Forms.CheckBox();
-            this.lblQuenMK = new System.Windows.Forms.Label();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.lblClose = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
@@ -119,31 +117,31 @@
             this.label4.Size = new System.Drawing.Size(350, 1);
             this.label4.TabIndex = 7;
             // 
-            // txtTenDangNhap
+            // txtUsername
             // 
-            this.txtTenDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
-            this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenDangNhap.ForeColor = System.Drawing.Color.Black;
-            this.txtTenDangNhap.Location = new System.Drawing.Point(744, 215);
-            this.txtTenDangNhap.Multiline = true;
-            this.txtTenDangNhap.Name = "txtTenDangNhap";
-            this.txtTenDangNhap.Size = new System.Drawing.Size(307, 37);
-            this.txtTenDangNhap.TabIndex = 8;
-            this.txtTenDangNhap.Text = "Tên đăng nhập";
+            this.txtUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
+            this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
+            this.txtUsername.Location = new System.Drawing.Point(744, 215);
+            this.txtUsername.Multiline = true;
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.Size = new System.Drawing.Size(307, 37);
+            this.txtUsername.TabIndex = 8;
+            this.txtUsername.Text = "Tên đăng nhập";
             // 
-            // txtMatKhau
+            // txtPassword
             // 
-            this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
-            this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtMatKhau.ForeColor = System.Drawing.Color.Black;
-            this.txtMatKhau.Location = new System.Drawing.Point(744, 291);
-            this.txtMatKhau.Multiline = true;
-            this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(307, 37);
-            this.txtMatKhau.TabIndex = 8;
-            this.txtMatKhau.Text = "Mật khẩu";
+            this.txtPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
+            this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
+            this.txtPassword.Location = new System.Drawing.Point(744, 291);
+            this.txtPassword.Multiline = true;
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(307, 37);
+            this.txtPassword.TabIndex = 8;
+            this.txtPassword.Text = "Mật khẩu";
             // 
             // pictureBox5
             // 
@@ -155,31 +153,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 5;
             this.pictureBox5.TabStop = false;
-            // 
-            // cbNhoMK
-            // 
-            this.cbNhoMK.AutoSize = true;
-            this.cbNhoMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
-            this.cbNhoMK.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.cbNhoMK.ForeColor = System.Drawing.Color.Black;
-            this.cbNhoMK.Location = new System.Drawing.Point(695, 390);
-            this.cbNhoMK.Name = "cbNhoMK";
-            this.cbNhoMK.Size = new System.Drawing.Size(145, 25);
-            this.cbNhoMK.TabIndex = 9;
-            this.cbNhoMK.Text = "Nhớ mật khẩu";
-            this.cbNhoMK.UseVisualStyleBackColor = false;
-            // 
-            // lblQuenMK
-            // 
-            this.lblQuenMK.AutoSize = true;
-            this.lblQuenMK.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
-            this.lblQuenMK.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblQuenMK.ForeColor = System.Drawing.Color.Black;
-            this.lblQuenMK.Location = new System.Drawing.Point(910, 390);
-            this.lblQuenMK.Name = "lblQuenMK";
-            this.lblQuenMK.Size = new System.Drawing.Size(132, 21);
-            this.lblQuenMK.TabIndex = 10;
-            this.lblQuenMK.Text = "Quên mật khẩu";
             // 
             // btnDangNhap
             // 
@@ -254,10 +227,8 @@
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblClose);
             this.Controls.Add(this.btnDangNhap);
-            this.Controls.Add(this.lblQuenMK);
-            this.Controls.Add(this.cbNhoMK);
-            this.Controls.Add(this.txtMatKhau);
-            this.Controls.Add(this.txtTenDangNhap);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox5);
@@ -293,11 +264,9 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtTenDangNhap;
-        private System.Windows.Forms.TextBox txtMatKhau;
+        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.CheckBox cbNhoMK;
-        private System.Windows.Forms.Label lblQuenMK;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label lblTitle;

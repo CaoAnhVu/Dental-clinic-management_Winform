@@ -1,0 +1,12 @@
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\PKNK.DAL.dll.config
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\PKNK.DAL.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\PKNK.DAL.pdb
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.xml
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.AssemblyReference.cache
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.CoreCompileInputs.cache
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.CopyComplete
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.pdb

@@ -1,0 +1,15 @@
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\PKNK.BUS.dll.config
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\PKNK.BUS.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\PKNK.BUS.pdb
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\EntityFramework.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\EntityFramework.SqlServer.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\PKNK.DAL.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\PKNK.DAL.pdb
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\PKNK.DAL.dll.config
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\EntityFramework.xml
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\EntityFramework.SqlServer.xml
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.AssemblyReference.cache
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.CoreCompileInputs.cache
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.CopyComplete
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.dll
+D:\workspace\CS\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.pdb
