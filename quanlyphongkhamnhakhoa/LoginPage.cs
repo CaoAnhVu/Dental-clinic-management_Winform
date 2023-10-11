@@ -26,6 +26,7 @@ namespace quanlyphongkhamnhakhoa
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
+           
             try
             {
                 authService.Login(txtUsername.Text, txtPassword.Text);
@@ -39,5 +40,7 @@ namespace quanlyphongkhamnhakhoa
                 MessageBox.Show(ex.Message);
             }
         }
+
+        
     }
 }

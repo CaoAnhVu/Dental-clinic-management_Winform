@@ -10,3 +10,15 @@ D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.CoreCompileInputs.c
 D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.CopyComplete
 D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.dll
 D:\workspace\CS\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\PKNK.DAL.dll.config
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\PKNK.DAL.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\PKNK.DAL.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.AssemblyReference.cache
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.csproj.CopyComplete
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.DAL\obj\Debug\PKNK.DAL.pdb

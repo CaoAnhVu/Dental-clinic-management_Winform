@@ -43,6 +43,9 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picFormLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -112,7 +115,7 @@
             // label4
             // 
             this.label4.BackColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(692, 331);
+            this.label4.Location = new System.Drawing.Point(692, 357);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(350, 1);
             this.label4.TabIndex = 7;
@@ -123,12 +126,11 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(744, 215);
+            this.txtUsername.Location = new System.Drawing.Point(744, 218);
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(307, 37);
             this.txtUsername.TabIndex = 8;
-            this.txtUsername.Text = "Tên đăng nhập";
             // 
             // txtPassword
             // 
@@ -136,18 +138,17 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(744, 291);
+            this.txtPassword.Location = new System.Drawing.Point(744, 320);
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(307, 37);
             this.txtPassword.TabIndex = 8;
-            this.txtPassword.Text = "Mật khẩu";
             // 
             // pictureBox5
             // 
             this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
             this.pictureBox5.Image = global::PKNK_CNPM.Properties.Resources.padlock;
-            this.pictureBox5.Location = new System.Drawing.Point(686, 292);
+            this.pictureBox5.Location = new System.Drawing.Point(686, 319);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(52, 36);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -161,7 +162,7 @@
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(712, 485);
+            this.btnDangNhap.Location = new System.Drawing.Point(712, 435);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(347, 78);
             this.btnDangNhap.TabIndex = 11;
@@ -195,9 +196,9 @@
             // 
             // picLogo
             // 
-            this.picLogo.BackColor = System.Drawing.Color.White;
+            this.picLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.picLogo.Image = global::PKNK_CNPM.Properties.Resources.svg__2_1;
-            this.picLogo.Location = new System.Drawing.Point(163, 527);
+            this.picLogo.Location = new System.Drawing.Point(990, 528);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(125, 151);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -215,6 +216,42 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label5.ForeColor = System.Drawing.Color.Black;
+            this.label5.Location = new System.Drawing.Point(690, 175);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(174, 32);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "Tên đăng nhập";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label6.ForeColor = System.Drawing.Color.Black;
+            this.label6.Location = new System.Drawing.Point(690, 280);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(115, 32);
+            this.label6.TabIndex = 15;
+            this.label6.Text = "Mật khẩu";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Black;
+            this.label7.Location = new System.Drawing.Point(741, 653);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(220, 16);
+            this.label7.TabIndex = 16;
+            this.label7.Text = "2023 @ coppyright all right reserved";
+            // 
             // frmLoginPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -223,6 +260,9 @@
             this.BackgroundImage = global::PKNK_CNPM.Properties.Resources.Slide_16_9___1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1277, 707);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.picLogo);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblClose);
@@ -272,6 +312,9 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
