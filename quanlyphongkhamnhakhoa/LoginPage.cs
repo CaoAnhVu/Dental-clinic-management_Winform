@@ -38,9 +38,9 @@ namespace quanlyphongkhamnhakhoa
 
                 frmHomeScreen f = new frmHomeScreen();
                 f.ShowDialog();
+                MessageBox.Show("Đăng nhập thành công!");
                 clearValue();
                 this.Hide();
-                MessageBox.Show("Đăng nhập thành công!");
             }
             catch (Exception ex)
             {

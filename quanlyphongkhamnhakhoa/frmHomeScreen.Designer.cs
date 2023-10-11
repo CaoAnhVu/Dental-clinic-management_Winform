@@ -145,7 +145,6 @@
             this.sidebar.Name = "sidebar";
             this.sidebar.Size = new System.Drawing.Size(266, 756);
             this.sidebar.TabIndex = 0;
-            this.sidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebar_Paint);
             // 
             // panelMenu
             // 
@@ -156,7 +155,6 @@
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(268, 77);
             this.panelMenu.TabIndex = 0;
-            this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             // 
             // label1
             // 
@@ -168,7 +166,6 @@
             this.label1.Size = new System.Drawing.Size(66, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // menuButton
             // 
@@ -225,7 +222,7 @@
             this.btnThongTin.Text = "            Thông tin";
             this.btnThongTin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongTin.UseVisualStyleBackColor = false;
-            this.btnThongTin.Click += new System.EventHandler(this.button10_Click);
+            this.btnThongTin.Click += new System.EventHandler(this.btnThongTin_Click);
             // 
             // panel12
             // 
@@ -253,7 +250,7 @@
             this.btnPhieuKham.Text = "            Phiếu khám";
             this.btnPhieuKham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhieuKham.UseVisualStyleBackColor = false;
-            this.btnPhieuKham.Click += new System.EventHandler(this.button8_Click);
+            this.btnPhieuKham.Click += new System.EventHandler(this.btnPhieuKham_Click);
             // 
             // panel11
             // 
@@ -281,7 +278,7 @@
             this.btnHoaDon.Text = "            Hóa đơn";
             this.btnHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoaDon.UseVisualStyleBackColor = false;
-            this.btnHoaDon.Click += new System.EventHandler(this.button3_Click);
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // panel1
             // 
@@ -318,7 +315,7 @@
             this.btnCanLamSan.Text = "            Cận lâm sàn";
             this.btnCanLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCanLamSan.UseVisualStyleBackColor = false;
-            this.btnCanLamSan.Click += new System.EventHandler(this.button7_Click);
+            this.btnCanLamSan.Click += new System.EventHandler(this.btnCanLamSan_Click);
             // 
             // panel10
             // 
@@ -346,7 +343,7 @@
             this.btnDonThuoc.Text = "            Đơn thuốc";
             this.btnDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonThuoc.UseVisualStyleBackColor = false;
-            this.btnDonThuoc.Click += new System.EventHandler(this.button5_Click);
+            this.btnDonThuoc.Click += new System.EventHandler(this.btnDonThuoc_Click);
             // 
             // panel8
             // 
@@ -356,7 +353,6 @@
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(274, 58);
             this.panel8.TabIndex = 2;
-            this.panel8.Paint += new System.Windows.Forms.PaintEventHandler(this.panel8_Paint);
             // 
             // btnKhamTongQuat
             // 
@@ -375,7 +371,7 @@
             this.btnKhamTongQuat.Text = "            Khám lâm sàn";
             this.btnKhamTongQuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhamTongQuat.UseVisualStyleBackColor = false;
-            this.btnKhamTongQuat.Click += new System.EventHandler(this.button6_Click);
+            this.btnKhamTongQuat.Click += new System.EventHandler(this.btnKhamTongQuat_Click);
             // 
             // panel2
             // 
@@ -385,7 +381,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(265, 71);
             this.panel2.TabIndex = 2;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // btnCustomer
             // 
@@ -427,7 +422,6 @@
             this.QuanlyContainer.Name = "QuanlyContainer";
             this.QuanlyContainer.Size = new System.Drawing.Size(265, 54);
             this.QuanlyContainer.TabIndex = 3;
-            this.QuanlyContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.QuanlyContainer_Paint);
             // 
             // panel16
             // 
@@ -436,7 +430,6 @@
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(319, 53);
             this.panel16.TabIndex = 6;
-            this.panel16.Paint += new System.Windows.Forms.PaintEventHandler(this.panel16_Paint);
             // 
             // btnDonXuatHang
             // 
@@ -455,7 +448,6 @@
             this.btnDonXuatHang.Text = "           Đơn xuất hàng";
             this.btnDonXuatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonXuatHang.UseVisualStyleBackColor = false;
-            this.btnDonXuatHang.Click += new System.EventHandler(this.button13_Click);
             // 
             // panel29
             // 
@@ -464,7 +456,6 @@
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(332, 59);
             this.panel29.TabIndex = 4;
-            this.panel29.Paint += new System.Windows.Forms.PaintEventHandler(this.panel29_Paint);
             // 
             // btnThongKeNam
             // 
@@ -483,7 +474,6 @@
             this.btnThongKeNam.Text = "            Thống kê năm";
             this.btnThongKeNam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKeNam.UseVisualStyleBackColor = false;
-            this.btnThongKeNam.Click += new System.EventHandler(this.button26_Click);
             // 
             // panel7
             // 
@@ -493,7 +483,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(265, 71);
             this.panel7.TabIndex = 13;
-            this.panel7.Paint += new System.Windows.Forms.PaintEventHandler(this.panel7_Paint);
             // 
             // btnQuanLy
             // 
@@ -522,7 +511,6 @@
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(286, 53);
             this.panel26.TabIndex = 9;
-            this.panel26.Paint += new System.Windows.Forms.PaintEventHandler(this.panel26_Paint);
             // 
             // btnDichVu
             // 
@@ -541,7 +529,6 @@
             this.btnDichVu.Text = "            Dịch vụ";
             this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDichVu.UseVisualStyleBackColor = false;
-            this.btnDichVu.Click += new System.EventHandler(this.button23_Click);
             // 
             // panel28
             // 
@@ -550,7 +537,6 @@
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(342, 53);
             this.panel28.TabIndex = 12;
-            this.panel28.Paint += new System.Windows.Forms.PaintEventHandler(this.panel28_Paint);
             // 
             // btnThongKeThang
             // 
@@ -569,7 +555,6 @@
             this.btnThongKeThang.Text = "           Thống kê tháng";
             this.btnThongKeThang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongKeThang.UseVisualStyleBackColor = false;
-            this.btnThongKeThang.Click += new System.EventHandler(this.button25_Click);
             // 
             // panel20
             // 
@@ -578,7 +563,6 @@
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(316, 53);
             this.panel20.TabIndex = 8;
-            this.panel20.Paint += new System.Windows.Forms.PaintEventHandler(this.panel20_Paint);
             // 
             // btnThuoc
             // 
@@ -597,7 +581,6 @@
             this.btnThuoc.Text = "            Thuốc";
             this.btnThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThuoc.UseVisualStyleBackColor = false;
-            this.btnThuoc.Click += new System.EventHandler(this.button14_Click);
             // 
             // panel3
             // 
@@ -606,7 +589,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(284, 54);
             this.panel3.TabIndex = 3;
-            this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // btnBacSi
             // 
@@ -625,7 +607,6 @@
             this.btnBacSi.Text = "            Bác sĩ";
             this.btnBacSi.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnBacSi.UseVisualStyleBackColor = false;
-            this.btnBacSi.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel24
             // 
@@ -634,7 +615,6 @@
             this.panel24.Name = "panel24";
             this.panel24.Size = new System.Drawing.Size(300, 53);
             this.panel24.TabIndex = 4;
-            this.panel24.Paint += new System.Windows.Forms.PaintEventHandler(this.panel24_Paint);
             // 
             // btnChiPhiVatLieu
             // 
@@ -653,7 +633,6 @@
             this.btnChiPhiVatLieu.Text = "            Chi phí vật liệu";
             this.btnChiPhiVatLieu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnChiPhiVatLieu.UseVisualStyleBackColor = false;
-            this.btnChiPhiVatLieu.Click += new System.EventHandler(this.button21_Click);
             // 
             // panel27
             // 
@@ -662,7 +641,6 @@
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(322, 53);
             this.panel27.TabIndex = 11;
-            this.panel27.Paint += new System.Windows.Forms.PaintEventHandler(this.panel27_Paint);
             // 
             // btnDoanhThu
             // 
@@ -681,7 +659,6 @@
             this.btnDoanhThu.Text = "            Doanh thu";
             this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoanhThu.UseVisualStyleBackColor = false;
-            this.btnDoanhThu.Click += new System.EventHandler(this.button24_Click);
             // 
             // panel25
             // 
@@ -690,7 +667,6 @@
             this.panel25.Name = "panel25";
             this.panel25.Size = new System.Drawing.Size(319, 53);
             this.panel25.TabIndex = 6;
-            this.panel25.Paint += new System.Windows.Forms.PaintEventHandler(this.panel25_Paint);
             // 
             // btnDonNhapHang
             // 
@@ -709,7 +685,6 @@
             this.btnDonNhapHang.Text = "            Đơn nhập hàng";
             this.btnDonNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonNhapHang.UseVisualStyleBackColor = false;
-            this.btnDonNhapHang.Click += new System.EventHandler(this.button22_Click);
             // 
             // panel17
             // 
@@ -718,7 +693,6 @@
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(313, 53);
             this.panel17.TabIndex = 10;
-            this.panel17.Paint += new System.Windows.Forms.PaintEventHandler(this.panel17_Paint);
             // 
             // btnTinhLuong
             // 
@@ -737,7 +711,6 @@
             this.btnTinhLuong.Text = "            Tính lương";
             this.btnTinhLuong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTinhLuong.UseVisualStyleBackColor = false;
-            this.btnTinhLuong.Click += new System.EventHandler(this.button17_Click);
             // 
             // SettingContainer
             // 
@@ -751,7 +724,6 @@
             this.SettingContainer.Name = "SettingContainer";
             this.SettingContainer.Size = new System.Drawing.Size(265, 58);
             this.SettingContainer.TabIndex = 5;
-            this.SettingContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.SettingContainer_Paint);
             // 
             // panel13
             // 
@@ -760,7 +732,6 @@
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(265, 65);
             this.panel13.TabIndex = 3;
-            this.panel13.Paint += new System.Windows.Forms.PaintEventHandler(this.panel13_Paint);
             // 
             // btnThemNhanVien
             // 
@@ -779,7 +750,7 @@
             this.btnThemNhanVien.Text = "            Thêm nhân viên";
             this.btnThemNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThemNhanVien.UseVisualStyleBackColor = false;
-            this.btnThemNhanVien.Click += new System.EventHandler(this.button2_Click);
+            this.btnThemNhanVien.Click += new System.EventHandler(this.btnThemNhanVien_Click);
             // 
             // panel18
             // 
@@ -788,7 +759,6 @@
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(265, 61);
             this.panel18.TabIndex = 4;
-            this.panel18.Paint += new System.Windows.Forms.PaintEventHandler(this.panel18_Paint);
             // 
             // btnSetting
             // 
@@ -817,7 +787,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(285, 70);
             this.panel5.TabIndex = 2;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // btnThongTinChung
             // 
@@ -836,7 +805,6 @@
             this.btnThongTinChung.Text = "            Thông tin chung";
             this.btnThongTinChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongTinChung.UseVisualStyleBackColor = false;
-            this.btnThongTinChung.Click += new System.EventHandler(this.button4_Click);
             // 
             // AccountContainer
             // 
@@ -850,7 +818,6 @@
             this.AccountContainer.Name = "AccountContainer";
             this.AccountContainer.Size = new System.Drawing.Size(265, 55);
             this.AccountContainer.TabIndex = 3;
-            this.AccountContainer.Paint += new System.Windows.Forms.PaintEventHandler(this.AccountContainer_Paint);
             // 
             // panel6
             // 
@@ -859,7 +826,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(265, 59);
             this.panel6.TabIndex = 0;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // btnDoiMatKhau
             // 
@@ -879,7 +845,6 @@
             this.btnDoiMatKhau.Text = "            Đổi mật khẩu";
             this.btnDoiMatKhau.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoiMatKhau.UseVisualStyleBackColor = false;
-            this.btnDoiMatKhau.Click += new System.EventHandler(this.button9_Click);
             // 
             // panel4
             // 
@@ -888,7 +853,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(265, 58);
             this.panel4.TabIndex = 0;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // btnAccount
             // 
@@ -917,7 +881,6 @@
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(265, 54);
             this.panel14.TabIndex = 4;
-            this.panel14.Paint += new System.Windows.Forms.PaintEventHandler(this.panel14_Paint);
             // 
             // btnDangXuat
             // 
@@ -937,7 +900,6 @@
             this.btnDangXuat.Text = "           Đăng xuất";
             this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangXuat.UseVisualStyleBackColor = false;
-            this.btnDangXuat.Click += new System.EventHandler(this.button11_Click);
             // 
             // CustomerTimer
             // 
@@ -975,7 +937,6 @@
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(982, 79);
             this.panelTitleBar.TabIndex = 1;
-            this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             // 
             // button12
             // 
@@ -1013,7 +974,6 @@
             this.lblTitle.TabIndex = 0;
             this.lblTitle.Text = "HOME";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.lblTitle.Click += new System.EventHandler(this.lblTitle_Click);
             // 
             // panelDesktoppanel
             // 

@@ -1,4 +1,5 @@
 ﻿using PKNK_CNPM;
+using PKNK_CNPM.Forms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -24,8 +25,6 @@ namespace quanlyphongkhamnhakhoa
         private Button currentButton;
         private Form activeForm;
         private int tempIndex;
-        /*public object SiderbarTimer { get; private set; }*/
-        //contruction
         public frmHomeScreen()
         {
             
@@ -304,268 +303,39 @@ namespace quanlyphongkhamnhakhoa
             AccountTimer.Start();
         }
 
-        
-
-        private void sidebar_Paint(object sender, PaintEventArgs e)
+        private void btnKhamTongQuat_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
+        private void btnCanLamSan_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void btnPhieuKham_Click(object sender, EventArgs e)
         {
 
         }
 
-        
-
-        private void button5_Click(object sender, EventArgs e)
+        private void btnDonThuoc_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnHoaDon_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void button8_Click(object sender, EventArgs e)
+        private void btnThongTin_Click(object sender, EventArgs e)
         {
 
         }
 
-        private void panel9_Paint(object sender, PaintEventArgs e)
+        private void btnThemNhanVien_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void QuanlyContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel16_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel29_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel26_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel28_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel20_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel24_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel27_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel25_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel17_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SettingContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel18_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccountContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel14_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel11_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel12_Paint(object sender, PaintEventArgs e)
-        {
-
+            OpenChildForm(new PKNK_CNPM.Forms.dialogThemKhachHang(), sender);
         }
     }
 }
