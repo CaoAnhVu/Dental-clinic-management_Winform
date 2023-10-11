@@ -61,35 +61,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\Tài Khoản.cs">
+    <Compile Include="Forms\frmAccount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Tài Khoản.Designer.cs">
-      <DependentUpon>Tài Khoản.cs</DependentUpon>
+    <Compile Include="Forms\frmAccount.Designer.cs">
+      <DependentUpon>frmAccount.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Khách Hàng.cs">
+    <Compile Include="Forms\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Khách Hàng.Designer.cs">
-      <DependentUpon>Khách Hàng.cs</DependentUpon>
+    <Compile Include="Forms\frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormDesktop.cs">
+    <Compile Include="Forms\frmManager.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\FormDesktop.Designer.cs">
-      <DependentUpon>FormDesktop.cs</DependentUpon>
+    <Compile Include="Forms\frmManager.Designer.cs">
+      <DependentUpon>frmManager.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Quản Lý.cs">
+    <Compile Include="Forms\frmSetting.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Quản Lý.Designer.cs">
-      <DependentUpon>Quản Lý.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\Thiết Lập.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\Thiết Lập.Designer.cs">
-      <DependentUpon>Thiết Lập.cs</DependentUpon>
+    <Compile Include="Forms\frmSetting.Designer.cs">
+      <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -97,35 +91,32 @@
     <Compile Include="LoginPage.Designer.cs">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="Giaodien.cs">
+    <Compile Include="frmHomeScreen.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Giaodien.Designer.cs">
-      <DependentUpon>Giaodien.cs</DependentUpon>
+    <Compile Include="frmHomeScreen.Designer.cs">
+      <DependentUpon>frmHomeScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
-    <EmbeddedResource Include="Forms\Tài Khoản.resx">
-      <DependentUpon>Tài Khoản.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmAccount.resx">
+      <DependentUpon>frmAccount.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Khách Hàng.resx">
-      <DependentUpon>Khách Hàng.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormDesktop.resx">
-      <DependentUpon>FormDesktop.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmManager.resx">
+      <DependentUpon>frmManager.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Quản Lý.resx">
-      <DependentUpon>Quản Lý.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Thiết Lập.resx">
-      <DependentUpon>Thiết Lập.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmSetting.resx">
+      <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Giaodien.resx">
-      <DependentUpon>Giaodien.cs</DependentUpon>
+    <EmbeddedResource Include="frmHomeScreen.resx">
+      <DependentUpon>frmHomeScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
