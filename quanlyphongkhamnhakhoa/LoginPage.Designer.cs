@@ -123,7 +123,7 @@
             // 
             this.txtTenDangNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
             this.txtTenDangNhap.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtTenDangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenDangNhap.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenDangNhap.ForeColor = System.Drawing.Color.Black;
             this.txtTenDangNhap.Location = new System.Drawing.Point(744, 215);
             this.txtTenDangNhap.Multiline = true;
@@ -136,7 +136,7 @@
             // 
             this.txtMatKhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
             this.txtMatKhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtMatKhau.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtMatKhau.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtMatKhau.ForeColor = System.Drawing.Color.Black;
             this.txtMatKhau.Location = new System.Drawing.Point(744, 291);
             this.txtMatKhau.Multiline = true;
@@ -188,7 +188,7 @@
             this.btnDangNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDangNhap.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDangNhap.ForeColor = System.Drawing.Color.White;
-            this.btnDangNhap.Location = new System.Drawing.Point(704, 485);
+            this.btnDangNhap.Location = new System.Drawing.Point(712, 485);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(347, 78);
             this.btnDangNhap.TabIndex = 11;
@@ -224,7 +224,7 @@
             // 
             this.picLogo.BackColor = System.Drawing.Color.White;
             this.picLogo.Image = global::PKNK_CNPM.Properties.Resources.svg__2_1;
-            this.picLogo.Location = new System.Drawing.Point(163, 518);
+            this.picLogo.Location = new System.Drawing.Point(163, 527);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(125, 151);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
