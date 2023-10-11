@@ -17,5 +17,14 @@ namespace PKNK_CNPM.Forms
             InitializeComponent();
         }
 
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
