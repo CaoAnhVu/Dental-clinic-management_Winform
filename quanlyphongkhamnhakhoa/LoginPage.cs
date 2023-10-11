@@ -1,4 +1,5 @@
 ﻿using PKNK.BUS.Servive;
+using PKNK.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,21 +27,39 @@ namespace quanlyphongkhamnhakhoa
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-           
+
             try
             {
-                authService.Login(txtUsername.Text, txtPassword.Text);
+                Auth user = authService.Login(txtUsername.Text, txtPassword.Text);
+                if (!checkValid())
+                    throw new Exception("Nhập đầy đủ kí tự!");
+                if (user == null)
+                    throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
 
                 frmManager f = new frmManager();
-                this.Hide();
                 f.ShowDialog();
+                clearValue();
+                MessageBox.Show("Đăng nhập thành công!");
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+        }
+        private bool checkValid()
+        {
+            if (txtUsername.Text != "" || txtPassword.Text != "")
+            {
+                return true;
+            }
+            return false;
         }
 
-        
+        private void clearValue()
+        {
+            txtUsername.Text = txtPassword.Text = "";
+        }
     }
 }
+
