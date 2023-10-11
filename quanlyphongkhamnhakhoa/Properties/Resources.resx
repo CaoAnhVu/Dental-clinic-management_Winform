@@ -127,17 +127,14 @@
   <data name="Rectangle 21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="membrane" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\membrane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Rectangle 002" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Rectangle 002.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -163,8 +160,8 @@
   <data name="padlock-square-1 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\padlock-square-1 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="delivery" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\delivery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="unsplash_tZCrFpSNiIQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\unsplash_tZCrFpSNiIQ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="help-desk1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\help-desk1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,9 +211,6 @@
   <data name="money1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4732290396587_a10bf6644b2956ee3436fefc2264e0012" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e0012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="salary1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\salary1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -243,6 +237,9 @@
   </data>
   <data name="image 62" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\image 62.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="single-man-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\single-man-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="unlock (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unlock (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -289,8 +286,8 @@
   <data name="mail-send-envelope (1)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mail-send-envelope (1)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="z4732290396587_a10bf6644b2956ee3436fefc2264e0011" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e0011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="svg (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="padlock" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\padlock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,8 +298,8 @@
   <data name="unsplash_tZCrFpSNiIQ" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\unsplash_tZCrFpSNiIQ.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Form" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="team-management" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\team-management.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -310,11 +307,14 @@
   <data name="menu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\menu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Form" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Form.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="doctor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\doctor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="delivery" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delivery.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="menu1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\menu1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z4768413299262_32a1eeab2e36199a62c028a3897b89a5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -327,6 +327,9 @@
   </data>
   <data name="info1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="svg" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\svg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="z4768413299262_32a1eeab2e36199a62c028a3897b89a53" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\z4768413299262_32a1eeab2e36199a62c028a3897b89a53.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -367,8 +370,8 @@
   <data name="user (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\user (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="membrane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\membrane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Desktop - 1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Desktop - 1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -415,8 +418,11 @@
   <data name="info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="doctor1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\doctor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="logout" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\logout.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="about" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\about.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="statistics" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\statistics.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -424,8 +430,8 @@
   <data name="padlock-square-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\padlock-square-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="single-man-circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\single-man-circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z4732290396587_a10bf6644b2956ee3436fefc2264e0011" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e0011.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -436,8 +442,8 @@
   <data name="settings2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="unsplash_tZCrFpSNiIQ1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\unsplash_tZCrFpSNiIQ1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="z4732290396587_a10bf6644b2956ee3436fefc2264e0012" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\z4732290396587_a10bf6644b2956ee3436fefc2264e0012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="settings1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\settings1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -454,7 +460,7 @@
   <data name="medicine" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\medicine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="svg (2)1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\svg (2)1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="close (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\close (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

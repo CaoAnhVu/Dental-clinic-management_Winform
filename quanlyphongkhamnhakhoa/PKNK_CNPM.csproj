@@ -61,11 +61,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\Tài Khoản.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Tài Khoản.Designer.cs">
+      <DependentUpon>Tài Khoản.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Khách Hàng.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Khách Hàng.Designer.cs">
+      <DependentUpon>Khách Hàng.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\FormDesktop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormDesktop.Designer.cs">
       <DependentUpon>FormDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Quản Lý.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Quản Lý.Designer.cs">
+      <DependentUpon>Quản Lý.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Thiết Lập.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Thiết Lập.Designer.cs">
+      <DependentUpon>Thiết Lập.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -81,8 +105,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="Forms\Tài Khoản.resx">
+      <DependentUpon>Tài Khoản.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Khách Hàng.resx">
+      <DependentUpon>Khách Hàng.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormDesktop.resx">
       <DependentUpon>FormDesktop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Quản Lý.resx">
+      <DependentUpon>Quản Lý.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Thiết Lập.resx">
+      <DependentUpon>Thiết Lập.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -448,6 +485,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\svg %282%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
