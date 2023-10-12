@@ -1,6 +1,6 @@
 ﻿namespace PKNK_CNPM.Forms
 {
-    partial class dialogThemKhachHang
+    partial class frmThemKhachHang
     {
         /// <summary>
         /// Required designer variable.
@@ -46,7 +46,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -54,6 +53,7 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -212,13 +212,6 @@
             this.textBox4.Size = new System.Drawing.Size(172, 22);
             this.textBox4.TabIndex = 18;
             // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(138, 221);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(172, 22);
-            this.textBox5.TabIndex = 19;
-            // 
             // textBox6
             // 
             this.textBox6.Location = new System.Drawing.Point(138, 262);
@@ -265,13 +258,13 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.richTextBox1);
             this.groupBox1.Controls.Add(this.textBox11);
             this.groupBox1.Controls.Add(this.textBox10);
             this.groupBox1.Controls.Add(this.textBox9);
             this.groupBox1.Controls.Add(this.textBox7);
             this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -294,7 +287,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin khách hàng";
             // 
-            // dialogThemKhachHang
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(138, 221);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(172, 24);
+            this.comboBox1.TabIndex = 27;
+            // 
+            // frmThemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -303,7 +304,7 @@
             this.Controls.Add(this.label15);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
-            this.Name = "dialogThemKhachHang";
+            this.Name = "frmThemKhachHang";
             this.Text = "Thêm khách hàng";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -332,7 +333,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox9;
@@ -340,5 +340,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

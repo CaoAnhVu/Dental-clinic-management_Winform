@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PKNK.DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,36 @@ namespace PKNK_CNPM.FormsSetting
         public frmDanhSachNV()
         {
             InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dtgvEmployee_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void BindGrid(List<BacSi> list)
+        {
+            dtgvEmployee.Rows.Clear();
+            foreach (BacSi i in list)
+            {
+                int index = dtgvEmployee.Rows.Add();
+                dtgvEmployee.Rows[index].Cells[0].Value = i.MaBS;
+                dtgvEmployee.Rows[index].Cells[1].Value = i.TenBacSi;
+                //if (i.GioiTinh != null)
+                //{
+                //    dtgvEmployee.Rows[index].Cells[2].Value = i.GioiTinh == 0;
+                //}
+                //dtgvEmployee.Rows[index].Cells[3].Value = i.AvgScore;
+                //if (i.MajorID != null)
+                //{
+                //    dtgvEmployee.Rows[index].Cells[4].Value = i.Major.Name;
+                //}
+            }
         }
     }
 }

@@ -758,6 +758,7 @@
             this.btnDanhSachNhanVien.Text = "            Nhân viên";
             this.btnDanhSachNhanVien.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDanhSachNhanVien.UseVisualStyleBackColor = false;
+            this.btnDanhSachNhanVien.Click += new System.EventHandler(this.btnDanhSachNhanVien_Click);
             // 
             // panel18
             // 

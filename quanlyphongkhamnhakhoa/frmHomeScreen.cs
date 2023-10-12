@@ -1,4 +1,5 @@
 ﻿using PKNK_CNPM;
+using PKNK_CNPM.FormsSetting;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,7 +29,7 @@ namespace quanlyphongkhamnhakhoa
         //contruction
         public frmHomeScreen()
         {
-            
+            this.WindowState = FormWindowState.Maximized;
             InitializeComponent();
             random = new Random();
             btnCloseChildForm.Visible = false;
@@ -144,7 +145,7 @@ namespace quanlyphongkhamnhakhoa
             if (WindowState == FormWindowState.Normal)
                 this.WindowState = FormWindowState.Maximized;
             else
-                this.WindowState = FormWindowState.Normal;
+                this.WindowState = FormWindowState.Maximized;
         }
         private void btnMinimize_Click_1(object sender, EventArgs e)
         {
@@ -314,6 +315,12 @@ namespace quanlyphongkhamnhakhoa
             AccountTimer.Start();
         }
 
-       
+        private void btnDanhSachNhanVien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new frmDanhSachNV(), sender);
+
+            //set timer interval to lowest to make it smoother 
+            AccountTimer.Start();
+        }
     }
 }

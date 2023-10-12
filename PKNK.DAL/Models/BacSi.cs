@@ -9,13 +9,6 @@ namespace PKNK.DAL.Models
     [Table("BacSi")]
     public partial class BacSi
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public BacSi()
-        {
-            TTCanLamSangs = new HashSet<TTCanLamSang>();
-            TTLamSangs = new HashSet<TTLamSang>();
-        }
-
         [Key]
         [StringLength(10)]
         public string MaBS { get; set; }
@@ -30,12 +23,31 @@ namespace PKNK.DAL.Models
 
         public DateTime NamSinh { get; set; }
 
-        public bool TinhTrang { get; set; }
+        [StringLength(10)]
+        public string MaChucDanh { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TTCanLamSang> TTCanLamSangs { get; set; }
+        [StringLength(10)]
+        public string DienThoai { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TTLamSang> TTLamSangs { get; set; }
+        [StringLength(50)]
+        public string Email { get; set; }
+
+        [StringLength(50)]
+        public string DiaChi { get; set; }
+
+        public int? SoNgayCong { get; set; }
+
+        public int? SoNgayNghi { get; set; }
+
+        public int? SoGioLamViec { get; set; }
+
+        [Column(TypeName = "money")]
+        public decimal? TinhLuong { get; set; }
+
+        public DateTime? NgayTao { get; set; }
+
+        public DateTime? NgaySua { get; set; }
+
+        public virtual ChucDanh ChucDanh { get; set; }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PKNK_CNPM.Forms
 {
-    public partial class dialogThemKhachHang : Form
+    public partial class frmThemKhachHang : Form
     {
-        public dialogThemKhachHang()
+        public frmThemKhachHang()
         {
             InitializeComponent();
         }

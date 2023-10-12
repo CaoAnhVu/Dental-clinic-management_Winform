@@ -83,11 +83,11 @@
     <Compile Include="FormsSetting\frmThemNhanVien.Designer.cs">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\dialogThemKhachHang.cs">
+    <Compile Include="Forms\frmThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\dialogThemKhachHang.Designer.cs">
-      <DependentUpon>dialogThemKhachHang.cs</DependentUpon>
+    <Compile Include="Forms\frmThemKhachHang.Designer.cs">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmAccount.cs">
       <SubType>Form</SubType>
@@ -134,8 +134,8 @@
     <EmbeddedResource Include="FormsSetting\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\dialogThemKhachHang.resx">
-      <DependentUpon>dialogThemKhachHang.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmAccount.resx">
       <DependentUpon>frmAccount.cs</DependentUpon>
