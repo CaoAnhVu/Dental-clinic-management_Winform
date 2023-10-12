@@ -30,22 +30,22 @@ namespace PKNK_CNPM.FormsSetting
 
         private void BindGrid(List<BacSi> list)
         {
-            dtgvEmployee.Rows.Clear();
-            foreach (BacSi i in list)
-            {
-                int index = dtgvEmployee.Rows.Add();
-                dtgvEmployee.Rows[index].Cells[0].Value = i.MaBS;
-                dtgvEmployee.Rows[index].Cells[1].Value = i.TenBacSi;
-                //if (i.GioiTinh != null)
-                //{
-                //    dtgvEmployee.Rows[index].Cells[2].Value = i.GioiTinh == 0;
-                //}
-                //dtgvEmployee.Rows[index].Cells[3].Value = i.AvgScore;
-                //if (i.MajorID != null)
-                //{
-                //    dtgvEmployee.Rows[index].Cells[4].Value = i.Major.Name;
-                //}
-            }
+            //dtgvEmployee.Rows.Clear();
+            //foreach (BacSi i in list)
+            //{
+            //    int index = dtgvEmployee.Rows.Add();
+            //    dtgvEmployee.Rows[index].Cells[0].Value = i.MaBS;
+            //    dtgvEmployee.Rows[index].Cells[1].Value = i.TenBacSi;
+            //    //if (i.GioiTinh != null)
+            //    //{
+            //    //    dtgvEmployee.Rows[index].Cells[2].Value = i.GioiTinh == 0;
+            //    //}
+            //    //dtgvEmployee.Rows[index].Cells[3].Value = i.AvgScore;
+            //    //if (i.MajorID != null)
+            //    //{
+            //    //    dtgvEmployee.Rows[index].Cells[4].Value = i.Major.Name;
+            //    //}
+            //}
         }
     }
 }

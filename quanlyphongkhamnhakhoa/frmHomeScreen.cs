@@ -75,24 +75,29 @@ namespace quanlyphongkhamnhakhoa
                 }
             }
         }
+
+        private void DisableCollapse()
+        {
+            customerCollapse = quanlyCollapse = settingCollapse = accountCollapse = false;
+        }
         private void DisableButton()
         {
             foreach (Control previousBtn in sidebar.Controls)
             {
-                if (previousBtn.GetType() == typeof(Button))
-                {
-                    previousBtn.BackColor = Color.FromArgb(55, 63, 65);
+                    previousBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
                     previousBtn.ForeColor = Color.Gainsboro;
                     previousBtn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
                     
-                }
             }
         }
         //Show Forms
         private void OpenChildForm(Form childForm, object btnSender)
         {
             if (activeForm != null)
-            activeForm.Close();
+            {
+                activeForm.Close();
+            }
+            Reset();
             ActivateButton(btnSender);
             activeForm = childForm;
             childForm.TopLevel = false;
@@ -103,6 +108,7 @@ namespace quanlyphongkhamnhakhoa
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
+            DisableCollapse();
         }
 
         private void btnCloseChildForm_Click_1(object sender, EventArgs e)
@@ -121,7 +127,8 @@ namespace quanlyphongkhamnhakhoa
             btnQuanLy.BackColor = Color.FromArgb(55, 51, 76);
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
             btnAccount.BackColor = Color.FromArgb(55, 51, 76);
-            currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
+            if(currentButton != null)
+                currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
             btnCloseChildForm.Visible = false;
             currentButton = null;
 
@@ -157,7 +164,6 @@ namespace quanlyphongkhamnhakhoa
             if (sidebarExpand)
             {
                 //if siderbar is Expand, maximine
-
                 sidebar.Width -= 10;
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
@@ -186,8 +192,6 @@ namespace quanlyphongkhamnhakhoa
         }
 
         //Set Timer các chức năng trong toolBar
-       
-
         private void btnCustomer_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new PKNK_CNPM.Forms.FormCustomer(), sender);
@@ -204,7 +208,6 @@ namespace quanlyphongkhamnhakhoa
                 {
                     customerCollapse = false;
                     CustomerTimer.Stop();
-
                 }
             }
             else
@@ -214,7 +217,6 @@ namespace quanlyphongkhamnhakhoa
                 {
                     customerCollapse = true;
                     CustomerTimer.Stop();
-
                 }
 
             }
@@ -278,7 +280,6 @@ namespace quanlyphongkhamnhakhoa
         private void btnSetting_Click_1(object sender, EventArgs e)
         {
             OpenChildForm(new PKNK_CNPM.Forms.FormSetting(), sender);
-
             //set timer interval to lowest to make it smoother 
             SettingTimer.Start();
         }
@@ -318,9 +319,6 @@ namespace quanlyphongkhamnhakhoa
         private void btnDanhSachNhanVien_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmDanhSachNV(), sender);
-
-            //set timer interval to lowest to make it smoother 
-            AccountTimer.Start();
         }
     }
 }

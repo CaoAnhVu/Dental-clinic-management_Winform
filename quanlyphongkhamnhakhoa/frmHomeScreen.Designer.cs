@@ -98,7 +98,6 @@
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktoppanel = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.grpTatCa = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -108,6 +107,7 @@
             this.colTenNV = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colGioiTinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -1032,16 +1032,6 @@
             this.panelDesktoppanel.Size = new System.Drawing.Size(1131, 1023);
             this.panelDesktoppanel.TabIndex = 2;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(12, 26);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(302, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Danh Sách Khám Hôm Nay";
-            // 
             // grpTatCa
             // 
             this.grpTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -1134,6 +1124,16 @@
             this.txtTimKiem.Size = new System.Drawing.Size(1070, 86);
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "   Tìm kiếm...";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(12, 26);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(302, 29);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Danh Sách Khám Hôm Nay";
             // 
             // frmHomeScreen
             // 
