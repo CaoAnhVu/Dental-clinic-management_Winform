@@ -36,6 +36,7 @@ namespace quanlyphongkhamnhakhoa
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
+        //Drag form
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
         private extern static void ReleaseCapture();
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
@@ -63,12 +64,13 @@ namespace quanlyphongkhamnhakhoa
                     currentButton = (Button)btnSender;
                     currentButton.BackColor = color;
                     currentButton.ForeColor = Color.White;
-                    currentButton.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+                    currentButton.Font = new System.Drawing.Font("Segoe UI", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
                     panelTitleBar.BackColor = color;
                     panelMenu.BackColor = Themecolor.ChangeColorBrightness(color, -0.3);
                     Themecolor.PrimaryColor = color;
                     Themecolor.SecondaryColor = Themecolor.ChangeColorBrightness(color, -0.3);
                     btnCloseChildForm.Visible = true;
+                    btnCloseChildForm.BackColor = color;
                 }
             }
         }
@@ -80,7 +82,8 @@ namespace quanlyphongkhamnhakhoa
                 {
                     previousBtn.BackColor = Color.FromArgb(55, 63, 65);
                     previousBtn.ForeColor = Color.Gainsboro;
-                    previousBtn.Font = new System.Drawing.Font("Segoe UI", 14.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+                    previousBtn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+                    
                 }
             }
         }
@@ -117,30 +120,37 @@ namespace quanlyphongkhamnhakhoa
             btnQuanLy.BackColor = Color.FromArgb(55, 51, 76);
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
             btnAccount.BackColor = Color.FromArgb(55, 51, 76);
-            currentButton = null;
+            currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
             btnCloseChildForm.Visible = false;
+            currentButton = null;
+
+
         }
+        //Drag Form
         private void panelTitleBar_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-        private void btnClose_Click(object sender, EventArgs e)
+
+
+        //Button Max, close, minimize
+        private void btnClosePage_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
-
-        private void btnMaximize_Click(object sender, EventArgs e)
+        private void btnMaximine_Click(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Normal)
                 this.WindowState = FormWindowState.Maximized;
             else
                 this.WindowState = FormWindowState.Normal;
         }
-        private void btnMinimize_Click(object sender, EventArgs e)
+        private void btnMinimize_Click_1(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
         private void sidebarTimer_Tick(object sender, EventArgs e)
         {
             if (sidebarExpand)
@@ -304,268 +314,6 @@ namespace quanlyphongkhamnhakhoa
             AccountTimer.Start();
         }
 
-        
-
-        private void sidebar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panelMenu_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel9_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel8_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void QuanlyContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel16_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel29_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button26_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel7_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel26_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button23_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel28_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button25_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel20_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel24_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button21_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel27_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button24_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel25_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button22_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel17_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SettingContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel13_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel18_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void AccountContainer_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel14_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panelTitleBar_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void lblTitle_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel10_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel11_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel12_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
     }
 }
