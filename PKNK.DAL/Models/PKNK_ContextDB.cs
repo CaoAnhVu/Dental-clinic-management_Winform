@@ -14,6 +14,7 @@ namespace PKNK.DAL.Models
 
         public virtual DbSet<Auth> Auths { get; set; }
         public virtual DbSet<BacSi> BacSis { get; set; }
+        public virtual DbSet<ChucDanh> ChucDanhs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -23,12 +24,24 @@ namespace PKNK.DAL.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<BacSi>()
+                .Property(e => e.MaChucDanh)
+                .IsFixedLength();
+
+            modelBuilder.Entity<BacSi>()
                 .Property(e => e.DienThoai)
                 .IsFixedLength();
 
             modelBuilder.Entity<BacSi>()
                 .Property(e => e.TinhLuong)
                 .HasPrecision(19, 4);
+
+            modelBuilder.Entity<ChucDanh>()
+                .Property(e => e.MaChucDanh)
+                .IsFixedLength();
+
+            modelBuilder.Entity<ChucDanh>()
+                .Property(e => e.ChucDanh1)
+                .IsFixedLength();
         }
     }
 }

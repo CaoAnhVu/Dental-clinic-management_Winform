@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Models\Auth.cs" />
     <Compile Include="Models\BacSi.cs" />
+    <Compile Include="Models\ChucDanh.cs" />
     <Compile Include="Models\PKNK_ContextDB.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -23,8 +23,8 @@ namespace PKNK.DAL.Models
 
         public DateTime NamSinh { get; set; }
 
-        [StringLength(50)]
-        public string ChucDanh { get; set; }
+        [StringLength(10)]
+        public string MaChucDanh { get; set; }
 
         [StringLength(10)]
         public string DienThoai { get; set; }
@@ -47,5 +47,7 @@ namespace PKNK.DAL.Models
         public DateTime? NgayTao { get; set; }
 
         public DateTime? NgaySua { get; set; }
+
+        public virtual ChucDanh ChucDanh { get; set; }
     }
 }
