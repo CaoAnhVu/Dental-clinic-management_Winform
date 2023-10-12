@@ -34,14 +34,14 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.grpTatCa = new System.Windows.Forms.GroupBox();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.listView1 = new System.Windows.Forms.ListView();
             this.colSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colMaNV = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colTenNV = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.colGioiTinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.grpTatCa.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -104,7 +104,7 @@
             this.grpTatCa.Controls.Add(this.label2);
             this.grpTatCa.Controls.Add(this.listView1);
             this.grpTatCa.Controls.Add(this.txtTimKiem);
-            this.grpTatCa.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.grpTatCa.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.grpTatCa.ForeColor = System.Drawing.Color.Black;
             this.grpTatCa.Location = new System.Drawing.Point(19, 154);
             this.grpTatCa.Name = "grpTatCa";
@@ -113,17 +113,24 @@
             this.grpTatCa.TabStop = false;
             this.grpTatCa.Text = "Tất cả";
             // 
-            // txtTimKiem
+            // textBox1
             // 
-            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(26, 47);
-            this.txtTimKiem.Multiline = true;
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(1156, 41);
-            this.txtTimKiem.TabIndex = 0;
-            this.txtTimKiem.Text = "   Tìm kiếm...";
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(105, 370);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(186, 38);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "  0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(19, 373);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(66, 31);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Tổng";
             // 
             // listView1
             // 
@@ -159,24 +166,17 @@
             this.colGioiTinh.Text = "Giới tính";
             this.colGioiTinh.Width = 100;
             // 
-            // label2
+            // txtTimKiem
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(19, 373);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(80, 38);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tổng";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(105, 370);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 43);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "  0";
+            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTimKiem.Location = new System.Drawing.Point(26, 47);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(1156, 41);
+            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
             // frmDanhSachNV
             // 
@@ -187,6 +187,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmDanhSachNV";
             this.Text = "Danh Sách Nhân Viên";
             this.grpTatCa.ResumeLayout(false);

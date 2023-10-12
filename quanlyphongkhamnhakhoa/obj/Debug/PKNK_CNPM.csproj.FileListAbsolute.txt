@@ -52,3 +52,4 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Deb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\quanlyphongkhamnhakhoa.frmHomeScreen.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormsSetting.frmDanhSachNV.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.dialogThemKhachHang.resources
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormsSetting.frmThemNhanVien.resources

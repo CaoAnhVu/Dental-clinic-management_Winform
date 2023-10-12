@@ -540,6 +540,15 @@
   <ItemGroup>
     <None Include="Resources\diskette.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x7201.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

@@ -473,6 +473,16 @@ namespace PKNK_CNPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap images__1_ {
+            get {
+                object obj = ResourceManager.GetObject("images (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap info {
             get {
                 object obj = ResourceManager.GetObject("info", resourceCulture);
@@ -776,6 +786,26 @@ namespace PKNK_CNPM.Properties {
         internal static System.Drawing.Bitmap prescription {
             get {
                 object obj = ResourceManager.GetObject("prescription", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profession_Dentiste_Clinique_dentaire_RDP_1280x720 {
+            get {
+                object obj = ResourceManager.GetObject("Profession_Dentiste_Clinique_dentaire_RDP-1280x720", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Profession_Dentiste_Clinique_dentaire_RDP_1280x7201 {
+            get {
+                object obj = ResourceManager.GetObject("Profession_Dentiste_Clinique_dentaire_RDP-1280x7201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -99,6 +99,15 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktoppanel = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.grpTatCa = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.colSTT = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colMaNV = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colTenNV = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.colGioiTinh = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.sidebar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -132,6 +141,7 @@
             this.panel14.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
             this.panelDesktoppanel.SuspendLayout();
+            this.grpTatCa.SuspendLayout();
             this.SuspendLayout();
             // 
             // sidebar
@@ -718,9 +728,9 @@
             this.SettingContainer.Controls.Add(this.panel5);
             this.SettingContainer.Location = new System.Drawing.Point(3, 204);
             this.SettingContainer.MaximumSize = new System.Drawing.Size(266, 190);
-            this.SettingContainer.MinimumSize = new System.Drawing.Size(266, 66);
+            this.SettingContainer.MinimumSize = new System.Drawing.Size(266, 54);
             this.SettingContainer.Name = "SettingContainer";
-            this.SettingContainer.Size = new System.Drawing.Size(266, 66);
+            this.SettingContainer.Size = new System.Drawing.Size(266, 54);
             this.SettingContainer.TabIndex = 5;
             // 
             // panel13
@@ -767,7 +777,7 @@
             this.btnSetting.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnSetting.Image = global::PKNK_CNPM.Properties.Resources.settings21;
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(-13, -1);
+            this.btnSetting.Location = new System.Drawing.Point(-14, -9);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnSetting.Size = new System.Drawing.Size(289, 71);
@@ -809,7 +819,7 @@
             this.AccountContainer.Controls.Add(this.panel6);
             this.AccountContainer.Controls.Add(this.panel4);
             this.AccountContainer.Controls.Add(this.panel14);
-            this.AccountContainer.Location = new System.Drawing.Point(3, 276);
+            this.AccountContainer.Location = new System.Drawing.Point(3, 264);
             this.AccountContainer.MaximumSize = new System.Drawing.Size(265, 177);
             this.AccountContainer.MinimumSize = new System.Drawing.Size(265, 55);
             this.AccountContainer.Name = "AccountContainer";
@@ -861,7 +871,7 @@
             this.btnAccount.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnAccount.Image = global::PKNK_CNPM.Properties.Resources.user__2_;
             this.btnAccount.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAccount.Location = new System.Drawing.Point(-12, -10);
+            this.btnAccount.Location = new System.Drawing.Point(-13, -10);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnAccount.Size = new System.Drawing.Size(292, 75);
@@ -934,7 +944,7 @@
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitleBar.Location = new System.Drawing.Point(271, 0);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(970, 79);
+            this.panelTitleBar.Size = new System.Drawing.Size(1131, 79);
             this.panelTitleBar.TabIndex = 1;
             this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
@@ -945,7 +955,7 @@
             this.btnClosePage.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnClosePage.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnClosePage.ForeColor = System.Drawing.Color.White;
-            this.btnClosePage.Location = new System.Drawing.Point(925, 6);
+            this.btnClosePage.Location = new System.Drawing.Point(1086, 6);
             this.btnClosePage.Name = "btnClosePage";
             this.btnClosePage.Size = new System.Drawing.Size(50, 43);
             this.btnClosePage.TabIndex = 4;
@@ -960,7 +970,7 @@
             this.btnMaximine.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMaximine.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnMaximine.ForeColor = System.Drawing.Color.White;
-            this.btnMaximine.Location = new System.Drawing.Point(874, 6);
+            this.btnMaximine.Location = new System.Drawing.Point(1035, 6);
             this.btnMaximine.Name = "btnMaximine";
             this.btnMaximine.Size = new System.Drawing.Size(50, 43);
             this.btnMaximine.TabIndex = 1;
@@ -975,7 +985,7 @@
             this.btnMinimize.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMinimize.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.btnMinimize.ForeColor = System.Drawing.Color.White;
-            this.btnMinimize.Location = new System.Drawing.Point(817, 6);
+            this.btnMinimize.Location = new System.Drawing.Point(978, 6);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.Size = new System.Drawing.Size(50, 43);
             this.btnMinimize.TabIndex = 0;
@@ -1004,7 +1014,7 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTitle.Location = new System.Drawing.Point(428, 19);
+            this.lblTitle.Location = new System.Drawing.Point(508, 19);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(101, 38);
             this.lblTitle.TabIndex = 0;
@@ -1013,28 +1023,122 @@
             // 
             // panelDesktoppanel
             // 
+            this.panelDesktoppanel.Controls.Add(this.grpTatCa);
             this.panelDesktoppanel.Controls.Add(this.label2);
             this.panelDesktoppanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktoppanel.Location = new System.Drawing.Point(271, 79);
             this.panelDesktoppanel.Name = "panelDesktoppanel";
-            this.panelDesktoppanel.Size = new System.Drawing.Size(970, 1023);
+            this.panelDesktoppanel.Size = new System.Drawing.Size(1131, 1023);
             this.panelDesktoppanel.TabIndex = 2;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(26, 26);
+            this.label2.Location = new System.Drawing.Point(12, 26);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(302, 29);
             this.label2.TabIndex = 0;
             this.label2.Text = "Danh Sách Khám Hôm Nay";
             // 
+            // grpTatCa
+            // 
+            this.grpTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.grpTatCa.BackColor = System.Drawing.Color.Snow;
+            this.grpTatCa.Controls.Add(this.textBox1);
+            this.grpTatCa.Controls.Add(this.label3);
+            this.grpTatCa.Controls.Add(this.listView1);
+            this.grpTatCa.Controls.Add(this.txtTimKiem);
+            this.grpTatCa.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.grpTatCa.ForeColor = System.Drawing.Color.Black;
+            this.grpTatCa.Location = new System.Drawing.Point(17, 96);
+            this.grpTatCa.Name = "grpTatCa";
+            this.grpTatCa.Size = new System.Drawing.Size(1102, 595);
+            this.grpTatCa.TabIndex = 5;
+            this.grpTatCa.TabStop = false;
+            this.grpTatCa.Text = "Tất cả";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(100, 531);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(186, 31);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "  0";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 531);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(66, 31);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tổng";
+            // 
+            // listView1
+            // 
+            this.listView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.colSTT,
+            this.colMaNV,
+            this.colTenNV,
+            this.colGioiTinh});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(26, 127);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(1070, 336);
+            this.listView1.TabIndex = 1;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // colSTT
+            // 
+            this.colSTT.Text = "STT";
+            // 
+            // colMaNV
+            // 
+            this.colMaNV.Text = "Mã NV";
+            this.colMaNV.Width = 150;
+            // 
+            // colTenNV
+            // 
+            this.colTenNV.Text = "Tên nhân viên";
+            this.colTenNV.Width = 150;
+            // 
+            // colGioiTinh
+            // 
+            this.colGioiTinh.Text = "Giới tính";
+            this.colGioiTinh.Width = 100;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTimKiem.Location = new System.Drawing.Point(26, 47);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(1070, 86);
+            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "   Tìm kiếm...";
+            // 
             // frmHomeScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1241, 1102);
+            this.ClientSize = new System.Drawing.Size(1402, 1102);
             this.Controls.Add(this.panelDesktoppanel);
             this.Controls.Add(this.panelTitleBar);
             this.Controls.Add(this.sidebar);
@@ -1077,6 +1181,8 @@
             this.panelTitleBar.PerformLayout();
             this.panelDesktoppanel.ResumeLayout(false);
             this.panelDesktoppanel.PerformLayout();
+            this.grpTatCa.ResumeLayout(false);
+            this.grpTatCa.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1153,5 +1259,14 @@
         private System.Windows.Forms.Button btnClosePage;
         private System.Windows.Forms.Button btnMaximine;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.GroupBox grpTatCa;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ColumnHeader colSTT;
+        private System.Windows.Forms.ColumnHeader colMaNV;
+        private System.Windows.Forms.ColumnHeader colTenNV;
+        private System.Windows.Forms.ColumnHeader colGioiTinh;
+        private System.Windows.Forms.TextBox txtTimKiem;
     }
 }
