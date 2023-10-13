@@ -30,7 +30,7 @@ namespace quanlyphongkhamnhakhoa
 
             try
             {
-                Auth user = authService.Login(txtUsername.Text, txtPassword.Text);
+                /*Auth user = authService.Login(txtUsername.Text, txtPassword.Text);*/
                 /*if (!checkValid())
                     throw new Exception("Nhập đầy đủ kí tự!");
                 if (user == null)

@@ -71,11 +71,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCustomer\frmAddExaminationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\frmAddExaminationForm.Designer.cs">
+      <DependentUpon>frmAddExaminationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\frmClinical.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\frmClinical.Designer.cs">
+      <DependentUpon>frmClinical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\frmExaminationform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\frmExaminationform.Designer.cs">
+      <DependentUpon>frmExaminationform.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormsSetting\frmAddStaff.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsSetting\frmAddStaff.Designer.cs">
       <DependentUpon>frmAddStaff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormsSetting\frmGeneralInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormsSetting\frmGeneralInformation.Designer.cs">
+      <DependentUpon>frmGeneralInformation.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsSetting\frmThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -128,8 +152,20 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="FormCustomer\frmAddExaminationForm.resx">
+      <DependentUpon>frmAddExaminationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\frmClinical.resx">
+      <DependentUpon>frmClinical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\frmExaminationform.resx">
+      <DependentUpon>frmExaminationform.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormsSetting\frmAddStaff.resx">
       <DependentUpon>frmAddStaff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormsSetting\frmGeneralInformation.resx">
+      <DependentUpon>frmGeneralInformation.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsSetting\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
@@ -548,6 +584,66 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x7201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x7202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kham-nha-khoa-IMPLANT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nha-khoa-o-thanh-hoa-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20200923_140404_562589_han-rang.max-1800x1800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boc-rang-su.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20190806_045211_746039_pasted_image_0_25.max-1800x1800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cao-voi-rang-het-bao-nhieu-768x513.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danh-bong-rang-la-gi-768x513.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4781273691158_ddfb8f6987864972fe94ccf00a5dc51a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meo-chua-rang-sau-768x503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nho-rang-khon-1688699317553340911178.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

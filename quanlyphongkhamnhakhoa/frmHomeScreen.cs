@@ -98,7 +98,7 @@ namespace quanlyphongkhamnhakhoa
                 activeForm.Close();
             }
             Reset();
-            ActivateButton(btnSender);
+            ActivateButton(btnSender); 
             activeForm = childForm;
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
@@ -108,7 +108,7 @@ namespace quanlyphongkhamnhakhoa
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
-            DisableCollapse();
+            
         }
 
         private void btnCloseChildForm_Click_1(object sender, EventArgs e)
@@ -128,7 +128,7 @@ namespace quanlyphongkhamnhakhoa
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
             btnAccount.BackColor = Color.FromArgb(55, 51, 76);
             if(currentButton != null)
-                currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
+            currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
             btnCloseChildForm.Visible = false;
             currentButton = null;
 
