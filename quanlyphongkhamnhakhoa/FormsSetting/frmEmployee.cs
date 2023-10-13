@@ -15,7 +15,8 @@ namespace PKNK_CNPM.FormsSetting
     public partial class frmDanhSachNV : Form
     {
         private readonly PKNK_ContextDB context = new PKNK_ContextDB();
-        private readonly NhanVienService nhanVienService = new NhanVienService();   
+        private readonly NhanVienService nhanVienService = new NhanVienService();
+        private NhanVien nhanVien;
         public frmDanhSachNV()
         {
             InitializeComponent();
@@ -25,11 +26,6 @@ namespace PKNK_CNPM.FormsSetting
             List<NhanVien> nv =  nhanVienService.GetAll();
             BindGrid(nv);
             txtTong.Text = nv.Count.ToString();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void BindGrid(List<NhanVien> list)
@@ -71,6 +67,23 @@ namespace PKNK_CNPM.FormsSetting
         }
 
         private void btnSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThemNV_Click(object sender, EventArgs e)
+        {
+            frmThemNhanVien frmThemNhanVien = new frmThemNhanVien();
+            frmThemNhanVien.ShowDialog();
+            BindGrid(nhanVienService.GetAll());
+        }
+
+        private void btnTaiLai_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
         {
 
         }
