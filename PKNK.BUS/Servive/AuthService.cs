@@ -36,7 +36,6 @@ namespace PKNK.BUS.Servive
             }
             catch (Exception ex){
                 throw new Exception(ex.Message);
-                throw new Exception($"{username} {hashedPassword} {hashedPassword.Length}");
             }
         }
 

@@ -54,9 +54,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Auth.cs" />
-    <Compile Include="Models\BacSi.cs" />
+    <Compile Include="Models\BaoHiem.cs" />
+    <Compile Include="Models\BenhNhan.cs" />
+    <Compile Include="Models\Bill.cs" />
+    <Compile Include="Models\ChanDoan.cs" />
     <Compile Include="Models\ChucDanh.cs" />
+    <Compile Include="Models\CL.cs" />
+    <Compile Include="Models\DoanhThu.cs" />
+    <Compile Include="Models\DonThuoc.cs" />
+    <Compile Include="Models\LoaiThuThuat.cs" />
+    <Compile Include="Models\NhanVien.cs" />
     <Compile Include="Models\PKNK_ContextDB.cs" />
+    <Compile Include="Models\ThongTinCL.cs" />
+    <Compile Include="Models\ThongTinL.cs" />
+    <Compile Include="Models\Thuoc.cs" />
+    <Compile Include="Models\ThuThuat.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

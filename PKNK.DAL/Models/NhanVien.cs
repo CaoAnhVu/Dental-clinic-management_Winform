@@ -6,35 +6,30 @@ namespace PKNK.DAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("DonThuoc")]
-    public partial class DonThuoc
+    [Table("NhanVien")]
+    public partial class NhanVien
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DonThuoc()
+        public NhanVien()
         {
             Bills = new HashSet<Bill>();
         }
 
         [Key]
         [StringLength(10)]
-        public string MaDonThuoc { get; set; }
-
-        [Required]
-        [StringLength(10)]
-        public string MaThuoc { get; set; }
-
-        public int SoLuong { get; set; }
-
-        [Column(TypeName = "money")]
-        public decimal ThanhTien { get; set; }
+        public string MaNhanVien { get; set; }
 
         [Column(TypeName = "ntext")]
         [Required]
-        public string GhiChu { get; set; }
+        public string TenNhanVien { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string MaChucDanh { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill> Bills { get; set; }
 
-        public virtual Thuoc Thuoc { get; set; }
+        public virtual ChucDanh ChucDanh { get; set; }
     }
 }

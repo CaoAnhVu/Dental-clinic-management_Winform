@@ -8,22 +8,22 @@ using System.Threading.Tasks;
 
 namespace PKNK.BUS.Servive
 {
-    public class EmployeeService
+    public class NhanVienService
     {
         // Lấy tất cả bác sĩ
-        public List<BacSi> GetAll()
+        public List<NhanVien> GetAll()
         {
             PKNK_ContextDB model = new PKNK_ContextDB();
-            return model.BacSis.ToList();
+            return model.NhanViens.ToList();
         }
 
         // Thêm bác sĩ
-        public void Add(BacSi bs)
+        public void Add(NhanVien bs)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                model.BacSis.Add(bs);
+                model.NhanViens.Add(bs);
                 model.SaveChanges();
             }catch (Exception ex)
             {
@@ -32,7 +32,7 @@ namespace PKNK.BUS.Servive
         }
 
         // Sửa bác sĩ
-        public void Update(BacSi bs)
+        public void Update(NhanVien bs)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace PKNK.BUS.Servive
                 using (PKNK_ContextDB model = new PKNK_ContextDB())
                 {
                     // Tìm bác sĩ trong danh sách
-                    BacSi existingBs  = model.BacSis.Find(bs);
+                    NhanVien existingBs  = model.NhanViens.Find(bs);
                     // Kiểm tra xem bs có không nếu xong thì set lại value cho bác sĩ
                     if (existingBs != null)
                     {
@@ -58,14 +58,14 @@ namespace PKNK.BUS.Servive
         }
         
         // Tìm bác sĩ bằng mã bác sĩ
-        public BacSi FindById(string id)
+        public NhanVien FindById(string id)
         {
             try
             {
                 // Sữ dụng PKNK_ContextDB
                 using (PKNK_ContextDB model = new PKNK_ContextDB())
                 {
-                    return model.BacSis.Find(id);
+                    return model.NhanViens.Find(id);
                 }
             }
             catch (Exception ex)
@@ -76,12 +76,12 @@ namespace PKNK.BUS.Servive
         }
 
         // Xóa bác sĩ
-        public void Delete(BacSi bs)
+        public void Delete(NhanVien bs)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                model.BacSis.Remove(bs);
+                model.NhanViens.Remove(bs);
                 model.SaveChanges();
             }
             catch (Exception ex)

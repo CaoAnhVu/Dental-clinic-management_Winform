@@ -50,7 +50,12 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Servive\AuthService.cs" />
-    <Compile Include="Servive\EmployeeService.cs" />
+    <Compile Include="Servive\BenhNhanService.cs" />
+    <Compile Include="Servive\CanLamSangService.cs" />
+    <Compile Include="Servive\ThuocService.cs" />
+    <Compile Include="Servive\NhanVienService.cs" />
+    <Compile Include="Servive\LoaiThuThuatService.cs" />
+    <Compile Include="Servive\ThuThuatService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PKNK.DAL\PKNK.DAL.csproj">

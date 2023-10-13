@@ -13,8 +13,7 @@ namespace PKNK.DAL.Models
         [StringLength(50)]
         public string username { get; set; }
 
-        [Required]
-        [StringLength(33)]
+        [StringLength(32)]
         public string password { get; set; }
     }
 }

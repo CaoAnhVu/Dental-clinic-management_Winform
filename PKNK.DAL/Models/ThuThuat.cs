@@ -6,22 +6,26 @@ namespace PKNK.DAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("Thuoc")]
-    public partial class Thuoc
+    [Table("ThuThuat")]
+    public partial class ThuThuat
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Thuoc()
+        public ThuThuat()
         {
-            DonThuocs = new HashSet<DonThuoc>();
+            ThongTinLS = new HashSet<ThongTinL>();
         }
+
+        [Required]
+        [StringLength(10)]
+        public string MaLoaiThuThuat { get; set; }
 
         [Key]
         [StringLength(10)]
-        public string MaThuoc { get; set; }
+        public string MaThuThuat { get; set; }
 
         [Column(TypeName = "ntext")]
         [Required]
-        public string TenThuoc { get; set; }
+        public string TenThuThuat { get; set; }
 
         [Column(TypeName = "ntext")]
         [Required]
@@ -30,7 +34,9 @@ namespace PKNK.DAL.Models
         [Column(TypeName = "money")]
         public decimal DonGia { get; set; }
 
+        public virtual LoaiThuThuat LoaiThuThuat { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DonThuoc> DonThuocs { get; set; }
+        public virtual ICollection<ThongTinL> ThongTinLS { get; set; }
     }
 }

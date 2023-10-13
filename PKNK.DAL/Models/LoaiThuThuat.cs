@@ -6,35 +6,28 @@ namespace PKNK.DAL.Models
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("DonThuoc")]
-    public partial class DonThuoc
+    [Table("LoaiThuThuat")]
+    public partial class LoaiThuThuat
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DonThuoc()
+        public LoaiThuThuat()
         {
-            Bills = new HashSet<Bill>();
+            ThongTinLS = new HashSet<ThongTinL>();
+            ThuThuats = new HashSet<ThuThuat>();
         }
 
         [Key]
         [StringLength(10)]
-        public string MaDonThuoc { get; set; }
-
-        [Required]
-        [StringLength(10)]
-        public string MaThuoc { get; set; }
-
-        public int SoLuong { get; set; }
-
-        [Column(TypeName = "money")]
-        public decimal ThanhTien { get; set; }
+        public string MaLoaiThuThuat { get; set; }
 
         [Column(TypeName = "ntext")]
         [Required]
-        public string GhiChu { get; set; }
+        public string TenLoaiThuThuat { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
+        public virtual ICollection<ThongTinL> ThongTinLS { get; set; }
 
-        public virtual Thuoc Thuoc { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ThuThuat> ThuThuats { get; set; }
     }
 }
