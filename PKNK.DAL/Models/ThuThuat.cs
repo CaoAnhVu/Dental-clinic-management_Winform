@@ -15,13 +15,13 @@ namespace PKNK.DAL.Models
             ThongTinLS = new HashSet<ThongTinL>();
         }
 
-        [Required]
-        [StringLength(10)]
-        public string MaLoaiThuThuat { get; set; }
-
         [Key]
         [StringLength(10)]
         public string MaThuThuat { get; set; }
+
+        [Required]
+        [StringLength(10)]
+        public string MaLoaiThuThuat { get; set; }
 
         [Column(TypeName = "ntext")]
         [Required]

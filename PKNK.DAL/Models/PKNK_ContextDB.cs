@@ -30,10 +30,6 @@ namespace PKNK.DAL.Models
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Auth>()
-                .Property(e => e.password)
-                .IsFixedLength();
-
             modelBuilder.Entity<BaoHiem>()
                 .Property(e => e.MaBaoHiem)
                 .IsFixedLength()
@@ -194,6 +190,14 @@ namespace PKNK.DAL.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
+                .Property(e => e.SoDienThoai)
+                .IsFixedLength();
+
+            modelBuilder.Entity<NhanVien>()
+                .Property(e => e.Email)
+                .IsFixedLength();
+
+            modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.Bills)
                 .WithRequired(e => e.NhanVien)
                 .WillCascadeOnDelete(false);
@@ -267,12 +271,12 @@ namespace PKNK.DAL.Models
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ThuThuat>()
-                .Property(e => e.MaLoaiThuThuat)
+                .Property(e => e.MaThuThuat)
                 .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<ThuThuat>()
-                .Property(e => e.MaThuThuat)
+                .Property(e => e.MaLoaiThuThuat)
                 .IsFixedLength()
                 .IsUnicode(false);
 

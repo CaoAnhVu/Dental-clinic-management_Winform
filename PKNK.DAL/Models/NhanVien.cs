@@ -27,6 +27,24 @@ namespace PKNK.DAL.Models
         [StringLength(10)]
         public string MaChucDanh { get; set; }
 
+        [StringLength(11)]
+        public string SoDienThoai { get; set; }
+
+        [StringLength(255)]
+        public string Email { get; set; }
+
+        [StringLength(255)]
+        public string DiaChi { get; set; }
+
+        public bool? GioiTinh { get; set; }
+
+        public DateTime? NgayTao { get; set; }
+
+        [Column(TypeName = "date")]
+        public DateTime? NamSinh { get; set; }
+
+        public DateTime? NgaySua { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill> Bills { get; set; }
 

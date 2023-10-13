@@ -27,6 +27,9 @@ namespace PKNK.DAL.Models
         [StringLength(10)]
         public string MaNV { get; set; }
 
+        [Column(TypeName = "ntext")]
+        public string NoiDung { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChanDoan> ChanDoans { get; set; }
 

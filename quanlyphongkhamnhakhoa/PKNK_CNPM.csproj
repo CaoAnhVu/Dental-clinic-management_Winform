@@ -89,11 +89,11 @@
     <Compile Include="FormCustomer\frmExaminationform.Designer.cs">
       <DependentUpon>frmExaminationform.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsSetting\frmAddStaff.cs">
+    <Compile Include="FormsSetting\frmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsSetting\frmAddStaff.Designer.cs">
-      <DependentUpon>frmAddStaff.cs</DependentUpon>
+    <Compile Include="FormsSetting\frmEmployee.Designer.cs">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
     <Compile Include="FormsSetting\frmGeneralInformation.cs">
       <SubType>Form</SubType>
@@ -161,8 +161,8 @@
     <EmbeddedResource Include="FormCustomer\frmExaminationform.resx">
       <DependentUpon>frmExaminationform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsSetting\frmAddStaff.resx">
-      <DependentUpon>frmAddStaff.cs</DependentUpon>
+    <EmbeddedResource Include="FormsSetting\frmEmployee.resx">
+      <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormsSetting\frmGeneralInformation.resx">
       <DependentUpon>frmGeneralInformation.cs</DependentUpon>
