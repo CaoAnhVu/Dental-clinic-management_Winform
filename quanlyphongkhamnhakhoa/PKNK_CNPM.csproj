@@ -71,6 +71,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCustomer\Controller\ThongTinItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ThongTinItems.Designer.cs">
+      <DependentUpon>ThongTinItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ThuocItem.Designer.cs">
+      <DependentUpon>ThuocItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ThuThuatItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ThuThuatItem.Designer.cs">
+      <DependentUpon>ThuThuatItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCustomer\frmAddExaminationForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +170,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="FormCustomer\Controller\ThongTinItems.resx">
+      <DependentUpon>ThongTinItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\Controller\ThuocItem.resx">
+      <DependentUpon>ThuocItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\Controller\ThuThuatItem.resx">
+      <DependentUpon>ThuThuatItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\frmAddExaminationForm.resx">
       <DependentUpon>frmAddExaminationForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -644,6 +671,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\nho-rang-khon-1688699317553340911178.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4781637953959_0b6efdfdcf623dd02c36a468e863553f %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

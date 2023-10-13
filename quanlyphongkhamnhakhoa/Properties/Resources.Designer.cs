@@ -133,6 +133,16 @@ namespace PKNK_CNPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add2 {
+            get {
+                object obj = ResourceManager.GetObject("add2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap background {
             get {
                 object obj = ResourceManager.GetObject("background", resourceCulture);
@@ -306,6 +316,16 @@ namespace PKNK_CNPM.Properties {
         internal static System.Drawing.Bitmap danh_bong_rang_la_gi_768x513 {
             get {
                 object obj = ResourceManager.GetObject("danh-bong-rang-la-gi-768x513", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap delete {
+            get {
+                object obj = ResourceManager.GetObject("delete", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -933,6 +953,26 @@ namespace PKNK_CNPM.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap printing {
+            get {
+                object obj = ResourceManager.GetObject("printing", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap printing1 {
+            get {
+                object obj = ResourceManager.GetObject("printing1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Profession_Dentiste_Clinique_dentaire_RDP_1280x720 {
             get {
                 object obj = ResourceManager.GetObject("Profession_Dentiste_Clinique_dentaire_RDP-1280x720", resourceCulture);
@@ -1486,6 +1526,16 @@ namespace PKNK_CNPM.Properties {
         internal static System.Drawing.Bitmap z4781273691158_ddfb8f6987864972fe94ccf00a5dc51a {
             get {
                 object obj = ResourceManager.GetObject("z4781273691158_ddfb8f6987864972fe94ccf00a5dc51a", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap z4781637953959_0b6efdfdcf623dd02c36a468e863553f__1_ {
+            get {
+                object obj = ResourceManager.GetObject("z4781637953959_0b6efdfdcf623dd02c36a468e863553f (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
