@@ -27,7 +27,7 @@ namespace PKNK.BUS.Servive
                 model.SaveChanges();
             }catch (Exception ex)
             {
-                throw new Exception($"Thêm bác sĩ lỗi! msg:{ex.Message}");
+                throw new Exception($"Thêm nhân viên lỗi! msg:{ex.Message}");
             }
         }
 
@@ -89,5 +89,26 @@ namespace PKNK.BUS.Servive
                 throw new Exception($"Xóa bác sĩ lỗi! msg:{ex.Message}");
             }
         }
+
+        // Generate UID MaNhanVien trong DB
+        //private string GenerateUniqueMaNhanVien()
+        //{
+        //    using (PKNK_ContextDB db = new YourDbContext())
+        //    {
+        //        var lastNhanVien = db.NhanViens.OrderByDescending(nv => nv.Id).FirstOrDefault();
+
+        //        if (lastNhanVien != null)
+        //        {
+        //            int lastId = lastNhanVien.Id;
+        //            // Extract the numeric part of MaNhanVien and increment it
+        //            int newId = lastId + 1;
+        //            return "NV" + newId.ToString("D3");
+        //        }
+        //        else
+        //        {
+        //            return "NV001"; // If there are no existing records
+        //        }
+        //    }
+        //}
     }
 }

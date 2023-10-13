@@ -30,7 +30,16 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.grpTatCa = new System.Windows.Forms.GroupBox();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.dgvNhanVien = new System.Windows.Forms.DataGridView();
+            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChucDanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtTong = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -48,14 +57,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtTenNV = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.MaNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenNhanVien = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChucDanh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamSinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoDienThoai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.grpTatCa.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvNhanVien)).BeginInit();
             this.panel1.SuspendLayout();
@@ -78,6 +79,7 @@
             this.grpTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpTatCa.BackColor = System.Drawing.Color.Snow;
+            this.grpTatCa.Controls.Add(this.btnTimKiem);
             this.grpTatCa.Controls.Add(this.dgvNhanVien);
             this.grpTatCa.Controls.Add(this.txtTong);
             this.grpTatCa.Controls.Add(this.label2);
@@ -91,10 +93,32 @@
             this.grpTatCa.TabIndex = 4;
             this.grpTatCa.TabStop = false;
             // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(400, 47);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTimKiem.Size = new System.Drawing.Size(155, 43);
+            this.btnTimKiem.TabIndex = 19;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
             // dgvNhanVien
             // 
             this.dgvNhanVien.AllowUserToAddRows = false;
             this.dgvNhanVien.AllowUserToDeleteRows = false;
+            this.dgvNhanVien.AllowUserToResizeColumns = false;
+            this.dgvNhanVien.AllowUserToResizeRows = false;
             this.dgvNhanVien.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -115,6 +139,71 @@
             this.dgvNhanVien.Size = new System.Drawing.Size(1190, 344);
             this.dgvNhanVien.TabIndex = 5;
             this.dgvNhanVien.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvgDanhSachKham_CellContentClick);
+            // 
+            // MaNhanVien
+            // 
+            this.MaNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.MaNhanVien.Frozen = true;
+            this.MaNhanVien.HeaderText = "MaNhanVien";
+            this.MaNhanVien.MinimumWidth = 6;
+            this.MaNhanVien.Name = "MaNhanVien";
+            this.MaNhanVien.Width = 152;
+            // 
+            // TenNhanVien
+            // 
+            this.TenNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.TenNhanVien.HeaderText = "TenNhanVien";
+            this.TenNhanVien.MinimumWidth = 6;
+            this.TenNhanVien.Name = "TenNhanVien";
+            this.TenNhanVien.Width = 154;
+            // 
+            // ChucDanh
+            // 
+            this.ChucDanh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.ChucDanh.HeaderText = "ChucDanh";
+            this.ChucDanh.MinimumWidth = 6;
+            this.ChucDanh.Name = "ChucDanh";
+            this.ChucDanh.Width = 129;
+            // 
+            // NamSinh
+            // 
+            this.NamSinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.NamSinh.HeaderText = "NamSinh";
+            this.NamSinh.MinimumWidth = 6;
+            this.NamSinh.Name = "NamSinh";
+            this.NamSinh.Width = 118;
+            // 
+            // SoDienThoai
+            // 
+            this.SoDienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.SoDienThoai.HeaderText = "SoDienThoai";
+            this.SoDienThoai.MinimumWidth = 6;
+            this.SoDienThoai.Name = "SoDienThoai";
+            this.SoDienThoai.Width = 148;
+            // 
+            // Email
+            // 
+            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.Email.HeaderText = "Email";
+            this.Email.MinimumWidth = 6;
+            this.Email.Name = "Email";
+            this.Email.Width = 87;
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.DiaChi.HeaderText = "DiaChi";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            this.DiaChi.Width = 97;
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.GioiTinh.HeaderText = "GioiTinh";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            this.GioiTinh.Width = 112;
             // 
             // txtTong
             // 
@@ -148,7 +237,7 @@
             this.txtTimKiem.Location = new System.Drawing.Point(16, 47);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(1187, 41);
+            this.txtTimKiem.Size = new System.Drawing.Size(358, 41);
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
@@ -179,6 +268,7 @@
             this.btnThemNV.Text = "    Thêm Nhân Viên";
             this.btnThemNV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemNV.UseVisualStyleBackColor = false;
+            this.btnThemNV.Click += new System.EventHandler(this.btnThemNV_Click);
             // 
             // panel2
             // 
@@ -207,6 +297,7 @@
             this.btnTaiLai.Text = "  Tải Lại";
             this.btnTaiLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaiLai.UseVisualStyleBackColor = false;
+            this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
             // 
             // label3
             // 
@@ -338,71 +429,6 @@
             this.label10.TabIndex = 8;
             this.label10.Text = "Mã nhân viên";
             // 
-            // MaNhanVien
-            // 
-            this.MaNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.MaNhanVien.Frozen = true;
-            this.MaNhanVien.HeaderText = "MaNhanVien";
-            this.MaNhanVien.MinimumWidth = 6;
-            this.MaNhanVien.Name = "MaNhanVien";
-            this.MaNhanVien.Width = 152;
-            // 
-            // TenNhanVien
-            // 
-            this.TenNhanVien.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.TenNhanVien.HeaderText = "TenNhanVien";
-            this.TenNhanVien.MinimumWidth = 6;
-            this.TenNhanVien.Name = "TenNhanVien";
-            this.TenNhanVien.Width = 154;
-            // 
-            // ChucDanh
-            // 
-            this.ChucDanh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.ChucDanh.HeaderText = "ChucDanh";
-            this.ChucDanh.MinimumWidth = 6;
-            this.ChucDanh.Name = "ChucDanh";
-            this.ChucDanh.Width = 129;
-            // 
-            // NamSinh
-            // 
-            this.NamSinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.NamSinh.HeaderText = "NamSinh";
-            this.NamSinh.MinimumWidth = 6;
-            this.NamSinh.Name = "NamSinh";
-            this.NamSinh.Width = 118;
-            // 
-            // SoDienThoai
-            // 
-            this.SoDienThoai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.SoDienThoai.HeaderText = "SoDienThoai";
-            this.SoDienThoai.MinimumWidth = 6;
-            this.SoDienThoai.Name = "SoDienThoai";
-            this.SoDienThoai.Width = 148;
-            // 
-            // Email
-            // 
-            this.Email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Email.HeaderText = "Email";
-            this.Email.MinimumWidth = 6;
-            this.Email.Name = "Email";
-            this.Email.Width = 87;
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.DiaChi.HeaderText = "DiaChi";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            this.DiaChi.Width = 97;
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.GioiTinh.HeaderText = "GioiTinh";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Width = 112;
-            // 
             // frmDanhSachNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -457,5 +483,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn GioiTinh;
+        private System.Windows.Forms.Button btnTimKiem;
     }
 }
