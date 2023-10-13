@@ -108,7 +108,6 @@ namespace quanlyphongkhamnhakhoa
             childForm.BringToFront();
             childForm.Show();
             lblTitle.Text = childForm.Text;
-            DisableCollapse();
         }
 
         private void btnCloseChildForm_Click_1(object sender, EventArgs e)

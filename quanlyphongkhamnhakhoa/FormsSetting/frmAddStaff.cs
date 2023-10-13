@@ -28,7 +28,7 @@ namespace PKNK_CNPM.FormsSetting
 
         }
 
-        private void BindGrid(List<BacSi> list)
+        private void BindGrid(List<NhanVien> list)
         {
             //dtgvEmployee.Rows.Clear();
             //foreach (BacSi i in list)

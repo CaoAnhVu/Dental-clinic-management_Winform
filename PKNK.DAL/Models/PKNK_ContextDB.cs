@@ -13,35 +13,272 @@ namespace PKNK.DAL.Models
         }
 
         public virtual DbSet<Auth> Auths { get; set; }
-        public virtual DbSet<BacSi> BacSis { get; set; }
+        public virtual DbSet<BaoHiem> BaoHiems { get; set; }
+        public virtual DbSet<BenhNhan> BenhNhans { get; set; }
+        public virtual DbSet<Bill> Bills { get; set; }
+        public virtual DbSet<ChanDoan> ChanDoans { get; set; }
         public virtual DbSet<ChucDanh> ChucDanhs { get; set; }
+        public virtual DbSet<CL> CLS { get; set; }
+        public virtual DbSet<DoanhThu> DoanhThus { get; set; }
+        public virtual DbSet<DonThuoc> DonThuocs { get; set; }
+        public virtual DbSet<LoaiThuThuat> LoaiThuThuats { get; set; }
+        public virtual DbSet<NhanVien> NhanViens { get; set; }
+        public virtual DbSet<ThongTinCL> ThongTinCLS { get; set; }
+        public virtual DbSet<ThongTinL> ThongTinLS { get; set; }
+        public virtual DbSet<Thuoc> Thuocs { get; set; }
+        public virtual DbSet<ThuThuat> ThuThuats { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<BacSi>()
-                .Property(e => e.MaBS)
+            modelBuilder.Entity<Auth>()
+                .Property(e => e.password)
+                .IsFixedLength();
+
+            modelBuilder.Entity<BaoHiem>()
+                .Property(e => e.MaBaoHiem)
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<BacSi>()
-                .Property(e => e.MaChucDanh)
-                .IsFixedLength();
+            modelBuilder.Entity<BenhNhan>()
+                .Property(e => e.SDT)
+                .IsUnicode(false);
 
-            modelBuilder.Entity<BacSi>()
-                .Property(e => e.DienThoai)
-                .IsFixedLength();
+            modelBuilder.Entity<BenhNhan>()
+                .Property(e => e.NhomMau)
+                .IsFixedLength()
+                .IsUnicode(false);
 
-            modelBuilder.Entity<BacSi>()
-                .Property(e => e.TinhLuong)
+            modelBuilder.Entity<BenhNhan>()
+                .Property(e => e.TongTien)
                 .HasPrecision(19, 4);
 
-            modelBuilder.Entity<ChucDanh>()
-                .Property(e => e.MaChucDanh)
-                .IsFixedLength();
+            modelBuilder.Entity<BenhNhan>()
+                .Property(e => e.DaThanhToan)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<BenhNhan>()
+                .Property(e => e.TienNo)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<BenhNhan>()
+                .HasMany(e => e.BaoHiems)
+                .WithRequired(e => e.BenhNhan)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<BenhNhan>()
+                .HasMany(e => e.ChanDoans)
+                .WithRequired(e => e.BenhNhan)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Bill>()
+                .Property(e => e.MaHoaDon)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Bill>()
+                .Property(e => e.MaChanDoan)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Bill>()
+                .Property(e => e.MaDonThuoc)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Bill>()
+                .Property(e => e.MaNhanVien)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Bill>()
+                .Property(e => e.ThanhTien)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<Bill>()
+                .HasMany(e => e.DoanhThus)
+                .WithRequired(e => e.Bill)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ChanDoan>()
+                .Property(e => e.MaChanDoan)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ChanDoan>()
+                .Property(e => e.MaThongTinCLS)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ChanDoan>()
+                .Property(e => e.MaThongTinLS)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ChanDoan>()
+                .HasMany(e => e.Bills)
+                .WithRequired(e => e.ChanDoan)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ChucDanh>()
-                .Property(e => e.ChucDanh1)
-                .IsFixedLength();
+                .Property(e => e.MaChucDanh)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ChucDanh>()
+                .HasMany(e => e.NhanViens)
+                .WithRequired(e => e.ChucDanh)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<CL>()
+                .Property(e => e.MaCLS)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<CL>()
+                .HasMany(e => e.ThongTinCLS)
+                .WithRequired(e => e.CL)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<DoanhThu>()
+                .Property(e => e.MaDoanhThu)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DoanhThu>()
+                .Property(e => e.MaHoaDon)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DonThuoc>()
+                .Property(e => e.MaDonThuoc)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DonThuoc>()
+                .Property(e => e.MaThuoc)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<DonThuoc>()
+                .Property(e => e.ThanhTien)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<DonThuoc>()
+                .HasMany(e => e.Bills)
+                .WithRequired(e => e.DonThuoc)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<LoaiThuThuat>()
+                .Property(e => e.MaLoaiThuThuat)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<LoaiThuThuat>()
+                .HasMany(e => e.ThongTinLS)
+                .WithRequired(e => e.LoaiThuThuat)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<LoaiThuThuat>()
+                .HasMany(e => e.ThuThuats)
+                .WithRequired(e => e.LoaiThuThuat)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .Property(e => e.MaNhanVien)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .Property(e => e.MaChucDanh)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .HasMany(e => e.Bills)
+                .WithRequired(e => e.NhanVien)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ThongTinCL>()
+                .Property(e => e.MaThongTinCLS)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinCL>()
+                .Property(e => e.MaCLS)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinCL>()
+                .Property(e => e.MaNV)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinCL>()
+                .HasMany(e => e.ChanDoans)
+                .WithRequired(e => e.ThongTinCL)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ThongTinL>()
+                .Property(e => e.MaThongTinLS)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinL>()
+                .Property(e => e.MaChanDoan)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinL>()
+                .Property(e => e.ThanhTien)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<ThongTinL>()
+                .Property(e => e.MaNV)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinL>()
+                .Property(e => e.MaThuThuat)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinL>()
+                .Property(e => e.MaLoaiThuThuat)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThongTinL>()
+                .HasMany(e => e.ChanDoans)
+                .WithRequired(e => e.ThongTinL)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<Thuoc>()
+                .Property(e => e.MaThuoc)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Thuoc>()
+                .Property(e => e.DonGia)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<Thuoc>()
+                .HasMany(e => e.DonThuocs)
+                .WithRequired(e => e.Thuoc)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ThuThuat>()
+                .Property(e => e.MaLoaiThuThuat)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThuThuat>()
+                .Property(e => e.MaThuThuat)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ThuThuat>()
+                .Property(e => e.DonGia)
+                .HasPrecision(19, 4);
         }
     }
 }
