@@ -126,7 +126,7 @@ namespace PKNK_CNPM.FormsSetting
                     rbNam.Checked = true;
                 else
                     rbNu.Checked = true;
-                dtNgaySinh.Value = nhanVien.NamSinh.Value;
+                //dtNgaySinh.Value = nhanVien.NamSinh.Value;
             }
         }
     }
