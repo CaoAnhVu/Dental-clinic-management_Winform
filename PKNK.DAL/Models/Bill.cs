@@ -28,7 +28,7 @@ namespace PKNK.DAL.Models
         public string MaDonThuoc { get; set; }
 
         [Required]
-        [StringLength(10)]
+        [StringLength(5)]
         public string MaNhanVien { get; set; }
 
         [Column(TypeName = "money")]

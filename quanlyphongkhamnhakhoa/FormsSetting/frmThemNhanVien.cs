@@ -17,6 +17,7 @@ namespace PKNK_CNPM.FormsSetting
     public partial class frmThemNhanVien : Form
     {
         private readonly NhanVienService nhanVienService = new NhanVienService();
+        private readonly ChucDanhService chucDanhService = new ChucDanhService();
         private bool isSave = false;
         private NhanVien nhanVien;
         public frmThemNhanVien()
@@ -44,7 +45,13 @@ namespace PKNK_CNPM.FormsSetting
             }
             return false;
         }
-
+        private void FillChucDanhComboBox(List<ChucDanh> facultyList)
+        {
+            facultyList.Insert(0, new ChucDanh());
+            this.cbChucDanh.DataSource = facultyList;
+            this.cbChucDanh.DisplayMember = "TenChucDanh";
+            this.cbChucDanh.ValueMember = "MaChucDanh";
+        }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -74,18 +81,23 @@ namespace PKNK_CNPM.FormsSetting
                     Email = txtEmail.Text,
                     DiaChi = txtDiaChi.Text,
                     SoDienThoai = txtSDT.Text,
-                    MaChucDanh = "BS1",
+                    MaChucDanh = (string)cbChucDanh.SelectedValue,
                     GioiTinh = rbNam.Checked == true ? true : false,
                     NamSinh = (DateTime)dtNgaySinh.Value,
                     NgayTao = DateTime.Now,
                 };
 
-                if(isSave)
+                if (isSave)
+                {
                     nhanVienService.Update(nhanVien);
+                    MessageBox.Show("Sửa nhân viên thành công!");
+                }
                 else
+                {
                     nhanVienService.Add(nhanVien);
+                    MessageBox.Show("Thêm nhân viên thành công!");
+                }
 
-                MessageBox.Show("Thêm nhân viên thành công!");
                 clearValue();
                 this.Close();
 
@@ -113,7 +125,8 @@ namespace PKNK_CNPM.FormsSetting
 
         private void frmThemNhanVien_Load(object sender, EventArgs e)
         {
-            if(isSave && nhanVien != null)
+            FillChucDanhComboBox(chucDanhService.GetAll());
+            if (isSave && nhanVien != null)
             {
                 txtMaNV.Enabled = false;
                 txtMaNV.Text = nhanVien.MaNhanVien;
@@ -121,12 +134,21 @@ namespace PKNK_CNPM.FormsSetting
                 txtEmail.Text = nhanVien.Email;
                 txtDiaChi.Text = nhanVien.DiaChi;
                 txtSDT.Text = nhanVien.SoDienThoai;
-                //MaChucDanh = "BS1",
+                dtNgaySinh.Value = nhanVien.NamSinh.Value;
+                // Select item trong combobox
+                foreach (ChucDanh item in cbChucDanh.Items)
+                {
+                    if (item.TenChucDanh == chucDanhService.GetById(nhanVien.MaChucDanh).TenChucDanh)
+                    {
+                        cbChucDanh.SelectedItem = item;
+                        break;
+                    }
+                }
+                // Select radio button 
                 if (nhanVien.GioiTinh == true)
                     rbNam.Checked = true;
                 else
                     rbNu.Checked = true;
-                //dtNgaySinh.Value = nhanVien.NamSinh.Value;
             }
         }
     }

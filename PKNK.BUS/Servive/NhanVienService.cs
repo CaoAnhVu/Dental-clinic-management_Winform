@@ -39,14 +39,7 @@ namespace PKNK.BUS.Servive
                 // Sữ dụng PKNK_ContextDB
                 using (PKNK_ContextDB model = new PKNK_ContextDB())
                 {
-                    // Tìm bác sĩ trong danh sách
-                    NhanVien existingBs  = model.NhanViens.Find(bs);
-                    // Kiểm tra xem bs có không nếu xong thì set lại value cho bác sĩ
-                    if (existingBs != null)
-                    {
-                        model.Entry(existingBs).CurrentValues.SetValues(bs);
-                    }
-                    // Lưu
+                    model.NhanViens.AddOrUpdate(bs);
                     model.SaveChanges();
 
                 }
@@ -72,7 +65,20 @@ namespace PKNK.BUS.Servive
             {
                 throw new Exception($"Tìm bác sĩ lỗi! msg:{ex.Message}");
             }
-            
+        }
+
+        public List<NhanVien> SearchByName(string name)
+        {
+            try
+            {
+                // Sữ dụng PKNK_ContextDB
+                PKNK_ContextDB model = new PKNK_ContextDB();
+                return model.NhanViens.Where(p=>p.TenNhanVien.ToLower().Contains(name.ToLower())).ToList();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"Tìm bác sĩ lỗi! msg:{ex.Message}");
+            }
         }
 
         // Xóa bác sĩ
@@ -81,7 +87,8 @@ namespace PKNK.BUS.Servive
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                model.NhanViens.Remove(bs);
+                NhanVien tmp = model.NhanViens.Find(bs.MaNhanVien);
+                model.NhanViens.Remove(tmp);
                 model.SaveChanges();
             }
             catch (Exception ex)
@@ -89,26 +96,5 @@ namespace PKNK.BUS.Servive
                 throw new Exception($"Xóa bác sĩ lỗi! msg:{ex.Message}");
             }
         }
-
-        // Generate UID MaNhanVien trong DB
-        //private string GenerateUniqueMaNhanVien()
-        //{
-        //    using (PKNK_ContextDB db = new YourDbContext())
-        //    {
-        //        var lastNhanVien = db.NhanViens.OrderByDescending(nv => nv.Id).FirstOrDefault();
-
-        //        if (lastNhanVien != null)
-        //        {
-        //            int lastId = lastNhanVien.Id;
-        //            // Extract the numeric part of MaNhanVien and increment it
-        //            int newId = lastId + 1;
-        //            return "NV" + newId.ToString("D3");
-        //        }
-        //        else
-        //        {
-        //            return "NV001"; // If there are no existing records
-        //        }
-        //    }
-        //}
     }
 }

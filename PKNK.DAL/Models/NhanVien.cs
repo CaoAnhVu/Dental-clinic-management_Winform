@@ -16,11 +16,11 @@ namespace PKNK.DAL.Models
         }
 
         [Key]
-        [StringLength(10)]
+        [StringLength(5)]
         public string MaNhanVien { get; set; }
 
-        [Column(TypeName = "ntext")]
         [Required]
+        [StringLength(255)]
         public string TenNhanVien { get; set; }
 
         [Required]

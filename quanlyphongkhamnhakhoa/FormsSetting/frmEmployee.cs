@@ -14,7 +14,6 @@ namespace PKNK_CNPM.FormsSetting
 {
     public partial class frmDanhSachNV : Form
     {
-        private readonly PKNK_ContextDB context = new PKNK_ContextDB();
         private readonly NhanVienService nhanVienService = new NhanVienService();
         private NhanVien nhanVien;
 
@@ -49,7 +48,7 @@ namespace PKNK_CNPM.FormsSetting
                     dgvNhanVien.Rows[index].Cells[6].Value = i.DiaChi;
                     if (i.GioiTinh != null)
                     {
-                        dgvNhanVien.Rows[index].Cells[7].Value = i.GioiTinh == true ? "Male" : "Female";
+                        dgvNhanVien.Rows[index].Cells[7].Value = i.GioiTinh == true ? "Nam" : "Nữ";
                     }
                 }
             }catch (Exception ex)
@@ -75,6 +74,7 @@ namespace PKNK_CNPM.FormsSetting
             {
                 frmThemNhanVien frm = new frmThemNhanVien(true, nhanVien);
                 frm.ShowDialog();
+                BindGrid(nhanVienService.GetAll());
             }
             else
             {
@@ -87,6 +87,7 @@ namespace PKNK_CNPM.FormsSetting
             frmThemNhanVien frmThemNhanVien = new frmThemNhanVien();
             frmThemNhanVien.ShowDialog();
             BindGrid(nhanVienService.GetAll());
+            txtTong.Text = nhanVienService.GetAll().Count.ToString(); // reset lại tổng nhân viên
         }
 
         private void btnTaiLai_Click(object sender, EventArgs e)
@@ -96,12 +97,29 @@ namespace PKNK_CNPM.FormsSetting
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-
+            if(txtTimKiem.Text == "")
+                BindGrid(nhanVienService.GetAll());
+            else
+            {
+                BindGrid(nhanVienService.SearchByName(txtTimKiem.Text));
+            }
         }
 
-        private void grpTatCa_Enter(object sender, EventArgs e)
+        private void btnXoa_Click(object sender, EventArgs e)
         {
-
+            if(nhanVien != null)
+            {
+                DialogResult res = MessageBox.Show("Bạn có muốn xóa nhân viên này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+                if (res == DialogResult.Yes)
+                {
+                    nhanVienService.Delete(nhanVien);
+                    MessageBox.Show("Xóa thành công!");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn nhân viên dưới bản nhân viên!");
+            }
         }
     }
 }
