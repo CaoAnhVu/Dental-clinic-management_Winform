@@ -10,15 +10,25 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace PKNK_CNPM.FormsSetting
 {
     public partial class frmThemNhanVien : Form
     {
         private readonly NhanVienService nhanVienService = new NhanVienService();
+        private bool isSave = false;
+        private NhanVien nhanVien;
         public frmThemNhanVien()
         {
             InitializeComponent();
+        }
+
+        public frmThemNhanVien(bool isSave, NhanVien nhanVien)
+        {
+            InitializeComponent();
+            this.isSave = isSave;
+            this.nhanVien = nhanVien;
         }
         // FUNC
         private void clearValue()
@@ -35,17 +45,6 @@ namespace PKNK_CNPM.FormsSetting
             return false;
         }
 
-        static bool IsEmailValid(string emailAddress)
-        {
-            string pattern = @"^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$";
-            return Regex.IsMatch(emailAddress, pattern);
-        }
-
-        static bool IsVietnamesePhoneNumber(string phoneNumber)
-        {
-            string pattern = @"^(03|05|07|09)[0-9]{8}$";
-            return Regex.IsMatch(phoneNumber, pattern);
-        }
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -53,7 +52,7 @@ namespace PKNK_CNPM.FormsSetting
             {
                 NhanVien existingNhanVien = nhanVienService.GetAll().FirstOrDefault(p => p.MaNhanVien == txtMaNV.Text);
                 // Hander valid
-                if (existingNhanVien != null)
+                if (existingNhanVien != null && !isSave)
                     throw new Exception("Mã nhân viên đã có!");
                 if (!checkValue())
                     throw new Exception("Chưa nhập đầy đủ thông tin!");
@@ -61,9 +60,9 @@ namespace PKNK_CNPM.FormsSetting
                     throw new Exception("Mã nhân viên phải bằng 5!");
                 if (txtTenNV.Text.Length > 255)
                     throw new Exception("Tên nhân viên quá 255 kí tự!");
-                if (!IsVietnamesePhoneNumber(txtSDT.Text))
+                if (!CheckValidService.IsVietnamesePhoneNumber(txtSDT.Text))
                     throw new Exception("Số điện thoại không hợp lệ!");
-                if (!IsEmailValid(txtEmail.Text))
+                if (!CheckValidService.IsEmailValid(txtEmail.Text))
                     throw new Exception("Email không hợp lệ!");
                 if (txtDiaChi.Text.Length > 255)
                     throw new Exception("Tên nhân viên quá 255 kí tự!");
@@ -80,7 +79,12 @@ namespace PKNK_CNPM.FormsSetting
                     NamSinh = (DateTime)dtNgaySinh.Value,
                     NgayTao = DateTime.Now,
                 };
-                nhanVienService.Add(nhanVien);
+
+                if(isSave)
+                    nhanVienService.Update(nhanVien);
+                else
+                    nhanVienService.Add(nhanVien);
+
                 MessageBox.Show("Thêm nhân viên thành công!");
                 clearValue();
                 this.Close();
@@ -104,6 +108,25 @@ namespace PKNK_CNPM.FormsSetting
             else
             {
                 this.Close();
+            }
+        }
+
+        private void frmThemNhanVien_Load(object sender, EventArgs e)
+        {
+            if(isSave && nhanVien != null)
+            {
+                txtMaNV.Enabled = false;
+                txtMaNV.Text = nhanVien.MaNhanVien;
+                txtTenNV.Text = nhanVien.TenNhanVien;
+                txtEmail.Text = nhanVien.Email;
+                txtDiaChi.Text = nhanVien.DiaChi;
+                txtSDT.Text = nhanVien.SoDienThoai;
+                //MaChucDanh = "BS1",
+                if (nhanVien.GioiTinh == true)
+                    rbNam.Checked = true;
+                else
+                    rbNu.Checked = true;
+                dtNgaySinh.Value = nhanVien.NamSinh.Value;
             }
         }
     }

@@ -17,6 +17,7 @@ namespace PKNK_CNPM.FormsSetting
         private readonly PKNK_ContextDB context = new PKNK_ContextDB();
         private readonly NhanVienService nhanVienService = new NhanVienService();
         private NhanVien nhanVien;
+
         public frmDanhSachNV()
         {
             InitializeComponent();
@@ -59,16 +60,25 @@ namespace PKNK_CNPM.FormsSetting
 
         private void dvgDanhSachKham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataGridViewRow row = new DataGridViewRow();
-            row = dgvNhanVien.Rows[e.RowIndex];
-            txtMaNV.Text = row.Cells[0].Value.ToString();
-            txtTenNV.Text = row.Cells[1].Value.ToString();
-            txtChucVu.Text = row.Cells[2].Value.ToString();
+            //DataGridViewRow row = new DataGridViewRow();
+            //row = dgvNhanVien.Rows[e.RowIndex];
+            //txtMaNV.Text = row.Cells[0].Value.ToString();
+            //txtTenNV.Text = row.Cells[1].Value.ToString();
+            //txtChucVu.Text = row.Cells[2].Value.ToString();
+            //nhanVien = nhanVienService.FindById(row.Cells[0].Value.ToString());
+
         }
 
         private void btnSua_Click(object sender, EventArgs e)
         {
-
+            //if(nhanVien != null)
+            //{
+            //    frmThemNhanVien frm = new frmThemNhanVien(true, nhanVien);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Chưa chọn nhân viên dưới bản nhân viên!");
+            //}
         }
 
         private void btnThemNV_Click(object sender, EventArgs e)
@@ -80,7 +90,7 @@ namespace PKNK_CNPM.FormsSetting
 
         private void btnTaiLai_Click(object sender, EventArgs e)
         {
-
+            BindGrid(nhanVienService.GetAll());
         }
 
         private void btnTimKiem_Click(object sender, EventArgs e)

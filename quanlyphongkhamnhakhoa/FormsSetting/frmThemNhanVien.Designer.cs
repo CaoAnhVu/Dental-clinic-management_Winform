@@ -305,6 +305,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmThemNhanVien";
             this.Text = "Thêm nhân viên mới";
+            this.Load += new System.EventHandler(this.frmThemNhanVien_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
