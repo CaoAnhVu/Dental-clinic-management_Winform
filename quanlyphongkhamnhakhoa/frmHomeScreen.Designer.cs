@@ -66,8 +66,6 @@
             this.btnDoanhThu = new System.Windows.Forms.Button();
             this.panel25 = new System.Windows.Forms.Panel();
             this.btnDonNhapHang = new System.Windows.Forms.Button();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnTinhLuong = new System.Windows.Forms.Button();
             this.SettingContainer = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.btnSetting = new System.Windows.Forms.Button();
@@ -124,7 +122,6 @@
             this.panel20.SuspendLayout();
             this.panel27.SuspendLayout();
             this.panel25.SuspendLayout();
-            this.panel17.SuspendLayout();
             this.SettingContainer.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -386,9 +383,8 @@
             this.QuanlyContainer.Controls.Add(this.panel20);
             this.QuanlyContainer.Controls.Add(this.panel27);
             this.QuanlyContainer.Controls.Add(this.panel25);
-            this.QuanlyContainer.Controls.Add(this.panel17);
             this.QuanlyContainer.Location = new System.Drawing.Point(3, 143);
-            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 495);
+            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 448);
             this.QuanlyContainer.MinimumSize = new System.Drawing.Size(265, 54);
             this.QuanlyContainer.Name = "QuanlyContainer";
             this.QuanlyContainer.Size = new System.Drawing.Size(265, 54);
@@ -450,7 +446,7 @@
             // panel29
             // 
             this.panel29.Controls.Add(this.btnThongKeNam);
-            this.panel29.Location = new System.Drawing.Point(-13, 441);
+            this.panel29.Location = new System.Drawing.Point(-13, 391);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(332, 59);
             this.panel29.TabIndex = 4;
@@ -531,7 +527,7 @@
             // panel28
             // 
             this.panel28.Controls.Add(this.btnThongKeThang);
-            this.panel28.Location = new System.Drawing.Point(-78, 392);
+            this.panel28.Location = new System.Drawing.Point(-78, 342);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(342, 53);
             this.panel28.TabIndex = 12;
@@ -583,7 +579,7 @@
             // panel27
             // 
             this.panel27.Controls.Add(this.btnDoanhThu);
-            this.panel27.Location = new System.Drawing.Point(-46, 344);
+            this.panel27.Location = new System.Drawing.Point(-46, 294);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(322, 53);
             this.panel27.TabIndex = 11;
@@ -631,32 +627,6 @@
             this.btnDonNhapHang.Text = "            Đơn nhập hàng";
             this.btnDonNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonNhapHang.UseVisualStyleBackColor = false;
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.btnTinhLuong);
-            this.panel17.Location = new System.Drawing.Point(-49, 295);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(313, 53);
-            this.panel17.TabIndex = 10;
-            // 
-            // btnTinhLuong
-            // 
-            this.btnTinhLuong.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnTinhLuong.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnTinhLuong.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTinhLuong.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnTinhLuong.ForeColor = System.Drawing.Color.White;
-            this.btnTinhLuong.Image = global::PKNK_CNPM.Properties.Resources.salary2;
-            this.btnTinhLuong.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTinhLuong.Location = new System.Drawing.Point(30, -11);
-            this.btnTinhLuong.Name = "btnTinhLuong";
-            this.btnTinhLuong.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnTinhLuong.Size = new System.Drawing.Size(292, 71);
-            this.btnTinhLuong.TabIndex = 1;
-            this.btnTinhLuong.Text = "            Tính lương";
-            this.btnTinhLuong.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTinhLuong.UseVisualStyleBackColor = false;
             // 
             // SettingContainer
             // 
@@ -742,7 +712,7 @@
             this.btnDangXuat.ForeColor = System.Drawing.Color.Gainsboro;
             this.btnDangXuat.Image = global::PKNK_CNPM.Properties.Resources.logout1;
             this.btnDangXuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDangXuat.Location = new System.Drawing.Point(-14, -13);
+            this.btnDangXuat.Location = new System.Drawing.Point(-10, -13);
             this.btnDangXuat.Name = "btnDangXuat";
             this.btnDangXuat.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnDangXuat.Size = new System.Drawing.Size(292, 77);
@@ -1094,7 +1064,6 @@
             this.panel20.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.panel25.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
             this.SettingContainer.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1156,8 +1125,6 @@
         private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.Panel panel25;
         private System.Windows.Forms.Button btnDonNhapHang;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Button btnTinhLuong;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button btnDanhSachNhanVien;
         private System.Windows.Forms.Panel panel18;
