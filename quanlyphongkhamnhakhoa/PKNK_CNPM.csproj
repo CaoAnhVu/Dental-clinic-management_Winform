@@ -71,6 +71,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCustomer\Controller\DonThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\DonThuocItem.Designer.cs">
+      <DependentUpon>DonThuocItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCustomer\Controller\ThongTinItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -89,11 +95,11 @@
     <Compile Include="FormCustomer\Controller\ThuThuatItem.Designer.cs">
       <DependentUpon>ThuThuatItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\frmAddExaminationForm.cs">
+    <Compile Include="FormCustomer\frmCanLamSang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomer\frmAddExaminationForm.Designer.cs">
-      <DependentUpon>frmAddExaminationForm.cs</DependentUpon>
+    <Compile Include="FormCustomer\frmCanLamSang.Designer.cs">
+      <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCustomer\frmClinical.cs">
       <SubType>Form</SubType>
@@ -113,17 +119,35 @@
     <Compile Include="FormsSetting\frmEmployee.Designer.cs">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsSetting\frmGeneralInformation.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormsSetting\frmGeneralInformation.Designer.cs">
-      <DependentUpon>frmGeneralInformation.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormsSetting\frmThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormsSetting\frmThemNhanVien.Designer.cs">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDonThuoc.Designer.cs">
+      <DependentUpon>frmDonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmThemKhachHang.cs">
       <SubType>Form</SubType>
@@ -131,29 +155,11 @@
     <Compile Include="Forms\frmThemKhachHang.Designer.cs">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmAccount.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmAccount.Designer.cs">
-      <DependentUpon>frmAccount.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmCustomer.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmCustomer.Designer.cs">
       <DependentUpon>frmCustomer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmManager.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmManager.Designer.cs">
-      <DependentUpon>frmManager.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmSetting.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmSetting.Designer.cs">
-      <DependentUpon>frmSetting.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -170,6 +176,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="FormCustomer\Controller\DonThuocItem.resx">
+      <DependentUpon>DonThuocItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\Controller\ThongTinItems.resx">
       <DependentUpon>ThongTinItems.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,8 +188,8 @@
     <EmbeddedResource Include="FormCustomer\Controller\ThuThuatItem.resx">
       <DependentUpon>ThuThuatItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\frmAddExaminationForm.resx">
-      <DependentUpon>frmAddExaminationForm.cs</DependentUpon>
+    <EmbeddedResource Include="FormCustomer\frmCanLamSang.resx">
+      <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\frmClinical.resx">
       <DependentUpon>frmClinical.cs</DependentUpon>
@@ -191,26 +200,20 @@
     <EmbeddedResource Include="FormsSetting\frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsSetting\frmGeneralInformation.resx">
-      <DependentUpon>frmGeneralInformation.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormsSetting\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDonThuoc.resx">
+      <DependentUpon>frmDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmAccount.resx">
-      <DependentUpon>frmAccount.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCustomer.resx">
       <DependentUpon>frmCustomer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmManager.resx">
-      <DependentUpon>frmManager.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSetting.resx">
-      <DependentUpon>frmSetting.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -689,6 +692,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\printing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cao-voi-rang-het-bao-nhieu-768x5131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cay-ghep-implant-khi-mat-mot-rang-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhung-truong-hop-chi-dinh-va-chong-chi-dinh-nho-rang-trong-nha-khoa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cung-tim-hieu-dieu-tri-noi-nha-la-gi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boc-rang-su1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\182-co-the-su-dung-rang-gia-thao-lap-trong-bao-lau-1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
