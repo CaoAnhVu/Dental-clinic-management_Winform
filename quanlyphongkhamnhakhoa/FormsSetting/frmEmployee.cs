@@ -87,5 +87,10 @@ namespace PKNK_CNPM.FormsSetting
         {
 
         }
+
+        private void grpTatCa_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

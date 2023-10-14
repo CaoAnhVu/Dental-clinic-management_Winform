@@ -30,13 +30,6 @@
         {
             this.grpTatCa = new System.Windows.Forms.GroupBox();
             this.dvgDanhSachKham = new System.Windows.Forms.DataGridView();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTenKhachHang = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -44,6 +37,13 @@
             this.colDiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNguonKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNVPhuTrach = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.btnTaiLai = new System.Windows.Forms.Button();
             this.btnThemKH = new System.Windows.Forms.Button();
             this.grpTatCa.SuspendLayout();
@@ -66,7 +66,7 @@
             this.grpTatCa.ForeColor = System.Drawing.Color.Black;
             this.grpTatCa.Location = new System.Drawing.Point(27, 163);
             this.grpTatCa.Name = "grpTatCa";
-            this.grpTatCa.Size = new System.Drawing.Size(1239, 595);
+            this.grpTatCa.Size = new System.Drawing.Size(1223, 595);
             this.grpTatCa.TabIndex = 6;
             this.grpTatCa.TabStop = false;
             // 
@@ -88,83 +88,8 @@
             this.dvgDanhSachKham.Name = "dvgDanhSachKham";
             this.dvgDanhSachKham.RowHeadersWidth = 51;
             this.dvgDanhSachKham.RowTemplate.Height = 24;
-            this.dvgDanhSachKham.Size = new System.Drawing.Size(1227, 410);
+            this.dvgDanhSachKham.Size = new System.Drawing.Size(1211, 410);
             this.dvgDanhSachKham.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(6, -1);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 29);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tất cả";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(100, 531);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 25);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "  0";
-            // 
-            // label3
-            // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 531);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 25);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tổng";
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(6, 44);
-            this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
-            this.txtTimKiem.Multiline = true;
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(1070, 36);
-            this.txtTimKiem.TabIndex = 0;
-            this.txtTimKiem.Text = "   Tìm kiếm...";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(28, 67);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(265, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Danh Sách Khách Hàng";
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.btnTaiLai);
-            this.panel2.Location = new System.Drawing.Point(1139, 56);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(127, 52);
-            this.panel2.TabIndex = 8;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.btnThemKH);
-            this.panel1.Location = new System.Drawing.Point(903, 56);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(230, 52);
-            this.panel1.TabIndex = 7;
             // 
             // colSTT
             // 
@@ -222,6 +147,81 @@
             this.colNVPhuTrach.Name = "colNVPhuTrach";
             this.colNVPhuTrach.Width = 200;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(6, -1);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(79, 29);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tất cả";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
+            this.textBox1.Location = new System.Drawing.Point(100, 531);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(186, 25);
+            this.textBox1.TabIndex = 3;
+            this.textBox1.Text = "  0";
+            // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 531);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(55, 25);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tổng";
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTimKiem.Location = new System.Drawing.Point(6, 44);
+            this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(1054, 36);
+            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "   Tìm kiếm...";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(28, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(265, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Danh Sách Khách Hàng";
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.btnTaiLai);
+            this.panel2.Location = new System.Drawing.Point(1123, 56);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(127, 52);
+            this.panel2.TabIndex = 8;
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnThemKH);
+            this.panel1.Location = new System.Drawing.Point(887, 56);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(230, 52);
+            this.panel1.TabIndex = 7;
+            // 
             // btnTaiLai
             // 
             this.btnTaiLai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -264,13 +264,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1284, 803);
+            this.ClientSize = new System.Drawing.Size(1268, 803);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.grpTatCa);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "FormCustomer";
-            this.Text = "Khách Hàng";
+            this.Text = "Danh Sách Khách Hàng";
             this.Load += new System.EventHandler(this.FormCustomer_Load);
             this.grpTatCa.ResumeLayout(false);
             this.grpTatCa.PerformLayout();

@@ -125,7 +125,7 @@ namespace quanlyphongkhamnhakhoa
             btnCustomer.BackColor = Color.FromArgb(55, 51, 76);
             btnQuanLy.BackColor = Color.FromArgb(55, 51, 76);
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
-            btnAccount.BackColor = Color.FromArgb(55, 51, 76);
+            btnDangXuat.BackColor = Color.FromArgb(55, 51, 76);
             if(currentButton != null)
                 currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
             btnCloseChildForm.Visible = false;
@@ -246,7 +246,7 @@ namespace quanlyphongkhamnhakhoa
         }
         private void btnQuanLy_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new PKNK_CNPM.Forms.FormManager(), sender);
+            /*OpenChildForm(new PKNK_CNPM.Forms.FormManager(), sender);*/
             //set timer interval to lowest to make it smoother 
             QuanlyTimer.Start();
         }
@@ -278,42 +278,11 @@ namespace quanlyphongkhamnhakhoa
 
         private void btnSetting_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new PKNK_CNPM.Forms.FormSetting(), sender);
+           /* OpenChildForm(new PKNK_CNPM.Forms.FormSetting(), sender);*/
             //set timer interval to lowest to make it smoother 
             SettingTimer.Start();
         }
 
-        private void AccountTimer_Tick_1(object sender, EventArgs e)
-        {
-            if (accountCollapse)
-            {
-                AccountContainer.Height += 10;
-                if (AccountContainer.Height == AccountContainer.MaximumSize.Height)
-                {
-                    accountCollapse = false;
-                    AccountTimer.Stop();
-
-                }
-            }
-            else
-            {
-                AccountContainer.Height -= 10;
-                if (AccountContainer.Height == AccountContainer.MinimumSize.Height)
-                {
-                    accountCollapse = true;
-                    AccountTimer.Stop();
-
-                }
-            }
-        }
-
-        private void btnAccount_Click_1(object sender, EventArgs e)
-        {
-            OpenChildForm(new PKNK_CNPM.Forms.FormAccount(), sender);
-
-            //set timer interval to lowest to make it smoother 
-            AccountTimer.Start();
-        }
 
         private void btnDanhSachNhanVien_Click(object sender, EventArgs e)
         {

@@ -150,7 +150,7 @@
             this.ngaySua.Name = "ngaySua";
             this.ngaySua.Size = new System.Drawing.Size(235, 25);
             this.ngaySua.TabIndex = 17;
-            this.ngaySua.Text = "Ngày ngày sửa 26/10/2003";
+            this.ngaySua.Text = "Ngày ngày sửa 26/10/2023";
             // 
             // ngayTao
             // 
@@ -160,7 +160,7 @@
             this.ngayTao.Name = "ngayTao";
             this.ngayTao.Size = new System.Drawing.Size(187, 25);
             this.ngayTao.TabIndex = 16;
-            this.ngayTao.Text = "Ngày tạo 26/10/2003";
+            this.ngayTao.Text = "Ngày tạo 26/10/2023";
             // 
             // txtTenNV
             // 
@@ -270,10 +270,10 @@
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Image = global::PKNK_CNPM.Properties.Resources.diskette;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(951, 417);
+            this.btnLuu.Location = new System.Drawing.Point(928, 417);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnLuu.Size = new System.Drawing.Size(136, 59);
+            this.btnLuu.Size = new System.Drawing.Size(159, 59);
             this.btnLuu.TabIndex = 1;
             this.btnLuu.Text = "Lưu Lại";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -286,7 +286,7 @@
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(814, 417);
+            this.btnHuy.Location = new System.Drawing.Point(791, 417);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(131, 59);
             this.btnHuy.TabIndex = 1;
@@ -298,7 +298,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1099, 510);
+            this.ClientSize = new System.Drawing.Size(1099, 484);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnHuy);
