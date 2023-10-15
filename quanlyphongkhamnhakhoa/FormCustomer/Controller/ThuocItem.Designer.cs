@@ -38,7 +38,7 @@
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel17.BackColor = System.Drawing.Color.Snow;
             this.panel17.Controls.Add(this.label32);
             this.panel17.Controls.Add(this.label33);
             this.panel17.Controls.Add(this.pictureBox14);

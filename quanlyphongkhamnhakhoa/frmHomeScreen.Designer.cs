@@ -64,8 +64,6 @@
             this.btnThuoc = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
             this.btnDoanhThu = new System.Windows.Forms.Button();
-            this.panel25 = new System.Windows.Forms.Panel();
-            this.btnDonNhapHang = new System.Windows.Forms.Button();
             this.SettingContainer = new System.Windows.Forms.Panel();
             this.panel18 = new System.Windows.Forms.Panel();
             this.btnSetting = new System.Windows.Forms.Button();
@@ -85,7 +83,7 @@
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktoppanel = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
+            this.lblTatCa = new System.Windows.Forms.Label();
             this.grpTatCa = new System.Windows.Forms.GroupBox();
             this.panel19 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -101,7 +99,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lblDanhSachKham = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -121,7 +119,6 @@
             this.panel28.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel27.SuspendLayout();
-            this.panel25.SuspendLayout();
             this.SettingContainer.SuspendLayout();
             this.panel18.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -382,9 +379,8 @@
             this.QuanlyContainer.Controls.Add(this.panel28);
             this.QuanlyContainer.Controls.Add(this.panel20);
             this.QuanlyContainer.Controls.Add(this.panel27);
-            this.QuanlyContainer.Controls.Add(this.panel25);
             this.QuanlyContainer.Location = new System.Drawing.Point(3, 143);
-            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 448);
+            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 390);
             this.QuanlyContainer.MinimumSize = new System.Drawing.Size(265, 54);
             this.QuanlyContainer.Name = "QuanlyContainer";
             this.QuanlyContainer.Size = new System.Drawing.Size(265, 54);
@@ -412,7 +408,7 @@
             this.btnDonXuatHang.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnDonXuatHang.Size = new System.Drawing.Size(292, 71);
             this.btnDonXuatHang.TabIndex = 1;
-            this.btnDonXuatHang.Text = "           Đơn xuất hàng";
+            this.btnDonXuatHang.Text = "           Hóa đơn xuất nhập";
             this.btnDonXuatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonXuatHang.UseVisualStyleBackColor = false;
             // 
@@ -446,7 +442,7 @@
             // panel29
             // 
             this.panel29.Controls.Add(this.btnThongKeNam);
-            this.panel29.Location = new System.Drawing.Point(-13, 391);
+            this.panel29.Location = new System.Drawing.Point(-13, 340);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(332, 59);
             this.panel29.TabIndex = 4;
@@ -460,7 +456,7 @@
             this.btnThongKeNam.ForeColor = System.Drawing.Color.White;
             this.btnThongKeNam.Image = global::PKNK_CNPM.Properties.Resources.statistics;
             this.btnThongKeNam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeNam.Location = new System.Drawing.Point(-6, -2);
+            this.btnThongKeNam.Location = new System.Drawing.Point(-6, -3);
             this.btnThongKeNam.Name = "btnThongKeNam";
             this.btnThongKeNam.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnThongKeNam.Size = new System.Drawing.Size(290, 62);
@@ -501,7 +497,7 @@
             // panel26
             // 
             this.panel26.Controls.Add(this.btnDichVu);
-            this.panel26.Location = new System.Drawing.Point(-19, 247);
+            this.panel26.Location = new System.Drawing.Point(-19, 196);
             this.panel26.Name = "panel26";
             this.panel26.Size = new System.Drawing.Size(286, 53);
             this.panel26.TabIndex = 9;
@@ -527,7 +523,7 @@
             // panel28
             // 
             this.panel28.Controls.Add(this.btnThongKeThang);
-            this.panel28.Location = new System.Drawing.Point(-78, 342);
+            this.panel28.Location = new System.Drawing.Point(-78, 291);
             this.panel28.Name = "panel28";
             this.panel28.Size = new System.Drawing.Size(342, 53);
             this.panel28.TabIndex = 12;
@@ -553,7 +549,7 @@
             // panel20
             // 
             this.panel20.Controls.Add(this.btnThuoc);
-            this.panel20.Location = new System.Drawing.Point(-49, 201);
+            this.panel20.Location = new System.Drawing.Point(-49, 150);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(316, 53);
             this.panel20.TabIndex = 8;
@@ -579,7 +575,7 @@
             // panel27
             // 
             this.panel27.Controls.Add(this.btnDoanhThu);
-            this.panel27.Location = new System.Drawing.Point(-46, 294);
+            this.panel27.Location = new System.Drawing.Point(-46, 243);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(322, 53);
             this.panel27.TabIndex = 11;
@@ -601,32 +597,6 @@
             this.btnDoanhThu.Text = "            Doanh thu";
             this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoanhThu.UseVisualStyleBackColor = false;
-            // 
-            // panel25
-            // 
-            this.panel25.Controls.Add(this.btnDonNhapHang);
-            this.panel25.Location = new System.Drawing.Point(-52, 150);
-            this.panel25.Name = "panel25";
-            this.panel25.Size = new System.Drawing.Size(319, 53);
-            this.panel25.TabIndex = 6;
-            // 
-            // btnDonNhapHang
-            // 
-            this.btnDonNhapHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnDonNhapHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDonNhapHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonNhapHang.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnDonNhapHang.ForeColor = System.Drawing.Color.White;
-            this.btnDonNhapHang.Image = global::PKNK_CNPM.Properties.Resources.delivery1;
-            this.btnDonNhapHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonNhapHang.Location = new System.Drawing.Point(33, -7);
-            this.btnDonNhapHang.Name = "btnDonNhapHang";
-            this.btnDonNhapHang.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDonNhapHang.Size = new System.Drawing.Size(292, 71);
-            this.btnDonNhapHang.TabIndex = 1;
-            this.btnDonNhapHang.Text = "            Đơn nhập hàng";
-            this.btnDonNhapHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonNhapHang.UseVisualStyleBackColor = false;
             // 
             // SettingContainer
             // 
@@ -808,6 +778,7 @@
             // btnCloseChildForm
             // 
             this.btnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnCloseChildForm.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
             this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -835,25 +806,25 @@
             // 
             // panelDesktoppanel
             // 
-            this.panelDesktoppanel.Controls.Add(this.label4);
+            this.panelDesktoppanel.Controls.Add(this.lblTatCa);
             this.panelDesktoppanel.Controls.Add(this.grpTatCa);
-            this.panelDesktoppanel.Controls.Add(this.label2);
+            this.panelDesktoppanel.Controls.Add(this.lblDanhSachKham);
             this.panelDesktoppanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelDesktoppanel.Location = new System.Drawing.Point(271, 79);
             this.panelDesktoppanel.Name = "panelDesktoppanel";
             this.panelDesktoppanel.Size = new System.Drawing.Size(1131, 976);
             this.panelDesktoppanel.TabIndex = 2;
             // 
-            // label4
+            // lblTatCa
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Snow;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(31, 84);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 31);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Tất cả";
+            this.lblTatCa.AutoSize = true;
+            this.lblTatCa.BackColor = System.Drawing.Color.Snow;
+            this.lblTatCa.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTatCa.Location = new System.Drawing.Point(31, 84);
+            this.lblTatCa.Name = "lblTatCa";
+            this.lblTatCa.Size = new System.Drawing.Size(75, 31);
+            this.lblTatCa.TabIndex = 6;
+            this.lblTatCa.Text = "Tất cả";
             // 
             // grpTatCa
             // 
@@ -876,7 +847,7 @@
             // panel19
             // 
             this.panel19.Controls.Add(this.btnTimKiem);
-            this.panel19.Location = new System.Drawing.Point(738, 26);
+            this.panel19.Location = new System.Drawing.Point(717, 27);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(165, 54);
             this.panel19.TabIndex = 21;
@@ -905,6 +876,7 @@
             this.dvgDanhSachKham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dvgDanhSachKham.BackgroundColor = System.Drawing.Color.Snow;
             this.dvgDanhSachKham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvgDanhSachKham.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colSTT,
@@ -1021,20 +993,22 @@
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
-            // label2
+            // lblDanhSachKham
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(12, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(297, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Danh Sách Khám (Hôm nay)";
+            this.lblDanhSachKham.AutoSize = true;
+            this.lblDanhSachKham.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblDanhSachKham.Location = new System.Drawing.Point(6, 8);
+            this.lblDanhSachKham.Name = "lblDanhSachKham";
+            this.lblDanhSachKham.Size = new System.Drawing.Size(465, 46);
+            this.lblDanhSachKham.TabIndex = 0;
+            this.lblDanhSachKham.Text = "Danh Sách Khám (Hôm nay)";
             // 
             // frmHomeScreen
             // 
+            this.AcceptButton = this.btnTimKiem;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnCloseChildForm;
             this.ClientSize = new System.Drawing.Size(1402, 1055);
             this.Controls.Add(this.panelDesktoppanel);
             this.Controls.Add(this.panelTitleBar);
@@ -1063,7 +1037,6 @@
             this.panel28.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
-            this.panel25.ResumeLayout(false);
             this.SettingContainer.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1123,8 +1096,6 @@
         private System.Windows.Forms.Button btnThuoc;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Button btnDoanhThu;
-        private System.Windows.Forms.Panel panel25;
-        private System.Windows.Forms.Button btnDonNhapHang;
         private System.Windows.Forms.Panel panel13;
         private System.Windows.Forms.Button btnDanhSachNhanVien;
         private System.Windows.Forms.Panel panel18;
@@ -1148,11 +1119,11 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colThuThuat;
         private System.Windows.Forms.DataGridViewTextBoxColumn colTrangThai;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGhiChu;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblDanhSachKham;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTimKiem;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label lblTatCa;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button btnTimKiem;
     }

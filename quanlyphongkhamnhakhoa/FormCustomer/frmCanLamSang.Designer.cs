@@ -36,10 +36,6 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TabControl = new System.Windows.Forms.TabControl();
             this.tpThuThuat = new System.Windows.Forms.TabPage();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel18 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
@@ -59,15 +55,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txtPhanTramThue = new System.Windows.Forms.TextBox();
+            this.txtTienConNo = new System.Windows.Forms.TextBox();
+            this.txtThanhToan = new System.Windows.Forms.TextBox();
+            this.txtKhachCanTra = new System.Windows.Forms.TextBox();
+            this.txtThue = new System.Windows.Forms.TextBox();
+            this.txtTienChuaThue = new System.Windows.Forms.TextBox();
+            this.txtTienGiam = new System.Windows.Forms.TextBox();
+            this.txtTongTien = new System.Windows.Forms.TextBox();
+            this.rtbGhiChu = new System.Windows.Forms.RichTextBox();
             this.label37 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -94,13 +90,12 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tpThuThuat.SuspendLayout();
-            this.panel17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.panel18.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.panel11.SuspendLayout();
@@ -164,10 +159,10 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(21, 58);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 31);
+            this.label2.Size = new System.Drawing.Size(219, 46);
             this.label2.TabIndex = 36;
             this.label2.Text = "Phiếu Khám ";
             // 
@@ -177,7 +172,7 @@
             this.groupBox1.Controls.Add(this.TabControl);
             this.groupBox1.Controls.Add(this.panel11);
             this.groupBox1.Controls.Add(this.txtTimKiem);
-            this.groupBox1.Location = new System.Drawing.Point(12, 192);
+            this.groupBox1.Location = new System.Drawing.Point(12, 127);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1900, 737);
             this.groupBox1.TabIndex = 37;
@@ -196,7 +191,7 @@
             // 
             // tpThuThuat
             // 
-            this.tpThuThuat.Controls.Add(this.panel17);
+            this.tpThuThuat.BackColor = System.Drawing.Color.Snow;
             this.tpThuThuat.Controls.Add(this.panel18);
             this.tpThuThuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.tpThuThuat.Location = new System.Drawing.Point(4, 37);
@@ -205,48 +200,6 @@
             this.tpThuThuat.Size = new System.Drawing.Size(351, 611);
             this.tpThuThuat.TabIndex = 1;
             this.tpThuThuat.Text = "Thủ thuật";
-            this.tpThuThuat.UseVisualStyleBackColor = true;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel17.Controls.Add(this.label32);
-            this.panel17.Controls.Add(this.label33);
-            this.panel17.Controls.Add(this.pictureBox14);
-            this.panel17.Location = new System.Drawing.Point(8, -4);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(359, 80);
-            this.panel17.TabIndex = 8;
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label32.Location = new System.Drawing.Point(133, 41);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(152, 25);
-            this.label32.TabIndex = 2;
-            this.label32.Text = "Giá: 400.000 VNĐ";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label33.Location = new System.Drawing.Point(133, 12);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(106, 25);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Bọc răng sứ";
-            // 
-            // pictureBox14
-            // 
-            this.pictureBox14.Image = global::PKNK_CNPM.Properties.Resources.boc_rang_su;
-            this.pictureBox14.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox14.Name = "pictureBox14";
-            this.pictureBox14.Size = new System.Drawing.Size(119, 80);
-            this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 0;
-            this.pictureBox14.TabStop = false;
             // 
             // panel18
             // 
@@ -291,13 +244,13 @@
             // 
             // tpThuoc
             // 
+            this.tpThuoc.BackColor = System.Drawing.Color.Snow;
             this.tpThuoc.Location = new System.Drawing.Point(4, 37);
             this.tpThuoc.Name = "tpThuoc";
             this.tpThuoc.Padding = new System.Windows.Forms.Padding(3);
             this.tpThuoc.Size = new System.Drawing.Size(351, 611);
             this.tpThuoc.TabIndex = 2;
             this.tpThuoc.Text = "Thuốc";
-            this.tpThuoc.UseVisualStyleBackColor = true;
             // 
             // panel11
             // 
@@ -467,15 +420,15 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.textBox5);
-            this.groupBox2.Controls.Add(this.textBox4);
-            this.groupBox2.Controls.Add(this.textBox3);
-            this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Controls.Add(this.richTextBox1);
+            this.groupBox2.Controls.Add(this.txtPhanTramThue);
+            this.groupBox2.Controls.Add(this.txtTienConNo);
+            this.groupBox2.Controls.Add(this.txtThanhToan);
+            this.groupBox2.Controls.Add(this.txtKhachCanTra);
+            this.groupBox2.Controls.Add(this.txtThue);
+            this.groupBox2.Controls.Add(this.txtTienChuaThue);
+            this.groupBox2.Controls.Add(this.txtTienGiam);
+            this.groupBox2.Controls.Add(this.txtTongTien);
+            this.groupBox2.Controls.Add(this.rtbGhiChu);
             this.groupBox2.Controls.Add(this.label37);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label7);
@@ -507,110 +460,110 @@
             this.label15.TabIndex = 14;
             this.label15.Text = "%";
             // 
-            // textBox6
+            // txtPhanTramThue
             // 
-            this.textBox6.BackColor = System.Drawing.Color.Snow;
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Enabled = false;
-            this.textBox6.Location = new System.Drawing.Point(73, 184);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(59, 34);
-            this.textBox6.TabIndex = 13;
-            this.textBox6.Text = "0";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtPhanTramThue.BackColor = System.Drawing.Color.Snow;
+            this.txtPhanTramThue.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtPhanTramThue.Enabled = false;
+            this.txtPhanTramThue.Location = new System.Drawing.Point(73, 184);
+            this.txtPhanTramThue.Name = "txtPhanTramThue";
+            this.txtPhanTramThue.Size = new System.Drawing.Size(59, 34);
+            this.txtPhanTramThue.TabIndex = 13;
+            this.txtPhanTramThue.Text = "0";
+            this.txtPhanTramThue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox8
+            // txtTienConNo
             // 
-            this.textBox8.BackColor = System.Drawing.Color.Snow;
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox8.Enabled = false;
-            this.textBox8.ForeColor = System.Drawing.Color.Red;
-            this.textBox8.Location = new System.Drawing.Point(180, 324);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(150, 27);
-            this.textBox8.TabIndex = 12;
-            this.textBox8.Text = "0";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTienConNo.BackColor = System.Drawing.Color.Snow;
+            this.txtTienConNo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTienConNo.Enabled = false;
+            this.txtTienConNo.ForeColor = System.Drawing.Color.Red;
+            this.txtTienConNo.Location = new System.Drawing.Point(180, 324);
+            this.txtTienConNo.Name = "txtTienConNo";
+            this.txtTienConNo.Size = new System.Drawing.Size(150, 27);
+            this.txtTienConNo.TabIndex = 12;
+            this.txtTienConNo.Text = "0";
+            this.txtTienConNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox9
+            // txtThanhToan
             // 
-            this.textBox9.BackColor = System.Drawing.Color.Snow;
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Enabled = false;
-            this.textBox9.Location = new System.Drawing.Point(180, 278);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(150, 27);
-            this.textBox9.TabIndex = 12;
-            this.textBox9.Text = "0";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThanhToan.BackColor = System.Drawing.Color.Snow;
+            this.txtThanhToan.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtThanhToan.Enabled = false;
+            this.txtThanhToan.Location = new System.Drawing.Point(180, 278);
+            this.txtThanhToan.Name = "txtThanhToan";
+            this.txtThanhToan.Size = new System.Drawing.Size(150, 27);
+            this.txtThanhToan.TabIndex = 12;
+            this.txtThanhToan.Text = "0";
+            this.txtThanhToan.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox7
+            // txtKhachCanTra
             // 
-            this.textBox7.BackColor = System.Drawing.Color.Snow;
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Enabled = false;
-            this.textBox7.Location = new System.Drawing.Point(180, 234);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 27);
-            this.textBox7.TabIndex = 12;
-            this.textBox7.Text = "0";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtKhachCanTra.BackColor = System.Drawing.Color.Snow;
+            this.txtKhachCanTra.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtKhachCanTra.Enabled = false;
+            this.txtKhachCanTra.Location = new System.Drawing.Point(180, 234);
+            this.txtKhachCanTra.Name = "txtKhachCanTra";
+            this.txtKhachCanTra.Size = new System.Drawing.Size(150, 27);
+            this.txtKhachCanTra.TabIndex = 12;
+            this.txtKhachCanTra.Text = "0";
+            this.txtKhachCanTra.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox5
+            // txtThue
             // 
-            this.textBox5.BackColor = System.Drawing.Color.Snow;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(180, 191);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(150, 27);
-            this.textBox5.TabIndex = 12;
-            this.textBox5.Text = "0";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtThue.BackColor = System.Drawing.Color.Snow;
+            this.txtThue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtThue.Enabled = false;
+            this.txtThue.Location = new System.Drawing.Point(180, 191);
+            this.txtThue.Name = "txtThue";
+            this.txtThue.Size = new System.Drawing.Size(150, 27);
+            this.txtThue.TabIndex = 12;
+            this.txtThue.Text = "0";
+            this.txtThue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox4
+            // txtTienChuaThue
             // 
-            this.textBox4.BackColor = System.Drawing.Color.Snow;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(180, 140);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 27);
-            this.textBox4.TabIndex = 12;
-            this.textBox4.Text = "0";
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTienChuaThue.BackColor = System.Drawing.Color.Snow;
+            this.txtTienChuaThue.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTienChuaThue.Enabled = false;
+            this.txtTienChuaThue.Location = new System.Drawing.Point(180, 140);
+            this.txtTienChuaThue.Name = "txtTienChuaThue";
+            this.txtTienChuaThue.Size = new System.Drawing.Size(150, 27);
+            this.txtTienChuaThue.TabIndex = 12;
+            this.txtTienChuaThue.Text = "0";
+            this.txtTienChuaThue.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox3
+            // txtTienGiam
             // 
-            this.textBox3.BackColor = System.Drawing.Color.Snow;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(180, 95);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 27);
-            this.textBox3.TabIndex = 12;
-            this.textBox3.Text = "0";
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTienGiam.BackColor = System.Drawing.Color.Snow;
+            this.txtTienGiam.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTienGiam.Enabled = false;
+            this.txtTienGiam.Location = new System.Drawing.Point(180, 95);
+            this.txtTienGiam.Name = "txtTienGiam";
+            this.txtTienGiam.Size = new System.Drawing.Size(150, 27);
+            this.txtTienGiam.TabIndex = 12;
+            this.txtTienGiam.Text = "0";
+            this.txtTienGiam.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox2
+            // txtTongTien
             // 
-            this.textBox2.BackColor = System.Drawing.Color.Snow;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(180, 44);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 27);
-            this.textBox2.TabIndex = 12;
-            this.textBox2.Text = "  0";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtTongTien.BackColor = System.Drawing.Color.Snow;
+            this.txtTongTien.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTongTien.Enabled = false;
+            this.txtTongTien.Location = new System.Drawing.Point(180, 44);
+            this.txtTongTien.Name = "txtTongTien";
+            this.txtTongTien.Size = new System.Drawing.Size(150, 27);
+            this.txtTongTien.TabIndex = 12;
+            this.txtTongTien.Text = "  0";
+            this.txtTongTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // richTextBox1
+            // rtbGhiChu
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(6, 386);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(332, 141);
-            this.richTextBox1.TabIndex = 11;
-            this.richTextBox1.Text = "";
+            this.rtbGhiChu.Location = new System.Drawing.Point(6, 386);
+            this.rtbGhiChu.Name = "rtbGhiChu";
+            this.rtbGhiChu.Size = new System.Drawing.Size(332, 141);
+            this.rtbGhiChu.TabIndex = 11;
+            this.rtbGhiChu.Text = "";
             // 
             // label37
             // 
@@ -877,17 +830,32 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Snow;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(45, 174);
+            this.label1.Location = new System.Drawing.Point(45, 103);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(223, 31);
             this.label1.TabIndex = 36;
             this.label1.Text = "Tạo mới phiếu khám";
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(95)))), ((int)(((byte)(99)))));
+            this.btnHuy.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Location = new System.Drawing.Point(1490, 81);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(96, 45);
+            this.btnHuy.TabIndex = 42;
+            this.btnHuy.Text = "Hủy Bỏ";
+            this.btnHuy.UseVisualStyleBackColor = false;
             // 
             // frmCanLamSang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
+            this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label2);
@@ -901,9 +869,6 @@
             this.groupBox1.PerformLayout();
             this.TabControl.ResumeLayout(false);
             this.tpThuThuat.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
@@ -937,10 +902,6 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TabControl TabControl;
         private System.Windows.Forms.TabPage tpThuThuat;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.PictureBox pictureBox14;
         private System.Windows.Forms.Panel panel18;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label35;
@@ -963,17 +924,17 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TextBox txtPhanTramThue;
+        private System.Windows.Forms.TextBox txtThue;
+        private System.Windows.Forms.TextBox txtTienChuaThue;
+        private System.Windows.Forms.TextBox txtTienGiam;
+        private System.Windows.Forms.TextBox txtTongTien;
+        private System.Windows.Forms.RichTextBox rtbGhiChu;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btnLuuLai;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtTienConNo;
+        private System.Windows.Forms.TextBox txtKhachCanTra;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -982,6 +943,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtThanhToan;
+        private System.Windows.Forms.Button btnHuy;
     }
 }
