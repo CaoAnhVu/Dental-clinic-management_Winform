@@ -27,6 +27,7 @@ namespace PKNK.DAL.Models
         public virtual DbSet<ThongTinL> ThongTinLS { get; set; }
         public virtual DbSet<Thuoc> Thuocs { get; set; }
         public virtual DbSet<ThuThuat> ThuThuats { get; set; }
+        public virtual DbSet<TrangThai> TrangThais { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -40,7 +41,7 @@ namespace PKNK.DAL.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<BenhNhan>()
-                .Property(e => e.NhomMau)
+                .Property(e => e.MaNV)
                 .IsFixedLength()
                 .IsUnicode(false);
 
@@ -53,8 +54,13 @@ namespace PKNK.DAL.Models
                 .HasPrecision(19, 4);
 
             modelBuilder.Entity<BenhNhan>()
-                .Property(e => e.TienNo)
-                .HasPrecision(19, 4);
+                .Property(e => e.MaTrangThai)
+                .IsFixedLength()
+                .IsUnicode(false);
+
+            modelBuilder.Entity<BenhNhan>()
+                .Property(e => e.MaBaoHiem)
+                .IsUnicode(false);
 
             modelBuilder.Entity<BenhNhan>()
                 .HasMany(e => e.BaoHiems)
@@ -195,7 +201,12 @@ namespace PKNK.DAL.Models
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.Email)
-                .IsFixedLength();
+                .IsUnicode(false);
+
+            modelBuilder.Entity<NhanVien>()
+                .HasMany(e => e.BenhNhans)
+                .WithOptional(e => e.NhanVien)
+                .HasForeignKey(e => e.MaNV);
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.Bills)
@@ -283,6 +294,11 @@ namespace PKNK.DAL.Models
             modelBuilder.Entity<ThuThuat>()
                 .Property(e => e.DonGia)
                 .HasPrecision(19, 4);
+
+            modelBuilder.Entity<TrangThai>()
+                .Property(e => e.MaTrangThai)
+                .IsFixedLength()
+                .IsUnicode(false);
         }
     }
 }

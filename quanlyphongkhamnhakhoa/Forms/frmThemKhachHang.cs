@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PKNK.BUS.Servive;
+using PKNK.DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,49 +14,129 @@ namespace PKNK_CNPM.Forms
 {
     public partial class frmThemKhachHang : Form
     {
+        private readonly KhachHangService benhNhanService = new KhachHangService();
+        private bool isEdit = false;
+        private BenhNhan khachHang;
         public frmThemKhachHang()
         {
             InitializeComponent();
         }
-
-        private void label10_Click(object sender, EventArgs e)
+        public frmThemKhachHang(bool isSave, BenhNhan khachHang)
         {
-
+            InitializeComponent();
+            this.isEdit = isSave;
+            this.khachHang = khachHang;
+        }
+        // FUNC
+        private void clearValue()
+        {
+            txtTenKH.Text = txtMaKH.Text = "";
         }
 
-        private void textBox9_TextChanged(object sender, EventArgs e)
+        private bool checkValue()
         {
-
+            if (txtTenKH.Text != "" && txtMaKH.Text != "" && txtSDT.Text != "")
+            {
+                return true;
+            }
+            return false;
+        }
+        //
+        private void frmThemKhachHang_Load(object sender, EventArgs e)
+        {
+            if (isEdit && khachHang != null)
+            {
+                txtMaKH.Enabled = false;
+                txtMaKH.Text = khachHang.MaBN.ToString();
+                txtTenKH.Text = khachHang.TenBN;
+                txtSDT.Text = khachHang.SDT;
+                txtDiaChi.Text = khachHang.DiaChi;
+                txtSDT.Text = khachHang.SDT;
+                rtbLyDo.Text = khachHang.GhiChu;
+                if(khachHang.DuongHuyet != null)
+                    cbDuongHuyet.Checked = khachHang.DuongHuyet.Value;
+                if(khachHang.HuyetApMach != null)
+                    cbHuyetAp.Checked = khachHang.HuyetApMach.Value;
+                if(khachHang.MauKhoDong != null)
+                    cbMauKhoDong.Checked = khachHang.MauKhoDong.Value;
+                if(khachHang.ThieuNangTriTue != null)
+                    cbThieuNang.Checked = khachHang.ThieuNangTriTue.Value;
+                txtMaNV.Text = khachHang.MaNV;
+                dtpNgaySinh.Value = khachHang.NgaySinh.Value;
+                // Select item trong combobox
+                if (khachHang.GioiTinh == true)
+                    rbNam.Checked = true;
+                else
+                    rbNu.Checked = true;
+            }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void btnLuu_Click(object sender, EventArgs e)
         {
+            try
+            {
+                BenhNhan existingBenhNhan = benhNhanService.GetAll().FirstOrDefault(p => p.MaBN == int.Parse(txtMaKH.Text));
+                // Hander valid
+                if (existingBenhNhan != null && !isEdit)
+                    throw new Exception("Mã nhân viên đã có!");
+                if (!checkValue())
+                    throw new Exception("Chưa nhập đầy đủ thông tin!");
+                if (txtTenKH.Text.Length > 255)
+                    throw new Exception("Tên nhân viên quá 255 kí tự!");
+                if (!CheckValidService.IsVietnamesePhoneNumber(txtSDT.Text))
+                    throw new Exception("Số điện thoại không hợp lệ!");
 
+                BenhNhan value = new BenhNhan()
+                {
+                    MaBN = int.Parse(txtMaKH.Text),
+                    TenBN = txtTenKH.Text,
+                    SDT = txtSDT.Text,
+                    GioiTinh = rbNam.Checked == true ? true : false,
+                    NgayTao = DateTime.Now,
+                    MaNV = txtMaNV.Text,
+                    NgaySinh = (DateTime)dtpNgaySinh.Value,
+                    DiaChi = txtDiaChi.Text,
+                    GhiChu = rtbLyDo.Text,
+                    MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
+                    DuongHuyet = cbDuongHuyet.Checked,
+                    HuyetApMach = cbDuongHuyet.Checked,
+                    MauKhoDong = cbDuongHuyet.Checked,
+                    ThieuNangTriTue = cbDuongHuyet.Checked,
+                };
+
+                if (isEdit)
+                {
+                    benhNhanService.Update(value);
+                    MessageBox.Show("Sửa khách hàng thành công!");
+                }
+                else
+                {
+                    benhNhanService.Add(value);
+                    MessageBox.Show("Thêm khách hàng thành công!");
+                }
+                clearValue();
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void btnHuy_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
+            if (checkValue())
+            {
+                DialogResult res = MessageBox.Show("Dữ liệu chưa được lưu, Bạn có muốn thoát không?", "Hệ thống", MessageBoxButtons.YesNo);
+                if (res == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+            }
+            else
+            {
+                this.Close();
+            }
         }
     }
 }

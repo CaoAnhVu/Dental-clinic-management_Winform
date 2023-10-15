@@ -32,9 +32,13 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTaiLai = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThemPhieuKham = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.btnSua = new System.Windows.Forms.Button();
             this.checkBox13 = new System.Windows.Forms.CheckBox();
             this.checkBox16 = new System.Windows.Forms.CheckBox();
             this.checkBox15 = new System.Windows.Forms.CheckBox();
@@ -59,18 +63,14 @@
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
+            this.btnInHoaDon = new System.Windows.Forms.Button();
+            this.btnInA4 = new System.Windows.Forms.Button();
             this.btnLuuLai = new System.Windows.Forms.Button();
             this.btnThemKH = new System.Windows.Forms.Button();
             this.btnHoSoPhongKham = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.txtNhanVien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnTaiLai = new System.Windows.Forms.Button();
-            this.btnThemPhieuKham = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
-            this.btnInHoaDon = new System.Windows.Forms.Button();
-            this.btnInA4 = new System.Windows.Forms.Button();
             this.panel11.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -154,6 +154,25 @@
             this.panel2.Size = new System.Drawing.Size(127, 52);
             this.panel2.TabIndex = 21;
             // 
+            // btnTaiLai
+            // 
+            this.btnTaiLai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTaiLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
+            this.btnTaiLai.FlatAppearance.BorderSize = 0;
+            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
+            this.btnTaiLai.Image = global::PKNK_CNPM.Properties.Resources.reload1;
+            this.btnTaiLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTaiLai.Location = new System.Drawing.Point(-10, -3);
+            this.btnTaiLai.Name = "btnTaiLai";
+            this.btnTaiLai.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTaiLai.Size = new System.Drawing.Size(142, 58);
+            this.btnTaiLai.TabIndex = 3;
+            this.btnTaiLai.Text = "  Tải Lại";
+            this.btnTaiLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTaiLai.UseVisualStyleBackColor = false;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -174,13 +193,70 @@
             this.panel1.Size = new System.Drawing.Size(230, 52);
             this.panel1.TabIndex = 20;
             // 
+            // btnThemPhieuKham
+            // 
+            this.btnThemPhieuKham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnThemPhieuKham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnThemPhieuKham.FlatAppearance.BorderSize = 0;
+            this.btnThemPhieuKham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThemPhieuKham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnThemPhieuKham.ForeColor = System.Drawing.Color.White;
+            this.btnThemPhieuKham.Image = global::PKNK_CNPM.Properties.Resources.add1;
+            this.btnThemPhieuKham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThemPhieuKham.Location = new System.Drawing.Point(-11, -10);
+            this.btnThemPhieuKham.Name = "btnThemPhieuKham";
+            this.btnThemPhieuKham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnThemPhieuKham.Size = new System.Drawing.Size(248, 70);
+            this.btnThemPhieuKham.TabIndex = 1;
+            this.btnThemPhieuKham.Text = "    Thêm Phiếu Khám";
+            this.btnThemPhieuKham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnThemPhieuKham.UseVisualStyleBackColor = false;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnXoa.BackColor = System.Drawing.Color.DarkRed;
+            this.btnXoa.FlatAppearance.BorderSize = 0;
+            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Image = global::PKNK_CNPM.Properties.Resources.delete1;
+            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnXoa.Location = new System.Drawing.Point(822, 114);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnXoa.Size = new System.Drawing.Size(127, 53);
+            this.btnXoa.TabIndex = 22;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnXoa.UseVisualStyleBackColor = false;
+            // 
             // richTextBox1
             // 
             this.richTextBox1.Location = new System.Drawing.Point(175, 493);
             this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(420, 190);
+            this.richTextBox1.Size = new System.Drawing.Size(301, 149);
             this.richTextBox1.TabIndex = 19;
             this.richTextBox1.Text = "";
+            // 
+            // btnSua
+            // 
+            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnSua.FlatAppearance.BorderSize = 0;
+            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Image = global::PKNK_CNPM.Properties.Resources.add1;
+            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSua.Location = new System.Drawing.Point(689, 114);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnSua.Size = new System.Drawing.Size(127, 53);
+            this.btnSua.TabIndex = 19;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSua.UseVisualStyleBackColor = false;
             // 
             // checkBox13
             // 
@@ -424,9 +500,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(43, 370);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(206, 25);
+            this.label1.Size = new System.Drawing.Size(164, 25);
             this.label1.TabIndex = 10;
-            this.label1.Text = "Tiền sử bênh toàn thân";
+            this.label1.Text = "Tiền sử bệnh răng";
             // 
             // label39
             // 
@@ -463,6 +539,36 @@
             this.label17.Size = new System.Drawing.Size(98, 25);
             this.label17.TabIndex = 10;
             this.label17.Text = "Nhân viên";
+            // 
+            // btnInHoaDon
+            // 
+            this.btnInHoaDon.BackColor = System.Drawing.Color.Silver;
+            this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInHoaDon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnInHoaDon.ForeColor = System.Drawing.Color.Black;
+            this.btnInHoaDon.Image = global::PKNK_CNPM.Properties.Resources.printing1;
+            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInHoaDon.Location = new System.Drawing.Point(834, 593);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Size = new System.Drawing.Size(164, 49);
+            this.btnInHoaDon.TabIndex = 9;
+            this.btnInHoaDon.Text = "     In Hóa Đơn";
+            this.btnInHoaDon.UseVisualStyleBackColor = false;
+            // 
+            // btnInA4
+            // 
+            this.btnInA4.BackColor = System.Drawing.Color.Silver;
+            this.btnInA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInA4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnInA4.ForeColor = System.Drawing.Color.Black;
+            this.btnInA4.Image = global::PKNK_CNPM.Properties.Resources.printing;
+            this.btnInA4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInA4.Location = new System.Drawing.Point(654, 593);
+            this.btnInA4.Name = "btnInA4";
+            this.btnInA4.Size = new System.Drawing.Size(174, 49);
+            this.btnInA4.TabIndex = 9;
+            this.btnInA4.Text = "In khổ A4";
+            this.btnInA4.UseVisualStyleBackColor = false;
             // 
             // btnLuuLai
             // 
@@ -535,112 +641,6 @@
             this.label4.Size = new System.Drawing.Size(265, 37);
             this.label4.TabIndex = 5;
             this.label4.Text = "Phiếu Khám Lâm Sàn";
-            // 
-            // btnTaiLai
-            // 
-            this.btnTaiLai.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTaiLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
-            this.btnTaiLai.FlatAppearance.BorderSize = 0;
-            this.btnTaiLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTaiLai.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTaiLai.ForeColor = System.Drawing.Color.White;
-            this.btnTaiLai.Image = global::PKNK_CNPM.Properties.Resources.reload1;
-            this.btnTaiLai.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTaiLai.Location = new System.Drawing.Point(-10, -3);
-            this.btnTaiLai.Name = "btnTaiLai";
-            this.btnTaiLai.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTaiLai.Size = new System.Drawing.Size(142, 58);
-            this.btnTaiLai.TabIndex = 3;
-            this.btnTaiLai.Text = "  Tải Lại";
-            this.btnTaiLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTaiLai.UseVisualStyleBackColor = false;
-            // 
-            // btnThemPhieuKham
-            // 
-            this.btnThemPhieuKham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnThemPhieuKham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.btnThemPhieuKham.FlatAppearance.BorderSize = 0;
-            this.btnThemPhieuKham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThemPhieuKham.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnThemPhieuKham.ForeColor = System.Drawing.Color.White;
-            this.btnThemPhieuKham.Image = global::PKNK_CNPM.Properties.Resources.add1;
-            this.btnThemPhieuKham.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThemPhieuKham.Location = new System.Drawing.Point(-11, -10);
-            this.btnThemPhieuKham.Name = "btnThemPhieuKham";
-            this.btnThemPhieuKham.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnThemPhieuKham.Size = new System.Drawing.Size(248, 70);
-            this.btnThemPhieuKham.TabIndex = 1;
-            this.btnThemPhieuKham.Text = "    Thêm Phiếu Khám";
-            this.btnThemPhieuKham.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnThemPhieuKham.UseVisualStyleBackColor = false;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BackColor = System.Drawing.Color.DarkRed;
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Image = global::PKNK_CNPM.Properties.Resources.delete1;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(822, 114);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(127, 53);
-            this.btnXoa.TabIndex = 22;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoa.UseVisualStyleBackColor = false;
-            // 
-            // btnSua
-            // 
-            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.btnSua.FlatAppearance.BorderSize = 0;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Image = global::PKNK_CNPM.Properties.Resources.add1;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(689, 114);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSua.Size = new System.Drawing.Size(127, 53);
-            this.btnSua.TabIndex = 19;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSua.UseVisualStyleBackColor = false;
-            // 
-            // btnInHoaDon
-            // 
-            this.btnInHoaDon.BackColor = System.Drawing.Color.Silver;
-            this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInHoaDon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnInHoaDon.ForeColor = System.Drawing.Color.Black;
-            this.btnInHoaDon.Image = global::PKNK_CNPM.Properties.Resources.printing1;
-            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInHoaDon.Location = new System.Drawing.Point(834, 593);
-            this.btnInHoaDon.Name = "btnInHoaDon";
-            this.btnInHoaDon.Size = new System.Drawing.Size(164, 49);
-            this.btnInHoaDon.TabIndex = 9;
-            this.btnInHoaDon.Text = "     In Hóa Đơn";
-            this.btnInHoaDon.UseVisualStyleBackColor = false;
-            // 
-            // btnInA4
-            // 
-            this.btnInA4.BackColor = System.Drawing.Color.Silver;
-            this.btnInA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInA4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnInA4.ForeColor = System.Drawing.Color.Black;
-            this.btnInA4.Image = global::PKNK_CNPM.Properties.Resources.printing;
-            this.btnInA4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInA4.Location = new System.Drawing.Point(654, 593);
-            this.btnInA4.Name = "btnInA4";
-            this.btnInA4.Size = new System.Drawing.Size(174, 49);
-            this.btnInA4.TabIndex = 9;
-            this.btnInA4.Text = "In khổ A4";
-            this.btnInA4.UseVisualStyleBackColor = false;
             // 
             // frmClinical
             // 

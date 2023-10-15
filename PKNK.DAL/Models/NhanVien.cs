@@ -12,6 +12,7 @@ namespace PKNK.DAL.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NhanVien()
         {
+            BenhNhans = new HashSet<BenhNhan>();
             Bills = new HashSet<Bill>();
         }
 
@@ -44,6 +45,9 @@ namespace PKNK.DAL.Models
         public DateTime? NamSinh { get; set; }
 
         public DateTime? NgaySua { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<BenhNhan> BenhNhans { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill> Bills { get; set; }

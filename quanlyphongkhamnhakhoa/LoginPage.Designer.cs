@@ -42,10 +42,10 @@
             this.lblClose = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFormLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -205,17 +205,6 @@
             this.picLogo.TabIndex = 14;
             this.picLogo.TabStop = false;
             // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
-            this.pictureBox3.Image = global::PKNK_CNPM.Properties.Resources.user;
-            this.pictureBox3.Location = new System.Drawing.Point(845, 41);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(111, 90);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 2;
-            this.pictureBox3.TabStop = false;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -251,6 +240,17 @@
             this.label7.Size = new System.Drawing.Size(220, 16);
             this.label7.TabIndex = 16;
             this.label7.Text = "2023 @ coppyright all right reserved";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
+            this.pictureBox3.Image = global::PKNK_CNPM.Properties.Resources.user;
+            this.pictureBox3.Location = new System.Drawing.Point(845, 41);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(111, 90);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
             // 
             // frmLoginPage
             // 
@@ -311,10 +311,10 @@
         private System.Windows.Forms.Label lblClose;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox picLogo;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

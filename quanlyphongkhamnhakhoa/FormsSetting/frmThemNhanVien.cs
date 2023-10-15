@@ -85,6 +85,7 @@ namespace PKNK_CNPM.FormsSetting
                     GioiTinh = rbNam.Checked == true ? true : false,
                     NamSinh = (DateTime)dtNgaySinh.Value,
                     NgayTao = DateTime.Now,
+                    
                 };
 
                 if (isSave)

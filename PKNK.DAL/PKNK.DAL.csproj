@@ -69,6 +69,7 @@
     <Compile Include="Models\ThongTinL.cs" />
     <Compile Include="Models\Thuoc.cs" />
     <Compile Include="Models\ThuThuat.cs" />
+    <Compile Include="Models\TrangThai.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

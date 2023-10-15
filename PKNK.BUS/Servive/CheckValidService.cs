@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace PKNK.BUS.Servive
 {
-    public class CheckValidService
+    public static class CheckValidService
     {
         // Kí tự có dấu việt nam
         private static readonly string[] VietnameseSigns = new string[]
@@ -54,6 +54,13 @@ namespace PKNK.BUS.Servive
                     str = str.Replace(VietnameseSigns[i][j], VietnameseSigns[0][i - 1]);
             }
             return str;
+        }
+
+        // Kiểm tra string có phải là số không
+        public static bool IsNumeric(this string text)
+        {
+            int test;
+            return int.TryParse(text, out test);
         }
     }
 }
