@@ -186,11 +186,11 @@
             // lblTitle
             // 
             this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Arial", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblTitle.Font = new System.Drawing.Font("Arial", 39F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.lblTitle.Location = new System.Drawing.Point(207, 25);
+            this.lblTitle.Location = new System.Drawing.Point(226, 25);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(419, 78);
+            this.lblTitle.Size = new System.Drawing.Size(405, 77);
             this.lblTitle.TabIndex = 13;
             this.lblTitle.Text = "NICE SMILE";
             // 
@@ -198,9 +198,9 @@
             // 
             this.picLogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(246)))), ((int)(((byte)(246)))));
             this.picLogo.Image = global::PKNK_CNPM.Properties.Resources.svg__2_1;
-            this.picLogo.Location = new System.Drawing.Point(990, 528);
+            this.picLogo.Location = new System.Drawing.Point(163, 25);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(125, 151);
+            this.picLogo.Size = new System.Drawing.Size(77, 66);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 14;
             this.picLogo.TabStop = false;

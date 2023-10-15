@@ -62,6 +62,10 @@ namespace PKNK_CNPM.Forms
             this.label27 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtTenBaoHiem = new System.Windows.Forms.TextBox();
+            this.txtMaBaoHiem = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -97,9 +101,11 @@ namespace PKNK_CNPM.Forms
             this.groupBox2.Controls.Add(this.rbNam);
             this.groupBox2.Controls.Add(this.rtbLyDo);
             this.groupBox2.Controls.Add(this.txtSDT);
+            this.groupBox2.Controls.Add(this.txtMaBaoHiem);
             this.groupBox2.Controls.Add(this.txtTenKH);
             this.groupBox2.Controls.Add(this.txtGiamGia);
             this.groupBox2.Controls.Add(this.txtMaNV);
+            this.groupBox2.Controls.Add(this.txtTenBaoHiem);
             this.groupBox2.Controls.Add(this.txtMaKH);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label22);
@@ -108,7 +114,9 @@ namespace PKNK_CNPM.Forms
             this.groupBox2.Controls.Add(this.label23);
             this.groupBox2.Controls.Add(this.label24);
             this.groupBox2.Controls.Add(this.label26);
+            this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label27);
+            this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.label28);
             this.groupBox2.Controls.Add(this.label29);
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -418,6 +426,43 @@ namespace PKNK_CNPM.Forms
             this.label29.TabIndex = 0;
             this.label29.Text = "Mã khách hàng";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(658, 138);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên bảo hiểm";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(658, 199);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Mã bảo hiểm";
+            // 
+            // txtTenBaoHiem
+            // 
+            this.txtTenBaoHiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenBaoHiem.Location = new System.Drawing.Point(862, 136);
+            this.txtTenBaoHiem.Multiline = true;
+            this.txtTenBaoHiem.Name = "txtTenBaoHiem";
+            this.txtTenBaoHiem.Size = new System.Drawing.Size(328, 32);
+            this.txtTenBaoHiem.TabIndex = 0;
+            // 
+            // txtMaBaoHiem
+            // 
+            this.txtMaBaoHiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaBaoHiem.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMaBaoHiem.Location = new System.Drawing.Point(862, 197);
+            this.txtMaBaoHiem.Multiline = true;
+            this.txtMaBaoHiem.Name = "txtMaBaoHiem";
+            this.txtMaBaoHiem.Size = new System.Drawing.Size(328, 32);
+            this.txtMaBaoHiem.TabIndex = 1;
+            // 
             // frmThemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -468,5 +513,9 @@ namespace PKNK_CNPM.Forms
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.TextBox txtDiaChi;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtMaBaoHiem;
+        private System.Windows.Forms.TextBox txtTenBaoHiem;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
