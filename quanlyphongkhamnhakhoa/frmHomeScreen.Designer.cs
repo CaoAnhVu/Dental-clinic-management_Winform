@@ -778,7 +778,6 @@
             // btnCloseChildForm
             // 
             this.btnCloseChildForm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.btnCloseChildForm.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnCloseChildForm.Dock = System.Windows.Forms.DockStyle.Left;
             this.btnCloseChildForm.FlatAppearance.BorderSize = 0;
             this.btnCloseChildForm.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -1008,7 +1007,6 @@
             this.AcceptButton = this.btnTimKiem;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.CancelButton = this.btnCloseChildForm;
             this.ClientSize = new System.Drawing.Size(1402, 1055);
             this.Controls.Add(this.panelDesktoppanel);
             this.Controls.Add(this.panelTitleBar);
