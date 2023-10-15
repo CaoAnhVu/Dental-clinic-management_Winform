@@ -1,4 +1,6 @@
 ﻿using PKNK_CNPM;
+using PKNK_CNPM.FormCustomer;
+using PKNK_CNPM.Forms;
 using PKNK_CNPM.FormsSetting;
 using System;
 using System.Collections.Generic;
@@ -291,62 +293,62 @@ namespace quanlyphongkhamnhakhoa
 
         private void btnKhamLamSan_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmKhamLamSan(), sender);
         }
 
         private void btnCanLamSan_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmCanLamSang(), sender);
         }
 
         private void btnPhieuKham_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmPhieuKham(), sender);
         }
 
         private void btnDonThuoc_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmDonThuoc(), sender);
         }
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmHoaDon(), sender);
         }
 
         private void btnDonXuatHang_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmHoaDonXuatNhap(), sender);
         }
 
         private void btnThuoc_Click(object sender, EventArgs e)
         {
-
+            OpenChildForm(new frmDonThuoc(), sender);
         }
 
         private void btnDichVu_Click(object sender, EventArgs e)
         {
-
+            //OpenChildForm(new frmCanLamSang(), sender);
         }
 
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
-
+            //OpenChildForm(new frmDoanh(), sender);
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-
+            //OpenChildForm(new frmThong(), sender);
         }
 
         private void btnThongTinChung_Click(object sender, EventArgs e)
         {
-
+            //OpenChildForm(new frmThong(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-
+            this.Close();
         }
     }
 }

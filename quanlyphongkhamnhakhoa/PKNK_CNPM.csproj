@@ -113,23 +113,23 @@
     <Compile Include="Forms\frmCanLamSang.Designer.cs">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmClinical.cs">
+    <Compile Include="Forms\frmKhamLamSan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmClinical.Designer.cs">
-      <DependentUpon>frmClinical.cs</DependentUpon>
+    <Compile Include="Forms\frmKhamLamSan.Designer.cs">
+      <DependentUpon>frmKhamLamSan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmExaminationform.cs">
+    <Compile Include="Forms\frmPhieuKham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmExaminationform.Designer.cs">
-      <DependentUpon>frmExaminationform.cs</DependentUpon>
+    <Compile Include="Forms\frmPhieuKham.Designer.cs">
+      <DependentUpon>frmPhieuKham.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmEmployee.cs">
+    <Compile Include="Forms\frmNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmEmployee.Designer.cs">
-      <DependentUpon>frmEmployee.cs</DependentUpon>
+    <Compile Include="Forms\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -233,14 +233,14 @@
     <EmbeddedResource Include="Forms\frmCanLamSang.resx">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmClinical.resx">
-      <DependentUpon>frmClinical.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmKhamLamSan.resx">
+      <DependentUpon>frmKhamLamSan.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmExaminationform.resx">
-      <DependentUpon>frmExaminationform.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmPhieuKham.resx">
+      <DependentUpon>frmPhieuKham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmEmployee.resx">
-      <DependentUpon>frmEmployee.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
@@ -729,10 +729,7 @@
   <ItemGroup>
     <None Include="Resources\nho-rang-khon-1688699317553340911178.jpg" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-    <Folder Include="FormsSetting\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\delete.png" />
   </ItemGroup>
