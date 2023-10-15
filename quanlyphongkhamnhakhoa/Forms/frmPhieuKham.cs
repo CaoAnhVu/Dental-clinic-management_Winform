@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace PKNK_CNPM.FormCustomer
 {
-    public partial class frmClinical : Form
+    public partial class frmPhieuKham : Form
     {
-        public frmClinical()
+        public frmPhieuKham()
         {
             InitializeComponent();
+        }
+
+        private void btnAddPhieuKham_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

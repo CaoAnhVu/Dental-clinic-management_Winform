@@ -1,6 +1,6 @@
 ﻿namespace PKNK_CNPM.FormCustomer
 {
-    partial class frmClinical
+    partial class frmKhamLamSan
     {
         /// <summary>
         /// Required designer variable.

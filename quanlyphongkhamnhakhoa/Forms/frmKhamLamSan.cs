@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PKNK_CNPM.FormCustomer
 {
-    public partial class frmExaminationform : Form
+    public partial class frmKhamLamSan : Form
     {
-        public frmExaminationform()
+        public frmKhamLamSan()
         {
             InitializeComponent();
         }

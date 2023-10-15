@@ -1,6 +1,6 @@
 ﻿namespace PKNK_CNPM.FormCustomer
 {
-    partial class frmExaminationform
+    partial class frmPhieuKham
     {
         /// <summary>
         /// Required designer variable.
@@ -229,7 +229,7 @@
             this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label2.Location = new System.Drawing.Point(12, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(383, 46);
+            this.label2.Size = new System.Drawing.Size(373, 45);
             this.label2.TabIndex = 0;
             this.label2.Text = "Phiếu Khám (hôm nay)";
             // 
@@ -259,6 +259,7 @@
             this.btnAddPhieuKham.TabIndex = 1;
             this.btnAddPhieuKham.Text = "    Tạo Mới";
             this.btnAddPhieuKham.UseVisualStyleBackColor = false;
+            this.btnAddPhieuKham.Click += new System.EventHandler(this.btnAddPhieuKham_Click);
             // 
             // label1
             // 
@@ -298,7 +299,7 @@
             this.btnTatCa.Text = "  Tất Cả";
             this.btnTatCa.UseVisualStyleBackColor = false;
             // 
-            // frmExaminationform
+            // frmPhieuKham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -308,7 +309,7 @@
             this.Controls.Add(this.grpTatCa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Name = "frmExaminationform";
+            this.Name = "frmPhieuKham";
             this.Text = "Phiếu khám";
             this.grpTatCa.ResumeLayout(false);
             this.grpTatCa.PerformLayout();
