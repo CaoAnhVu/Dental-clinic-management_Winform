@@ -107,34 +107,34 @@
     <Compile Include="FormCustomer\Controller\ThuThuatItem.Designer.cs">
       <DependentUpon>ThuThuatItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\frmCanLamSang.cs">
+    <Compile Include="Forms\frmCanLamSang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomer\frmCanLamSang.Designer.cs">
+    <Compile Include="Forms\frmCanLamSang.Designer.cs">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\frmClinical.cs">
+    <Compile Include="Forms\frmClinical.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomer\frmClinical.Designer.cs">
+    <Compile Include="Forms\frmClinical.Designer.cs">
       <DependentUpon>frmClinical.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\frmExaminationform.cs">
+    <Compile Include="Forms\frmExaminationform.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormCustomer\frmExaminationform.Designer.cs">
+    <Compile Include="Forms\frmExaminationform.Designer.cs">
       <DependentUpon>frmExaminationform.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsSetting\frmEmployee.cs">
+    <Compile Include="Forms\frmEmployee.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsSetting\frmEmployee.Designer.cs">
+    <Compile Include="Forms\frmEmployee.Designer.cs">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormsSetting\frmThemNhanVien.cs">
+    <Compile Include="Forms\frmThemNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FormsSetting\frmThemNhanVien.Designer.cs">
+    <Compile Include="Forms\frmThemNhanVien.Designer.cs">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\FormManager.cs">
@@ -230,19 +230,19 @@
     <EmbeddedResource Include="FormCustomer\Controller\ThuThuatItem.resx">
       <DependentUpon>ThuThuatItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\frmCanLamSang.resx">
+    <EmbeddedResource Include="Forms\frmCanLamSang.resx">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\frmClinical.resx">
+    <EmbeddedResource Include="Forms\frmClinical.resx">
       <DependentUpon>frmClinical.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\frmExaminationform.resx">
+    <EmbeddedResource Include="Forms\frmExaminationform.resx">
       <DependentUpon>frmExaminationform.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsSetting\frmEmployee.resx">
+    <EmbeddedResource Include="Forms\frmEmployee.resx">
       <DependentUpon>frmEmployee.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormsSetting\frmThemNhanVien.resx">
+    <EmbeddedResource Include="Forms\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDanhSachThuoc.resx">
@@ -731,6 +731,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Controller\" />
+    <Folder Include="FormsSetting\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete.png" />

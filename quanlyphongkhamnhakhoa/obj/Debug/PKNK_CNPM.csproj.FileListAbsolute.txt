@@ -74,3 +74,9 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Deb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DanhSachThuocItem.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDanhSachThuoc.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmTaoThuocMoi.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.ChiTietHoaDonXuatNhapItem.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DanhSachThuocItem.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDanhSachThuoc.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDonXuatNhap.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmTaoThuocMoi.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThemHoaDonXuatNhap.resources
