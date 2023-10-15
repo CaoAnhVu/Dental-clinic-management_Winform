@@ -37,7 +37,7 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.btnPhieuKham = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.btnKhamTongQuat = new System.Windows.Forms.Button();
+            this.btnKhamLamSan = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.btnDonThuoc = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -53,13 +53,11 @@
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnDanhSachNhanVien = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
-            this.btnThongKeNam = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnQuanLy = new System.Windows.Forms.Button();
             this.panel26 = new System.Windows.Forms.Panel();
             this.btnDichVu = new System.Windows.Forms.Button();
-            this.panel28 = new System.Windows.Forms.Panel();
-            this.btnThongKeThang = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.btnThuoc = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -116,7 +114,6 @@
             this.panel29.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel26.SuspendLayout();
-            this.panel28.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel27.SuspendLayout();
             this.SettingContainer.SuspendLayout();
@@ -221,33 +218,35 @@
             this.btnPhieuKham.Text = "            Phiếu khám";
             this.btnPhieuKham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhieuKham.UseVisualStyleBackColor = false;
+            this.btnPhieuKham.Click += new System.EventHandler(this.btnPhieuKham_Click);
             // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel8.Controls.Add(this.btnKhamTongQuat);
+            this.panel8.Controls.Add(this.btnKhamLamSan);
             this.panel8.Location = new System.Drawing.Point(-12, 55);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(292, 58);
             this.panel8.TabIndex = 2;
             // 
-            // btnKhamTongQuat
+            // btnKhamLamSan
             // 
-            this.btnKhamTongQuat.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnKhamTongQuat.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnKhamTongQuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKhamTongQuat.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnKhamTongQuat.ForeColor = System.Drawing.Color.White;
-            this.btnKhamTongQuat.Image = global::PKNK_CNPM.Properties.Resources.pros_and_cons;
-            this.btnKhamTongQuat.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhamTongQuat.Location = new System.Drawing.Point(2, -4);
-            this.btnKhamTongQuat.Name = "btnKhamTongQuat";
-            this.btnKhamTongQuat.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnKhamTongQuat.Size = new System.Drawing.Size(301, 67);
-            this.btnKhamTongQuat.TabIndex = 1;
-            this.btnKhamTongQuat.Text = "            Khám lâm sàn";
-            this.btnKhamTongQuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnKhamTongQuat.UseVisualStyleBackColor = false;
+            this.btnKhamLamSan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnKhamLamSan.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnKhamLamSan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKhamLamSan.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnKhamLamSan.ForeColor = System.Drawing.Color.White;
+            this.btnKhamLamSan.Image = global::PKNK_CNPM.Properties.Resources.pros_and_cons;
+            this.btnKhamLamSan.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhamLamSan.Location = new System.Drawing.Point(2, -4);
+            this.btnKhamLamSan.Name = "btnKhamLamSan";
+            this.btnKhamLamSan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnKhamLamSan.Size = new System.Drawing.Size(301, 67);
+            this.btnKhamLamSan.TabIndex = 1;
+            this.btnKhamLamSan.Text = "            Khám lâm sàn";
+            this.btnKhamLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKhamLamSan.UseVisualStyleBackColor = false;
+            this.btnKhamLamSan.Click += new System.EventHandler(this.btnKhamLamSan_Click);
             // 
             // panel10
             // 
@@ -275,6 +274,7 @@
             this.btnDonThuoc.Text = "            Đơn thuốc";
             this.btnDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonThuoc.UseVisualStyleBackColor = false;
+            this.btnDonThuoc.Click += new System.EventHandler(this.btnDonThuoc_Click);
             // 
             // panel11
             // 
@@ -302,6 +302,7 @@
             this.btnHoaDon.Text = "            Hóa đơn";
             this.btnHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHoaDon.UseVisualStyleBackColor = false;
+            this.btnHoaDon.Click += new System.EventHandler(this.btnHoaDon_Click);
             // 
             // panel1
             // 
@@ -338,6 +339,7 @@
             this.btnCanLamSan.Text = "            Cận lâm sàn";
             this.btnCanLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCanLamSan.UseVisualStyleBackColor = false;
+            this.btnCanLamSan.Click += new System.EventHandler(this.btnCanLamSan_Click);
             // 
             // panel2
             // 
@@ -376,11 +378,10 @@
             this.QuanlyContainer.Controls.Add(this.panel29);
             this.QuanlyContainer.Controls.Add(this.panel7);
             this.QuanlyContainer.Controls.Add(this.panel26);
-            this.QuanlyContainer.Controls.Add(this.panel28);
             this.QuanlyContainer.Controls.Add(this.panel20);
             this.QuanlyContainer.Controls.Add(this.panel27);
             this.QuanlyContainer.Location = new System.Drawing.Point(3, 143);
-            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 390);
+            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 344);
             this.QuanlyContainer.MinimumSize = new System.Drawing.Size(265, 54);
             this.QuanlyContainer.Name = "QuanlyContainer";
             this.QuanlyContainer.Size = new System.Drawing.Size(265, 54);
@@ -411,6 +412,7 @@
             this.btnDonXuatHang.Text = "           Hóa đơn xuất nhập";
             this.btnDonXuatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonXuatHang.UseVisualStyleBackColor = false;
+            this.btnDonXuatHang.Click += new System.EventHandler(this.btnDonXuatHang_Click);
             // 
             // panel13
             // 
@@ -441,29 +443,30 @@
             // 
             // panel29
             // 
-            this.panel29.Controls.Add(this.btnThongKeNam);
-            this.panel29.Location = new System.Drawing.Point(-13, 340);
+            this.panel29.Controls.Add(this.btnThongKe);
+            this.panel29.Location = new System.Drawing.Point(-13, 290);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(332, 59);
             this.panel29.TabIndex = 4;
             // 
-            // btnThongKeNam
+            // btnThongKe
             // 
-            this.btnThongKeNam.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnThongKeNam.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThongKeNam.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKeNam.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnThongKeNam.ForeColor = System.Drawing.Color.White;
-            this.btnThongKeNam.Image = global::PKNK_CNPM.Properties.Resources.statistics;
-            this.btnThongKeNam.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeNam.Location = new System.Drawing.Point(-6, -3);
-            this.btnThongKeNam.Name = "btnThongKeNam";
-            this.btnThongKeNam.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnThongKeNam.Size = new System.Drawing.Size(290, 62);
-            this.btnThongKeNam.TabIndex = 1;
-            this.btnThongKeNam.Text = "            Thống kê năm";
-            this.btnThongKeNam.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeNam.UseVisualStyleBackColor = false;
+            this.btnThongKe.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnThongKe.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnThongKe.ForeColor = System.Drawing.Color.White;
+            this.btnThongKe.Image = global::PKNK_CNPM.Properties.Resources.statistics;
+            this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.Location = new System.Drawing.Point(-6, -3);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnThongKe.Size = new System.Drawing.Size(290, 62);
+            this.btnThongKe.TabIndex = 1;
+            this.btnThongKe.Text = "            Thống kê ";
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnThongKe.UseVisualStyleBackColor = false;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
             // 
             // panel7
             // 
@@ -519,32 +522,7 @@
             this.btnDichVu.Text = "            Dịch vụ";
             this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDichVu.UseVisualStyleBackColor = false;
-            // 
-            // panel28
-            // 
-            this.panel28.Controls.Add(this.btnThongKeThang);
-            this.panel28.Location = new System.Drawing.Point(-78, 291);
-            this.panel28.Name = "panel28";
-            this.panel28.Size = new System.Drawing.Size(342, 53);
-            this.panel28.TabIndex = 12;
-            // 
-            // btnThongKeThang
-            // 
-            this.btnThongKeThang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnThongKeThang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThongKeThang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThongKeThang.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnThongKeThang.ForeColor = System.Drawing.Color.White;
-            this.btnThongKeThang.Image = global::PKNK_CNPM.Properties.Resources.business_report1;
-            this.btnThongKeThang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeThang.Location = new System.Drawing.Point(64, -13);
-            this.btnThongKeThang.Name = "btnThongKeThang";
-            this.btnThongKeThang.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnThongKeThang.Size = new System.Drawing.Size(292, 71);
-            this.btnThongKeThang.TabIndex = 1;
-            this.btnThongKeThang.Text = "           Thống kê tháng";
-            this.btnThongKeThang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKeThang.UseVisualStyleBackColor = false;
+            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
             // 
             // panel20
             // 
@@ -571,6 +549,7 @@
             this.btnThuoc.Text = "            Thuốc";
             this.btnThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThuoc.UseVisualStyleBackColor = false;
+            this.btnThuoc.Click += new System.EventHandler(this.btnThuoc_Click);
             // 
             // panel27
             // 
@@ -597,6 +576,7 @@
             this.btnDoanhThu.Text = "            Doanh thu";
             this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDoanhThu.UseVisualStyleBackColor = false;
+            this.btnDoanhThu.Click += new System.EventHandler(this.btnDoanhThu_Click);
             // 
             // SettingContainer
             // 
@@ -663,6 +643,7 @@
             this.btnThongTinChung.Text = "            Thông tin chung";
             this.btnThongTinChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongTinChung.UseVisualStyleBackColor = false;
+            this.btnThongTinChung.Click += new System.EventHandler(this.btnThongTinChung_Click);
             // 
             // panel14
             // 
@@ -690,6 +671,7 @@
             this.btnDangXuat.Text = "           Đăng xuất";
             this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangXuat.UseVisualStyleBackColor = false;
+            this.btnDangXuat.Click += new System.EventHandler(this.btnDangXuat_Click);
             // 
             // CustomerTimer
             // 
@@ -998,7 +980,7 @@
             this.lblDanhSachKham.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblDanhSachKham.Location = new System.Drawing.Point(6, 8);
             this.lblDanhSachKham.Name = "lblDanhSachKham";
-            this.lblDanhSachKham.Size = new System.Drawing.Size(465, 46);
+            this.lblDanhSachKham.Size = new System.Drawing.Size(455, 45);
             this.lblDanhSachKham.TabIndex = 0;
             this.lblDanhSachKham.Text = "Danh Sách Khám (Hôm nay)";
             // 
@@ -1032,7 +1014,6 @@
             this.panel29.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
             this.panel26.ResumeLayout(false);
-            this.panel28.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.SettingContainer.ResumeLayout(false);
@@ -1080,16 +1061,10 @@
         private System.Windows.Forms.Button btnHoaDon;
         private System.Windows.Forms.Button btnPhieuKham;
         private System.Windows.Forms.Button btnCanLamSan;
-        private System.Windows.Forms.Button btnKhamTongQuat;
+        private System.Windows.Forms.Button btnKhamLamSan;
         private System.Windows.Forms.Panel QuanlyContainer;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Button btnDonXuatHang;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Button btnThongKeNam;
         private System.Windows.Forms.Panel panel26;
         private System.Windows.Forms.Button btnDichVu;
-        private System.Windows.Forms.Panel panel28;
-        private System.Windows.Forms.Button btnThongKeThang;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button btnThuoc;
         private System.Windows.Forms.Panel panel27;
@@ -1124,5 +1099,9 @@
         private System.Windows.Forms.Label lblTatCa;
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Panel panel16;
+        private System.Windows.Forms.Button btnDonXuatHang;
+        private System.Windows.Forms.Panel panel29;
+        private System.Windows.Forms.Button btnThongKe;
     }
 }

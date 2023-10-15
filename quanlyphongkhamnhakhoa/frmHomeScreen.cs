@@ -288,5 +288,65 @@ namespace quanlyphongkhamnhakhoa
         {
             OpenChildForm(new frmDanhSachNV(), sender);
         }
+
+        private void btnKhamLamSan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCanLamSan_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPhieuKham_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHoaDon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDonXuatHang_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDichVu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDoanhThu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnThongTinChung_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
