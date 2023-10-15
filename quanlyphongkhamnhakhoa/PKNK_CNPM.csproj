@@ -71,6 +71,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.Designer.cs">
+      <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\DanhSachThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\DanhSachThuocItem.Designer.cs">
+      <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCustomer\Controller\DonThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -137,6 +149,12 @@
     <Compile Include="Forms\FormSetting.Designer.cs">
       <DependentUpon>FormSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmDanhSachThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDanhSachThuoc.Designer.cs">
+      <DependentUpon>frmDanhSachThuoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmDonThuoc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -148,6 +166,24 @@
     </Compile>
     <Compile Include="Forms\frmHoaDon.Designer.cs">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHoaDonXuatNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHoaDonXuatNhap.Designer.cs">
+      <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTaoThuocMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTaoThuocMoi.Designer.cs">
+      <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemHoaDonXuatNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemHoaDonXuatNhap.Designer.cs">
+      <DependentUpon>frmThemHoaDonXuatNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmThemKhachHang.cs">
       <SubType>Form</SubType>
@@ -176,6 +212,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.resx">
+      <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\Controller\DanhSachThuocItem.resx">
+      <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\Controller\DonThuocItem.resx">
       <DependentUpon>DonThuocItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,11 +245,23 @@
     <EmbeddedResource Include="FormsSetting\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDanhSachThuoc.resx">
+      <DependentUpon>frmDanhSachThuoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmDonThuoc.resx">
       <DependentUpon>frmDonThuoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHoaDon.resx">
       <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHoaDonXuatNhap.resx">
+      <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTaoThuocMoi.resx">
+      <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemHoaDonXuatNhap.resx">
+      <DependentUpon>frmThemHoaDonXuatNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
@@ -716,6 +770,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\182-co-the-su-dung-rang-gia-thao-lap-trong-bao-lau-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4781637953959_0b6efdfdcf623dd02c36a468e863553f %281%291.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

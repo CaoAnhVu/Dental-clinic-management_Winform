@@ -119,7 +119,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(24, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(610, 1031);
+            this.groupBox1.Size = new System.Drawing.Size(614, 1031);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
@@ -521,7 +521,7 @@
             this.picLogo.Image = global::PKNK_CNPM.Properties.Resources.svg__2_1;
             this.picLogo.Location = new System.Drawing.Point(209, 9);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(177, 79);
+            this.picLogo.Size = new System.Drawing.Size(181, 79);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 15;
             this.picLogo.TabStop = false;
@@ -550,7 +550,7 @@
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button4.Location = new System.Drawing.Point(640, 98);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(169, 31);
+            this.button4.Size = new System.Drawing.Size(173, 31);
             this.button4.TabIndex = 11;
             this.button4.Text = "     In Hóa Đơn";
             this.button4.UseVisualStyleBackColor = false;
@@ -566,7 +566,7 @@
             this.btnLuuLai.ForeColor = System.Drawing.Color.White;
             this.btnLuuLai.Location = new System.Drawing.Point(640, 42);
             this.btnLuuLai.Name = "btnLuuLai";
-            this.btnLuuLai.Size = new System.Drawing.Size(169, 50);
+            this.btnLuuLai.Size = new System.Drawing.Size(173, 50);
             this.btnLuuLai.TabIndex = 10;
             this.btnLuuLai.Text = "Lưu Lại";
             this.btnLuuLai.UseVisualStyleBackColor = false;
@@ -575,7 +575,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(813, 1055);
+            this.ClientSize = new System.Drawing.Size(817, 1055);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnLuuLai);
             this.Controls.Add(this.groupBox1);

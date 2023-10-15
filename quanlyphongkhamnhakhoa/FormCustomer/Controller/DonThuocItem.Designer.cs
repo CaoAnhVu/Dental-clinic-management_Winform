@@ -43,13 +43,13 @@
             this.label8 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtTenThuoc = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
+            this.txtDonVi = new System.Windows.Forms.TextBox();
+            this.txtCachDung = new System.Windows.Forms.TextBox();
+            this.picXoa = new System.Windows.Forms.PictureBox();
+            this.txtSTT = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picXoa)).BeginInit();
             this.SuspendLayout();
             // 
             // label4
@@ -199,85 +199,90 @@
             this.textBox7.Size = new System.Drawing.Size(2, 78);
             this.textBox7.TabIndex = 19;
             // 
-            // label9
+            // txtTenThuoc
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(8, 47);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 23);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "1";
+            this.txtTenThuoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenThuoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTenThuoc.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtTenThuoc.Location = new System.Drawing.Point(77, 41);
+            this.txtTenThuoc.Multiline = true;
+            this.txtTenThuoc.Name = "txtTenThuoc";
+            this.txtTenThuoc.Size = new System.Drawing.Size(253, 32);
+            this.txtTenThuoc.TabIndex = 20;
+            this.txtTenThuoc.Text = "Nhập thuốc";
             // 
-            // textBox8
+            // txtSoLuong
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox8.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox8.Location = new System.Drawing.Point(77, 41);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(253, 32);
-            this.textBox8.TabIndex = 20;
-            this.textBox8.Text = "Nhập thuốc";
+            this.txtSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSoLuong.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtSoLuong.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSoLuong.Location = new System.Drawing.Point(349, 41);
+            this.txtSoLuong.Multiline = true;
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(119, 32);
+            this.txtSoLuong.TabIndex = 20;
+            this.txtSoLuong.Text = "1";
+            this.txtSoLuong.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox9
+            // txtDonVi
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox9.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox9.Location = new System.Drawing.Point(349, 41);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(119, 32);
-            this.textBox9.TabIndex = 20;
-            this.textBox9.Text = "1";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtDonVi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDonVi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtDonVi.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtDonVi.Location = new System.Drawing.Point(484, 41);
+            this.txtDonVi.Multiline = true;
+            this.txtDonVi.Name = "txtDonVi";
+            this.txtDonVi.Size = new System.Drawing.Size(90, 32);
+            this.txtDonVi.TabIndex = 20;
+            this.txtDonVi.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox10
+            // txtCachDung
             // 
-            this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox10.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox10.Location = new System.Drawing.Point(484, 41);
-            this.textBox10.Multiline = true;
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(90, 32);
-            this.textBox10.TabIndex = 20;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.txtCachDung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtCachDung.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtCachDung.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtCachDung.Location = new System.Drawing.Point(588, 41);
+            this.txtCachDung.Multiline = true;
+            this.txtCachDung.Name = "txtCachDung";
+            this.txtCachDung.Size = new System.Drawing.Size(237, 32);
+            this.txtCachDung.TabIndex = 20;
+            this.txtCachDung.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
-            // textBox11
+            // picXoa
             // 
-            this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox11.ForeColor = System.Drawing.Color.DarkGray;
-            this.textBox11.Location = new System.Drawing.Point(588, 41);
-            this.textBox11.Multiline = true;
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(237, 32);
-            this.textBox11.TabIndex = 20;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.picXoa.Image = global::PKNK_CNPM.Properties.Resources.delete2;
+            this.picXoa.Location = new System.Drawing.Point(839, 43);
+            this.picXoa.Name = "picXoa";
+            this.picXoa.Size = new System.Drawing.Size(42, 32);
+            this.picXoa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picXoa.TabIndex = 21;
+            this.picXoa.TabStop = false;
             // 
-            // pictureBox1
+            // txtSTT
             // 
-            this.pictureBox1.Image = global::PKNK_CNPM.Properties.Resources.delete2;
-            this.pictureBox1.Location = new System.Drawing.Point(839, 43);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(42, 32);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 21;
-            this.pictureBox1.TabStop = false;
+            this.txtSTT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSTT.Enabled = false;
+            this.txtSTT.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtSTT.ForeColor = System.Drawing.Color.DarkGray;
+            this.txtSTT.Location = new System.Drawing.Point(9, 39);
+            this.txtSTT.Multiline = true;
+            this.txtSTT.Name = "txtSTT";
+            this.txtSTT.Size = new System.Drawing.Size(36, 32);
+            this.txtSTT.TabIndex = 23;
+            this.txtSTT.Text = "1";
+            this.txtSTT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // DonThuocItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gainsboro;
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.textBox11);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
+            this.BackColor = System.Drawing.Color.Snow;
+            this.Controls.Add(this.txtSTT);
+            this.Controls.Add(this.picXoa);
+            this.Controls.Add(this.txtCachDung);
+            this.Controls.Add(this.txtDonVi);
+            this.Controls.Add(this.txtSoLuong);
+            this.Controls.Add(this.txtTenThuoc);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.label8);
@@ -290,13 +295,12 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label4);
             this.Name = "DonThuocItem";
-            this.Size = new System.Drawing.Size(886, 83);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Size = new System.Drawing.Size(886, 78);
+            ((System.ComponentModel.ISupportInitialize)(this.picXoa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -319,11 +323,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox txtTenThuoc;
+        private System.Windows.Forms.TextBox txtSoLuong;
+        private System.Windows.Forms.TextBox txtDonVi;
+        private System.Windows.Forms.TextBox txtCachDung;
+        private System.Windows.Forms.PictureBox picXoa;
+        private System.Windows.Forms.TextBox txtSTT;
     }
 }

@@ -30,8 +30,8 @@
         {
             this.panel17 = new System.Windows.Forms.Panel();
             this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
@@ -39,7 +39,7 @@
             // 
             // panel17
             // 
-            this.panel17.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel17.BackColor = System.Drawing.Color.Snow;
             this.panel17.Controls.Add(this.label32);
             this.panel17.Controls.Add(this.label1);
             this.panel17.Controls.Add(this.label33);
@@ -59,16 +59,6 @@
             this.label32.TabIndex = 2;
             this.label32.Text = "Giá: 400.000 VNĐ";
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label33.Location = new System.Drawing.Point(133, 26);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(113, 25);
-            this.label33.TabIndex = 1;
-            this.label33.Text = "Cạo vôi răng";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -78,6 +68,16 @@
             this.label1.Size = new System.Drawing.Size(45, 25);
             this.label1.TabIndex = 1;
             this.label1.Text = "CRV";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label33.Location = new System.Drawing.Point(133, 26);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(113, 25);
+            this.label33.TabIndex = 1;
+            this.label33.Text = "Cạo vôi răng";
             // 
             // pictureBox14
             // 

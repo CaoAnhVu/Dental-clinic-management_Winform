@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grpTatCa = new System.Windows.Forms.GroupBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
             this.dvgDanhSachKham = new System.Windows.Forms.DataGridView();
             this.colSTT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colSoPhieuKham = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,43 +40,65 @@
             this.colThuThuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colGhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTong = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnAddPhieuKham = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnTatCa = new System.Windows.Forms.Button();
-            this.btnAddPhieuKham = new System.Windows.Forms.Button();
             this.grpTatCa.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgDanhSachKham)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dvgDanhSachKham)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // grpTatCa
             // 
-            this.grpTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.grpTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.grpTatCa.BackColor = System.Drawing.Color.Snow;
             this.grpTatCa.Controls.Add(this.panel2);
             this.grpTatCa.Controls.Add(this.dvgDanhSachKham);
-            this.grpTatCa.Controls.Add(this.textBox1);
+            this.grpTatCa.Controls.Add(this.txtTong);
             this.grpTatCa.Controls.Add(this.label3);
             this.grpTatCa.Controls.Add(this.txtTimKiem);
             this.grpTatCa.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.grpTatCa.ForeColor = System.Drawing.Color.Black;
-            this.grpTatCa.Location = new System.Drawing.Point(12, 182);
+            this.grpTatCa.Location = new System.Drawing.Point(12, 105);
             this.grpTatCa.Name = "grpTatCa";
-            this.grpTatCa.Size = new System.Drawing.Size(1265, 595);
+            this.grpTatCa.Size = new System.Drawing.Size(1265, 507);
             this.grpTatCa.TabIndex = 6;
             this.grpTatCa.TabStop = false;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel2.Controls.Add(this.btnTimKiem);
+            this.panel2.Location = new System.Drawing.Point(721, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(102, 36);
+            this.panel2.TabIndex = 7;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(-8, -3);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(119, 39);
+            this.btnTimKiem.TabIndex = 3;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
             // dvgDanhSachKham
             // 
@@ -95,7 +119,7 @@
             this.dvgDanhSachKham.Name = "dvgDanhSachKham";
             this.dvgDanhSachKham.RowHeadersWidth = 51;
             this.dvgDanhSachKham.RowTemplate.Height = 24;
-            this.dvgDanhSachKham.Size = new System.Drawing.Size(1253, 410);
+            this.dvgDanhSachKham.Size = new System.Drawing.Size(1253, 322);
             this.dvgDanhSachKham.TabIndex = 4;
             // 
             // colSTT
@@ -162,33 +186,23 @@
             this.colGhiChu.Name = "colGhiChu";
             this.colGhiChu.Width = 200;
             // 
-            // label2
+            // txtTong
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(13, 24);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(243, 31);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Phiếu Khám (hôm nay)";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.textBox1.BackColor = System.Drawing.Color.Gainsboro;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(100, 531);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(186, 25);
-            this.textBox1.TabIndex = 3;
-            this.textBox1.Text = "  0";
+            this.txtTong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.txtTong.BackColor = System.Drawing.Color.Gainsboro;
+            this.txtTong.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTong.Enabled = false;
+            this.txtTong.Location = new System.Drawing.Point(100, 443);
+            this.txtTong.Name = "txtTong";
+            this.txtTong.Size = new System.Drawing.Size(186, 25);
+            this.txtTong.TabIndex = 3;
+            this.txtTong.Text = "  0";
             // 
             // label3
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(20, 531);
+            this.label3.Location = new System.Drawing.Point(20, 443);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(55, 25);
             this.label3.TabIndex = 2;
@@ -205,91 +219,28 @@
             this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(1070, 36);
+            this.txtTimKiem.Size = new System.Drawing.Size(700, 36);
             this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
-            // panel2
+            // label2
             // 
-            this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel2.Controls.Add(this.btnTimKiem);
-            this.panel2.Location = new System.Drawing.Point(1102, 44);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(102, 36);
-            this.panel2.TabIndex = 7;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
-            this.btnTimKiem.FlatAppearance.BorderSize = 0;
-            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(-8, -3);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Size = new System.Drawing.Size(119, 39);
-            this.btnTimKiem.TabIndex = 3;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.UseVisualStyleBackColor = false;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label2.Location = new System.Drawing.Point(12, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(383, 46);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Phiếu Khám (hôm nay)";
             // 
             // panel1
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.btnAddPhieuKham);
-            this.panel1.Location = new System.Drawing.Point(982, 136);
+            this.panel1.Location = new System.Drawing.Point(982, 27);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(153, 42);
             this.panel1.TabIndex = 30;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Snow;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(32, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Tất cả";
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel3.Controls.Add(this.btnTatCa);
-            this.panel3.Location = new System.Drawing.Point(1153, 136);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(120, 42);
-            this.panel3.TabIndex = 31;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::PKNK_CNPM.Properties.Resources.svg__2_3;
-            this.pictureBox1.Location = new System.Drawing.Point(1138, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(153, 123);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 32;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btnTatCa
-            // 
-            this.btnTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTatCa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
-            this.btnTatCa.FlatAppearance.BorderSize = 0;
-            this.btnTatCa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTatCa.ForeColor = System.Drawing.Color.White;
-            this.btnTatCa.Image = global::PKNK_CNPM.Properties.Resources.reload1;
-            this.btnTatCa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTatCa.Location = new System.Drawing.Point(-11, -7);
-            this.btnTatCa.Name = "btnTatCa";
-            this.btnTatCa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTatCa.Size = new System.Drawing.Size(165, 58);
-            this.btnTatCa.TabIndex = 3;
-            this.btnTatCa.Text = "  Tất Cả";
-            this.btnTatCa.UseVisualStyleBackColor = false;
             // 
             // btnAddPhieuKham
             // 
@@ -309,12 +260,49 @@
             this.btnAddPhieuKham.Text = "    Tạo Mới";
             this.btnAddPhieuKham.UseVisualStyleBackColor = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Snow;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label1.Location = new System.Drawing.Point(32, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(79, 29);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Tất cả";
+            // 
+            // panel3
+            // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel3.Controls.Add(this.btnTatCa);
+            this.panel3.Location = new System.Drawing.Point(1153, 27);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(120, 42);
+            this.panel3.TabIndex = 31;
+            // 
+            // btnTatCa
+            // 
+            this.btnTatCa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTatCa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
+            this.btnTatCa.FlatAppearance.BorderSize = 0;
+            this.btnTatCa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTatCa.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTatCa.ForeColor = System.Drawing.Color.White;
+            this.btnTatCa.Image = global::PKNK_CNPM.Properties.Resources.reload1;
+            this.btnTatCa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTatCa.Location = new System.Drawing.Point(-11, -7);
+            this.btnTatCa.Name = "btnTatCa";
+            this.btnTatCa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTatCa.Size = new System.Drawing.Size(165, 58);
+            this.btnTatCa.TabIndex = 3;
+            this.btnTatCa.Text = "  Tất Cả";
+            this.btnTatCa.UseVisualStyleBackColor = false;
+            // 
             // frmExaminationform
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1289, 803);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(1289, 673);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.grpTatCa);
@@ -324,11 +312,10 @@
             this.Text = "Phiếu khám";
             this.grpTatCa.ResumeLayout(false);
             this.grpTatCa.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dvgDanhSachKham)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dvgDanhSachKham)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -347,7 +334,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colTrangThai;
         private System.Windows.Forms.DataGridViewTextBoxColumn colGhiChu;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTong;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTimKiem;
         private System.Windows.Forms.Panel panel2;
@@ -357,6 +344,5 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnTatCa;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
