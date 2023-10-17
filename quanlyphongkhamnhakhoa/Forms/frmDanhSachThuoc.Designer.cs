@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.grpDanhSachThuoc = new System.Windows.Forms.GroupBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
@@ -37,7 +38,6 @@
             this.btnTaiLai = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnThemThuoc = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
             this.grpDanhSachThuoc.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -64,17 +64,26 @@
             this.grpDanhSachThuoc.Controls.Add(this.label2);
             this.grpDanhSachThuoc.Controls.Add(this.panel2);
             this.grpDanhSachThuoc.Controls.Add(this.txtTimKiem);
-            this.grpDanhSachThuoc.Location = new System.Drawing.Point(18, 104);
+            this.grpDanhSachThuoc.Location = new System.Drawing.Point(12, 104);
             this.grpDanhSachThuoc.Name = "grpDanhSachThuoc";
-            this.grpDanhSachThuoc.Size = new System.Drawing.Size(1227, 492);
+            this.grpDanhSachThuoc.Size = new System.Drawing.Size(1246, 625);
             this.grpDanhSachThuoc.TabIndex = 1;
             this.grpDanhSachThuoc.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(348, 147);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(408, 16);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "chỗ này t có làm 1 cái Item là DanhSachThuocItem nhớ add vào nha";
             // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel2.Controls.Add(this.btnTimKiem);
-            this.panel2.Location = new System.Drawing.Point(1107, 21);
+            this.panel2.Location = new System.Drawing.Point(1126, 21);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(102, 36);
             this.panel2.TabIndex = 9;
@@ -166,15 +175,6 @@
             this.btnThemThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemThuoc.UseVisualStyleBackColor = false;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(348, 147);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(408, 16);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "chỗ này t có làm 1 cái Item là DanhSachThuocItem nhớ add vào nha";
-            // 
             // btnHuy
             // 
             this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -194,7 +194,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1270, 644);
+            this.ClientSize = new System.Drawing.Size(1270, 753);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel3);

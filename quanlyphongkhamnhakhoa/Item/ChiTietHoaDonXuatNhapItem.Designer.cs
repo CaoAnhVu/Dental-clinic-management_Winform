@@ -247,7 +247,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label6);
             this.Name = "ChiTietHoaDonXuatNhapItem";
-            this.Size = new System.Drawing.Size(1145, 74);
+            this.Size = new System.Drawing.Size(1145, 77);
             ((System.ComponentModel.ISupportInitialize)(this.picXoa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
