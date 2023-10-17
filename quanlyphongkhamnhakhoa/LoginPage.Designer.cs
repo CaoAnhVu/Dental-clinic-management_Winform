@@ -1,4 +1,4 @@
-﻿namespace quanlyphongkhamnhakhoa
+﻿namespace PKNK_CNPM
 {
     partial class frmLoginPage
     {
@@ -130,7 +130,7 @@
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(307, 37);
-            this.txtUsername.TabIndex = 8;
+            this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
             // 
@@ -142,7 +142,8 @@
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(307, 37);
-            this.txtPassword.TabIndex = 8;
+            this.txtPassword.TabIndex = 2;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // pictureBox5
             // 
@@ -165,7 +166,7 @@
             this.btnDangNhap.Location = new System.Drawing.Point(712, 435);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(347, 78);
-            this.btnDangNhap.TabIndex = 11;
+            this.btnDangNhap.TabIndex = 3;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -254,6 +255,7 @@
             // 
             // frmLoginPage
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;

@@ -13,7 +13,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quanlyphongkhamnhakhoa
+namespace PKNK_CNPM
 {
     public partial class frmHomeScreen : Form
     {
@@ -77,11 +77,7 @@ namespace quanlyphongkhamnhakhoa
                 }
             }
         }
-
-        private void DisableCollapse()
-        {
-            customerCollapse = quanlyCollapse = settingCollapse = accountCollapse = false;
-        }
+ 
         private void DisableButton()
         {
             foreach (Control previousBtn in sidebar.Controls)
@@ -291,26 +287,6 @@ namespace quanlyphongkhamnhakhoa
             OpenChildForm(new frmDanhSachNV(), sender);
         }
 
-        private void btnKhamLamSan_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmKhamLamSan(), sender);
-        }
-
-        private void btnCanLamSan_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmCanLamSang(), sender);
-        }
-
-        private void btnPhieuKham_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmPhieuKham(), sender);
-        }
-
-        private void btnDonThuoc_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmDonThuoc(), sender);
-        }
-
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
             OpenChildForm(new frmHoaDon(), sender);
@@ -350,5 +326,6 @@ namespace quanlyphongkhamnhakhoa
         {
             this.Close();
         }
+
     }
 }

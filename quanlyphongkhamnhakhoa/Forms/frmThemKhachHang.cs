@@ -97,7 +97,7 @@ namespace PKNK_CNPM.Forms
                     NgaySinh = (DateTime)dtpNgaySinh.Value,
                     DiaChi = txtDiaChi.Text,
                     GhiChu = rtbLyDo.Text,
-                    MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
+                    //MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
                     DuongHuyet = cbDuongHuyet.Checked,
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,

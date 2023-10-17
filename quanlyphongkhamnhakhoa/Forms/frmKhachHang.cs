@@ -1,5 +1,6 @@
 ﻿using PKNK.BUS.Servive;
 using PKNK.DAL.Models;
+using PKNK_CNPM.FormCustomer;
 using PKNK_CNPM.FormsSetting;
 using System;
 using System.Collections.Generic;
@@ -72,7 +73,7 @@ namespace PKNK_CNPM.Forms
                     dvgDanhSachKham.Rows[index].Cells[8].Value = i.TongTien;
                     dvgDanhSachKham.Rows[index].Cells[9].Value = i.DaThanhToan;
                     dvgDanhSachKham.Rows[index].Cells[10].Value = i.GhiChu;
-                    dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
+                    //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
                     dvgDanhSachKham.Rows[index].Cells[12].Value = i.HuyetApMach == true ? "Có" : "Không";
                     dvgDanhSachKham.Rows[index].Cells[13].Value = i.DuongHuyet == true ? "Có" : "Không";
                     dvgDanhSachKham.Rows[index].Cells[14].Value = i.MauKhoDong == true ? "Có" : "Không";
@@ -108,7 +109,7 @@ namespace PKNK_CNPM.Forms
             frmThemKhachHang frmKH = new frmThemKhachHang();
             frmKH.ShowDialog();
             BindGrid(khachHangService.GetAll());
-            setCount(); // reset lại tổng nhân viên
+            setCount();
         }
 
         private void btnTaiLai_Click(object sender, EventArgs e)
@@ -127,7 +128,7 @@ namespace PKNK_CNPM.Forms
             }
             else
             {
-                MessageBox.Show("Chưa chọn nhân viên dưới bản nhân viên!");
+                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
             }
         }
 
@@ -141,6 +142,72 @@ namespace PKNK_CNPM.Forms
                     khachHangService.Remove(khachHang);
                     MessageBox.Show("Xóa thành công!");
                 }
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
+            }
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+                BindGrid(khachHangService.GetAll());
+            else
+            {
+                BindGrid(khachHangService.SearchByName(txtTimKiem.Text));
+            }
+        }
+
+        private void btnKhamLamSan_Click(object sender, EventArgs e)
+        {
+            if (khachHang != null)
+            {
+                frmCanLamSang frmCanLamSang = new frmCanLamSang(khachHang);
+                frmCanLamSang.ShowDialog();
+                BindGrid(khachHangService.GetAll());
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
+            }
+        }
+
+        private void btnCanLamSan_Click(object sender, EventArgs e)
+        {
+            if (khachHang != null)
+            {
+                frmKhamLamSan frmKhamLamSan = new frmKhamLamSan(khachHang);
+                frmKhamLamSan.ShowDialog();
+                BindGrid(khachHangService.GetAll());
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
+            }
+        }
+
+        private void btnDonThuoc_Click(object sender, EventArgs e)
+        {
+            if (khachHang != null)
+            {
+                frmDonThuoc frmDonThuoc = new frmDonThuoc();
+                frmDonThuoc.ShowDialog();
+                BindGrid(khachHangService.GetAll());
+            }
+            else
+            {
+                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
+            }
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            if (khachHang != null)
+            {
+                frmHoaDon frmHoaDon = new frmHoaDon();
+                frmHoaDon.ShowDialog();
+                BindGrid(khachHangService.GetAll());
             }
             else
             {

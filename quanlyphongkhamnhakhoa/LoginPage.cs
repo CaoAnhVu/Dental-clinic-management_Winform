@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quanlyphongkhamnhakhoa
+namespace PKNK_CNPM
 {
     public partial class frmLoginPage : Form
     {
@@ -22,7 +22,12 @@ namespace quanlyphongkhamnhakhoa
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult res = MessageBox.Show("Bạn có muốn xóa khách hàng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+                MessageBox.Show("Thoát thành công!");
+            }
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -30,14 +35,14 @@ namespace quanlyphongkhamnhakhoa
             try
             {
                 Auth user = authService.Login(txtUsername.Text, txtPassword.Text);
-                //if (!checkValid())
-                //    throw new Exception("Nhập đầy đủ kí tự!");
-                //if (user == null)
-                //    throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
+                if (!checkValid())
+                    throw new Exception("Nhập đầy đủ kí tự!");
+                if (user == null)
+                    throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
 
                 frmHomeScreen f = new frmHomeScreen();
-                f.ShowDialog();
                 MessageBox.Show("Đăng nhập thành công!");
+                f.ShowDialog();
                 clearValue();
                 this.Hide();
             }

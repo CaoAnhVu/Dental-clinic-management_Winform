@@ -60,6 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,40 +72,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.cs">
+    <Compile Include="Item\ChiTietHoaDonXuatNhapItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.Designer.cs">
+    <Compile Include="Item\ChiTietHoaDonXuatNhapItem.Designer.cs">
       <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\Controller\DanhSachThuocItem.cs">
+    <Compile Include="Item\DanhSachThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormCustomer\Controller\DanhSachThuocItem.Designer.cs">
+    <Compile Include="Item\DanhSachThuocItem.Designer.cs">
       <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\Controller\DonThuocItem.cs">
+    <Compile Include="Item\DonThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormCustomer\Controller\DonThuocItem.Designer.cs">
+    <Compile Include="Item\DonThuocItem.Designer.cs">
       <DependentUpon>DonThuocItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ThongTinItems.cs">
+    <Compile Include="Item\ThongTinItems.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ThongTinItems.Designer.cs">
+    <Compile Include="Item\ThongTinItems.Designer.cs">
       <DependentUpon>ThongTinItems.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ThuocItem.cs">
+    <Compile Include="Item\ThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ThuocItem.Designer.cs">
+    <Compile Include="Item\ThuocItem.Designer.cs">
       <DependentUpon>ThuocItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ThuThuatItem.cs">
+    <Compile Include="Item\ThuThuatItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="FormCustomer\Controller\ThuThuatItem.Designer.cs">
+    <Compile Include="Item\ThuThuatItem.Designer.cs">
       <DependentUpon>ThuThuatItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmCanLamSang.cs">
@@ -112,6 +113,12 @@
     </Compile>
     <Compile Include="Forms\frmCanLamSang.Designer.cs">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmKhamLamSan.cs">
       <SubType>Form</SubType>
@@ -191,11 +198,11 @@
     <Compile Include="Forms\frmThemKhachHang.Designer.cs">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmCustomer.cs">
-      <SubType>Form</SubType>
+    <Compile Include="Item\TTThuThuatItem.cs">
+      <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Forms\frmCustomer.Designer.cs">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
+    <Compile Include="Item\TTThuThuatItem.Designer.cs">
+      <DependentUpon>TTThuThuatItem.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -212,26 +219,32 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
-    <EmbeddedResource Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.resx">
+    <EmbeddedResource Include="Item\ChiTietHoaDonXuatNhapItem.resx">
       <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\Controller\DanhSachThuocItem.resx">
+    <EmbeddedResource Include="Item\DanhSachThuocItem.resx">
       <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\Controller\DonThuocItem.resx">
+    <EmbeddedResource Include="Item\DonThuocItem.resx">
       <DependentUpon>DonThuocItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\Controller\ThongTinItems.resx">
+    <EmbeddedResource Include="Item\ThongTinItems.resx">
       <DependentUpon>ThongTinItems.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\Controller\ThuocItem.resx">
+    <EmbeddedResource Include="Item\ThuocItem.resx">
       <DependentUpon>ThuocItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormCustomer\Controller\ThuThuatItem.resx">
+    <EmbeddedResource Include="Item\ThuThuatItem.resx">
       <DependentUpon>ThuThuatItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmCanLamSang.resx">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKhamLamSan.resx">
       <DependentUpon>frmKhamLamSan.cs</DependentUpon>
@@ -266,8 +279,8 @@
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmCustomer.resx">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Item\TTThuThuatItem.resx">
+      <DependentUpon>TTThuThuatItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>

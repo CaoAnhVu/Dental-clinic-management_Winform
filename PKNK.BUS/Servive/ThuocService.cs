@@ -10,7 +10,7 @@ namespace PKNK.BUS.Servive
 {
     public class ThuocService
     {
-        public List<Thuoc> GetAlL()
+        public List<Thuoc> GetAll()
         {
             PKNK_ContextDB model = new PKNK_ContextDB();
             return model.Thuocs.ToList();
