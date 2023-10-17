@@ -147,5 +147,10 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
             }
         }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

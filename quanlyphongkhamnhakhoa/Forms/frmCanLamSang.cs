@@ -26,5 +26,33 @@ namespace PKNK_CNPM.FormCustomer
         {
 
         }
+
+        private void txtNhanVien_TextChanged(object sender, EventArgs e)
+        {
+            if (txtNhanVien.Text.Length < 5)
+            {
+                // Hiển thị thông báo lỗi
+                errorProvider1.SetError(txtNhanVien, "Vui lòng nhập ít nhất 5 ký tự.");
+            }
+            else
+            {
+                // Xóa thông báo lỗi nếu có
+                errorProvider1.Clear();
+            }
+        }
+
+        private void txtKhachHang_TextChanged(object sender, EventArgs e)
+        {
+            if (txtKhachHang.Text.Length < 5)
+            {
+                // Hiển thị thông báo lỗi
+                errorProvider2.SetError(txtKhachHang, "Vui lòng nhập ít nhất 5 ký tự.");
+            }
+            else
+            {
+                // Xóa thông báo lỗi nếu có
+                errorProvider2.Clear();
+            }
+        }
     }
 }

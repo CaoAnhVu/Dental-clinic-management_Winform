@@ -60,6 +60,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -71,6 +72,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormCustomer\Controller\ChiTietDoanhThuItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\ChiTietDoanhThuItem.Designer.cs">
+      <DependentUpon>ChiTietDoanhThuItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,11 +90,23 @@
     <Compile Include="FormCustomer\Controller\DanhSachThuocItem.Designer.cs">
       <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormCustomer\Controller\DichVuThuThuatItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\DichVuThuThuatItem.Designer.cs">
+      <DependentUpon>DichVuThuThuatItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormCustomer\Controller\DonThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="FormCustomer\Controller\DonThuocItem.Designer.cs">
       <DependentUpon>DonThuocItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\SuDungTieuHaoThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FormCustomer\Controller\SuDungTieuHaoThuocItem.Designer.cs">
+      <DependentUpon>SuDungTieuHaoThuocItem.cs</DependentUpon>
     </Compile>
     <Compile Include="FormCustomer\Controller\ThongTinItems.cs">
       <SubType>UserControl</SubType>
@@ -113,6 +132,30 @@
     <Compile Include="Forms\frmCanLamSang.Designer.cs">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\frmDichVuThuThuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDichVuThuThuat.Designer.cs">
+      <DependentUpon>frmDichVuThuThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDoanhThu.Designer.cs">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemChiTietThuThuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemChiTietThuThuat.Designer.cs">
+      <DependentUpon>frmThemChiTietThuThuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\frmKhamLamSan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +173,12 @@
     </Compile>
     <Compile Include="Forms\frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemDoanhThu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemDoanhThu.Designer.cs">
+      <DependentUpon>frmThemDoanhThu.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -191,12 +240,6 @@
     <Compile Include="Forms\frmThemKhachHang.Designer.cs">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmCustomer.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmCustomer.Designer.cs">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
-    </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -212,14 +255,23 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
+    <EmbeddedResource Include="FormCustomer\Controller\ChiTietDoanhThuItem.resx">
+      <DependentUpon>ChiTietDoanhThuItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\Controller\ChiTietHoaDonXuatNhapItem.resx">
       <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\Controller\DanhSachThuocItem.resx">
       <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\Controller\DichVuThuThuatItem.resx">
+      <DependentUpon>DichVuThuThuatItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\Controller\DonThuocItem.resx">
       <DependentUpon>DonThuocItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCustomer\Controller\SuDungTieuHaoThuocItem.resx">
+      <DependentUpon>SuDungTieuHaoThuocItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormCustomer\Controller\ThongTinItems.resx">
       <DependentUpon>ThongTinItems.cs</DependentUpon>
@@ -233,6 +285,18 @@
     <EmbeddedResource Include="Forms\frmCanLamSang.resx">
       <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDichVuThuThuat.resx">
+      <DependentUpon>frmDichVuThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDoanhThu.resx">
+      <DependentUpon>frmDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemChiTietThuThuat.resx">
+      <DependentUpon>frmThemChiTietThuThuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmKhamLamSan.resx">
       <DependentUpon>frmKhamLamSan.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,6 +305,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemDoanhThu.resx">
+      <DependentUpon>frmThemDoanhThu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemNhanVien.resx">
       <DependentUpon>frmThemNhanVien.cs</DependentUpon>
@@ -265,9 +332,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmCustomer.resx">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -729,7 +793,9 @@
   <ItemGroup>
     <None Include="Resources\nho-rang-khon-1688699317553340911178.jpg" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\add3.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete.png" />
   </ItemGroup>
@@ -786,6 +852,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\delete5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boc-rang-su2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete6.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

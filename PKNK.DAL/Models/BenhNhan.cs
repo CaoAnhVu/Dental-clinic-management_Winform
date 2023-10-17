@@ -14,6 +14,7 @@ namespace PKNK.DAL.Models
         {
             BaoHiems = new HashSet<BaoHiem>();
             ChanDoans = new HashSet<ChanDoan>();
+            TTCanLamSans = new HashSet<TTCanLamSan>();
         }
 
         [Key]
@@ -79,5 +80,8 @@ namespace PKNK.DAL.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChanDoan> ChanDoans { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TTCanLamSan> TTCanLamSans { get; set; }
     }
 }

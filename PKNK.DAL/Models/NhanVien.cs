@@ -14,6 +14,7 @@ namespace PKNK.DAL.Models
         {
             BenhNhans = new HashSet<BenhNhan>();
             Bills = new HashSet<Bill>();
+            TTCanLamSans = new HashSet<TTCanLamSan>();
         }
 
         [Key]
@@ -53,5 +54,8 @@ namespace PKNK.DAL.Models
         public virtual ICollection<Bill> Bills { get; set; }
 
         public virtual ChucDanh ChucDanh { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TTCanLamSan> TTCanLamSans { get; set; }
     }
 }

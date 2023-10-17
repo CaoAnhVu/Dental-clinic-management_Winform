@@ -48,9 +48,11 @@ namespace PKNK_CNPM.Forms
             this.rbNam = new System.Windows.Forms.RadioButton();
             this.rtbLyDo = new System.Windows.Forms.RichTextBox();
             this.txtSDT = new System.Windows.Forms.TextBox();
+            this.txtMaBaoHiem = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtGiamGia = new System.Windows.Forms.TextBox();
             this.txtMaNV = new System.Windows.Forms.TextBox();
+            this.txtTenBaoHiem = new System.Windows.Forms.TextBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -59,13 +61,11 @@ namespace PKNK_CNPM.Forms
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtTenBaoHiem = new System.Windows.Forms.TextBox();
-            this.txtMaBaoHiem = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,7 +122,7 @@ namespace PKNK_CNPM.Forms
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox2.Location = new System.Drawing.Point(12, 43);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1261, 633);
+            this.groupBox2.Size = new System.Drawing.Size(1211, 633);
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             // 
@@ -147,13 +147,15 @@ namespace PKNK_CNPM.Forms
             // 
             // btnLuu
             // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(203)))));
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
             this.btnLuu.Image = global::PKNK_CNPM.Properties.Resources.diskette;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1031, 531);
+            this.btnLuu.Location = new System.Drawing.Point(1031, 534);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnLuu.Size = new System.Drawing.Size(159, 45);
@@ -165,11 +167,13 @@ namespace PKNK_CNPM.Forms
             // 
             // btnHuy
             // 
+            this.btnHuy.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(95)))), ((int)(((byte)(99)))));
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(889, 531);
+            this.btnHuy.Location = new System.Drawing.Point(889, 534);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(131, 45);
             this.btnHuy.TabIndex = 37;
@@ -179,8 +183,9 @@ namespace PKNK_CNPM.Forms
             // 
             // cbThieuNang
             // 
+            this.cbThieuNang.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbThieuNang.AutoSize = true;
-            this.cbThieuNang.Location = new System.Drawing.Point(836, 352);
+            this.cbThieuNang.Location = new System.Drawing.Point(836, 308);
             this.cbThieuNang.Name = "cbThieuNang";
             this.cbThieuNang.Size = new System.Drawing.Size(184, 29);
             this.cbThieuNang.TabIndex = 11;
@@ -189,8 +194,9 @@ namespace PKNK_CNPM.Forms
             // 
             // cbMauKhoDong
             // 
+            this.cbMauKhoDong.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbMauKhoDong.AutoSize = true;
-            this.cbMauKhoDong.Location = new System.Drawing.Point(1037, 307);
+            this.cbMauKhoDong.Location = new System.Drawing.Point(1037, 251);
             this.cbMauKhoDong.Name = "cbMauKhoDong";
             this.cbMauKhoDong.Size = new System.Drawing.Size(157, 29);
             this.cbMauKhoDong.TabIndex = 9;
@@ -199,8 +205,9 @@ namespace PKNK_CNPM.Forms
             // 
             // cbDuongHuyet
             // 
+            this.cbDuongHuyet.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbDuongHuyet.AutoSize = true;
-            this.cbDuongHuyet.Location = new System.Drawing.Point(836, 307);
+            this.cbDuongHuyet.Location = new System.Drawing.Point(836, 251);
             this.cbDuongHuyet.Name = "cbDuongHuyet";
             this.cbDuongHuyet.Size = new System.Drawing.Size(143, 29);
             this.cbDuongHuyet.TabIndex = 8;
@@ -209,8 +216,9 @@ namespace PKNK_CNPM.Forms
             // 
             // cbTimBamSinh
             // 
+            this.cbTimBamSinh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbTimBamSinh.AutoSize = true;
-            this.cbTimBamSinh.Location = new System.Drawing.Point(663, 352);
+            this.cbTimBamSinh.Location = new System.Drawing.Point(663, 308);
             this.cbTimBamSinh.Name = "cbTimBamSinh";
             this.cbTimBamSinh.Size = new System.Drawing.Size(147, 29);
             this.cbTimBamSinh.TabIndex = 10;
@@ -219,8 +227,9 @@ namespace PKNK_CNPM.Forms
             // 
             // cbHuyetAp
             // 
+            this.cbHuyetAp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cbHuyetAp.AutoSize = true;
-            this.cbHuyetAp.Location = new System.Drawing.Point(663, 307);
+            this.cbHuyetAp.Location = new System.Drawing.Point(663, 251);
             this.cbHuyetAp.Name = "cbHuyetAp";
             this.cbHuyetAp.Size = new System.Drawing.Size(160, 29);
             this.cbHuyetAp.TabIndex = 7;
@@ -232,7 +241,7 @@ namespace PKNK_CNPM.Forms
             this.lbNgaySua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNgaySua.AutoSize = true;
             this.lbNgaySua.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbNgaySua.Location = new System.Drawing.Point(1041, 597);
+            this.lbNgaySua.Location = new System.Drawing.Point(995, 600);
             this.lbNgaySua.Name = "lbNgaySua";
             this.lbNgaySua.Size = new System.Drawing.Size(0, 23);
             this.lbNgaySua.TabIndex = 33;
@@ -242,7 +251,7 @@ namespace PKNK_CNPM.Forms
             this.lbNgayTao.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNgayTao.AutoSize = true;
             this.lbNgayTao.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbNgayTao.Location = new System.Drawing.Point(864, 597);
+            this.lbNgayTao.Location = new System.Drawing.Point(814, 597);
             this.lbNgayTao.Name = "lbNgayTao";
             this.lbNgayTao.Size = new System.Drawing.Size(0, 23);
             this.lbNgayTao.TabIndex = 32;
@@ -281,7 +290,7 @@ namespace PKNK_CNPM.Forms
             this.rtbLyDo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.rtbLyDo.Location = new System.Drawing.Point(251, 431);
             this.rtbLyDo.Name = "rtbLyDo";
-            this.rtbLyDo.Size = new System.Drawing.Size(328, 148);
+            this.rtbLyDo.Size = new System.Drawing.Size(387, 148);
             this.rtbLyDo.TabIndex = 6;
             this.rtbLyDo.Text = "";
             // 
@@ -295,6 +304,17 @@ namespace PKNK_CNPM.Forms
             this.txtSDT.Size = new System.Drawing.Size(328, 32);
             this.txtSDT.TabIndex = 2;
             // 
+            // txtMaBaoHiem
+            // 
+            this.txtMaBaoHiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtMaBaoHiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtMaBaoHiem.ForeColor = System.Drawing.Color.DimGray;
+            this.txtMaBaoHiem.Location = new System.Drawing.Point(862, 134);
+            this.txtMaBaoHiem.Multiline = true;
+            this.txtMaBaoHiem.Name = "txtMaBaoHiem";
+            this.txtMaBaoHiem.Size = new System.Drawing.Size(328, 32);
+            this.txtMaBaoHiem.TabIndex = 1;
+            // 
             // txtTenKH
             // 
             this.txtTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -307,9 +327,11 @@ namespace PKNK_CNPM.Forms
             // 
             // txtGiamGia
             // 
+            this.txtGiamGia.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtGiamGia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGiamGia.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGiamGia.Location = new System.Drawing.Point(862, 477);
+            this.txtGiamGia.Location = new System.Drawing.Point(862, 467);
             this.txtGiamGia.Multiline = true;
             this.txtGiamGia.Name = "txtGiamGia";
             this.txtGiamGia.Size = new System.Drawing.Size(109, 32);
@@ -318,14 +340,26 @@ namespace PKNK_CNPM.Forms
             // 
             // txtMaNV
             // 
+            this.txtMaNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtMaNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtMaNV.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMaNV.Location = new System.Drawing.Point(862, 429);
+            this.txtMaNV.Location = new System.Drawing.Point(862, 419);
             this.txtMaNV.Multiline = true;
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(328, 32);
             this.txtMaNV.TabIndex = 14;
             this.txtMaNV.Text = "Nhập mã hoặc tên nhân viên";
+            // 
+            // txtTenBaoHiem
+            // 
+            this.txtTenBaoHiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtTenBaoHiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenBaoHiem.Location = new System.Drawing.Point(862, 73);
+            this.txtTenBaoHiem.Multiline = true;
+            this.txtTenBaoHiem.Name = "txtTenBaoHiem";
+            this.txtTenBaoHiem.Size = new System.Drawing.Size(328, 32);
+            this.txtTenBaoHiem.TabIndex = 0;
             // 
             // txtMaKH
             // 
@@ -338,8 +372,9 @@ namespace PKNK_CNPM.Forms
             // 
             // label19
             // 
+            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(658, 259);
+            this.label19.Location = new System.Drawing.Point(658, 200);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(204, 25);
             this.label19.TabIndex = 10;
@@ -356,8 +391,10 @@ namespace PKNK_CNPM.Forms
             // 
             // label31
             // 
+            this.label31.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(978, 479);
+            this.label31.Location = new System.Drawing.Point(978, 469);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(28, 25);
             this.label31.TabIndex = 7;
@@ -365,8 +402,10 @@ namespace PKNK_CNPM.Forms
             // 
             // label30
             // 
+            this.label30.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(658, 479);
+            this.label30.Location = new System.Drawing.Point(658, 474);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(169, 25);
             this.label30.TabIndex = 7;
@@ -374,8 +413,10 @@ namespace PKNK_CNPM.Forms
             // 
             // label23
             // 
+            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(658, 431);
+            this.label23.Location = new System.Drawing.Point(658, 426);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(184, 25);
             this.label23.TabIndex = 7;
@@ -399,6 +440,16 @@ namespace PKNK_CNPM.Forms
             this.label26.TabIndex = 3;
             this.label26.Text = "Ngày sinh";
             // 
+            // label3
+            // 
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(658, 136);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(123, 25);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Mã bảo hiểm";
+            // 
             // label27
             // 
             this.label27.AutoSize = true;
@@ -407,6 +458,16 @@ namespace PKNK_CNPM.Forms
             this.label27.Size = new System.Drawing.Size(123, 25);
             this.label27.TabIndex = 2;
             this.label27.Text = "Số điện thoại";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(658, 75);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(125, 25);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tên bảo hiểm";
             // 
             // label28
             // 
@@ -426,48 +487,11 @@ namespace PKNK_CNPM.Forms
             this.label29.TabIndex = 0;
             this.label29.Text = "Mã khách hàng";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(658, 138);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(125, 25);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tên bảo hiểm";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(658, 199);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 25);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Mã bảo hiểm";
-            // 
-            // txtTenBaoHiem
-            // 
-            this.txtTenBaoHiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTenBaoHiem.Location = new System.Drawing.Point(862, 136);
-            this.txtTenBaoHiem.Multiline = true;
-            this.txtTenBaoHiem.Name = "txtTenBaoHiem";
-            this.txtTenBaoHiem.Size = new System.Drawing.Size(328, 32);
-            this.txtTenBaoHiem.TabIndex = 0;
-            // 
-            // txtMaBaoHiem
-            // 
-            this.txtMaBaoHiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMaBaoHiem.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMaBaoHiem.Location = new System.Drawing.Point(862, 197);
-            this.txtMaBaoHiem.Multiline = true;
-            this.txtMaBaoHiem.Name = "txtMaBaoHiem";
-            this.txtMaBaoHiem.Size = new System.Drawing.Size(328, 32);
-            this.txtMaBaoHiem.TabIndex = 1;
-            // 
             // frmThemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1288, 681);
+            this.ClientSize = new System.Drawing.Size(1228, 701);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox2);
             this.Name = "frmThemKhachHang";

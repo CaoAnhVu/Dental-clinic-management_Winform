@@ -32,6 +32,10 @@
             this.sidebar = new System.Windows.Forms.FlowLayoutPanel();
             this.panelMenu = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.CustomerContainer = new System.Windows.Forms.Panel();
+            this.panel12 = new System.Windows.Forms.Panel();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.QuanlyContainer = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
             this.panel13 = new System.Windows.Forms.Panel();
@@ -68,10 +72,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.lblDanhSachKham = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.CustomerContainer = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnClosePage = new System.Windows.Forms.Button();
             this.btnMinimize = new System.Windows.Forms.Button();
@@ -92,6 +92,10 @@
             this.btnDangXuat = new System.Windows.Forms.Button();
             this.sidebar.SuspendLayout();
             this.panelMenu.SuspendLayout();
+            this.CustomerContainer.SuspendLayout();
+            this.panel12.SuspendLayout();
+            this.panel11.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.QuanlyContainer.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -109,10 +113,6 @@
             this.grpTatCa.SuspendLayout();
             this.panel19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvgDanhSachKham)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.CustomerContainer.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,6 +152,46 @@
             this.label1.Size = new System.Drawing.Size(66, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Menu";
+            // 
+            // CustomerContainer
+            // 
+            this.CustomerContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.CustomerContainer.Controls.Add(this.panel12);
+            this.CustomerContainer.Controls.Add(this.panel11);
+            this.CustomerContainer.Controls.Add(this.panel2);
+            this.CustomerContainer.Location = new System.Drawing.Point(3, 85);
+            this.CustomerContainer.MaximumSize = new System.Drawing.Size(265, 163);
+            this.CustomerContainer.MinimumSize = new System.Drawing.Size(265, 52);
+            this.CustomerContainer.Name = "CustomerContainer";
+            this.CustomerContainer.Size = new System.Drawing.Size(265, 52);
+            this.CustomerContainer.TabIndex = 1;
+            // 
+            // panel12
+            // 
+            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel12.Controls.Add(this.btnPhieuKham);
+            this.panel12.Location = new System.Drawing.Point(-12, 59);
+            this.panel12.Name = "panel12";
+            this.panel12.Size = new System.Drawing.Size(313, 57);
+            this.panel12.TabIndex = 6;
+            // 
+            // panel11
+            // 
+            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel11.Controls.Add(this.btnHoaDon);
+            this.panel11.Location = new System.Drawing.Point(-7, 114);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(287, 58);
+            this.panel11.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.panel2.Controls.Add(this.btnCustomer);
+            this.panel2.Location = new System.Drawing.Point(-11, -1);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(299, 55);
+            this.panel2.TabIndex = 2;
             // 
             // QuanlyContainer
             // 
@@ -216,7 +256,7 @@
             this.panel20.Controls.Add(this.btnThuoc);
             this.panel20.Location = new System.Drawing.Point(-49, 150);
             this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(316, 53);
+            this.panel20.Size = new System.Drawing.Size(328, 60);
             this.panel20.TabIndex = 8;
             // 
             // panel27
@@ -357,9 +397,9 @@
             // panel19
             // 
             this.panel19.Controls.Add(this.btnTimKiem);
-            this.panel19.Location = new System.Drawing.Point(717, 27);
+            this.panel19.Location = new System.Drawing.Point(717, 43);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(165, 54);
+            this.panel19.Size = new System.Drawing.Size(165, 37);
             this.panel19.TabIndex = 21;
             // 
             // dvgDanhSachKham
@@ -494,46 +534,6 @@
             this.lblDanhSachKham.TabIndex = 0;
             this.lblDanhSachKham.Text = "Danh Sách Khám (Hôm nay)";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel2.Controls.Add(this.btnCustomer);
-            this.panel2.Location = new System.Drawing.Point(-11, -1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(299, 55);
-            this.panel2.TabIndex = 2;
-            // 
-            // panel11
-            // 
-            this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel11.Controls.Add(this.btnHoaDon);
-            this.panel11.Location = new System.Drawing.Point(-7, 114);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(287, 58);
-            this.panel11.TabIndex = 5;
-            // 
-            // panel12
-            // 
-            this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.panel12.Controls.Add(this.btnPhieuKham);
-            this.panel12.Location = new System.Drawing.Point(-12, 59);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(313, 57);
-            this.panel12.TabIndex = 6;
-            // 
-            // CustomerContainer
-            // 
-            this.CustomerContainer.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.CustomerContainer.Controls.Add(this.panel12);
-            this.CustomerContainer.Controls.Add(this.panel11);
-            this.CustomerContainer.Controls.Add(this.panel2);
-            this.CustomerContainer.Location = new System.Drawing.Point(3, 85);
-            this.CustomerContainer.MaximumSize = new System.Drawing.Size(265, 163);
-            this.CustomerContainer.MinimumSize = new System.Drawing.Size(265, 52);
-            this.CustomerContainer.Name = "CustomerContainer";
-            this.CustomerContainer.Size = new System.Drawing.Size(265, 52);
-            this.CustomerContainer.TabIndex = 1;
-            // 
             // btnTimKiem
             // 
             this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -544,7 +544,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(-8, -4);
+            this.btnTimKiem.Location = new System.Drawing.Point(-8, -13);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(174, 63);
@@ -677,10 +677,10 @@
             this.btnDonXuatHang.ForeColor = System.Drawing.Color.White;
             this.btnDonXuatHang.Image = global::PKNK_CNPM.Properties.Resources.order_delivery1;
             this.btnDonXuatHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonXuatHang.Location = new System.Drawing.Point(39, -14);
+            this.btnDonXuatHang.Location = new System.Drawing.Point(39, -5);
             this.btnDonXuatHang.Name = "btnDonXuatHang";
             this.btnDonXuatHang.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDonXuatHang.Size = new System.Drawing.Size(292, 71);
+            this.btnDonXuatHang.Size = new System.Drawing.Size(292, 60);
             this.btnDonXuatHang.TabIndex = 1;
             this.btnDonXuatHang.Text = "           Hóa đơn xuất nhập";
             this.btnDonXuatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -715,10 +715,10 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
             this.btnThongKe.Image = global::PKNK_CNPM.Properties.Resources.statistics;
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(-6, -3);
+            this.btnThongKe.Location = new System.Drawing.Point(-6, -2);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnThongKe.Size = new System.Drawing.Size(290, 62);
+            this.btnThongKe.Size = new System.Drawing.Size(290, 59);
             this.btnThongKe.TabIndex = 1;
             this.btnThongKe.Text = "            Thống kê ";
             this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -754,10 +754,10 @@
             this.btnDichVu.ForeColor = System.Drawing.Color.White;
             this.btnDichVu.Image = global::PKNK_CNPM.Properties.Resources.customer_service;
             this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(1, -10);
+            this.btnDichVu.Location = new System.Drawing.Point(1, -4);
             this.btnDichVu.Name = "btnDichVu";
             this.btnDichVu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDichVu.Size = new System.Drawing.Size(292, 71);
+            this.btnDichVu.Size = new System.Drawing.Size(292, 65);
             this.btnDichVu.TabIndex = 1;
             this.btnDichVu.Text = "            Dịch vụ";
             this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -773,10 +773,10 @@
             this.btnThuoc.ForeColor = System.Drawing.Color.White;
             this.btnThuoc.Image = global::PKNK_CNPM.Properties.Resources.medicine;
             this.btnThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThuoc.Location = new System.Drawing.Point(30, -12);
+            this.btnThuoc.Location = new System.Drawing.Point(30, -7);
             this.btnThuoc.Name = "btnThuoc";
             this.btnThuoc.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnThuoc.Size = new System.Drawing.Size(292, 71);
+            this.btnThuoc.Size = new System.Drawing.Size(292, 69);
             this.btnThuoc.TabIndex = 1;
             this.btnThuoc.Text = "            Thuốc";
             this.btnThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -792,10 +792,10 @@
             this.btnDoanhThu.ForeColor = System.Drawing.Color.White;
             this.btnDoanhThu.Image = global::PKNK_CNPM.Properties.Resources.money1;
             this.btnDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoanhThu.Location = new System.Drawing.Point(28, -13);
+            this.btnDoanhThu.Location = new System.Drawing.Point(28, -9);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDoanhThu.Size = new System.Drawing.Size(292, 71);
+            this.btnDoanhThu.Size = new System.Drawing.Size(292, 69);
             this.btnDoanhThu.TabIndex = 1;
             this.btnDoanhThu.Text = "            Doanh thu";
             this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -877,6 +877,10 @@
             this.sidebar.ResumeLayout(false);
             this.panelMenu.ResumeLayout(false);
             this.panelMenu.PerformLayout();
+            this.CustomerContainer.ResumeLayout(false);
+            this.panel12.ResumeLayout(false);
+            this.panel11.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.QuanlyContainer.ResumeLayout(false);
             this.panel16.ResumeLayout(false);
             this.panel13.ResumeLayout(false);
@@ -897,10 +901,6 @@
             this.grpTatCa.PerformLayout();
             this.panel19.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvgDanhSachKham)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.CustomerContainer.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).EndInit();
             this.ResumeLayout(false);
 

@@ -22,7 +22,12 @@ namespace quanlyphongkhamnhakhoa
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (result == DialogResult.Yes)
+            {
+                this.Close();
+            }
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
@@ -30,10 +35,10 @@ namespace quanlyphongkhamnhakhoa
             try
             {
                 Auth user = authService.Login(txtUsername.Text, txtPassword.Text);
-                //if (!checkValid())
-                //    throw new Exception("Nhập đầy đủ kí tự!");
-                //if (user == null)
-                //    throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
+                if (!checkValid())
+                    throw new Exception("Nhập đầy đủ kí tự!");
+                if (user == null)
+                    throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
 
                 frmHomeScreen f = new frmHomeScreen();
                 f.ShowDialog();

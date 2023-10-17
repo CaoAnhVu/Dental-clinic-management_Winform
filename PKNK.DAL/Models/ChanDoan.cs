@@ -23,10 +23,6 @@ namespace PKNK.DAL.Models
 
         [Required]
         [StringLength(10)]
-        public string MaThongTinCLS { get; set; }
-
-        [Required]
-        [StringLength(10)]
         public string MaThongTinLS { get; set; }
 
         [Column(TypeName = "ntext")]
@@ -36,8 +32,6 @@ namespace PKNK.DAL.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Bill> Bills { get; set; }
-
-        public virtual ThongTinCL ThongTinCL { get; set; }
 
         public virtual ThongTinL ThongTinL { get; set; }
     }
