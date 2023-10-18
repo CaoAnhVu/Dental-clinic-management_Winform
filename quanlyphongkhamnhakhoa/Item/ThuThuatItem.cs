@@ -49,5 +49,6 @@ namespace PKNK_CNPM.FormCustomer.Controller
         {
             InitializeComponent();
         }
+
     }
 }
