@@ -130,7 +130,7 @@
             this.txtUsername.Multiline = true;
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(307, 37);
-            this.txtUsername.TabIndex = 8;
+            this.txtUsername.TabIndex = 0;
             // 
             // txtPassword
             // 
@@ -142,7 +142,7 @@
             this.txtPassword.Multiline = true;
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(307, 37);
-            this.txtPassword.TabIndex = 8;
+            this.txtPassword.TabIndex = 1;
             // 
             // pictureBox5
             // 
@@ -254,6 +254,7 @@
             // 
             // frmLoginPage
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;

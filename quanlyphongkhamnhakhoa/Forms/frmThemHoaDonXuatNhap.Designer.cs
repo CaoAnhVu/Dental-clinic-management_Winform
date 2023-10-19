@@ -217,7 +217,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(348, 35);
             this.textBox5.TabIndex = 2;
-            this.textBox5.Text = "Nhập mã hoặc tên nhà cung cấp";
             // 
             // label8
             // 
@@ -810,6 +809,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmThemHoaDonXuatNhap";
             this.Text = "Thêm Hóa Đơn Xuất Nhập";
             this.groupBox1.ResumeLayout(false);

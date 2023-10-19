@@ -424,6 +424,7 @@
             this.ClientSize = new System.Drawing.Size(1270, 723);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.grpThemThuocMoi);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmTaoThuocMoi";
             this.Text = "Thêm Thuốc Mới";
             this.grpThemThuocMoi.ResumeLayout(false);

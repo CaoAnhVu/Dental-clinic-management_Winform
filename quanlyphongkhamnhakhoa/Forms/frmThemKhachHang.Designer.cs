@@ -349,7 +349,6 @@ namespace PKNK_CNPM.Forms
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(328, 32);
             this.txtMaNV.TabIndex = 14;
-            this.txtMaNV.Text = "Nhập mã hoặc tên nhân viên";
             // 
             // txtTenBaoHiem
             // 
@@ -494,6 +493,7 @@ namespace PKNK_CNPM.Forms
             this.ClientSize = new System.Drawing.Size(1228, 701);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmThemKhachHang";
             this.Text = "Thêm khách hàng";
             this.Load += new System.EventHandler(this.frmThemKhachHang_Load);
