@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.grpHoaDon = new System.Windows.Forms.GroupBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtNgayIn = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
@@ -67,20 +69,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picLogo = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.button4 = new System.Windows.Forms.Button();
-            this.btnLuuLai = new System.Windows.Forms.Button();
+            this.btnInHoaDon = new System.Windows.Forms.Button();
             this.grpHoaDon.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // grpHoaDon
             // 
-            this.grpHoaDon.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.grpHoaDon.BackColor = System.Drawing.Color.Snow;
-            this.grpHoaDon.Controls.Add(this.dateTimePicker1);
+            this.grpHoaDon.Controls.Add(this.textBox13);
+            this.grpHoaDon.Controls.Add(this.textBox12);
+            this.grpHoaDon.Controls.Add(this.txtNgayIn);
             this.grpHoaDon.Controls.Add(this.textBox11);
             this.grpHoaDon.Controls.Add(this.textBox10);
-            this.grpHoaDon.Controls.Add(this.picLogo);
             this.grpHoaDon.Controls.Add(this.textBox9);
             this.grpHoaDon.Controls.Add(this.textBox8);
             this.grpHoaDon.Controls.Add(this.textBox6);
@@ -114,20 +115,53 @@
             this.grpHoaDon.Controls.Add(this.label3);
             this.grpHoaDon.Controls.Add(this.label2);
             this.grpHoaDon.Controls.Add(this.label1);
+            this.grpHoaDon.Controls.Add(this.picLogo);
             this.grpHoaDon.Controls.Add(this.lblTitle);
             this.grpHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpHoaDon.Location = new System.Drawing.Point(289, -54);
+            this.grpHoaDon.Location = new System.Drawing.Point(24, -8);
             this.grpHoaDon.Name = "grpHoaDon";
-            this.grpHoaDon.Size = new System.Drawing.Size(610, 953);
+            this.grpHoaDon.Size = new System.Drawing.Size(614, 985);
             this.grpHoaDon.TabIndex = 0;
             this.grpHoaDon.TabStop = false;
             // 
-            // dateTimePicker1
+            // textBox13
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(134, 314);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 31);
-            this.dateTimePicker1.TabIndex = 25;
+            this.textBox13.BackColor = System.Drawing.Color.White;
+            this.textBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox13.Enabled = false;
+            this.textBox13.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox13.Location = new System.Drawing.Point(134, 408);
+            this.textBox13.Name = "textBox13";
+            this.textBox13.Size = new System.Drawing.Size(256, 27);
+            this.textBox13.TabIndex = 27;
+            this.textBox13.Text = "  ";
+            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox12
+            // 
+            this.textBox12.BackColor = System.Drawing.Color.White;
+            this.textBox12.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox12.Enabled = false;
+            this.textBox12.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(134, 372);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(256, 27);
+            this.textBox12.TabIndex = 26;
+            this.textBox12.Text = "  ";
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // txtNgayIn
+            // 
+            this.txtNgayIn.BackColor = System.Drawing.Color.White;
+            this.txtNgayIn.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtNgayIn.Enabled = false;
+            this.txtNgayIn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNgayIn.Location = new System.Drawing.Point(131, 328);
+            this.txtNgayIn.Name = "txtNgayIn";
+            this.txtNgayIn.Size = new System.Drawing.Size(256, 27);
+            this.txtNgayIn.TabIndex = 25;
+            this.txtNgayIn.Text = "  ";
+            this.txtNgayIn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // textBox11
             // 
@@ -135,7 +169,7 @@
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Enabled = false;
             this.textBox11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(435, 857);
+            this.textBox11.Location = new System.Drawing.Point(435, 864);
             this.textBox11.Name = "textBox11";
             this.textBox11.Size = new System.Drawing.Size(153, 27);
             this.textBox11.TabIndex = 24;
@@ -149,7 +183,7 @@
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Enabled = false;
             this.textBox10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(435, 814);
+            this.textBox10.Location = new System.Drawing.Point(435, 821);
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(153, 27);
             this.textBox10.TabIndex = 24;
@@ -164,7 +198,7 @@
             this.textBox9.Enabled = false;
             this.textBox9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox9.ForeColor = System.Drawing.Color.Red;
-            this.textBox9.Location = new System.Drawing.Point(435, 773);
+            this.textBox9.Location = new System.Drawing.Point(435, 780);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(153, 27);
             this.textBox9.TabIndex = 24;
@@ -178,7 +212,7 @@
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Enabled = false;
             this.textBox8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(435, 730);
+            this.textBox8.Location = new System.Drawing.Point(435, 737);
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(153, 27);
             this.textBox8.TabIndex = 24;
@@ -192,7 +226,7 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Enabled = false;
             this.textBox6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(435, 684);
+            this.textBox6.Location = new System.Drawing.Point(435, 691);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(153, 27);
             this.textBox6.TabIndex = 24;
@@ -206,7 +240,7 @@
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox7.Enabled = false;
             this.textBox7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(435, 642);
+            this.textBox7.Location = new System.Drawing.Point(435, 644);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(153, 27);
             this.textBox7.TabIndex = 24;
@@ -218,7 +252,7 @@
             // 
             this.textBox3.BackColor = System.Drawing.Color.White;
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox3.Location = new System.Drawing.Point(435, 642);
+            this.textBox3.Location = new System.Drawing.Point(435, 644);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(153, 24);
             this.textBox3.TabIndex = 24;
@@ -232,7 +266,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Enabled = false;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(435, 598);
+            this.textBox2.Location = new System.Drawing.Point(435, 600);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(153, 27);
             this.textBox2.TabIndex = 24;
@@ -245,7 +279,7 @@
             this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(245, 642);
+            this.textBox5.Location = new System.Drawing.Point(245, 644);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(73, 24);
             this.textBox5.TabIndex = 24;
@@ -257,7 +291,7 @@
             // 
             this.txtGhiChu.BackColor = System.Drawing.Color.White;
             this.txtGhiChu.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtGhiChu.Location = new System.Drawing.Point(134, 490);
+            this.txtGhiChu.Location = new System.Drawing.Point(134, 499);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(320, 24);
             this.txtGhiChu.TabIndex = 24;
@@ -267,7 +301,7 @@
             // 
             this.txtNhanVien.BackColor = System.Drawing.Color.White;
             this.txtNhanVien.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtNhanVien.Location = new System.Drawing.Point(134, 395);
+            this.txtNhanVien.Location = new System.Drawing.Point(134, 404);
             this.txtNhanVien.Name = "txtNhanVien";
             this.txtNhanVien.Size = new System.Drawing.Size(253, 24);
             this.txtNhanVien.TabIndex = 24;
@@ -277,7 +311,7 @@
             // 
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(61, 447);
+            this.textBox4.Location = new System.Drawing.Point(61, 456);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(39, 31);
             this.textBox4.TabIndex = 24;
@@ -288,7 +322,7 @@
             // 
             this.txtKhachHang.BackColor = System.Drawing.Color.White;
             this.txtKhachHang.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtKhachHang.Location = new System.Drawing.Point(134, 358);
+            this.txtKhachHang.Location = new System.Drawing.Point(134, 367);
             this.txtKhachHang.Name = "txtKhachHang";
             this.txtKhachHang.Size = new System.Drawing.Size(253, 24);
             this.txtKhachHang.TabIndex = 24;
@@ -297,11 +331,12 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(174, 885);
+            this.label21.Location = new System.Drawing.Point(177, 897);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(260, 25);
             this.label21.TabIndex = 23;
             this.label21.Text = "Cảm ơn quý khách! Hẹn gặp lại";
+            this.label21.Click += new System.EventHandler(this.label21_Click);
             // 
             // label20
             // 
@@ -309,7 +344,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Location = new System.Drawing.Point(240, 910);
+            this.label20.Location = new System.Drawing.Point(240, 924);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(132, 25);
             this.label20.TabIndex = 22;
@@ -320,9 +355,10 @@
             // 
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.White;
-            this.textBox1.Location = new System.Drawing.Point(20, 530);
+            this.textBox1.Location = new System.Drawing.Point(20, 532);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(568, 32);
@@ -336,7 +372,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label10.AutoSize = true;
             this.label10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label10.Location = new System.Drawing.Point(240, 426);
+            this.label10.Location = new System.Drawing.Point(240, 435);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(132, 25);
             this.label10.TabIndex = 20;
@@ -346,7 +382,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(15, 857);
+            this.label19.Location = new System.Drawing.Point(15, 864);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(85, 25);
             this.label19.TabIndex = 19;
@@ -355,7 +391,7 @@
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(15, 814);
+            this.label18.Location = new System.Drawing.Point(15, 821);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(165, 25);
             this.label18.TabIndex = 19;
@@ -364,7 +400,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(15, 773);
+            this.label17.Location = new System.Drawing.Point(15, 780);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(152, 25);
             this.label17.TabIndex = 19;
@@ -373,7 +409,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(15, 730);
+            this.label16.Location = new System.Drawing.Point(15, 737);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(50, 25);
             this.label16.TabIndex = 19;
@@ -382,7 +418,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(15, 684);
+            this.label15.Location = new System.Drawing.Point(15, 691);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(140, 25);
             this.label15.TabIndex = 19;
@@ -391,7 +427,7 @@
             // label14
             // 
             this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(15, 642);
+            this.label14.Location = new System.Drawing.Point(15, 644);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(143, 25);
             this.label14.TabIndex = 19;
@@ -400,7 +436,7 @@
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(15, 598);
+            this.label13.Location = new System.Drawing.Point(15, 600);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(87, 25);
             this.label13.TabIndex = 19;
@@ -409,7 +445,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(15, 489);
+            this.label11.Location = new System.Drawing.Point(15, 498);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 25);
             this.label11.TabIndex = 19;
@@ -418,7 +454,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(15, 453);
+            this.label9.Location = new System.Drawing.Point(15, 462);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(40, 25);
             this.label9.TabIndex = 19;
@@ -427,7 +463,7 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(15, 399);
+            this.label12.Location = new System.Drawing.Point(15, 408);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 25);
             this.label12.TabIndex = 19;
@@ -436,7 +472,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 363);
+            this.label8.Location = new System.Drawing.Point(15, 372);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(113, 25);
             this.label8.TabIndex = 19;
@@ -445,7 +481,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(15, 319);
+            this.label7.Location = new System.Drawing.Point(15, 328);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(73, 25);
             this.label7.TabIndex = 19;
@@ -456,7 +492,7 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(259, 283);
+            this.label6.Location = new System.Drawing.Point(259, 292);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(96, 25);
             this.label6.TabIndex = 18;
@@ -469,7 +505,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label5.Location = new System.Drawing.Point(240, 258);
+            this.label5.Location = new System.Drawing.Point(240, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 25);
             this.label5.TabIndex = 17;
@@ -479,7 +515,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(15, 222);
+            this.label4.Location = new System.Drawing.Point(15, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(260, 25);
             this.label4.TabIndex = 16;
@@ -488,7 +524,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 184);
+            this.label3.Location = new System.Drawing.Point(15, 193);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(283, 25);
             this.label3.TabIndex = 16;
@@ -497,7 +533,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 148);
+            this.label2.Location = new System.Drawing.Point(15, 157);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(226, 25);
             this.label2.TabIndex = 16;
@@ -506,7 +542,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 110);
+            this.label1.Location = new System.Drawing.Point(15, 119);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(535, 25);
             this.label1.TabIndex = 16;
@@ -518,9 +554,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.picLogo.BackColor = System.Drawing.Color.Snow;
             this.picLogo.Image = global::PKNK_CNPM.Properties.Resources.svg__2_1;
-            this.picLogo.Location = new System.Drawing.Point(6, 16);
+            this.picLogo.Location = new System.Drawing.Point(8, 17);
             this.picLogo.Name = "picLogo";
-            this.picLogo.Size = new System.Drawing.Size(104, 79);
+            this.picLogo.Size = new System.Drawing.Size(102, 82);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picLogo.TabIndex = 15;
             this.picLogo.TabStop = false;
@@ -530,51 +566,34 @@
             this.lblTitle.AutoSize = true;
             this.lblTitle.Font = new System.Drawing.Font("Arial", 40.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lblTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.lblTitle.Location = new System.Drawing.Point(103, 16);
+            this.lblTitle.Location = new System.Drawing.Point(95, 17);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(419, 78);
             this.lblTitle.TabIndex = 14;
             this.lblTitle.Text = "NICE SMILE";
             this.lblTitle.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // button4
+            // btnInHoaDon
             // 
-            this.button4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.button4.BackColor = System.Drawing.Color.Silver;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Image = global::PKNK_CNPM.Properties.Resources.printing1;
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(940, 32);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(240, 49);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "     In Hóa Đơn";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
-            // btnLuuLai
-            // 
-            this.btnLuuLai.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnLuuLai.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
-            this.btnLuuLai.FlatAppearance.BorderSize = 0;
-            this.btnLuuLai.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuuLai.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLuuLai.ForeColor = System.Drawing.Color.White;
-            this.btnLuuLai.Location = new System.Drawing.Point(940, -24);
-            this.btnLuuLai.Name = "btnLuuLai";
-            this.btnLuuLai.Size = new System.Drawing.Size(240, 50);
-            this.btnLuuLai.TabIndex = 10;
-            this.btnLuuLai.Text = "Lưu Lại";
-            this.btnLuuLai.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.BackColor = System.Drawing.Color.Silver;
+            this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInHoaDon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnInHoaDon.ForeColor = System.Drawing.Color.Black;
+            this.btnInHoaDon.Image = global::PKNK_CNPM.Properties.Resources.printing1;
+            this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInHoaDon.Location = new System.Drawing.Point(644, 21);
+            this.btnInHoaDon.Name = "btnInHoaDon";
+            this.btnInHoaDon.Size = new System.Drawing.Size(173, 31);
+            this.btnInHoaDon.TabIndex = 11;
+            this.btnInHoaDon.Text = "     In Hóa Đơn";
+            this.btnInHoaDon.UseVisualStyleBackColor = false;
             // 
             // frmHoaDon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1184, 923);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.btnLuuLai);
+            this.ClientSize = new System.Drawing.Size(817, 1055);
+            this.Controls.Add(this.btnInHoaDon);
             this.Controls.Add(this.grpHoaDon);
             this.Name = "frmHoaDon";
             this.Text = "Hóa Đơn";
@@ -613,7 +632,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.TextBox txtGhiChu;
         private System.Windows.Forms.TextBox txtNhanVien;
         private System.Windows.Forms.TextBox textBox4;
@@ -626,7 +644,9 @@
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnLuuLai;
+        private System.Windows.Forms.Button btnInHoaDon;
+        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtNgayIn;
     }
 }

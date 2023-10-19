@@ -57,6 +57,7 @@
     <Compile Include="Servive\NhanVienService.cs" />
     <Compile Include="Servive\LoaiThuThuatService.cs" />
     <Compile Include="Servive\ThuThuatService.cs" />
+    <Compile Include="Servive\TTCanLamSangService.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PKNK.DAL\PKNK.DAL.csproj">

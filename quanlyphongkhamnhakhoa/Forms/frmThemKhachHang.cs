@@ -41,8 +41,8 @@ namespace PKNK_CNPM.Forms
             }
             return false;
         }
-        //
-        private void frmThemKhachHang_Load(object sender, EventArgs e)
+
+        private void loadValue()
         {
             if (isEdit && khachHang != null)
             {
@@ -53,13 +53,13 @@ namespace PKNK_CNPM.Forms
                 txtDiaChi.Text = khachHang.DiaChi;
                 txtSDT.Text = khachHang.SDT;
                 rtbLyDo.Text = khachHang.GhiChu;
-                if(khachHang.DuongHuyet != null)
+                if (khachHang.DuongHuyet != null)
                     cbDuongHuyet.Checked = khachHang.DuongHuyet.Value;
-                if(khachHang.HuyetApMach != null)
+                if (khachHang.HuyetApMach != null)
                     cbHuyetAp.Checked = khachHang.HuyetApMach.Value;
-                if(khachHang.MauKhoDong != null)
+                if (khachHang.MauKhoDong != null)
                     cbMauKhoDong.Checked = khachHang.MauKhoDong.Value;
-                if(khachHang.ThieuNangTriTue != null)
+                if (khachHang.ThieuNangTriTue != null)
                     cbThieuNang.Checked = khachHang.ThieuNangTriTue.Value;
                 txtMaNV.Text = khachHang.MaNV;
                 dtpNgaySinh.Value = khachHang.NgaySinh.Value;
@@ -69,6 +69,11 @@ namespace PKNK_CNPM.Forms
                 else
                     rbNu.Checked = true;
             }
+        }
+        //
+        private void frmThemKhachHang_Load(object sender, EventArgs e)
+        {
+            loadValue();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -97,7 +102,7 @@ namespace PKNK_CNPM.Forms
                     NgaySinh = (DateTime)dtpNgaySinh.Value,
                     DiaChi = txtDiaChi.Text,
                     GhiChu = rtbLyDo.Text,
-                    MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
+                    //MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
                     DuongHuyet = cbDuongHuyet.Checked,
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,

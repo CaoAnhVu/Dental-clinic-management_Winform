@@ -21,5 +21,10 @@ namespace PKNK_CNPM.Forms
         {
 
         }
+
+        private void label21_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

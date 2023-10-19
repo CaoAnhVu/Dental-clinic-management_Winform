@@ -8,19 +8,34 @@ using System.Threading.Tasks;
 
 namespace PKNK.BUS.Servive
 {
-    public class ThuocService
+    public class TTCanLamSangService
     {
-        public List<Thuoc> GetAll()
+        public List<TTCanLamSan> getAll()
         {
             PKNK_ContextDB model = new PKNK_ContextDB();
-            return model.Thuocs.ToList();
+            return model.TTCanLamSans.ToList();
         }
-        public void AddUpdate(Thuoc thuoc)
+
+        public void Add(TTCanLamSan item)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                model.Thuocs.AddOrUpdate(thuoc);
+                model.TTCanLamSans.Add(item);
+                model.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception("Add(BenhNhan bn)" + ex.Message);
+            }
+        }
+
+        public void Remove(TTCanLamSan item)
+        {
+            try
+            {
+                PKNK_ContextDB model = new PKNK_ContextDB();
+                model.TTCanLamSans.Remove(item);
                 model.SaveChanges();
             }
             catch (Exception ex)
@@ -28,13 +43,12 @@ namespace PKNK.BUS.Servive
                 throw new Exception(ex.Message);
             }
         }
-
-        public void Romove(Thuoc thuoc)
+        public void Update(TTCanLamSan item)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                model.Thuocs.Remove(thuoc);
+                model.TTCanLamSans.AddOrUpdate(item);
                 model.SaveChanges();
             }
             catch (Exception ex)
@@ -42,13 +56,12 @@ namespace PKNK.BUS.Servive
                 throw new Exception(ex.Message);
             }
         }
-
-        public List<Thuoc> SearchByName(string name)
+        public TTCanLamSan FindByMaBN(int item)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                return model.Thuocs.Where(p=>p.TenThuoc == name).ToList();
+                return model.TTCanLamSans.FirstOrDefault(p => p.BenhNhan.MaBN == item);
             }
             catch (Exception ex)
             {
@@ -56,12 +69,12 @@ namespace PKNK.BUS.Servive
             }
         }
 
-        public List<Thuoc> SearchById(string id)
+        public List<TTCanLamSan> SearchByName(string name)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                return model.Thuocs.Where(p => p.MaThuoc == id).ToList();
+                return model.TTCanLamSans.Where(p => p.BenhNhan.TenBN == name).ToList();
             }
             catch (Exception ex)
             {

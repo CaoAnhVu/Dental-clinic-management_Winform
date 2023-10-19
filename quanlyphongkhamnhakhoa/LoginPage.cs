@@ -10,7 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quanlyphongkhamnhakhoa
+namespace PKNK_CNPM
 {
     public partial class frmLoginPage : Form
     {
@@ -22,11 +22,11 @@ namespace quanlyphongkhamnhakhoa
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            DialogResult result = MessageBox.Show("Bạn có muốn thoát không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-
-            if (result == DialogResult.Yes)
+            DialogResult res = MessageBox.Show("Bạn có muốn xóa khách hàng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
             {
                 this.Close();
+                MessageBox.Show("Thoát thành công!");
             }
         }
 
@@ -41,8 +41,8 @@ namespace quanlyphongkhamnhakhoa
                     throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
 
                 frmHomeScreen f = new frmHomeScreen();
-                f.ShowDialog();
                 MessageBox.Show("Đăng nhập thành công!");
+                f.ShowDialog();
                 clearValue();
                 this.Hide();
             }
