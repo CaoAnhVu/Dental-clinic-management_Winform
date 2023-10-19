@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -27,6 +28,8 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,8 +51,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -61,29 +72,137 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Forms\frmAccount.cs">
+    <Compile Include="Item\ChiTietHoaDonXuatNhapItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\ChiTietHoaDonXuatNhapItem.Designer.cs">
+      <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\DanhSachThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\DanhSachThuocItem.Designer.cs">
+      <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\DonThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\DonThuocItem.Designer.cs">
+      <DependentUpon>DonThuocItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ThongTinItems.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\ThongTinItems.Designer.cs">
+      <DependentUpon>ThongTinItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\ThuocItem.Designer.cs">
+      <DependentUpon>ThuocItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\ThuThuatItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\ThuThuatItem.Designer.cs">
+      <DependentUpon>ThuThuatItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmCanLamSang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmAccount.Designer.cs">
-      <DependentUpon>frmAccount.cs</DependentUpon>
+    <Compile Include="Forms\frmCanLamSang.Designer.cs">
+      <DependentUpon>frmCanLamSang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmCustomer.cs">
+    <Compile Include="Forms\frmKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmCustomer.Designer.cs">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
+    <Compile Include="Forms\frmKhachHang.Designer.cs">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmManager.cs">
+    <Compile Include="Forms\frmKhamLamSan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmManager.Designer.cs">
-      <DependentUpon>frmManager.cs</DependentUpon>
+    <Compile Include="Forms\frmKhamLamSan.Designer.cs">
+      <DependentUpon>frmKhamLamSan.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmSetting.cs">
+    <Compile Include="Forms\frmPhieuKham.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\frmSetting.Designer.cs">
-      <DependentUpon>frmSetting.cs</DependentUpon>
+    <Compile Include="Forms\frmPhieuKham.Designer.cs">
+      <DependentUpon>frmPhieuKham.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmNhanVien.Designer.cs">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemNhanVien.Designer.cs">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormManager.Designer.cs">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormSetting.Designer.cs">
+      <DependentUpon>FormSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDanhSachThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDanhSachThuoc.Designer.cs">
+      <DependentUpon>frmDanhSachThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDonThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDonThuoc.Designer.cs">
+      <DependentUpon>frmDonThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHoaDonXuatNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHoaDonXuatNhap.Designer.cs">
+      <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmTaoThuocMoi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmTaoThuocMoi.Designer.cs">
+      <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemHoaDonXuatNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemHoaDonXuatNhap.Designer.cs">
+      <DependentUpon>frmThemHoaDonXuatNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmThemKhachHang.Designer.cs">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\TTThuThuatItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\TTThuThuatItem.Designer.cs">
+      <DependentUpon>TTThuThuatItem.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginPage.cs">
       <SubType>Form</SubType>
@@ -100,17 +219,68 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Themecolor.cs" />
-    <EmbeddedResource Include="Forms\frmAccount.resx">
-      <DependentUpon>frmAccount.cs</DependentUpon>
+    <EmbeddedResource Include="Item\ChiTietHoaDonXuatNhapItem.resx">
+      <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmCustomer.resx">
-      <DependentUpon>frmCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="Item\DanhSachThuocItem.resx">
+      <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmManager.resx">
-      <DependentUpon>frmManager.cs</DependentUpon>
+    <EmbeddedResource Include="Item\DonThuocItem.resx">
+      <DependentUpon>DonThuocItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmSetting.resx">
-      <DependentUpon>frmSetting.cs</DependentUpon>
+    <EmbeddedResource Include="Item\ThongTinItems.resx">
+      <DependentUpon>ThongTinItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ThuocItem.resx">
+      <DependentUpon>ThuocItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\ThuThuatItem.resx">
+      <DependentUpon>ThuThuatItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormManager.resx">
+      <DependentUpon>FormManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmCanLamSang.resx">
+      <DependentUpon>frmCanLamSang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKhachHang.resx">
+      <DependentUpon>frmKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmKhamLamSan.resx">
+      <DependentUpon>frmKhamLamSan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPhieuKham.resx">
+      <DependentUpon>frmPhieuKham.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmNhanVien.resx">
+      <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemNhanVien.resx">
+      <DependentUpon>frmThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDanhSachThuoc.resx">
+      <DependentUpon>frmDanhSachThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDonThuoc.resx">
+      <DependentUpon>frmDonThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHoaDonXuatNhap.resx">
+      <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmTaoThuocMoi.resx">
+      <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemHoaDonXuatNhap.resx">
+      <DependentUpon>frmThemHoaDonXuatNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
+      <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\TTThuThuatItem.resx">
+      <DependentUpon>TTThuThuatItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginPage.resx">
       <DependentUpon>LoginPage.cs</DependentUpon>
@@ -128,6 +298,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -483,5 +654,159 @@
   <ItemGroup>
     <None Include="Resources\close %281%29.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PKNK.BUS\PKNK.BUS.csproj">
+      <Project>{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}</Project>
+      <Name>PKNK.BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PKNK.DAL\PKNK.DAL.csproj">
+      <Project>{22636C06-2C10-40AA-A57B-F21CDECB80E2}</Project>
+      <Name>PKNK.DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\diskette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x720.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x7201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Profession_Dentiste_Clinique_dentaire_RDP-1280x7202.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kham-nha-khoa-IMPLANT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %284%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tải xuống %285%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nha-khoa-o-thanh-hoa-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimize-sign.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\squares.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maximize %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reload1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20200923_140404_562589_han-rang.max-1800x1800.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boc-rang-su.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20190806_045211_746039_pasted_image_0_25.max-1800x1800.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cao-voi-rang-het-bao-nhieu-768x513.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\danh-bong-rang-la-gi-768x513.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4781273691158_ddfb8f6987864972fe94ccf00a5dc51a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\meo-chua-rang-sau-768x503.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nho-rang-khon-1688699317553340911178.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4781637953959_0b6efdfdcf623dd02c36a468e863553f %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cao-voi-rang-het-bao-nhieu-768x5131.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cay-ghep-implant-khi-mat-mot-rang-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nhung-truong-hop-chi-dinh-va-chong-chi-dinh-nho-rang-trong-nha-khoa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cung-tim-hieu-dieu-tri-noi-nha-la-gi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\boc-rang-su1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\182-co-the-su-dung-rang-gia-thao-lap-trong-bao-lau-1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z4781637953959_0b6efdfdcf623dd02c36a468e863553f %281%291.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printing2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete5.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>

@@ -25,7 +25,7 @@ namespace PKNK.DAL.Models
 
         [Column(TypeName = "ntext")]
         [Required]
-        public string DVTinh { get; set; }
+        public string DVT { get; set; }
 
         [Column(TypeName = "money")]
         public decimal DonGia { get; set; }

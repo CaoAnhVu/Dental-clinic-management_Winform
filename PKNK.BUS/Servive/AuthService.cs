@@ -21,18 +21,22 @@ namespace PKNK.BUS.Servive
         // Đăng kí
         public void Register(string username, string password)
         {
-            PKNK_ContextDB db = new PKNK_ContextDB();
             string hashedPassword = HashPassword(password);
 
-            // Tạo mới user để add vào DB
-            Auth newUser = new Auth
-            {
-                username = username,
-                password = hashedPassword
-            };
-
-            db.Auths.Add(newUser);
-            db.SaveChanges();
+            try{
+                PKNK_ContextDB db = new PKNK_ContextDB();
+                // Tạo mới user để add vào DB
+                Auth newUser = new Auth
+                {
+                    username = username,
+                    password = hashedPassword
+                };
+                db.Auths.Add(newUser);
+                db.SaveChanges();
+            }
+            catch (Exception ex){
+                throw new Exception(ex.Message);
+            }
         }
 
         // Mã hóa password sang MD5

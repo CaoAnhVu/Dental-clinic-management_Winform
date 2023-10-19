@@ -1,4 +1,6 @@
-﻿using System;
+﻿using PKNK.BUS.Servive;
+using PKNK.DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,12 +10,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace quanlyphongkhamnhakhoa
+namespace PKNK_CNPM
 {
     public partial class frmLoginPage : Form
     {
-        
-
+        private readonly AuthService authService = new AuthService();
         public frmLoginPage()
         {
             InitializeComponent();
@@ -21,32 +22,48 @@ namespace quanlyphongkhamnhakhoa
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            this.Close();
+            DialogResult res = MessageBox.Show("Bạn có muốn xóa khách hàng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                this.Close();
+                MessageBox.Show("Thoát thành công!");
+            }
         }
 
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
-            /*if (txtTenDangNhap.Text == "Tên đăng nhập" && txtMatKhau.Text == "Mật khẩu")
+            try
             {
-                frmManager f = new frmManager();
-                this.Hide();
+                Auth user = authService.Login(txtUsername.Text, txtPassword.Text);
+                if (!checkValid())
+                    throw new Exception("Nhập đầy đủ kí tự!");
+                if (user == null)
+                    throw new Exception("Sai tên đăng nhập hoặc mật khẩu");
+
+                frmHomeScreen f = new frmHomeScreen();
+                MessageBox.Show("Đăng nhập thành công!");
                 f.ShowDialog();
+                clearValue();
+                this.Hide();
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Tên người dùng hoặc mật khẩu bạn nhập không chính xác, hãy nhập lại!");
-                txtTenDangNhap.Clear();
-                txtMatKhau.Clear();
-                txtTenDangNhap.Focus();
-            }*/
-
-            frmManager f = new frmManager();
-            this.Hide();
-            f.ShowDialog();
-
-
+                MessageBox.Show(ex.Message);
+            }
+        }
+        private bool checkValid()
+        {
+            if (txtUsername.Text != "" || txtPassword.Text != "")
+            {
+                return true;
+            }
+            return false;
         }
 
-
+        private void clearValue()
+        {
+            txtUsername.Text = txtPassword.Text = "";
+        }
     }
 }
+
