@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PKNK.DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,6 +18,7 @@ namespace PKNK_CNPM.FormCustomer.Controller
         private string _description;
         private string _price;
         private Image _imagePath;
+        private LoaiThuThuat _tt;
 
         [Category("Custom Props")]
         public string Title
@@ -42,6 +44,12 @@ namespace PKNK_CNPM.FormCustomer.Controller
         {
             get { return _imagePath; }
             set { _imagePath = value; pbImage.Image = value; }
+        }
+
+        public LoaiThuThuat LoaiThuThuat
+        {
+            get { return _tt; }
+            set { _tt = value;}
         }
         #endregion
 

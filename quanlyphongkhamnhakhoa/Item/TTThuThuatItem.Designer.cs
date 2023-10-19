@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtGG = new System.Windows.Forms.TextBox();
+            this.txtSoLuong = new System.Windows.Forms.TextBox();
+            this.txtThanhTien = new System.Windows.Forms.TextBox();
+            this.txtDonGia = new System.Windows.Forms.TextBox();
+            this.txtVatLieu = new System.Windows.Forms.TextBox();
+            this.txtNoiDung = new System.Windows.Forms.TextBox();
+            this.txtThuThuat = new System.Windows.Forms.TextBox();
+            this.dtpNgay = new System.Windows.Forms.DateTimePicker();
             this.label17 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cbLoaiTT = new System.Windows.Forms.ComboBox();
+            this.cbBacSi = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,92 +49,95 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(1062, 5);
+            this.checkBox1.Location = new System.Drawing.Point(1048, 3);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(18, 17);
             this.checkBox1.TabIndex = 20;
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // txtGG
             // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Location = new System.Drawing.Point(333, 40);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(222, 31);
-            this.textBox3.TabIndex = 11;
+            this.txtGG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtGG.Location = new System.Drawing.Point(792, 40);
+            this.txtGG.Multiline = true;
+            this.txtGG.Name = "txtGG";
+            this.txtGG.Size = new System.Drawing.Size(39, 24);
+            this.txtGG.TabIndex = 12;
+            this.txtGG.Text = "0";
+            this.txtGG.TextChanged += new System.EventHandler(this.txtGG_TextChanged);
+            this.txtGG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGG_KeyPress);
             // 
-            // textBox7
+            // txtSoLuong
             // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox7.Location = new System.Drawing.Point(792, 40);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(39, 31);
-            this.textBox7.TabIndex = 12;
+            this.txtSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSoLuong.Location = new System.Drawing.Point(792, 3);
+            this.txtSoLuong.Multiline = true;
+            this.txtSoLuong.Name = "txtSoLuong";
+            this.txtSoLuong.Size = new System.Drawing.Size(39, 24);
+            this.txtSoLuong.TabIndex = 13;
+            this.txtSoLuong.Text = "0";
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged);
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress);
             // 
-            // textBox6
+            // txtThanhTien
             // 
-            this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox6.Location = new System.Drawing.Point(792, 3);
-            this.textBox6.Multiline = true;
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(39, 31);
-            this.textBox6.TabIndex = 13;
+            this.txtThanhTien.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtThanhTien.Enabled = false;
+            this.txtThanhTien.Location = new System.Drawing.Point(837, 40);
+            this.txtThanhTien.Multiline = true;
+            this.txtThanhTien.Name = "txtThanhTien";
+            this.txtThanhTien.Size = new System.Drawing.Size(166, 24);
+            this.txtThanhTien.TabIndex = 14;
             // 
-            // textBox9
+            // txtDonGia
             // 
-            this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox9.Location = new System.Drawing.Point(837, 40);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(166, 31);
-            this.textBox9.TabIndex = 14;
+            this.txtDonGia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDonGia.Enabled = false;
+            this.txtDonGia.Location = new System.Drawing.Point(837, 3);
+            this.txtDonGia.Multiline = true;
+            this.txtDonGia.Name = "txtDonGia";
+            this.txtDonGia.Size = new System.Drawing.Size(166, 24);
+            this.txtDonGia.TabIndex = 15;
             // 
-            // textBox8
+            // txtVatLieu
             // 
-            this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox8.Location = new System.Drawing.Point(837, 3);
-            this.textBox8.Multiline = true;
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(166, 31);
-            this.textBox8.TabIndex = 15;
+            this.txtVatLieu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtVatLieu.Enabled = false;
+            this.txtVatLieu.Location = new System.Drawing.Point(561, 40);
+            this.txtVatLieu.Multiline = true;
+            this.txtVatLieu.Name = "txtVatLieu";
+            this.txtVatLieu.Size = new System.Drawing.Size(225, 24);
+            this.txtVatLieu.TabIndex = 16;
             // 
-            // textBox5
+            // txtNoiDung
             // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Location = new System.Drawing.Point(561, 40);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 31);
-            this.textBox5.TabIndex = 16;
+            this.txtNoiDung.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNoiDung.Location = new System.Drawing.Point(561, 3);
+            this.txtNoiDung.Multiline = true;
+            this.txtNoiDung.Name = "txtNoiDung";
+            this.txtNoiDung.Size = new System.Drawing.Size(225, 24);
+            this.txtNoiDung.TabIndex = 17;
             // 
-            // textBox4
+            // txtThuThuat
             // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Location = new System.Drawing.Point(561, 3);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(225, 31);
-            this.textBox4.TabIndex = 17;
+            this.txtThuThuat.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtThuThuat.Enabled = false;
+            this.txtThuThuat.Location = new System.Drawing.Point(322, 3);
+            this.txtThuThuat.Multiline = true;
+            this.txtThuThuat.Name = "txtThuThuat";
+            this.txtThuThuat.Size = new System.Drawing.Size(233, 24);
+            this.txtThuThuat.TabIndex = 19;
             // 
-            // textBox1
+            // dtpNgay
             // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Location = new System.Drawing.Point(94, 40);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(233, 31);
-            this.textBox1.TabIndex = 19;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateTimePicker1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(96, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(231, 31);
-            this.dateTimePicker1.TabIndex = 10;
+            this.dtpNgay.CalendarFont = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dtpNgay.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.dtpNgay.Location = new System.Drawing.Point(96, 3);
+            this.dtpNgay.MaxDate = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
+            this.dtpNgay.Name = "dtpNgay";
+            this.dtpNgay.Size = new System.Drawing.Size(220, 31);
+            this.dtpNgay.TabIndex = 10;
+            this.dtpNgay.Value = new System.DateTime(2023, 10, 19, 0, 0, 0, 0);
             // 
             // label17
             // 
@@ -153,7 +156,7 @@
             this.pictureBox2.Image = global::PKNK_CNPM.Properties.Resources.add2;
             this.pictureBox2.Location = new System.Drawing.Point(1010, 40);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(41, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(32, 24);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
@@ -163,7 +166,7 @@
             this.pictureBox1.Image = global::PKNK_CNPM.Properties.Resources.delete;
             this.pictureBox1.Location = new System.Drawing.Point(1010, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(41, 31);
+            this.pictureBox1.Size = new System.Drawing.Size(32, 23);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -171,31 +174,40 @@
             // cbLoaiTT
             // 
             this.cbLoaiTT.FormattingEnabled = true;
-            this.cbLoaiTT.Location = new System.Drawing.Point(333, 3);
+            this.cbLoaiTT.Location = new System.Drawing.Point(96, 40);
             this.cbLoaiTT.Name = "cbLoaiTT";
-            this.cbLoaiTT.Size = new System.Drawing.Size(222, 24);
+            this.cbLoaiTT.Size = new System.Drawing.Size(220, 24);
             this.cbLoaiTT.TabIndex = 23;
+            this.cbLoaiTT.SelectedIndexChanged += new System.EventHandler(this.cbLoaiTT_SelectedIndexChanged);
+            // 
+            // cbBacSi
+            // 
+            this.cbBacSi.FormattingEnabled = true;
+            this.cbBacSi.Location = new System.Drawing.Point(322, 40);
+            this.cbBacSi.Name = "cbBacSi";
+            this.cbBacSi.Size = new System.Drawing.Size(233, 24);
+            this.cbBacSi.TabIndex = 24;
             // 
             // TTThuThuatItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.cbBacSi);
             this.Controls.Add(this.cbLoaiTT);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.txtGG);
+            this.Controls.Add(this.txtSoLuong);
+            this.Controls.Add(this.txtThanhTien);
+            this.Controls.Add(this.txtDonGia);
+            this.Controls.Add(this.txtVatLieu);
+            this.Controls.Add(this.txtNoiDung);
+            this.Controls.Add(this.txtThuThuat);
+            this.Controls.Add(this.dtpNgay);
             this.Controls.Add(this.label17);
             this.Name = "TTThuThuatItem";
-            this.Size = new System.Drawing.Size(1097, 74);
+            this.Size = new System.Drawing.Size(1070, 68);
             this.Load += new System.EventHandler(this.TTThuThuatItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -209,16 +221,16 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtGG;
+        private System.Windows.Forms.TextBox txtSoLuong;
+        private System.Windows.Forms.TextBox txtThanhTien;
+        private System.Windows.Forms.TextBox txtDonGia;
+        private System.Windows.Forms.TextBox txtVatLieu;
+        private System.Windows.Forms.TextBox txtNoiDung;
+        private System.Windows.Forms.TextBox txtThuThuat;
+        private System.Windows.Forms.DateTimePicker dtpNgay;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.ComboBox cbLoaiTT;
+        private System.Windows.Forms.ComboBox cbBacSi;
     }
 }

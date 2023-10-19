@@ -41,6 +41,7 @@ namespace PKNK_CNPM.FormCustomer
                 thuThuatItems[i].Description = thuThuats[i].TenLoaiThuThuat;
                 thuThuatItems[i].Price = "";
                 thuThuatItems[i].Cursor = Cursors.Hand;
+                thuThuatItems[i].LoaiThuThuat = thuThuats[i];
                 if (flpThuThuat.Controls.Count < 0)
                 {
                     flpThuThuat.Controls.Clear();
@@ -49,7 +50,7 @@ namespace PKNK_CNPM.FormCustomer
                 {
                     flpThuThuat.Controls.Add(thuThuatItems[i]);
                 }
-                thuThuatItems[i].Click += (sender, e) => ThuThuatControl_Click(this, e, thuThuats[i]);
+                thuThuatItems[i].Click += new System.EventHandler(ThuThuatControl_Click);
             }
         }
 
@@ -93,10 +94,11 @@ namespace PKNK_CNPM.FormCustomer
             }
         }
 
-        void ThuThuatControl_Click(object sender, EventArgs e, LoaiThuThuat ltt) {
+        void ThuThuatControl_Click(object sender, EventArgs e) {
             ThuThuatItem thuThuatItem = (ThuThuatItem)sender;
-            flpThemThuThuat.Controls.Add(new ThongTinItems());
-            flpThemThuThuat.Controls.Add(new TTThuThuatItem(ltt));
+            if (flpThemThuThuat.Controls.Count == 0) 
+                flpThemThuThuat.Controls.Add(new ThongTinItems());
+            flpThemThuThuat.Controls.Add(new TTThuThuatItem(thuThuatItem.LoaiThuThuat));
         }
 
         private void frmCanLamSang_Load(object sender, EventArgs e)
