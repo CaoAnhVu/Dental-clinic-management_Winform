@@ -208,11 +208,6 @@ namespace PKNK.DAL.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<ThongTinL>()
-                .Property(e => e.MaChanDoan)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ThongTinL>()
                 .Property(e => e.ThanhTien)
                 .HasPrecision(19, 4);
 

@@ -28,24 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel17 = new System.Windows.Forms.Panel();
             this.lbDonGia = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.pictureBox14 = new System.Windows.Forms.PictureBox();
-            this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.Snow;
-            this.panel17.Controls.Add(this.lbDonGia);
-            this.panel17.Controls.Add(this.lblTitle);
-            this.panel17.Controls.Add(this.pictureBox14);
-            this.panel17.Location = new System.Drawing.Point(-1, 0);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(359, 80);
-            this.panel17.TabIndex = 10;
             // 
             // lbDonGia
             // 
@@ -54,7 +41,7 @@
             this.lbDonGia.Location = new System.Drawing.Point(133, 41);
             this.lbDonGia.Name = "lbDonGia";
             this.lbDonGia.Size = new System.Drawing.Size(152, 25);
-            this.lbDonGia.TabIndex = 2;
+            this.lbDonGia.TabIndex = 5;
             this.lbDonGia.Text = "Giá: 400.000 VNĐ";
             // 
             // lblTitle
@@ -64,7 +51,7 @@
             this.lblTitle.Location = new System.Drawing.Point(133, 12);
             this.lblTitle.Name = "lblTitle";
             this.lblTitle.Size = new System.Drawing.Size(88, 25);
-            this.lblTitle.TabIndex = 1;
+            this.lblTitle.TabIndex = 4;
             this.lblTitle.Text = "Giảm đau";
             // 
             // pictureBox14
@@ -74,26 +61,26 @@
             this.pictureBox14.Name = "pictureBox14";
             this.pictureBox14.Size = new System.Drawing.Size(119, 80);
             this.pictureBox14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox14.TabIndex = 0;
+            this.pictureBox14.TabIndex = 3;
             this.pictureBox14.TabStop = false;
             // 
             // ThuocItem
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel17);
+            this.Controls.Add(this.lbDonGia);
+            this.Controls.Add(this.lblTitle);
+            this.Controls.Add(this.pictureBox14);
             this.Name = "ThuocItem";
             this.Size = new System.Drawing.Size(359, 80);
-            this.panel17.ResumeLayout(false);
-            this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox14)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel17;
         private System.Windows.Forms.Label lbDonGia;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.PictureBox pictureBox14;

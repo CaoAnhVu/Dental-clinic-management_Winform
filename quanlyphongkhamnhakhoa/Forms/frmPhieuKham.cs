@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PKNK.DAL.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,18 +9,32 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace PKNK_CNPM.FormCustomer
+namespace PKNK_CNPM.Forms
 {
     public partial class frmPhieuKham : Form
     {
-        public frmPhieuKham()
+        private List<ThongTinL> thongTins;
+        private double TongTien = 0, TongGiamGia;
+        public frmPhieuKham(List<ThongTinL> thongTins)
         {
             InitializeComponent();
+            this.thongTins = thongTins;
         }
 
-        private void btnAddPhieuKham_Click(object sender, EventArgs e)
+        private void setValue()
         {
+            foreach(ThongTinL i in thongTins)
+            {
+                TongTien += (double)(i.SoLuong * i.ThanhTien);
+                TongGiamGia += (double)(i.SoLuong * i.ThanhTien * (100 - i.GiamGia) / 100);
+            }
+            txtTongTien.Text = TongTien.ToString();
+            txtTienGiam.Text = (TongTien - TongGiamGia).ToString();
+        }
 
+        private void frmPhieuKham_Load(object sender, EventArgs e)
+        {
+            setValue();
         }
     }
 }

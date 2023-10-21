@@ -28,26 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbPrice = new System.Windows.Forms.Label();
             this.lbId = new System.Windows.Forms.Label();
             this.lbTitle = new System.Windows.Forms.Label();
             this.pbImage = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // lbPrice
-            // 
-            this.lbPrice.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbPrice.Location = new System.Drawing.Point(125, 50);
-            this.lbPrice.Name = "lbPrice";
-            this.lbPrice.Size = new System.Drawing.Size(152, 25);
-            this.lbPrice.TabIndex = 6;
-            this.lbPrice.Text = "Giá: 400.000 VNĐ";
-            // 
             // lbId
             // 
             this.lbId.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbId.Location = new System.Drawing.Point(125, 2);
+            this.lbId.Location = new System.Drawing.Point(125, 9);
             this.lbId.Name = "lbId";
             this.lbId.Size = new System.Drawing.Size(45, 25);
             this.lbId.TabIndex = 4;
@@ -56,7 +46,7 @@
             // lbTitle
             // 
             this.lbTitle.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTitle.Location = new System.Drawing.Point(125, 25);
+            this.lbTitle.Location = new System.Drawing.Point(125, 44);
             this.lbTitle.Name = "lbTitle";
             this.lbTitle.Size = new System.Drawing.Size(113, 25);
             this.lbTitle.TabIndex = 5;
@@ -76,7 +66,6 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.lbPrice);
             this.Controls.Add(this.lbId);
             this.Controls.Add(this.lbTitle);
             this.Controls.Add(this.pbImage);
@@ -88,8 +77,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lbPrice;
         private System.Windows.Forms.Label lbId;
         private System.Windows.Forms.Label lbTitle;
         private System.Windows.Forms.PictureBox pbImage;

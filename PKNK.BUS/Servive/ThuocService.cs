@@ -56,12 +56,12 @@ namespace PKNK.BUS.Servive
             }
         }
 
-        public List<Thuoc> SearchById(string id)
+        public Thuoc SearchById(string id)
         {
             try
             {
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                return model.Thuocs.Where(p => p.MaThuoc == id).ToList();
+                return model.Thuocs.FirstOrDefault(p => p.MaThuoc == id);
             }
             catch (Exception ex)
             {

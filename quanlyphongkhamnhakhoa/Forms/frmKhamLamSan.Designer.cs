@@ -585,6 +585,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.panel11);
             this.Name = "frmKhamLamSan";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lâm sàn";
             this.Load += new System.EventHandler(this.frmKhamLamSan_Load_1);
             this.panel11.ResumeLayout(false);

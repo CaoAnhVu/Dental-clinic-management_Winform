@@ -202,6 +202,7 @@
             // txtTenThuoc
             // 
             this.txtTenThuoc.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTenThuoc.Enabled = false;
             this.txtTenThuoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtTenThuoc.ForeColor = System.Drawing.Color.DarkGray;
             this.txtTenThuoc.Location = new System.Drawing.Point(77, 41);
@@ -227,6 +228,7 @@
             // txtDonVi
             // 
             this.txtDonVi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtDonVi.Enabled = false;
             this.txtDonVi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDonVi.ForeColor = System.Drawing.Color.DarkGray;
             this.txtDonVi.Location = new System.Drawing.Point(484, 41);

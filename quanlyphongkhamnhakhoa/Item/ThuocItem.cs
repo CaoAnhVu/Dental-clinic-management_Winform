@@ -8,10 +8,17 @@ namespace PKNK_CNPM.FormCustomer.Controller
     public partial class ThuocItem : UserControl
     {
         #region Properties
+        private string _uid;
         private string _title;
         private string _price;
         private System.Drawing.Image _imagePath;
 
+        [Category("Custom Props")]
+        public string UID
+        {
+            get { return _uid; }
+            set { _uid = value;}
+        }
         [Category("Custom Props")]
         public string Title
         {

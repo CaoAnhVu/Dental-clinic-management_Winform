@@ -16,7 +16,6 @@ namespace PKNK_CNPM.FormCustomer.Controller
         #region Properties
         private string _title;
         private string _description;
-        private string _price;
         private Image _imagePath;
         private LoaiThuThuat _tt;
 
@@ -32,12 +31,6 @@ namespace PKNK_CNPM.FormCustomer.Controller
             get { return _description; }
             set { _description = value; lbTitle.Text = value; }
 
-        }
-        [Category("Custom Props")]
-        public string Price
-        {
-            get { return _price; }
-            set { _price = value; lbPrice.Text = $"Giá: {value} VNĐ"; }
         }
         [Category("Custom Props")]
         public Image ImagePath

@@ -201,6 +201,7 @@
             this.Controls.Add(this.grpDanhSachThuoc);
             this.Controls.Add(this.label1);
             this.Name = "frmDanhSachThuoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Sách Thuốc";
             this.Load += new System.EventHandler(this.frmDanhSachThuoc_Load);
             this.grpDanhSachThuoc.ResumeLayout(false);

@@ -18,10 +18,6 @@ namespace PKNK.DAL.Models
         [StringLength(10)]
         public string MaThongTinLS { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        public string MaChanDoan { get; set; }
-
         [Column(TypeName = "ntext")]
         [Required]
         public string NoiDungDieuTri { get; set; }
@@ -41,6 +37,8 @@ namespace PKNK.DAL.Models
         public string MaLoaiThuThuat { get; set; }
 
         public int? SoLuong { get; set; }
+
+        public int? GiamGia { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ChanDoan> ChanDoans { get; set; }
