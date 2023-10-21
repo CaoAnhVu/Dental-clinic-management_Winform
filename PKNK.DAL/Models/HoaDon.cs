@@ -12,35 +12,31 @@ namespace PKNK.DAL.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HoaDon()
         {
-            DoanhThuBanHangs = new HashSet<DoanhThuBanHang>();
+            DoanhThus = new HashSet<DoanhThu>();
         }
 
         [Key]
         [StringLength(10)]
-        public string MaHD { get; set; }
-
-        public int MaKH { get; set; }
+        public string MaHoaDon { get; set; }
 
         [Required]
         [StringLength(10)]
-        public string MaDV { get; set; }
+        public string MaChanDoan { get; set; }
 
         [Required]
-        [StringLength(10)]
-        public string MaDonThuoc { get; set; }
+        [StringLength(5)]
+        public string MaNhanVien { get; set; }
 
         [Column(TypeName = "money")]
-        public decimal TongTien { get; set; }
+        public decimal ThanhTien { get; set; }
 
-        public DateTime NgayLap { get; set; }
+        public DateTime Ngay { get; set; }
 
-        public virtual DichVu DichVu { get; set; }
+        public virtual ChanDoan ChanDoan { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DoanhThuBanHang> DoanhThuBanHangs { get; set; }
+        public virtual ICollection<DoanhThu> DoanhThus { get; set; }
 
-        public virtual DonThuoc DonThuoc { get; set; }
-
-        public virtual KhachHang KhachHang { get; set; }
+        public virtual NhanVien NhanVien { get; set; }
     }
 }

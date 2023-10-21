@@ -78,11 +78,11 @@
     <Compile Include="Forms\frmPhieuKham.Designer.cs">
       <DependentUpon>frmPhieuKham.cs</DependentUpon>
     </Compile>
-    <Compile Include="Item\ChiTietHoaDonXuatNhapItem.cs">
+    <Compile Include="Item\DonThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Item\ChiTietHoaDonXuatNhapItem.Designer.cs">
-      <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
+    <Compile Include="Item\DonThuocItem.Designer.cs">
+      <DependentUpon>DonThuocItem.cs</DependentUpon>
     </Compile>
     <Compile Include="Item\DanhSachThuocItem.cs">
       <SubType>UserControl</SubType>
@@ -90,11 +90,11 @@
     <Compile Include="Item\DanhSachThuocItem.Designer.cs">
       <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </Compile>
-    <Compile Include="Item\DonThuocItem.cs">
+    <Compile Include="Item\DonThuocItem2.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Item\DonThuocItem.Designer.cs">
-      <DependentUpon>DonThuocItem.cs</DependentUpon>
+    <Compile Include="Item\DonThuocItem2.Designer.cs">
+      <DependentUpon>DonThuocItem2.cs</DependentUpon>
     </Compile>
     <Compile Include="Item\ThongTinItems.cs">
       <SubType>UserControl</SubType>
@@ -186,6 +186,12 @@
     <Compile Include="Forms\frmThemKhachHang.Designer.cs">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
     </Compile>
+    <Compile Include="Item\TTThuocItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Item\TTThuocItem.Designer.cs">
+      <DependentUpon>TTThuocItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\TTThuThuatItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -210,14 +216,14 @@
     <EmbeddedResource Include="Forms\frmPhieuKham.resx">
       <DependentUpon>frmPhieuKham.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Item\ChiTietHoaDonXuatNhapItem.resx">
-      <DependentUpon>ChiTietHoaDonXuatNhapItem.cs</DependentUpon>
+    <EmbeddedResource Include="Item\DonThuocItem.resx">
+      <DependentUpon>DonThuocItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\DanhSachThuocItem.resx">
       <DependentUpon>DanhSachThuocItem.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Item\DonThuocItem.resx">
-      <DependentUpon>DonThuocItem.cs</DependentUpon>
+    <EmbeddedResource Include="Item\DonThuocItem2.resx">
+      <DependentUpon>DonThuocItem2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\ThongTinItems.resx">
       <DependentUpon>ThongTinItems.cs</DependentUpon>
@@ -263,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\TTThuocItem.resx">
+      <DependentUpon>TTThuocItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Item\TTThuThuatItem.resx">
       <DependentUpon>TTThuThuatItem.cs</DependentUpon>

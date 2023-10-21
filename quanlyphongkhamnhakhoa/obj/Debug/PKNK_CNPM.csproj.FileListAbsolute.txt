@@ -80,4 +80,5 @@ D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.frmLoginPag
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.frmHomeScreen.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Item.TTThuThuatItem.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmPhieuKham.resources
-D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.ChiTietDonThuoc.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DonThuocItem2.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Item.TTThuocItem.resources

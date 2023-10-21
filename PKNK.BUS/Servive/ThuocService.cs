@@ -29,6 +29,20 @@ namespace PKNK.BUS.Servive
             }
         }
 
+        public void Add(Thuoc thuoc)
+        {
+            try
+            {
+                PKNK_ContextDB model = new PKNK_ContextDB();
+                model.Thuocs.Add(thuoc);
+                model.SaveChanges();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public void Romove(Thuoc thuoc)
         {
             try

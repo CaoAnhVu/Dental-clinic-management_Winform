@@ -12,7 +12,7 @@ namespace PKNK.DAL.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public LoaiThuThuat()
         {
-            ThongTinLs = new HashSet<ThongTinL>();
+            ThongTinLS = new HashSet<ThongTinL>();
             ThuThuats = new HashSet<ThuThuat>();
         }
 
@@ -25,7 +25,7 @@ namespace PKNK.DAL.Models
         public string TenLoaiThuThuat { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThongTinL> ThongTinLs { get; set; }
+        public virtual ICollection<ThongTinL> ThongTinLS { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ThuThuat> ThuThuats { get; set; }

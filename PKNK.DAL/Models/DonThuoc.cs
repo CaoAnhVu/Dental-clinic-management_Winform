@@ -9,31 +9,28 @@ namespace PKNK.DAL.Models
     [Table("DonThuoc")]
     public partial class DonThuoc
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public DonThuoc()
-        {
-            Bills = new HashSet<Bill>();
-        }
-
         [Key]
-        [StringLength(10)]
-        public string MaDonThuoc { get; set; }
-
-        [Required]
+        [Column(Order = 0)]
         [StringLength(10)]
         public string MaThuoc { get; set; }
 
+        [Key]
+        [Column(Order = 1)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SoLuong { get; set; }
 
-        [Column(TypeName = "money")]
+        [StringLength(10)]
+        public string MaChuanDoan { get; set; }
+
+        [Key]
+        [Column(Order = 2, TypeName = "money")]
         public decimal ThanhTien { get; set; }
 
-        [Column(TypeName = "ntext")]
-        [Required]
+        [Key]
+        [Column(Order = 3, TypeName = "ntext")]
         public string GhiChu { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
+        public virtual ChanDoan ChanDoan { get; set; }
 
         public virtual Thuoc Thuoc { get; set; }
     }

@@ -13,7 +13,7 @@ namespace PKNK.DAL.Models
         public NhanVien()
         {
             BenhNhans = new HashSet<BenhNhan>();
-            Bills = new HashSet<Bill>();
+            HoaDons = new HashSet<HoaDon>();
             TTCanLamSans = new HashSet<TTCanLamSan>();
         }
 
@@ -50,10 +50,10 @@ namespace PKNK.DAL.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<BenhNhan> BenhNhans { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
-
         public virtual ChucDanh ChucDanh { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HoaDon> HoaDons { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TTCanLamSan> TTCanLamSans { get; set; }

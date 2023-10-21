@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.label12 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.lbLoai = new System.Windows.Forms.Label();
             this.lbNgayKham = new System.Windows.Forms.Label();
             this.lbChuanDoan = new System.Windows.Forms.Label();
@@ -46,6 +45,9 @@
             // 
             // label12
             // 
+            this.label12.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label12.Enabled = false;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -54,18 +56,10 @@
             this.label12.Size = new System.Drawing.Size(1120, 2);
             this.label12.TabIndex = 2;
             // 
-            // label1
-            // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Enabled = false;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label1.Location = new System.Drawing.Point(0, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1120, 2);
-            this.label1.TabIndex = 3;
-            // 
             // lbLoai
             // 
+            this.lbLoai.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbLoai.Enabled = false;
             this.lbLoai.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbLoai.Location = new System.Drawing.Point(3, 39);
@@ -76,6 +70,9 @@
             // 
             // lbNgayKham
             // 
+            this.lbNgayKham.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNgayKham.Enabled = false;
             this.lbNgayKham.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbNgayKham.Location = new System.Drawing.Point(102, 12);
@@ -86,6 +83,8 @@
             // 
             // lbChuanDoan
             // 
+            this.lbChuanDoan.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbChuanDoan.Enabled = false;
             this.lbChuanDoan.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbChuanDoan.Location = new System.Drawing.Point(100, 39);
@@ -96,6 +95,9 @@
             // 
             // lbThuThuat
             // 
+            this.lbThuThuat.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbThuThuat.Enabled = false;
             this.lbThuThuat.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbThuThuat.Location = new System.Drawing.Point(339, 12);
@@ -106,6 +108,8 @@
             // 
             // lbBacSi
             // 
+            this.lbBacSi.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbBacSi.Enabled = false;
             this.lbBacSi.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbBacSi.Location = new System.Drawing.Point(339, 39);
@@ -116,6 +120,9 @@
             // 
             // lbNoiDung
             // 
+            this.lbNoiDung.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbNoiDung.Enabled = false;
             this.lbNoiDung.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbNoiDung.Location = new System.Drawing.Point(567, 12);
@@ -126,6 +133,8 @@
             // 
             // lbVatLieu
             // 
+            this.lbVatLieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbVatLieu.Enabled = false;
             this.lbVatLieu.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbVatLieu.Location = new System.Drawing.Point(567, 39);
@@ -136,6 +145,9 @@
             // 
             // lbSL
             // 
+            this.lbSL.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbSL.Enabled = false;
             this.lbSL.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbSL.Location = new System.Drawing.Point(798, 12);
@@ -146,6 +158,8 @@
             // 
             // lbGG
             // 
+            this.lbGG.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbGG.Enabled = false;
             this.lbGG.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbGG.Location = new System.Drawing.Point(798, 39);
@@ -156,6 +170,9 @@
             // 
             // lbDonGia
             // 
+            this.lbDonGia.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbDonGia.Enabled = false;
             this.lbDonGia.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbDonGia.Location = new System.Drawing.Point(921, 12);
@@ -166,6 +183,8 @@
             // 
             // lbThanhTien
             // 
+            this.lbThanhTien.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbThanhTien.Enabled = false;
             this.lbThanhTien.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbThanhTien.Location = new System.Drawing.Point(921, 39);
@@ -176,6 +195,8 @@
             // 
             // lbKhoa
             // 
+            this.lbKhoa.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lbKhoa.Enabled = false;
             this.lbKhoa.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.lbKhoa.Location = new System.Drawing.Point(1058, 39);
@@ -201,7 +222,6 @@
             this.Controls.Add(this.lbChuanDoan);
             this.Controls.Add(this.lbNgayKham);
             this.Controls.Add(this.lbLoai);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.label12);
             this.Name = "ThongTinItems";
             this.Size = new System.Drawing.Size(1120, 69);
@@ -213,7 +233,6 @@
         #endregion
 
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbLoai;
         private System.Windows.Forms.Label lbNgayKham;
         private System.Windows.Forms.Label lbChuanDoan;

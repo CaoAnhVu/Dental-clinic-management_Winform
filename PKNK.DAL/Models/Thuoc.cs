@@ -12,6 +12,7 @@ namespace PKNK.DAL.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Thuoc()
         {
+            ThongTinThuocs = new HashSet<ThongTinThuoc>();
             DonThuocs = new HashSet<DonThuoc>();
         }
 
@@ -29,6 +30,9 @@ namespace PKNK.DAL.Models
 
         [Column(TypeName = "money")]
         public decimal DonGia { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ThongTinThuoc> ThongTinThuocs { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DonThuoc> DonThuocs { get; set; }
