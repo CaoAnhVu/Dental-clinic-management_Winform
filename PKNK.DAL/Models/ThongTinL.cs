@@ -31,8 +31,7 @@ namespace PKNK.DAL.Models
 
         public int? SoLuong { get; set; }
 
-        [StringLength(10)]
-        public string MaChuanDoan { get; set; }
+        public int? MaChanDoan { get; set; }
 
         public int? GiamGia { get; set; }
 

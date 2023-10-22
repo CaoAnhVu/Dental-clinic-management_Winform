@@ -15,14 +15,12 @@ namespace PKNK.DAL.Models
             DonThuocs = new HashSet<DonThuoc>();
             HoaDons = new HashSet<HoaDon>();
             ThongTinLS = new HashSet<ThongTinL>();
-            ThongTinThuocs = new HashSet<ThongTinThuoc>();
         }
 
-        [Key]
-        [StringLength(10)]
-        public string MaChanDoan { get; set; }
-
         public int MaBN { get; set; }
+
+        [Key]
+        public int MaChanDoan { get; set; }
 
         public virtual BenhNhan BenhNhan { get; set; }
 
@@ -34,8 +32,5 @@ namespace PKNK.DAL.Models
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ThongTinL> ThongTinLS { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ThongTinThuoc> ThongTinThuocs { get; set; }
     }
 }

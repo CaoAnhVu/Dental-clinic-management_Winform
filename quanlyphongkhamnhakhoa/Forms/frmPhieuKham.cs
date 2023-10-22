@@ -17,11 +17,11 @@ namespace PKNK_CNPM.Forms
         private readonly ThongTinLsServive thongTinLsServive = new ThongTinLsServive();
         private readonly DonThuocService donThuocServive = new DonThuocService();
 
-        private string MaChuanDoan;
+        private int MaChuanDoan;
         private List<ThongTinL> thongTinLamSan;
         private List<DonThuoc> thongTinDonThuoc;
         private double TongTienTT = 0,TongTienThuoc = 0,  TongGiamGia;
-        public frmPhieuKham(string maChuanDoan)
+        public frmPhieuKham(int maChuanDoan)
         {
             InitializeComponent();
             this.MaChuanDoan = maChuanDoan;

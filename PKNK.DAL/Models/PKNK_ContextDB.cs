@@ -73,28 +73,8 @@ namespace PKNK.DAL.Models
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ChanDoan>()
-                .Property(e => e.MaChanDoan)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ChanDoan>()
-                .HasMany(e => e.DonThuocs)
-                .WithOptional(e => e.ChanDoan)
-                .HasForeignKey(e => e.MaChuanDoan);
-
-            modelBuilder.Entity<ChanDoan>()
                 .HasMany(e => e.HoaDons)
                 .WithRequired(e => e.ChanDoan)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<ChanDoan>()
-                .HasMany(e => e.ThongTinLS)
-                .WithOptional(e => e.ChanDoan)
-                .HasForeignKey(e => e.MaChuanDoan);
-
-            modelBuilder.Entity<ChanDoan>()
-                .HasMany(e => e.ThongTinThuocs)
-                .WithRequired(e => e.ChanDoan)
-                .HasForeignKey(e => e.MaChuanDoan)
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ChucDanh>()
@@ -119,15 +99,6 @@ namespace PKNK.DAL.Models
 
             modelBuilder.Entity<HoaDon>()
                 .Property(e => e.MaHoaDon)
-                .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<HoaDon>()
-                .Property(e => e.MaChanDoan)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<HoaDon>()
-                .Property(e => e.MaNhanVien)
                 .IsFixedLength()
                 .IsUnicode(false);
 
@@ -179,11 +150,6 @@ namespace PKNK.DAL.Models
                 .HasForeignKey(e => e.MaNV);
 
             modelBuilder.Entity<NhanVien>()
-                .HasMany(e => e.HoaDons)
-                .WithRequired(e => e.NhanVien)
-                .WillCascadeOnDelete(false);
-
-            modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.TTCanLamSans)
                 .WithOptional(e => e.NhanVien)
                 .HasForeignKey(e => e.MaNV);
@@ -207,16 +173,8 @@ namespace PKNK.DAL.Models
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<ThongTinL>()
-                .Property(e => e.MaChuanDoan)
-                .IsUnicode(false);
-
             modelBuilder.Entity<ThongTinThuoc>()
                 .Property(e => e.MaThongTinThuoc)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ThongTinThuoc>()
-                .Property(e => e.MaChuanDoan)
                 .IsUnicode(false);
 
             modelBuilder.Entity<ThongTinThuoc>()
@@ -234,11 +192,6 @@ namespace PKNK.DAL.Models
             modelBuilder.Entity<Thuoc>()
                 .Property(e => e.DonGia)
                 .HasPrecision(19, 4);
-
-            modelBuilder.Entity<Thuoc>()
-                .HasMany(e => e.ThongTinThuocs)
-                .WithRequired(e => e.Thuoc)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Thuoc>()
                 .HasMany(e => e.DonThuocs)
@@ -275,10 +228,6 @@ namespace PKNK.DAL.Models
 
             modelBuilder.Entity<DonThuoc>()
                 .Property(e => e.MaThuoc)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<DonThuoc>()
-                .Property(e => e.MaChuanDoan)
                 .IsUnicode(false);
 
             modelBuilder.Entity<DonThuoc>()

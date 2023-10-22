@@ -14,10 +14,10 @@ namespace PKNK.BUS.Servive
             PKNK_ContextDB model = new PKNK_ContextDB();
             return model.DonThuocs.ToList();
         }
-        public List<DonThuoc> FindByMaChuanDoan(string maChuanDoan)
+        public List<DonThuoc> FindByMaChuanDoan(int maChuanDoan)
         {
             PKNK_ContextDB model = new PKNK_ContextDB();
-            return model.DonThuocs.Where(p => p.MaChuanDoan == maChuanDoan).ToList();
+            return model.DonThuocs.Where(p => p.MaChanDoan == maChuanDoan).ToList();
         }
 
         public void Add(DonThuoc donThuoc)

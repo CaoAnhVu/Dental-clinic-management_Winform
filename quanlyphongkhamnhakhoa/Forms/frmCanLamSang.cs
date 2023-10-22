@@ -23,10 +23,11 @@ namespace PKNK_CNPM.FormCustomer
         private readonly ThongTinLsServive thongTinLsServive = new ThongTinLsServive();
         private readonly DonThuocService donThuocService = new DonThuocService();
         private readonly NhanVienService nhanVienService = new NhanVienService();
-        private readonly ChuanDoanService chuanDoanService = new ChuanDoanService();
+        private readonly ChanDoanService chuanDoanService = new ChanDoanService();
         private readonly ThuocService thuocService = new ThuocService();
         // -------------------------------
         private BenhNhan khachHang;
+        private ChanDoan chanDoan;
         private List<ThongTinL> thongTins = new List<ThongTinL>();
         private List<DonThuoc> thuocs = new List<DonThuoc>();
         // FUNCTION-----------------------
@@ -134,26 +135,36 @@ namespace PKNK_CNPM.FormCustomer
                 }
             }
         }
+        private void SetThongTinPanel()
+        {
+            if (flpThemThuThuat.Controls.Count == 0)
+                flpThemThuThuat.Controls.Add(new ThongTinItems());
+            if (flpThemThuoc.Controls.Count == 0)
+                flpThemThuoc.Controls.Add(new TTThuocItem());
+        }
         // HANDER-------------------
         private void frmCanLamSang_Load(object sender, EventArgs e)
         {
             populateNhanVienCombobox();
             populateThuThuatItems();
             populateThuocItems();
+            SetThongTinPanel();
             loadValue();
+            chanDoan = new ChanDoan
+            {
+                MaChanDoan = chuanDoanService.GetUid(),
+                MaBN = int.Parse(txtMaKH.Text),
+            };
+            txtMaChuanDoan.Text = chanDoan.MaChanDoan.ToString();
         }
         // Click //
         void ThuocControl_Click(object sender, EventArgs e)
         {
             ThuocItem thuThuatItem = (ThuocItem)sender;
-            if (flpThemThuoc.Controls.Count == 0)
-                flpThemThuoc.Controls.Add(new TTThuocItem());
             flpThemThuoc.Controls.Add(new DonThuocItem(thuThuatItem.UID, this.flpThemThuoc));
         }
         void ThuThuatControl_Click(object sender, EventArgs e) {
             ThuThuatItem thuThuatItem = (ThuThuatItem)sender;
-            if (flpThemThuThuat.Controls.Count == 0) 
-                flpThemThuThuat.Controls.Add(new ThongTinItems());
             flpThemThuThuat.Controls.Add(new TTThuThuatItem(thuThuatItem.LoaiThuThuat, this.flpThemThuThuat));
         }
         private void btnHoSoPhongKham_Click(object sender, EventArgs e)
@@ -165,12 +176,9 @@ namespace PKNK_CNPM.FormCustomer
         {
             try
             {
-                if (txtMaChuanDoan.Text == "")
-                    throw new Exception("Chưa nhập mã chuẩn đoán");
-
                 getThongTinThuThuat();
                 getThongTinThuoc();
-                frmPhieuKham frm = new frmPhieuKham(txtMaChuanDoan.Text);
+                frmPhieuKham frm = new frmPhieuKham(chanDoan.MaChanDoan);
                 frm.ShowDialog();
             }
             catch (Exception ex)
@@ -183,23 +191,14 @@ namespace PKNK_CNPM.FormCustomer
         {
             try
             {
-                if (txtMaChuanDoan.Text == "")
-                    throw new Exception("Chưa nhập mã chuẩn đoán");
-
                 getThongTinThuThuat();
                 getThongTinThuoc();
-                ChanDoan chanDoan = new ChanDoan
-                {
-                    MaChanDoan = txtMaChuanDoan.Text,
-                    MaBN = int.Parse(txtMaKH.Text),
-                };
                 chuanDoanService.Add(chanDoan);
-
                 foreach (var item in thuocs)
                 {
                     if (item != null)
                     {
-                        item.MaChuanDoan = txtMaChuanDoan.Text;
+                        item.MaChanDoan = chanDoan.MaChanDoan;
                         donThuocService.Add(item);
                     }
                 }
@@ -207,7 +206,7 @@ namespace PKNK_CNPM.FormCustomer
                 {
                     if (item != null)
                     {
-                        item.MaChuanDoan = txtMaChuanDoan.Text;
+                        item.MaChanDoan = chanDoan.MaChanDoan;
                         thongTinLsServive.Add(item);
                     }
                 }
@@ -217,6 +216,16 @@ namespace PKNK_CNPM.FormCustomer
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnDonThuoc_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnDonThuoc_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

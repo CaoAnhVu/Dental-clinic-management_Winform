@@ -15,10 +15,10 @@ namespace PKNK.BUS.Servive
             return model.ThongTinLS.ToList();
         }
 
-        public List<ThongTinL> FindByMaChuanDoan(string maChuanDoan)
+        public List<ThongTinL> FindByMaChuanDoan(int maChuanDoan)
         {
             PKNK_ContextDB model = new PKNK_ContextDB();
-            return model.ThongTinLS.Where(p=> p.MaChuanDoan == maChuanDoan).ToList();
+            return model.ThongTinLS.Where(p=> p.MaChanDoan == maChuanDoan).ToList();
         }
 
         public void Add(ThongTinL l)

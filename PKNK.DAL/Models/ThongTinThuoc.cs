@@ -13,9 +13,7 @@ namespace PKNK.DAL.Models
         [StringLength(10)]
         public string MaThongTinThuoc { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        public string MaChuanDoan { get; set; }
+        public int MaChuanDoan { get; set; }
 
         [Required]
         [StringLength(10)]
@@ -24,9 +22,5 @@ namespace PKNK.DAL.Models
         [Required]
         [StringLength(10)]
         public string MaDonThuoc { get; set; }
-
-        public virtual ChanDoan ChanDoan { get; set; }
-
-        public virtual Thuoc Thuoc { get; set; }
     }
 }

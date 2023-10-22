@@ -19,8 +19,7 @@ namespace PKNK.DAL.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SoLuong { get; set; }
 
-        [StringLength(10)]
-        public string MaChuanDoan { get; set; }
+        public int? MaChanDoan { get; set; }
 
         [Key]
         [Column(Order = 2, TypeName = "money")]
