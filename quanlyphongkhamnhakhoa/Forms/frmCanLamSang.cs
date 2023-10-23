@@ -218,12 +218,12 @@ namespace PKNK_CNPM.FormCustomer
             }
         }
 
-        private void btnDonThuoc_Click(object sender, EventArgs e)
+        private void btnDonThuoc_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void btnDonThuoc_Click_1(object sender, EventArgs e)
+        private void btnInHoaDon_Click(object sender, EventArgs e)
         {
 
         }

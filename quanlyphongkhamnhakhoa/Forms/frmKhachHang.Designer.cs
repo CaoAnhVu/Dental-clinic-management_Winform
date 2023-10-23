@@ -78,18 +78,8 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.btnCanLamSan = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
             this.txtTrangThai = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.txtTuoi = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
@@ -548,18 +538,8 @@
             this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel9);
             this.panel3.Controls.Add(this.txtSDT);
-            this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.textBox1);
-            this.panel3.Controls.Add(this.label17);
-            this.panel3.Controls.Add(this.textBox5);
             this.panel3.Controls.Add(this.txtTrangThai);
-            this.panel3.Controls.Add(this.label15);
-            this.panel3.Controls.Add(this.label16);
             this.panel3.Controls.Add(this.txtDiaChi);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label18);
             this.panel3.Controls.Add(this.txtTuoi);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.txtGioiTinh);
@@ -720,144 +700,44 @@
             this.txtSDT.Location = new System.Drawing.Point(154, 136);
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(270, 30);
+            this.txtSDT.Size = new System.Drawing.Size(426, 30);
             this.txtSDT.TabIndex = 31;
-            // 
-            // textBox4
-            // 
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Enabled = false;
-            this.textBox4.Location = new System.Drawing.Point(1036, 193);
-            this.textBox4.Multiline = true;
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(270, 30);
-            this.textBox4.TabIndex = 28;
-            // 
-            // textBox3
-            // 
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(1036, 137);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(270, 30);
-            this.textBox3.TabIndex = 28;
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Enabled = false;
-            this.textBox2.Location = new System.Drawing.Point(1036, 76);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(270, 30);
-            this.textBox2.TabIndex = 28;
-            // 
-            // textBox1
-            // 
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(1036, 20);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(270, 30);
-            this.textBox1.TabIndex = 28;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label17.Location = new System.Drawing.Point(901, 194);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(96, 25);
-            this.label17.TabIndex = 26;
-            this.label17.Text = "Trạng thái";
-            // 
-            // textBox5
-            // 
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Enabled = false;
-            this.textBox5.Location = new System.Drawing.Point(610, 191);
-            this.textBox5.Multiline = true;
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(270, 30);
-            this.textBox5.TabIndex = 28;
             // 
             // txtTrangThai
             // 
             this.txtTrangThai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTrangThai.Enabled = false;
-            this.txtTrangThai.Location = new System.Drawing.Point(610, 135);
+            this.txtTrangThai.Location = new System.Drawing.Point(838, 135);
             this.txtTrangThai.Multiline = true;
             this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(270, 30);
+            this.txtTrangThai.Size = new System.Drawing.Size(426, 30);
             this.txtTrangThai.TabIndex = 28;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label15.Location = new System.Drawing.Point(901, 77);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(96, 25);
-            this.label15.TabIndex = 26;
-            this.label15.Text = "Trạng thái";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label16.Location = new System.Drawing.Point(901, 138);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(96, 25);
-            this.label16.TabIndex = 26;
-            this.label16.Text = "Trạng thái";
             // 
             // txtDiaChi
             // 
             this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtDiaChi.Enabled = false;
-            this.txtDiaChi.Location = new System.Drawing.Point(608, 74);
+            this.txtDiaChi.Location = new System.Drawing.Point(836, 74);
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(270, 30);
+            this.txtDiaChi.Size = new System.Drawing.Size(426, 30);
             this.txtDiaChi.TabIndex = 28;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label13.Location = new System.Drawing.Point(901, 21);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(96, 25);
-            this.label13.TabIndex = 26;
-            this.label13.Text = "Trạng thái";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label18.Location = new System.Drawing.Point(472, 194);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(96, 25);
-            this.label18.TabIndex = 26;
-            this.label18.Text = "Trạng thái";
             // 
             // txtTuoi
             // 
             this.txtTuoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTuoi.Enabled = false;
-            this.txtTuoi.Location = new System.Drawing.Point(608, 17);
+            this.txtTuoi.Location = new System.Drawing.Point(836, 17);
             this.txtTuoi.Multiline = true;
             this.txtTuoi.Name = "txtTuoi";
-            this.txtTuoi.Size = new System.Drawing.Size(270, 30);
+            this.txtTuoi.Size = new System.Drawing.Size(426, 30);
             this.txtTuoi.TabIndex = 28;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label12.Location = new System.Drawing.Point(471, 138);
+            this.label12.Location = new System.Drawing.Point(699, 138);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(96, 25);
             this.label12.TabIndex = 26;
@@ -870,14 +750,14 @@
             this.txtGioiTinh.Location = new System.Drawing.Point(154, 195);
             this.txtGioiTinh.Multiline = true;
             this.txtGioiTinh.Name = "txtGioiTinh";
-            this.txtGioiTinh.Size = new System.Drawing.Size(270, 30);
+            this.txtGioiTinh.Size = new System.Drawing.Size(426, 30);
             this.txtGioiTinh.TabIndex = 29;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label11.Location = new System.Drawing.Point(472, 79);
+            this.label11.Location = new System.Drawing.Point(700, 79);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 25);
             this.label11.TabIndex = 26;
@@ -887,7 +767,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label14.Location = new System.Drawing.Point(596, 242);
+            this.label14.Location = new System.Drawing.Point(824, 242);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(0, 25);
             this.label14.TabIndex = 27;
@@ -906,7 +786,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label9.Location = new System.Drawing.Point(472, 22);
+            this.label9.Location = new System.Drawing.Point(700, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 25);
             this.label9.TabIndex = 26;
@@ -919,7 +799,7 @@
             this.txtTenBN.Location = new System.Drawing.Point(154, 76);
             this.txtTenBN.Multiline = true;
             this.txtTenBN.Name = "txtTenBN";
-            this.txtTenBN.Size = new System.Drawing.Size(270, 30);
+            this.txtTenBN.Size = new System.Drawing.Size(426, 30);
             this.txtTenBN.TabIndex = 22;
             // 
             // txtMaBN
@@ -929,7 +809,7 @@
             this.txtMaBN.Location = new System.Drawing.Point(154, 20);
             this.txtMaBN.Multiline = true;
             this.txtMaBN.Name = "txtMaBN";
-            this.txtMaBN.Size = new System.Drawing.Size(270, 30);
+            this.txtMaBN.Size = new System.Drawing.Size(426, 30);
             this.txtMaBN.TabIndex = 23;
             // 
             // label4
@@ -1087,16 +967,6 @@
         private System.Windows.Forms.Button btnKhamLamSan;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button btnCanLamSan;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label18;
         private System.Windows.Forms.RadioButton radioButton2;
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.RadioButton radioButton3;

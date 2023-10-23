@@ -72,7 +72,7 @@ namespace PKNK_CNPM.FormCustomer.Controller
             }
         }
 
-        private void picXoa_Click_1(object sender, EventArgs e)
+        private void picXoa_Click(object sender, EventArgs e)
         {
             if (flpThemDonThuoc != null)
             {

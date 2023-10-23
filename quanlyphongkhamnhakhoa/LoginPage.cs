@@ -23,7 +23,7 @@ namespace PKNK_CNPM
 
         private void lblClose_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Bạn có muốn xóa khách hàng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            DialogResult res = MessageBox.Show("Bạn có muốn thoát ứng dụng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
             if (res == DialogResult.Yes)
             {
                 this.Close();
