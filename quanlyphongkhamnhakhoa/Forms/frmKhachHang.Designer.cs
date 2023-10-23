@@ -31,13 +31,11 @@
             this.grpTatCa = new System.Windows.Forms.GroupBox();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbDaKhamLamSan = new System.Windows.Forms.RadioButton();
+            this.rbCanLamSan = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.rbDaKhamTongQuat = new System.Windows.Forms.RadioButton();
             this.dvgDanhSachKham = new System.Windows.Forms.DataGridView();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -115,12 +113,10 @@
             this.grpTatCa.BackColor = System.Drawing.Color.Snow;
             this.grpTatCa.Controls.Add(this.txtTimKiem);
             this.grpTatCa.Controls.Add(this.label19);
-            this.grpTatCa.Controls.Add(this.radioButton3);
-            this.grpTatCa.Controls.Add(this.radioButton6);
-            this.grpTatCa.Controls.Add(this.radioButton5);
-            this.grpTatCa.Controls.Add(this.radioButton2);
+            this.grpTatCa.Controls.Add(this.rbDaKhamLamSan);
+            this.grpTatCa.Controls.Add(this.rbCanLamSan);
             this.grpTatCa.Controls.Add(this.panel5);
-            this.grpTatCa.Controls.Add(this.radioButton1);
+            this.grpTatCa.Controls.Add(this.rbDaKhamTongQuat);
             this.grpTatCa.Controls.Add(this.dvgDanhSachKham);
             this.grpTatCa.Controls.Add(this.label2);
             this.grpTatCa.Controls.Add(this.txtTong);
@@ -152,49 +148,27 @@
             this.label19.TabIndex = 32;
             this.label19.Text = "Tìm kiếm theo tên";
             // 
-            // radioButton3
+            // rbDaKhamLamSan
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(1051, 85);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(177, 29);
-            this.radioButton3.TabIndex = 32;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Đã khám lâm sàn";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rbDaKhamLamSan.AutoSize = true;
+            this.rbDaKhamLamSan.Location = new System.Drawing.Point(1048, 50);
+            this.rbDaKhamLamSan.Name = "rbDaKhamLamSan";
+            this.rbDaKhamLamSan.Size = new System.Drawing.Size(177, 29);
+            this.rbDaKhamLamSan.TabIndex = 32;
+            this.rbDaKhamLamSan.TabStop = true;
+            this.rbDaKhamLamSan.Text = "Đã khám lâm sàn";
+            this.rbDaKhamLamSan.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rbCanLamSan
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(1291, 86);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(153, 29);
-            this.radioButton6.TabIndex = 32;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "Đã thanh toán";
-            this.radioButton6.UseVisualStyleBackColor = true;
-            // 
-            // radioButton5
-            // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(1051, 50);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(174, 29);
-            this.radioButton5.TabIndex = 32;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "Chưa thanh toán";
-            this.radioButton5.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(823, 86);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(212, 29);
-            this.radioButton2.TabIndex = 32;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Đã khám cận lâm sàn";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbCanLamSan.AutoSize = true;
+            this.rbCanLamSan.Location = new System.Drawing.Point(823, 86);
+            this.rbCanLamSan.Name = "rbCanLamSan";
+            this.rbCanLamSan.Size = new System.Drawing.Size(212, 29);
+            this.rbCanLamSan.TabIndex = 32;
+            this.rbCanLamSan.TabStop = true;
+            this.rbCanLamSan.Text = "Đã khám cận lâm sàn";
+            this.rbCanLamSan.UseVisualStyleBackColor = true;
             // 
             // panel5
             // 
@@ -224,16 +198,17 @@
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
             // 
-            // radioButton1
+            // rbDaKhamTongQuat
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(823, 50);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(194, 29);
-            this.radioButton1.TabIndex = 32;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Đã khám tổng quát";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbDaKhamTongQuat.AutoSize = true;
+            this.rbDaKhamTongQuat.Location = new System.Drawing.Point(823, 50);
+            this.rbDaKhamTongQuat.Name = "rbDaKhamTongQuat";
+            this.rbDaKhamTongQuat.Size = new System.Drawing.Size(194, 29);
+            this.rbDaKhamTongQuat.TabIndex = 32;
+            this.rbDaKhamTongQuat.TabStop = true;
+            this.rbDaKhamTongQuat.Text = "Đã khám tổng quát";
+            this.rbDaKhamTongQuat.UseVisualStyleBackColor = true;
+            this.rbDaKhamTongQuat.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // dvgDanhSachKham
             // 
@@ -967,11 +942,9 @@
         private System.Windows.Forms.Button btnKhamLamSan;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button btnCanLamSan;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
+        private System.Windows.Forms.RadioButton rbCanLamSan;
+        private System.Windows.Forms.RadioButton rbDaKhamTongQuat;
+        private System.Windows.Forms.RadioButton rbDaKhamLamSan;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtTimKiem;
     }

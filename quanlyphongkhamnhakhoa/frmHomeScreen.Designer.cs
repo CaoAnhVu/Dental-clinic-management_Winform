@@ -47,8 +47,6 @@
             this.btnThongKe = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnQuanLy = new System.Windows.Forms.Button();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.btnThuoc = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
             this.btnDoanhThu = new System.Windows.Forms.Button();
             this.SettingContainer = new System.Windows.Forms.Panel();
@@ -72,6 +70,10 @@
             this.lblTatCa = new System.Windows.Forms.Label();
             this.grpTatCa = new System.Windows.Forms.GroupBox();
             this.dvgDanhSachKham = new System.Windows.Forms.DataGridView();
+            this.panel19 = new System.Windows.Forms.Panel();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.lblDanhSachKham = new System.Windows.Forms.Label();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SDT = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -80,7 +82,6 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DaThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -92,10 +93,6 @@
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.lblDanhSachKham = new System.Windows.Forms.Label();
             this.sidebar.SuspendLayout();
             this.panelMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.menuButton)).BeginInit();
@@ -107,7 +104,6 @@
             this.panel13.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel20.SuspendLayout();
             this.panel27.SuspendLayout();
             this.SettingContainer.SuspendLayout();
             this.panel18.SuspendLayout();
@@ -175,7 +171,7 @@
             this.CustomerContainer.Controls.Add(this.panel12);
             this.CustomerContainer.Controls.Add(this.panel2);
             this.CustomerContainer.Location = new System.Drawing.Point(3, 85);
-            this.CustomerContainer.MaximumSize = new System.Drawing.Size(265, 163);
+            this.CustomerContainer.MaximumSize = new System.Drawing.Size(265, 132);
             this.CustomerContainer.MinimumSize = new System.Drawing.Size(265, 52);
             this.CustomerContainer.Name = "CustomerContainer";
             this.CustomerContainer.Size = new System.Drawing.Size(265, 52);
@@ -245,10 +241,9 @@
             this.QuanlyContainer.Controls.Add(this.panel13);
             this.QuanlyContainer.Controls.Add(this.panel29);
             this.QuanlyContainer.Controls.Add(this.panel7);
-            this.QuanlyContainer.Controls.Add(this.panel20);
             this.QuanlyContainer.Controls.Add(this.panel27);
             this.QuanlyContainer.Location = new System.Drawing.Point(3, 143);
-            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 310);
+            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 269);
             this.QuanlyContainer.MinimumSize = new System.Drawing.Size(265, 54);
             this.QuanlyContainer.Name = "QuanlyContainer";
             this.QuanlyContainer.Size = new System.Drawing.Size(265, 54);
@@ -311,7 +306,7 @@
             // panel29
             // 
             this.panel29.Controls.Add(this.btnThongKe);
-            this.panel29.Location = new System.Drawing.Point(-8, 248);
+            this.panel29.Location = new System.Drawing.Point(-8, 204);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(332, 59);
             this.panel29.TabIndex = 4;
@@ -364,37 +359,10 @@
             this.btnQuanLy.UseVisualStyleBackColor = false;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click_1);
             // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.btnThuoc);
-            this.panel20.Location = new System.Drawing.Point(-49, 150);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(316, 53);
-            this.panel20.TabIndex = 8;
-            // 
-            // btnThuoc
-            // 
-            this.btnThuoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnThuoc.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnThuoc.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnThuoc.ForeColor = System.Drawing.Color.White;
-            this.btnThuoc.Image = global::PKNK_CNPM.Properties.Resources.medicine;
-            this.btnThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThuoc.Location = new System.Drawing.Point(30, -8);
-            this.btnThuoc.Name = "btnThuoc";
-            this.btnThuoc.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnThuoc.Size = new System.Drawing.Size(292, 65);
-            this.btnThuoc.TabIndex = 1;
-            this.btnThuoc.Text = "            Thuốc";
-            this.btnThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThuoc.UseVisualStyleBackColor = false;
-            this.btnThuoc.Click += new System.EventHandler(this.btnThuoc_Click);
-            // 
             // panel27
             // 
             this.panel27.Controls.Add(this.btnDoanhThu);
-            this.panel27.Location = new System.Drawing.Point(-46, 196);
+            this.panel27.Location = new System.Drawing.Point(-46, 152);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(322, 53);
             this.panel27.TabIndex = 11;
@@ -666,7 +634,6 @@
             this.Column10,
             this.DiaChi,
             this.NgayTao,
-            this.Column1,
             this.DaThanhToan,
             this.GhiChu,
             this.TrangThai,
@@ -685,6 +652,56 @@
             this.dvgDanhSachKham.Size = new System.Drawing.Size(1090, 489);
             this.dvgDanhSachKham.TabIndex = 22;
             // 
+            // panel19
+            // 
+            this.panel19.Controls.Add(this.btnTimKiem);
+            this.panel19.Location = new System.Drawing.Point(363, 45);
+            this.panel19.Name = "panel19";
+            this.panel19.Size = new System.Drawing.Size(165, 37);
+            this.panel19.TabIndex = 21;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnTimKiem.FlatAppearance.BorderSize = 0;
+            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
+            this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(-8, -13);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTimKiem.Size = new System.Drawing.Size(174, 63);
+            this.btnTimKiem.TabIndex = 19;
+            this.btnTimKiem.Text = "Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnTimKiem.UseVisualStyleBackColor = false;
+            // 
+            // txtTimKiem
+            // 
+            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
+            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.txtTimKiem.Location = new System.Drawing.Point(6, 44);
+            this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
+            this.txtTimKiem.Multiline = true;
+            this.txtTimKiem.Name = "txtTimKiem";
+            this.txtTimKiem.Size = new System.Drawing.Size(351, 36);
+            this.txtTimKiem.TabIndex = 0;
+            this.txtTimKiem.Text = "   Tìm kiếm...";
+            // 
+            // lblDanhSachKham
+            // 
+            this.lblDanhSachKham.AutoSize = true;
+            this.lblDanhSachKham.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lblDanhSachKham.Location = new System.Drawing.Point(6, 8);
+            this.lblDanhSachKham.Name = "lblDanhSachKham";
+            this.lblDanhSachKham.Size = new System.Drawing.Size(455, 45);
+            this.lblDanhSachKham.TabIndex = 0;
+            this.lblDanhSachKham.Text = "Danh Sách Khám (Hôm nay)";
+            // 
             // MaBN
             // 
             this.MaBN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
@@ -692,7 +709,7 @@
             this.MaBN.HeaderText = "Mã BN";
             this.MaBN.MinimumWidth = 6;
             this.MaBN.Name = "MaBN";
-            this.MaBN.Width = 68;
+            this.MaBN.Width = 98;
             // 
             // TenBN
             // 
@@ -701,7 +718,6 @@
             this.TenBN.HeaderText = "Tên BN";
             this.TenBN.MinimumWidth = 6;
             this.TenBN.Name = "TenBN";
-            this.TenBN.Width = 70;
             // 
             // SDT
             // 
@@ -719,7 +735,7 @@
             this.GioiTinh.HeaderText = "Giới tính";
             this.GioiTinh.MinimumWidth = 6;
             this.GioiTinh.Name = "GioiTinh";
-            this.GioiTinh.Width = 104;
+            this.GioiTinh.Width = 113;
             // 
             // Tuoi
             // 
@@ -728,7 +744,7 @@
             this.Tuoi.HeaderText = "Năm sinh";
             this.Tuoi.MinimumWidth = 6;
             this.Tuoi.Name = "Tuoi";
-            this.Tuoi.Width = 111;
+            this.Tuoi.Width = 121;
             // 
             // Column10
             // 
@@ -754,13 +770,6 @@
             this.NgayTao.MinimumWidth = 6;
             this.NgayTao.Name = "NgayTao";
             this.NgayTao.Width = 108;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Tổng tiền";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
             // 
             // DaThanhToan
             // 
@@ -839,56 +848,6 @@
             this.Column9.Name = "Column9";
             this.Column9.Width = 125;
             // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.btnTimKiem);
-            this.panel19.Location = new System.Drawing.Point(363, 45);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(165, 37);
-            this.panel19.TabIndex = 21;
-            // 
-            // btnTimKiem
-            // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.btnTimKiem.FlatAppearance.BorderSize = 0;
-            this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnTimKiem.ForeColor = System.Drawing.Color.White;
-            this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
-            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(-8, -13);
-            this.btnTimKiem.Name = "btnTimKiem";
-            this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTimKiem.Size = new System.Drawing.Size(174, 63);
-            this.btnTimKiem.TabIndex = 19;
-            this.btnTimKiem.Text = "Tìm kiếm";
-            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTimKiem.UseVisualStyleBackColor = false;
-            // 
-            // txtTimKiem
-            // 
-            this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
-            this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTimKiem.Location = new System.Drawing.Point(6, 44);
-            this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
-            this.txtTimKiem.Multiline = true;
-            this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(351, 36);
-            this.txtTimKiem.TabIndex = 0;
-            this.txtTimKiem.Text = "   Tìm kiếm...";
-            // 
-            // lblDanhSachKham
-            // 
-            this.lblDanhSachKham.AutoSize = true;
-            this.lblDanhSachKham.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lblDanhSachKham.Location = new System.Drawing.Point(6, 8);
-            this.lblDanhSachKham.Name = "lblDanhSachKham";
-            this.lblDanhSachKham.Size = new System.Drawing.Size(455, 45);
-            this.lblDanhSachKham.TabIndex = 0;
-            this.lblDanhSachKham.Text = "Danh Sách Khám (Hôm nay)";
-            // 
             // frmHomeScreen
             // 
             this.AcceptButton = this.btnTimKiem;
@@ -914,7 +873,6 @@
             this.panel13.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.SettingContainer.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
@@ -955,8 +913,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnCloseChildForm;
         private System.Windows.Forms.Panel QuanlyContainer;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Button btnThuoc;
         private System.Windows.Forms.Panel panel27;
         private System.Windows.Forms.Button btnDoanhThu;
         private System.Windows.Forms.Panel panel13;
@@ -989,7 +945,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn DaThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;

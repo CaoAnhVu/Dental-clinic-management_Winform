@@ -214,10 +214,6 @@ namespace PKNK.DAL.Models
                 .IsUnicode(false);
 
             modelBuilder.Entity<TTCanLamSan>()
-                .Property(e => e.MaPhieuKham)
-                .IsFixedLength();
-
-            modelBuilder.Entity<TTCanLamSan>()
                 .Property(e => e.MaNV)
                 .IsFixedLength()
                 .IsUnicode(false);

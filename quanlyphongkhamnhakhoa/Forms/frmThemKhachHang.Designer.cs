@@ -51,7 +51,6 @@ namespace PKNK_CNPM.Forms
             this.txtMaBaoHiem = new System.Windows.Forms.TextBox();
             this.txtTenKH = new System.Windows.Forms.TextBox();
             this.txtGiamGia = new System.Windows.Forms.TextBox();
-            this.txtMaNV = new System.Windows.Forms.TextBox();
             this.txtTenBaoHiem = new System.Windows.Forms.TextBox();
             this.txtMaKH = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -66,6 +65,7 @@ namespace PKNK_CNPM.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
+            this.cbNhanVien = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +85,7 @@ namespace PKNK_CNPM.Forms
             this.groupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox2.BackColor = System.Drawing.Color.Snow;
+            this.groupBox2.Controls.Add(this.cbNhanVien);
             this.groupBox2.Controls.Add(this.txtDiaChi);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.btnLuu);
@@ -104,7 +105,6 @@ namespace PKNK_CNPM.Forms
             this.groupBox2.Controls.Add(this.txtMaBaoHiem);
             this.groupBox2.Controls.Add(this.txtTenKH);
             this.groupBox2.Controls.Add(this.txtGiamGia);
-            this.groupBox2.Controls.Add(this.txtMaNV);
             this.groupBox2.Controls.Add(this.txtTenBaoHiem);
             this.groupBox2.Controls.Add(this.txtMaKH);
             this.groupBox2.Controls.Add(this.label19);
@@ -338,19 +338,6 @@ namespace PKNK_CNPM.Forms
             this.txtGiamGia.TabIndex = 15;
             this.txtGiamGia.Text = "0";
             // 
-            // txtMaNV
-            // 
-            this.txtMaNV.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.txtMaNV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtMaNV.ForeColor = System.Drawing.Color.DimGray;
-            this.txtMaNV.Location = new System.Drawing.Point(862, 419);
-            this.txtMaNV.Multiline = true;
-            this.txtMaNV.Name = "txtMaNV";
-            this.txtMaNV.Size = new System.Drawing.Size(328, 32);
-            this.txtMaNV.TabIndex = 14;
-            this.txtMaNV.Text = "Nhập mã hoặc tên nhân viên";
-            // 
             // txtTenBaoHiem
             // 
             this.txtTenBaoHiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -487,6 +474,14 @@ namespace PKNK_CNPM.Forms
             this.label29.TabIndex = 0;
             this.label29.Text = "Mã khách hàng";
             // 
+            // cbNhanVien
+            // 
+            this.cbNhanVien.FormattingEnabled = true;
+            this.cbNhanVien.Location = new System.Drawing.Point(862, 423);
+            this.cbNhanVien.Name = "cbNhanVien";
+            this.cbNhanVien.Size = new System.Drawing.Size(328, 33);
+            this.cbNhanVien.TabIndex = 40;
+            // 
             // frmThemKhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -522,7 +517,6 @@ namespace PKNK_CNPM.Forms
         private System.Windows.Forms.TextBox txtSDT;
         private System.Windows.Forms.TextBox txtTenKH;
         private System.Windows.Forms.TextBox txtGiamGia;
-        private System.Windows.Forms.TextBox txtMaNV;
         private System.Windows.Forms.TextBox txtMaKH;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label22;
@@ -542,5 +536,6 @@ namespace PKNK_CNPM.Forms
         private System.Windows.Forms.TextBox txtTenBaoHiem;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.ComboBox cbNhanVien;
     }
 }

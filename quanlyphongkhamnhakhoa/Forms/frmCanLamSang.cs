@@ -220,7 +220,7 @@ namespace PKNK_CNPM.FormCustomer
             try
             {
                 Luu();
-                frmPhieuKham frm = new frmPhieuKham(chanDoan.MaChanDoan);
+                frmPhieuKham frm = new frmPhieuKham(chanDoan);
                 frm.ShowDialog();
             }
             catch (Exception ex)
@@ -228,37 +228,6 @@ namespace PKNK_CNPM.FormCustomer
                 MessageBox.Show(ex.Message);
             }
         }
-
-        //private void btnLuu_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        getThongTinThuThuat();
-        //        getThongTinThuoc();
-        //        chuanDoanService.Add(chanDoan);
-        //        foreach (var item in thuocs)
-        //        {
-        //            if (item != null)
-        //            {
-        //                item.MaChanDoan = chanDoan.MaChanDoan;
-        //                donThuocService.Add(item);
-        //            }
-        //        }
-        //        foreach (var item in thongTins)
-        //        {
-        //            if (item != null)
-        //            {
-        //                item.MaChanDoan = chanDoan.MaChanDoan;
-        //                thongTinLsServive.Add(item);
-        //            }
-        //        }
-        //        MessageBox.Show("Lưu thành công!");
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show(ex.Message);
-        //    }
-        //}
 
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {

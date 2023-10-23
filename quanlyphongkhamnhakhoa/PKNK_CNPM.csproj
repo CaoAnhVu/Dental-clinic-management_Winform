@@ -206,23 +206,11 @@
     <Compile Include="Forms\frmDanhSachThuoc.Designer.cs">
       <DependentUpon>frmDanhSachThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmDonThuoc.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmDonThuoc.Designer.cs">
-      <DependentUpon>frmDonThuoc.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmHoaDonXuatNhap.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\frmHoaDonXuatNhap.Designer.cs">
       <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmTaoThuocMoi.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmTaoThuocMoi.Designer.cs">
-      <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmThemKhachHang.cs">
       <SubType>Form</SubType>
@@ -309,14 +297,8 @@
     <EmbeddedResource Include="Forms\frmDanhSachThuoc.resx">
       <DependentUpon>frmDanhSachThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmDonThuoc.resx">
-      <DependentUpon>frmDonThuoc.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHoaDonXuatNhap.resx">
       <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmTaoThuocMoi.resx">
-      <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>

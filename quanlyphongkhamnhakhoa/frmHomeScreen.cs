@@ -130,7 +130,6 @@ namespace PKNK_CNPM
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
             btnDangXuat.BackColor = Color.FromArgb(55, 51, 76);
             btnPhieuKham.BackColor = Color.FromArgb(55, 51, 76);
-            btnThuoc.BackColor = Color.FromArgb(55, 51, 76);
             btnThongKe.BackColor = Color.FromArgb(55, 51, 76);
             btnDoanhThu.BackColor = Color.FromArgb(55, 51, 76);
             btnDanhSachNhanVien.BackColor = Color.FromArgb(55, 51, 76);
@@ -305,15 +304,6 @@ namespace PKNK_CNPM
             OpenChildForm(new frmHoaDonXuatNhap(), sender);
         }
 
-        private void btnThuoc_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmDonThuoc(), sender);
-        }
-
-        private void btnDichVu_Click(object sender, EventArgs e)
-        {
-            //OpenChildForm(new frmCanLamSang(), sender);
-        }
 
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
@@ -356,26 +346,29 @@ namespace PKNK_CNPM
                 dvgDanhSachKham.Rows.Clear();
                 foreach (BenhNhan i in list)
                 {
-                    int index = dvgDanhSachKham.Rows.Add();
-                    dvgDanhSachKham.Rows[index].Cells[0].Value = i.MaBN;
-                    dvgDanhSachKham.Rows[index].Cells[1].Value = i.TenBN;
-                    dvgDanhSachKham.Rows[index].Cells[2].Value = i.SDT;
-                    dvgDanhSachKham.Rows[index].Cells[3].Value = i.GioiTinh == true ? "Nam" : "Nữ";
-                    dvgDanhSachKham.Rows[index].Cells[4].Value = i.NgayTao;
-                    dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
-                    dvgDanhSachKham.Rows[index].Cells[6].Value = i.NgaySinh;
-                    dvgDanhSachKham.Rows[index].Cells[7].Value = i.DiaChi;
-                    dvgDanhSachKham.Rows[index].Cells[9].Value = i.DaThanhToan;
-                    dvgDanhSachKham.Rows[index].Cells[10].Value = i.GhiChu;
-                    //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
-                    dvgDanhSachKham.Rows[index].Cells[12].Value = i.HuyetApMach == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[13].Value = i.DuongHuyet == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[14].Value = i.MauKhoDong == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[15].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[16].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[17].Value = i.XQuang != "" ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[18].Value = i.MaBaoHiem;
-                    dvgDanhSachKham.Rows[index].Cells[19].Value = i.Khac;
+                    if(i.NgayTao.Month == DateTime.Now.Month && i.NgayTao.Date == DateTime.Now.Date && i.NgayTao.Date.Year == DateTime.Now.Year)
+                    {
+                        int index = dvgDanhSachKham.Rows.Add();
+                        dvgDanhSachKham.Rows[index].Cells[0].Value = i.MaBN;
+                        dvgDanhSachKham.Rows[index].Cells[1].Value = i.TenBN;
+                        dvgDanhSachKham.Rows[index].Cells[2].Value = i.SDT;
+                        dvgDanhSachKham.Rows[index].Cells[3].Value = i.GioiTinh == true ? "Nam" : "Nữ";
+                        dvgDanhSachKham.Rows[index].Cells[4].Value = i.NgaySinh;
+                        dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
+                        dvgDanhSachKham.Rows[index].Cells[6].Value = i.DiaChi;
+                        dvgDanhSachKham.Rows[index].Cells[7].Value = i.NgayTao;
+                        dvgDanhSachKham.Rows[index].Cells[8].Value = i.DaThanhToan;
+                        dvgDanhSachKham.Rows[index].Cells[9].Value = i.GhiChu;
+                        //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
+                        dvgDanhSachKham.Rows[index].Cells[10].Value = i.HuyetApMach == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[11].Value = i.DuongHuyet == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[13].Value = i.MauKhoDong == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[14].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[15].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[16].Value = i.XQuang != "" ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[17].Value = i.MaBaoHiem;
+                        dvgDanhSachKham.Rows[index].Cells[18].Value = i.Khac;
+                    }
                 }
             }
             catch (Exception ex)

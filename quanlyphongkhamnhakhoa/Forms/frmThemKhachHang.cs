@@ -16,6 +16,7 @@ namespace PKNK_CNPM.Forms
     public partial class frmThemKhachHang : Form
     {
         private readonly KhachHangService benhNhanService = new KhachHangService();
+        private readonly NhanVienService nhanVienService = new NhanVienService();
         private bool isEdit = false;
         private BenhNhan khachHang;
         public frmThemKhachHang()
@@ -62,7 +63,6 @@ namespace PKNK_CNPM.Forms
                     cbMauKhoDong.Checked = khachHang.MauKhoDong.Value;
                 if (khachHang.ThieuNangTriTue != null)
                     cbThieuNang.Checked = khachHang.ThieuNangTriTue.Value;
-                txtMaNV.Text = khachHang.MaNV;
                 dtpNgaySinh.Value = khachHang.NgaySinh.Value;
                 // Select item trong combobox
                 if (khachHang.GioiTinh == true)
@@ -75,10 +75,19 @@ namespace PKNK_CNPM.Forms
                 txtMaKH.Enabled = false;
             }
         }
+
+        private void populateNhanVienCombobox()
+        {
+            List<NhanVien> list = nhanVienService.GetAll();
+            cbNhanVien.DataSource = list;
+            cbNhanVien.DisplayMember = "TenNhanVien";
+            cbNhanVien.ValueMember = "MaNhanVien";
+        }
         //
         private void frmThemKhachHang_Load(object sender, EventArgs e)
         {
             loadValue();
+            populateNhanVienCombobox();
         }
 
         private void btnLuu_Click(object sender, EventArgs e)
@@ -99,7 +108,6 @@ namespace PKNK_CNPM.Forms
                     SDT = txtSDT.Text,
                     GioiTinh = rbNam.Checked == true ? true : false,
                     NgayTao = DateTime.Now,
-                    MaNV = txtMaNV.Text,
                     NgaySinh = (DateTime)dtpNgaySinh.Value,
                     DiaChi = txtDiaChi.Text,
                     GhiChu = rtbLyDo.Text,
@@ -108,6 +116,7 @@ namespace PKNK_CNPM.Forms
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,
                     ThieuNangTriTue = cbDuongHuyet.Checked,
+                    MaBaoHiem = txtMaBaoHiem.Text,
                 };
 
                 if (isEdit)

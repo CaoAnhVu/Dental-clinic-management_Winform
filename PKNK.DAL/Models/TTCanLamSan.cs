@@ -9,10 +9,6 @@ namespace PKNK.DAL.Models
     [Table("TTCanLamSan")]
     public partial class TTCanLamSan
     {
-        [Key]
-        [StringLength(5)]
-        public string MaPhieuKham { get; set; }
-
         public int? MaBN { get; set; }
 
         public DateTime? NgayTao { get; set; }
@@ -48,6 +44,9 @@ namespace PKNK.DAL.Models
 
         [StringLength(255)]
         public string Khac { get; set; }
+
+        [Key]
+        public int MaPhieuKham { get; set; }
 
         public virtual BenhNhan BenhNhan { get; set; }
 

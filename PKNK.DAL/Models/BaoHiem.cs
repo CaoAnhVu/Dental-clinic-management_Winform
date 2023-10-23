@@ -17,10 +17,6 @@ namespace PKNK.DAL.Models
         [Required]
         public string TenLaBo { get; set; }
 
-        [Column(TypeName = "ntext")]
-        [Required]
-        public string BaoHanh { get; set; }
-
         public int MaBN { get; set; }
 
         public virtual BenhNhan BenhNhan { get; set; }
