@@ -317,7 +317,7 @@ namespace PKNK_CNPM
 
         private void btnThongTinChung_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new frmThong(), sender);
+            OpenChildForm(new frmThongTinChung(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

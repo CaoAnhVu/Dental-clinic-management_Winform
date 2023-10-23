@@ -448,7 +448,7 @@
             this.btnThongTinChung.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnThongTinChung.Size = new System.Drawing.Size(294, 71);
             this.btnThongTinChung.TabIndex = 1;
-            this.btnThongTinChung.Text = "            Thông tin chung";
+            this.btnThongTinChung.Text = "            Thông tin ";
             this.btnThongTinChung.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThongTinChung.UseVisualStyleBackColor = false;
             this.btnThongTinChung.Click += new System.EventHandler(this.btnThongTinChung_Click);
