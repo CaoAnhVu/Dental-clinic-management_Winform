@@ -120,7 +120,7 @@
             this.grpHoaDon.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.grpHoaDon.Location = new System.Drawing.Point(24, -8);
             this.grpHoaDon.Name = "grpHoaDon";
-            this.grpHoaDon.Size = new System.Drawing.Size(614, 985);
+            this.grpHoaDon.Size = new System.Drawing.Size(614, 950);
             this.grpHoaDon.TabIndex = 0;
             this.grpHoaDon.TabStop = false;
             // 
@@ -133,7 +133,7 @@
             this.textBox13.Location = new System.Drawing.Point(134, 408);
             this.textBox13.Name = "textBox13";
             this.textBox13.Size = new System.Drawing.Size(256, 27);
-            this.textBox13.TabIndex = 27;
+            this.textBox13.TabIndex = 3;
             this.textBox13.Text = "  ";
             this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -146,7 +146,7 @@
             this.textBox12.Location = new System.Drawing.Point(134, 372);
             this.textBox12.Name = "textBox12";
             this.textBox12.Size = new System.Drawing.Size(256, 27);
-            this.textBox12.TabIndex = 26;
+            this.textBox12.TabIndex = 2;
             this.textBox12.Text = "  ";
             this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -159,7 +159,7 @@
             this.txtNgayIn.Location = new System.Drawing.Point(131, 328);
             this.txtNgayIn.Name = "txtNgayIn";
             this.txtNgayIn.Size = new System.Drawing.Size(256, 27);
-            this.txtNgayIn.TabIndex = 25;
+            this.txtNgayIn.TabIndex = 1;
             this.txtNgayIn.Text = "  ";
             this.txtNgayIn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -294,7 +294,7 @@
             this.txtGhiChu.Location = new System.Drawing.Point(134, 499);
             this.txtGhiChu.Name = "txtGhiChu";
             this.txtGhiChu.Size = new System.Drawing.Size(320, 24);
-            this.txtGhiChu.TabIndex = 24;
+            this.txtGhiChu.TabIndex = 5;
             this.txtGhiChu.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtNhanVien
@@ -314,7 +314,7 @@
             this.textBox4.Location = new System.Drawing.Point(61, 456);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(39, 31);
-            this.textBox4.TabIndex = 24;
+            this.textBox4.TabIndex = 4;
             this.textBox4.Text = "01";
             this.textBox4.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
@@ -331,7 +331,7 @@
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(177, 897);
+            this.label21.Location = new System.Drawing.Point(177, 889);
             this.label21.Name = "label21";
             this.label21.Size = new System.Drawing.Size(260, 25);
             this.label21.TabIndex = 23;
@@ -344,7 +344,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.AutoSize = true;
             this.label20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label20.Location = new System.Drawing.Point(240, 924);
+            this.label20.Location = new System.Drawing.Point(240, 916);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(132, 25);
             this.label20.TabIndex = 22;
@@ -576,14 +576,15 @@
             // btnInHoaDon
             // 
             this.btnInHoaDon.BackColor = System.Drawing.Color.Silver;
+            this.btnInHoaDon.FlatAppearance.BorderSize = 0;
             this.btnInHoaDon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInHoaDon.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnInHoaDon.ForeColor = System.Drawing.Color.Black;
             this.btnInHoaDon.Image = global::PKNK_CNPM.Properties.Resources.printing1;
             this.btnInHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInHoaDon.Location = new System.Drawing.Point(644, 21);
+            this.btnInHoaDon.Location = new System.Drawing.Point(644, 20);
             this.btnInHoaDon.Name = "btnInHoaDon";
-            this.btnInHoaDon.Size = new System.Drawing.Size(173, 31);
+            this.btnInHoaDon.Size = new System.Drawing.Size(173, 43);
             this.btnInHoaDon.TabIndex = 11;
             this.btnInHoaDon.Text = "     In Hóa Đơn";
             this.btnInHoaDon.UseVisualStyleBackColor = false;
@@ -592,10 +593,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(817, 1055);
+            this.ClientSize = new System.Drawing.Size(1206, 955);
             this.Controls.Add(this.btnInHoaDon);
             this.Controls.Add(this.grpHoaDon);
             this.Name = "frmHoaDon";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa Đơn";
             this.grpHoaDon.ResumeLayout(false);
             this.grpHoaDon.PerformLayout();

@@ -124,7 +124,15 @@ namespace PKNK_CNPM
             btnQuanLy.BackColor = Color.FromArgb(55, 51, 76);
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
             btnDangXuat.BackColor = Color.FromArgb(55, 51, 76);
-            if(currentButton != null)
+            btnHoaDon.BackColor = Color.FromArgb(55, 51, 76);
+            btnPhieuKham.BackColor = Color.FromArgb(55, 51, 76);
+            btnThuoc.BackColor = Color.FromArgb(55, 51, 76);
+            btnThongKe.BackColor = Color.FromArgb(55, 51, 76);
+            btnDoanhThu.BackColor = Color.FromArgb(55, 51, 76);
+            btnDichVu.BackColor = Color.FromArgb(55, 51, 76);
+            btnDanhSachNhanVien.BackColor = Color.FromArgb(55, 51, 76);
+            btnDonXuatNhap.BackColor = Color.FromArgb(55, 51, 76);
+            if (currentButton != null)
                 currentButton.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163))); 
             btnCloseChildForm.Visible = false;
             currentButton = null;

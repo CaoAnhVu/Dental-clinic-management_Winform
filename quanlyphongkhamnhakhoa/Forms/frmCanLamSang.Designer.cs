@@ -36,9 +36,11 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.tpThuoc = new System.Windows.Forms.TabPage();
             this.flpThuoc = new System.Windows.Forms.FlowLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.button2 = new System.Windows.Forms.Button();
             this.cbNhanVien = new System.Windows.Forms.ComboBox();
             this.label23 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -57,15 +59,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tpThuThuat.SuspendLayout();
             this.panel18.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.tpThuoc.SuspendLayout();
             this.panel11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -87,9 +87,9 @@
             this.groupBox1.Controls.Add(this.TabControl);
             this.groupBox1.Controls.Add(this.panel11);
             this.groupBox1.Controls.Add(this.txtTimKiem);
-            this.groupBox1.Location = new System.Drawing.Point(12, 90);
+            this.groupBox1.Location = new System.Drawing.Point(5, 90);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1920, 916);
+            this.groupBox1.Size = new System.Drawing.Size(1907, 953);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
@@ -103,7 +103,7 @@
             this.TabControl.Location = new System.Drawing.Point(15, 63);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(368, 831);
+            this.TabControl.Size = new System.Drawing.Size(368, 868);
             this.TabControl.TabIndex = 38;
             // 
             // tpThuThuat
@@ -115,7 +115,7 @@
             this.tpThuThuat.Location = new System.Drawing.Point(4, 37);
             this.tpThuThuat.Name = "tpThuThuat";
             this.tpThuThuat.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThuThuat.Size = new System.Drawing.Size(360, 790);
+            this.tpThuThuat.Size = new System.Drawing.Size(360, 827);
             this.tpThuThuat.TabIndex = 1;
             this.tpThuThuat.Text = "Thủ thuật";
             // 
@@ -126,7 +126,7 @@
             this.flpThuThuat.AutoScroll = true;
             this.flpThuThuat.Location = new System.Drawing.Point(1, 1);
             this.flpThuThuat.Name = "flpThuThuat";
-            this.flpThuThuat.Size = new System.Drawing.Size(359, 793);
+            this.flpThuThuat.Size = new System.Drawing.Size(359, 830);
             this.flpThuThuat.TabIndex = 10;
             // 
             // panel18
@@ -160,6 +160,16 @@
             this.label35.TabIndex = 1;
             this.label35.Text = "Trám răng";
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::PKNK_CNPM.Properties.Resources._20200923_140404_562589_han_rang_max_1800x1800;
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(119, 80);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
             // tpThuoc
             // 
             this.tpThuoc.BackColor = System.Drawing.Color.Snow;
@@ -167,7 +177,7 @@
             this.tpThuoc.Location = new System.Drawing.Point(4, 37);
             this.tpThuoc.Name = "tpThuoc";
             this.tpThuoc.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThuoc.Size = new System.Drawing.Size(360, 790);
+            this.tpThuoc.Size = new System.Drawing.Size(360, 796);
             this.tpThuoc.TabIndex = 2;
             this.tpThuoc.Text = "Thuốc";
             // 
@@ -205,8 +215,23 @@
             this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(389, 21);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1531, 895);
+            this.panel11.Size = new System.Drawing.Size(1494, 926);
             this.panel11.TabIndex = 3;
+            // 
+            // button2
+            // 
+            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackColor = System.Drawing.Color.Gold;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(1173, 66);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(300, 39);
+            this.button2.TabIndex = 29;
+            this.button2.Text = "Phiếu khám";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // cbNhanVien
             // 
@@ -214,7 +239,7 @@
             this.cbNhanVien.FormattingEnabled = true;
             this.cbNhanVien.Location = new System.Drawing.Point(175, 67);
             this.cbNhanVien.Name = "cbNhanVien";
-            this.cbNhanVien.Size = new System.Drawing.Size(300, 36);
+            this.cbNhanVien.Size = new System.Drawing.Size(381, 36);
             this.cbNhanVien.TabIndex = 28;
             // 
             // label23
@@ -223,7 +248,7 @@
             this.label23.BackColor = System.Drawing.Color.Snow;
             this.label23.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label23.ForeColor = System.Drawing.Color.Black;
-            this.label23.Location = new System.Drawing.Point(493, 75);
+            this.label23.Location = new System.Drawing.Point(594, 77);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(141, 23);
             this.label23.TabIndex = 27;
@@ -233,10 +258,10 @@
             // 
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.textBox2.Location = new System.Drawing.Point(654, 67);
+            this.textBox2.Location = new System.Drawing.Point(755, 69);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 92);
+            this.textBox2.Size = new System.Drawing.Size(394, 92);
             this.textBox2.TabIndex = 26;
             // 
             // label13
@@ -259,7 +284,7 @@
             this.txtMaKH.Location = new System.Drawing.Point(175, 127);
             this.txtMaKH.Multiline = true;
             this.txtMaKH.Name = "txtMaKH";
-            this.txtMaKH.Size = new System.Drawing.Size(300, 32);
+            this.txtMaKH.Size = new System.Drawing.Size(381, 32);
             this.txtMaKH.TabIndex = 22;
             // 
             // label12
@@ -268,7 +293,7 @@
             this.label12.BackColor = System.Drawing.Color.Snow;
             this.label12.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(493, 17);
+            this.label12.Location = new System.Drawing.Point(594, 19);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(130, 23);
             this.label12.TabIndex = 21;
@@ -279,18 +304,21 @@
             this.txtTenKH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTenKH.Enabled = false;
             this.txtTenKH.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.txtTenKH.Location = new System.Drawing.Point(654, 15);
+            this.txtTenKH.Location = new System.Drawing.Point(755, 17);
             this.txtTenKH.Multiline = true;
             this.txtTenKH.Name = "txtTenKH";
-            this.txtTenKH.Size = new System.Drawing.Size(296, 32);
+            this.txtTenKH.Size = new System.Drawing.Size(394, 32);
             this.txtTenKH.TabIndex = 20;
             // 
             // flpThemThuoc
             // 
+            this.flpThemThuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.flpThemThuoc.AutoScroll = true;
-            this.flpThemThuoc.Location = new System.Drawing.Point(21, 526);
+            this.flpThemThuoc.Location = new System.Drawing.Point(21, 559);
             this.flpThemThuoc.Name = "flpThemThuoc";
-            this.flpThemThuoc.Size = new System.Drawing.Size(1490, 329);
+            this.flpThemThuoc.Size = new System.Drawing.Size(1452, 351);
             this.flpThemThuoc.TabIndex = 19;
             // 
             // flpThemThuThuat
@@ -300,7 +328,7 @@
             this.flpThemThuThuat.AutoScroll = true;
             this.flpThemThuThuat.Location = new System.Drawing.Point(23, 184);
             this.flpThemThuThuat.Name = "flpThemThuThuat";
-            this.flpThemThuThuat.Size = new System.Drawing.Size(1488, 317);
+            this.flpThemThuThuat.Size = new System.Drawing.Size(1450, 350);
             this.flpThemThuThuat.TabIndex = 18;
             // 
             // label39
@@ -329,15 +357,14 @@
             // 
             // btnHoSoPhongKham
             // 
-            this.btnHoSoPhongKham.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnHoSoPhongKham.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnHoSoPhongKham.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
             this.btnHoSoPhongKham.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHoSoPhongKham.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnHoSoPhongKham.ForeColor = System.Drawing.Color.White;
-            this.btnHoSoPhongKham.Location = new System.Drawing.Point(962, 12);
+            this.btnHoSoPhongKham.Location = new System.Drawing.Point(1173, 21);
             this.btnHoSoPhongKham.Name = "btnHoSoPhongKham";
-            this.btnHoSoPhongKham.Size = new System.Drawing.Size(187, 39);
+            this.btnHoSoPhongKham.Size = new System.Drawing.Size(300, 39);
             this.btnHoSoPhongKham.TabIndex = 3;
             this.btnHoSoPhongKham.Text = "Hồ sơ phòng khám";
             this.btnHoSoPhongKham.UseVisualStyleBackColor = false;
@@ -345,15 +372,14 @@
             // 
             // btnDonThuoc
             // 
-            this.btnDonThuoc.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDonThuoc.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDonThuoc.BackColor = System.Drawing.Color.Gold;
             this.btnDonThuoc.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDonThuoc.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.btnDonThuoc.ForeColor = System.Drawing.Color.White;
-            this.btnDonThuoc.Location = new System.Drawing.Point(962, 102);
+            this.btnDonThuoc.Location = new System.Drawing.Point(1173, 111);
             this.btnDonThuoc.Name = "btnDonThuoc";
-            this.btnDonThuoc.Size = new System.Drawing.Size(187, 39);
+            this.btnDonThuoc.Size = new System.Drawing.Size(300, 39);
             this.btnDonThuoc.TabIndex = 3;
             this.btnDonThuoc.Text = "Đơn thuốc";
             this.btnDonThuoc.UseVisualStyleBackColor = false;
@@ -366,7 +392,7 @@
             this.txtMaThongTin.Location = new System.Drawing.Point(175, 13);
             this.txtMaThongTin.Multiline = true;
             this.txtMaThongTin.Name = "txtMaThongTin";
-            this.txtMaThongTin.Size = new System.Drawing.Size(300, 32);
+            this.txtMaThongTin.Size = new System.Drawing.Size(381, 32);
             this.txtMaThongTin.TabIndex = 2;
             // 
             // label11
@@ -391,8 +417,6 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
             this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -400,7 +424,7 @@
             this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(261, 36);
+            this.txtTimKiem.Size = new System.Drawing.Size(364, 36);
             this.txtTimKiem.TabIndex = 1;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
@@ -414,32 +438,6 @@
             this.label1.Size = new System.Drawing.Size(223, 31);
             this.label1.TabIndex = 36;
             this.label1.Text = "Tạo mới phiếu khám";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.BackColor = System.Drawing.Color.Gold;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(962, 57);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(187, 39);
-            this.button2.TabIndex = 29;
-            this.button2.Text = "Phiếu khám";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::PKNK_CNPM.Properties.Resources._20200923_140404_562589_han_rang_max_1800x1800;
-            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(119, 80);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
             // 
             // frmCanLamSang
             // 
@@ -461,10 +459,10 @@
             this.tpThuThuat.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.tpThuoc.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

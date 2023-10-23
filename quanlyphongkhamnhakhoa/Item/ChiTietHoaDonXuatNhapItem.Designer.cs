@@ -56,16 +56,18 @@
             this.label13.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label13.Location = new System.Drawing.Point(1, 37);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(1051, 2);
+            this.label13.Size = new System.Drawing.Size(956, 2);
             this.label13.TabIndex = 16;
             // 
             // label6
             // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label6.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label6.Location = new System.Drawing.Point(0, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(1145, 2);
+            this.label6.Size = new System.Drawing.Size(956, 2);
             this.label6.TabIndex = 15;
             // 
             // label1
@@ -95,7 +97,7 @@
             this.label2.AutoSize = true;
             this.label2.Enabled = false;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(248, 7);
+            this.label2.Location = new System.Drawing.Point(219, 7);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 25);
             this.label2.TabIndex = 17;
@@ -109,7 +111,7 @@
             this.txtTenThuoc.ForeColor = System.Drawing.Color.DimGray;
             this.txtTenThuoc.Location = new System.Drawing.Point(66, 42);
             this.txtTenThuoc.Name = "txtTenThuoc";
-            this.txtTenThuoc.Size = new System.Drawing.Size(181, 31);
+            this.txtTenThuoc.Size = new System.Drawing.Size(152, 31);
             this.txtTenThuoc.TabIndex = 18;
             // 
             // label3
@@ -128,9 +130,9 @@
             this.txtSoLuong.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtSoLuong.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtSoLuong.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSoLuong.Location = new System.Drawing.Point(253, 42);
+            this.txtSoLuong.Location = new System.Drawing.Point(224, 42);
             this.txtSoLuong.Name = "txtSoLuong";
-            this.txtSoLuong.Size = new System.Drawing.Size(88, 31);
+            this.txtSoLuong.Size = new System.Drawing.Size(83, 31);
             this.txtSoLuong.TabIndex = 18;
             this.txtSoLuong.Text = "0";
             this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged_1);
@@ -141,7 +143,7 @@
             this.label4.AutoSize = true;
             this.label4.Enabled = false;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(342, 7);
+            this.label4.Location = new System.Drawing.Point(313, 7);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(67, 25);
             this.label4.TabIndex = 17;
@@ -153,9 +155,9 @@
             this.txtDonVi.Enabled = false;
             this.txtDonVi.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDonVi.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDonVi.Location = new System.Drawing.Point(347, 42);
+            this.txtDonVi.Location = new System.Drawing.Point(313, 42);
             this.txtDonVi.Name = "txtDonVi";
-            this.txtDonVi.Size = new System.Drawing.Size(99, 31);
+            this.txtDonVi.Size = new System.Drawing.Size(77, 31);
             this.txtDonVi.TabIndex = 18;
             // 
             // label5
@@ -163,7 +165,7 @@
             this.label5.AutoSize = true;
             this.label5.Enabled = false;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(447, 7);
+            this.label5.Location = new System.Drawing.Point(391, 7);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 25);
             this.label5.TabIndex = 17;
@@ -175,9 +177,9 @@
             this.txtDonGia.Enabled = false;
             this.txtDonGia.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtDonGia.ForeColor = System.Drawing.Color.DimGray;
-            this.txtDonGia.Location = new System.Drawing.Point(452, 42);
+            this.txtDonGia.Location = new System.Drawing.Point(396, 42);
             this.txtDonGia.Name = "txtDonGia";
-            this.txtDonGia.Size = new System.Drawing.Size(149, 31);
+            this.txtDonGia.Size = new System.Drawing.Size(125, 31);
             this.txtDonGia.TabIndex = 18;
             this.txtDonGia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -186,7 +188,7 @@
             this.label7.AutoSize = true;
             this.label7.Enabled = false;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(602, 7);
+            this.label7.Location = new System.Drawing.Point(522, 7);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(104, 25);
             this.label7.TabIndex = 17;
@@ -198,9 +200,9 @@
             this.txtThanhTien.Enabled = false;
             this.txtThanhTien.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtThanhTien.ForeColor = System.Drawing.Color.DimGray;
-            this.txtThanhTien.Location = new System.Drawing.Point(607, 42);
+            this.txtThanhTien.Location = new System.Drawing.Point(527, 42);
             this.txtThanhTien.Name = "txtThanhTien";
-            this.txtThanhTien.Size = new System.Drawing.Size(153, 31);
+            this.txtThanhTien.Size = new System.Drawing.Size(165, 31);
             this.txtThanhTien.TabIndex = 18;
             this.txtThanhTien.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -209,7 +211,7 @@
             this.label8.AutoSize = true;
             this.label8.Enabled = false;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(761, 7);
+            this.label8.Location = new System.Drawing.Point(693, 7);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(77, 25);
             this.label8.TabIndex = 17;
@@ -220,15 +222,15 @@
             this.txtGhiChu.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGhiChu.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtGhiChu.ForeColor = System.Drawing.Color.DimGray;
-            this.txtGhiChu.Location = new System.Drawing.Point(766, 42);
+            this.txtGhiChu.Location = new System.Drawing.Point(698, 42);
             this.txtGhiChu.Name = "txtGhiChu";
-            this.txtGhiChu.Size = new System.Drawing.Size(231, 31);
+            this.txtGhiChu.Size = new System.Drawing.Size(192, 31);
             this.txtGhiChu.TabIndex = 18;
             // 
             // picXoa
             // 
             this.picXoa.Image = global::PKNK_CNPM.Properties.Resources.delete3;
-            this.picXoa.Location = new System.Drawing.Point(1003, 42);
+            this.picXoa.Location = new System.Drawing.Point(896, 42);
             this.picXoa.Name = "picXoa";
             this.picXoa.Size = new System.Drawing.Size(42, 31);
             this.picXoa.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -259,7 +261,7 @@
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label6);
             this.Name = "ChiTietDonThuoc";
-            this.Size = new System.Drawing.Size(1051, 77);
+            this.Size = new System.Drawing.Size(956, 77);
             this.Load += new System.EventHandler(this.ChiTietDonThuoc_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picXoa)).EndInit();
             this.ResumeLayout(false);
