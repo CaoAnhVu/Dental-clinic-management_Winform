@@ -19,15 +19,21 @@ namespace PKNK.DAL.Models
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         public int SoLuong { get; set; }
 
-        public int? MaChanDoan { get; set; }
+        [Key]
+        [Column(Order = 2)]
+        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        public int MaChanDoan { get; set; }
 
         [Key]
-        [Column(Order = 2, TypeName = "money")]
+        [Column(Order = 3, TypeName = "money")]
         public decimal ThanhTien { get; set; }
 
         [Key]
-        [Column(Order = 3, TypeName = "ntext")]
+        [Column(Order = 4, TypeName = "ntext")]
         public string GhiChu { get; set; }
+
+        [Column(TypeName = "money")]
+        public decimal? DonGia { get; set; }
 
         public virtual ChanDoan ChanDoan { get; set; }
 

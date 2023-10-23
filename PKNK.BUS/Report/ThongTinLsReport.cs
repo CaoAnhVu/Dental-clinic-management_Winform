@@ -8,25 +8,11 @@ namespace PKNK.BUS.Report
 {
     public class ThongTinLsReport
     {
-        public string Loai
-        {
-            get; set;
-        }
-        public string TenThuThuat
-        {
-            get; set;
-        }
-        public string SoLuong
-        {
-            get; set;
-        }
-        public string DonGia
-        {
-            get; set;
-        }
-        public string ThanhTien
-        {
-            get; set;
-        }
+        public string Loai{get; set;}
+        public string TenThuThuat{get; set;}
+        public string SoLuong{get; set;}
+        public string DonGia{get; set;}
+        public decimal ThanhTien{get; set;}
+        public string GiamGia {get; set;}
     }
 }

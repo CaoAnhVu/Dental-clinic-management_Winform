@@ -67,12 +67,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Report\AuthService.cs" />
+    <Compile Include="Report\HoaDonReport.cs" />
     <Compile Include="Report\ThongTinLsReport.cs" />
     <Compile Include="Report\ThongTinThuocReport.cs" />
     <Compile Include="Servive\AuthService.cs" />
     <Compile Include="Servive\ChanDoanService.cs" />
-    <Compile Include="Servive\ThongTinLsServive.cs" />
+    <Compile Include="Servive\TTLamSanServive.cs" />
     <Compile Include="Servive\DonThuocService.cs" />
     <Compile Include="Servive\KhachHangService.cs" />
     <Compile Include="Servive\CheckValidService.cs" />
@@ -93,6 +93,26 @@
   <ItemGroup>
     <None Include="App.Config" />
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\PKNK.BUS.Report.ThongTinLsReport.datasource" />
+    <None Include="Properties\DataSources\PKNK.BUS.Report.ThongTinThuocReport.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.Auth.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.BaoHiem.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.BenhNhan.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.ChanDoan.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.ChucDanh.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.DoanhThu.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.DonThuoc.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.HoaDon.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.LoaiThuThuat.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.NhanVien.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.PKNK_ContextDB.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.ThongTinL.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.ThongTinThuoc.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.Thuoc.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.ThuThuat.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.TrangThai.datasource" />
+    <None Include="Properties\DataSources\PKNK.DAL.Models.TTCanLamSan.datasource" />
+    <None Include="Properties\DataSources\SqlServerTypes.Utilities.datasource" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="SqlServerTypes\readme.htm" />

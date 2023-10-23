@@ -20,7 +20,7 @@ namespace PKNK_CNPM.FormCustomer
     {
         // Service -----------------------
         private readonly LoaiThuThuatService loaiThuThuatService = new LoaiThuThuatService();
-        private readonly ThongTinLsServive thongTinLsServive = new ThongTinLsServive();
+        private readonly TTLamSanServive thongTinLsServive = new TTLamSanServive();
         private readonly DonThuocService donThuocService = new DonThuocService();
         private readonly NhanVienService nhanVienService = new NhanVienService();
         private readonly ChanDoanService chuanDoanService = new ChanDoanService();
@@ -127,6 +127,7 @@ namespace PKNK_CNPM.FormCustomer
                     DonThuoc tt = new DonThuoc
                     {
                         MaThuoc = thuocItem.Thuoc.MaThuoc,
+                        DonGia = thuocItem.Thuoc.DonGia,
                         GhiChu = thuocItem.GhiChu,
                         SoLuong = thuocItem.SoLuong,
                         ThanhTien = thuocItem.Thuoc.DonGia * thuocItem.SoLuong,
@@ -176,8 +177,7 @@ namespace PKNK_CNPM.FormCustomer
         {
             try
             {
-                getThongTinThuThuat();
-                getThongTinThuoc();
+                Luu();
                 frmPhieuKham frm = new frmPhieuKham(chanDoan.MaChanDoan);
                 frm.ShowDialog();
             }
@@ -186,8 +186,7 @@ namespace PKNK_CNPM.FormCustomer
                 MessageBox.Show(ex.Message);
             }
         }
-
-        private void btnLuu_Click(object sender, EventArgs e)
+        private void Luu()
         {
             try
             {
@@ -218,14 +217,17 @@ namespace PKNK_CNPM.FormCustomer
             }
         }
 
-        private void btnDonThuoc_Click(object sender, EventArgs e)
+        private void btnDonThuoc_Click_1(object sender, EventArgs e)
         {
 
         }
 
-        private void btnDonThuoc_Click_1(object sender, EventArgs e)
+        private void btnInHoaDon_Click(object sender, EventArgs e)
         {
-
+            Luu();
+            frmHoaDon2 frm = new frmHoaDon2(chanDoan);
+            frm.ShowDialog();
+            this.Close();
         }
     }
 }

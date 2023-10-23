@@ -73,6 +73,11 @@ namespace PKNK.DAL.Models
                 .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<ChanDoan>()
+                .HasMany(e => e.DonThuocs)
+                .WithRequired(e => e.ChanDoan)
+                .WillCascadeOnDelete(false);
+
+            modelBuilder.Entity<ChanDoan>()
                 .HasMany(e => e.HoaDons)
                 .WithRequired(e => e.ChanDoan)
                 .WillCascadeOnDelete(false);
@@ -232,6 +237,10 @@ namespace PKNK.DAL.Models
 
             modelBuilder.Entity<DonThuoc>()
                 .Property(e => e.ThanhTien)
+                .HasPrecision(19, 4);
+
+            modelBuilder.Entity<DonThuoc>()
+                .Property(e => e.DonGia)
                 .HasPrecision(19, 4);
         }
     }

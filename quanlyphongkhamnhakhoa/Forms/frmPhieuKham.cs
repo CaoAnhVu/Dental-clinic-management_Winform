@@ -14,7 +14,7 @@ namespace PKNK_CNPM.Forms
 {
     public partial class frmPhieuKham : Form
     {
-        private readonly ThongTinLsServive thongTinLsServive = new ThongTinLsServive();
+        private readonly TTLamSanServive thongTinLsServive = new TTLamSanServive();
         private readonly DonThuocService donThuocServive = new DonThuocService();
 
         private int MaChuanDoan;

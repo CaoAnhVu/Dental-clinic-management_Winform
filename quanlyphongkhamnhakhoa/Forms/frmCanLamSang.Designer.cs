@@ -500,6 +500,7 @@
             this.btnInHoaDon.Text = "            In hóa đơn";
             this.btnInHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnInHoaDon.UseVisualStyleBackColor = false;
+            this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
             // panel10
             // 
