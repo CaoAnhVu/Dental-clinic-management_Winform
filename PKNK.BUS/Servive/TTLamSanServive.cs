@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace PKNK.BUS.Servive
 {
-    public class ThongTinLsServive
+    public class TTLamSanServive
     {
         public List<ThongTinL> GetAll()
         {
