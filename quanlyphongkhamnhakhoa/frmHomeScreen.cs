@@ -128,7 +128,6 @@ namespace PKNK_CNPM
             btnThuoc.BackColor = Color.FromArgb(55, 51, 76);
             btnThongKe.BackColor = Color.FromArgb(55, 51, 76);
             btnDoanhThu.BackColor = Color.FromArgb(55, 51, 76);
-            btnDichVu.BackColor = Color.FromArgb(55, 51, 76);
             btnDanhSachNhanVien.BackColor = Color.FromArgb(55, 51, 76);
             btnDonXuatNhap.BackColor = Color.FromArgb(55, 51, 76);
             if (currentButton != null)
@@ -198,8 +197,6 @@ namespace PKNK_CNPM
         //Set Timer các chức năng trong toolBar
         private void btnCustomer_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new PKNK_CNPM.Forms.FormCustomer(), sender);
-            //set timer interval to lowest to make it smoother 
             CustomerTimer.Start();
         }
 
@@ -296,7 +293,6 @@ namespace PKNK_CNPM
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmHoaDon(), sender);
         }
 
         private void btnDonXuatHang_Click(object sender, EventArgs e)
@@ -341,5 +337,10 @@ namespace PKNK_CNPM
             
         }
 
+        private void btnPhieuKham_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new PKNK_CNPM.Forms.FormCustomer(), sender);
+            //set timer interval to lowest to make it smoother 
+        }
     }
 }

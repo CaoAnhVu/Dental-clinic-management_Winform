@@ -200,19 +200,5 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
             }
         }
-
-        private void btnInHoaDon_Click(object sender, EventArgs e)
-        {
-            if (khachHang != null)
-            {
-                frmHoaDon frmHoaDon = new frmHoaDon();
-                frmHoaDon.ShowDialog();
-                BindGrid(khachHangService.GetAll());
-            }
-            else
-            {
-                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
-            }
-        }
     }
 }

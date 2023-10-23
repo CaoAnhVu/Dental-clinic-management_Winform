@@ -1,5 +1,6 @@
 ﻿using PKNK.BUS.Servive;
 using PKNK.DAL.Models;
+using PKNK_CNPM.FormCustomer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,7 +36,7 @@ namespace PKNK_CNPM.Forms
 
         private bool checkValue()
         {
-            if (txtTenKH.Text != "" && txtMaKH.Text != "" && txtSDT.Text != "")
+            if (txtTenKH.Text != "" && txtSDT.Text != "")
             {
                 return true;
             }
@@ -69,6 +70,10 @@ namespace PKNK_CNPM.Forms
                 else
                     rbNu.Checked = true;
             }
+            else
+            {
+                txtMaKH.Enabled = false;
+            }
         }
         //
         private void frmThemKhachHang_Load(object sender, EventArgs e)
@@ -80,10 +85,7 @@ namespace PKNK_CNPM.Forms
         {
             try
             {
-                BenhNhan existingBenhNhan = benhNhanService.GetAll().FirstOrDefault(p => p.MaBN == int.Parse(txtMaKH.Text));
                 // Hander valid
-                if (existingBenhNhan != null && !isEdit)
-                    throw new Exception("Mã nhân viên đã có!");
                 if (!checkValue())
                     throw new Exception("Chưa nhập đầy đủ thông tin!");
                 if (txtTenKH.Text.Length > 255)
@@ -93,7 +95,6 @@ namespace PKNK_CNPM.Forms
 
                 BenhNhan value = new BenhNhan()
                 {
-                    MaBN = int.Parse(txtMaKH.Text),
                     TenBN = txtTenKH.Text,
                     SDT = txtSDT.Text,
                     GioiTinh = rbNam.Checked == true ? true : false,

@@ -59,7 +59,6 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Deb
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DonThuocItem.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.frmCanLamSang.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDonThuoc.resources
-D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDon.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDonXuatNhap.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThemHoaDonXuatNhap.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DanhSachThuocItem.resources
@@ -69,7 +68,6 @@ D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustome
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDanhSachThuoc.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDonXuatNhap.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmTaoThuocMoi.resources
-D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThemHoaDonXuatNhap.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.frmKhamLamSan.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.frmLoginPage.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.frmHomeScreen.resources
@@ -201,3 +199,4 @@ D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.WinForms.x
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.pdb
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.xml
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThongKeVatLieu.resources
+D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.ThemHoaDonXuatNhap.resources

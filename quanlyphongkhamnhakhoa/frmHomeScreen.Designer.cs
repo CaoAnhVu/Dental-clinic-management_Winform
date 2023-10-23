@@ -49,8 +49,6 @@
             this.btnThongKe = new System.Windows.Forms.Button();
             this.panel7 = new System.Windows.Forms.Panel();
             this.btnQuanLy = new System.Windows.Forms.Button();
-            this.panel26 = new System.Windows.Forms.Panel();
-            this.btnDichVu = new System.Windows.Forms.Button();
             this.panel20 = new System.Windows.Forms.Panel();
             this.btnThuoc = new System.Windows.Forms.Button();
             this.panel27 = new System.Windows.Forms.Panel();
@@ -102,7 +100,6 @@
             this.panel13.SuspendLayout();
             this.panel29.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel26.SuspendLayout();
             this.panel20.SuspendLayout();
             this.panel27.SuspendLayout();
             this.SettingContainer.SuspendLayout();
@@ -204,6 +201,7 @@
             this.btnPhieuKham.Text = "            Phiếu khám";
             this.btnPhieuKham.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhieuKham.UseVisualStyleBackColor = false;
+            this.btnPhieuKham.Click += new System.EventHandler(this.btnPhieuKham_Click);
             // 
             // panel11
             // 
@@ -269,11 +267,10 @@
             this.QuanlyContainer.Controls.Add(this.panel13);
             this.QuanlyContainer.Controls.Add(this.panel29);
             this.QuanlyContainer.Controls.Add(this.panel7);
-            this.QuanlyContainer.Controls.Add(this.panel26);
             this.QuanlyContainer.Controls.Add(this.panel20);
             this.QuanlyContainer.Controls.Add(this.panel27);
             this.QuanlyContainer.Location = new System.Drawing.Point(3, 143);
-            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 344);
+            this.QuanlyContainer.MaximumSize = new System.Drawing.Size(265, 310);
             this.QuanlyContainer.MinimumSize = new System.Drawing.Size(265, 54);
             this.QuanlyContainer.Name = "QuanlyContainer";
             this.QuanlyContainer.Size = new System.Drawing.Size(265, 54);
@@ -336,7 +333,7 @@
             // panel29
             // 
             this.panel29.Controls.Add(this.btnThongKe);
-            this.panel29.Location = new System.Drawing.Point(-13, 290);
+            this.panel29.Location = new System.Drawing.Point(-8, 248);
             this.panel29.Name = "panel29";
             this.panel29.Size = new System.Drawing.Size(332, 59);
             this.panel29.TabIndex = 4;
@@ -350,7 +347,7 @@
             this.btnThongKe.ForeColor = System.Drawing.Color.White;
             this.btnThongKe.Image = global::PKNK_CNPM.Properties.Resources.statistics;
             this.btnThongKe.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThongKe.Location = new System.Drawing.Point(-6, -3);
+            this.btnThongKe.Location = new System.Drawing.Point(-10, -1);
             this.btnThongKe.Name = "btnThongKe";
             this.btnThongKe.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnThongKe.Size = new System.Drawing.Size(290, 62);
@@ -389,33 +386,6 @@
             this.btnQuanLy.UseVisualStyleBackColor = false;
             this.btnQuanLy.Click += new System.EventHandler(this.btnQuanLy_Click_1);
             // 
-            // panel26
-            // 
-            this.panel26.Controls.Add(this.btnDichVu);
-            this.panel26.Location = new System.Drawing.Point(-19, 196);
-            this.panel26.Name = "panel26";
-            this.panel26.Size = new System.Drawing.Size(286, 53);
-            this.panel26.TabIndex = 9;
-            // 
-            // btnDichVu
-            // 
-            this.btnDichVu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnDichVu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDichVu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDichVu.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnDichVu.ForeColor = System.Drawing.Color.White;
-            this.btnDichVu.Image = global::PKNK_CNPM.Properties.Resources.customer_service;
-            this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(1, -3);
-            this.btnDichVu.Name = "btnDichVu";
-            this.btnDichVu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDichVu.Size = new System.Drawing.Size(292, 61);
-            this.btnDichVu.TabIndex = 1;
-            this.btnDichVu.Text = "            Dịch vụ";
-            this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.UseVisualStyleBackColor = false;
-            this.btnDichVu.Click += new System.EventHandler(this.btnDichVu_Click);
-            // 
             // panel20
             // 
             this.panel20.Controls.Add(this.btnThuoc);
@@ -446,7 +416,7 @@
             // panel27
             // 
             this.panel27.Controls.Add(this.btnDoanhThu);
-            this.panel27.Location = new System.Drawing.Point(-46, 243);
+            this.panel27.Location = new System.Drawing.Point(-46, 196);
             this.panel27.Name = "panel27";
             this.panel27.Size = new System.Drawing.Size(322, 53);
             this.panel27.TabIndex = 11;
@@ -542,7 +512,7 @@
             this.panel14.Controls.Add(this.btnDangXuat);
             this.panel14.Location = new System.Drawing.Point(3, 263);
             this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(265, 54);
+            this.panel14.Size = new System.Drawing.Size(265, 52);
             this.panel14.TabIndex = 4;
             // 
             // btnDangXuat
@@ -886,7 +856,6 @@
             this.panel13.ResumeLayout(false);
             this.panel29.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel26.ResumeLayout(false);
             this.panel20.ResumeLayout(false);
             this.panel27.ResumeLayout(false);
             this.SettingContainer.ResumeLayout(false);
@@ -928,8 +897,6 @@
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnCloseChildForm;
         private System.Windows.Forms.Panel QuanlyContainer;
-        private System.Windows.Forms.Panel panel26;
-        private System.Windows.Forms.Button btnDichVu;
         private System.Windows.Forms.Panel panel20;
         private System.Windows.Forms.Button btnThuoc;
         private System.Windows.Forms.Panel panel27;

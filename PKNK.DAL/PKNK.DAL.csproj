@@ -94,6 +94,7 @@
     <Compile Include="Models\ChucDanh.cs" />
     <Compile Include="Models\DoanhThu.cs" />
     <Compile Include="Models\DonThuoc.cs" />
+    <Compile Include="Models\DonXuatNhap.cs" />
     <Compile Include="Models\HoaDon.cs" />
     <Compile Include="Models\LoaiThuThuat.cs" />
     <Compile Include="Models\NhanVien.cs" />
