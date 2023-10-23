@@ -141,3 +141,12 @@ D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.WinForms.pdb
 D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.WinForms.xml
 D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.Wpf.pdb
 D:\workspace\CS\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\LiveCharts.Wpf.xml

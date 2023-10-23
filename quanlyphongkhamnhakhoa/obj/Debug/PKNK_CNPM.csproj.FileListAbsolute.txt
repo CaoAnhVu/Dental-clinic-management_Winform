@@ -201,3 +201,17 @@ D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.WinForms.x
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.pdb
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.xml
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThongKeVatLieu.resources
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\Reporting\rptHoaDon.rdlc
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.WinForms.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.WinForms.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThongKe.resources
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThongKeVatLieu.resources
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDon2.resources
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmThongTinChung.resources
