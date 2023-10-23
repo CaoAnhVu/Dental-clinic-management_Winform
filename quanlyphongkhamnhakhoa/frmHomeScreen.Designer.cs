@@ -42,7 +42,7 @@
             this.btnCustomer = new System.Windows.Forms.Button();
             this.QuanlyContainer = new System.Windows.Forms.Panel();
             this.panel16 = new System.Windows.Forms.Panel();
-            this.btnDonXuatHang = new System.Windows.Forms.Button();
+            this.btnDonXuatNhap = new System.Windows.Forms.Button();
             this.panel13 = new System.Windows.Forms.Panel();
             this.btnDanhSachNhanVien = new System.Windows.Forms.Button();
             this.panel29 = new System.Windows.Forms.Panel();
@@ -281,30 +281,30 @@
             // 
             // panel16
             // 
-            this.panel16.Controls.Add(this.btnDonXuatHang);
+            this.panel16.Controls.Add(this.btnDonXuatNhap);
             this.panel16.Location = new System.Drawing.Point(-52, 105);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(319, 53);
             this.panel16.TabIndex = 6;
             // 
-            // btnDonXuatHang
+            // btnDonXuatNhap
             // 
-            this.btnDonXuatHang.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
-            this.btnDonXuatHang.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDonXuatHang.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDonXuatHang.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.btnDonXuatHang.ForeColor = System.Drawing.Color.White;
-            this.btnDonXuatHang.Image = global::PKNK_CNPM.Properties.Resources.order_delivery1;
-            this.btnDonXuatHang.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonXuatHang.Location = new System.Drawing.Point(39, -14);
-            this.btnDonXuatHang.Name = "btnDonXuatHang";
-            this.btnDonXuatHang.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDonXuatHang.Size = new System.Drawing.Size(292, 71);
-            this.btnDonXuatHang.TabIndex = 1;
-            this.btnDonXuatHang.Text = "           Hóa đơn xuất nhập";
-            this.btnDonXuatHang.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDonXuatHang.UseVisualStyleBackColor = false;
-            this.btnDonXuatHang.Click += new System.EventHandler(this.btnDonXuatHang_Click);
+            this.btnDonXuatNhap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
+            this.btnDonXuatNhap.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDonXuatNhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDonXuatNhap.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.btnDonXuatNhap.ForeColor = System.Drawing.Color.White;
+            this.btnDonXuatNhap.Image = global::PKNK_CNPM.Properties.Resources.order_delivery1;
+            this.btnDonXuatNhap.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonXuatNhap.Location = new System.Drawing.Point(39, -14);
+            this.btnDonXuatNhap.Name = "btnDonXuatNhap";
+            this.btnDonXuatNhap.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
+            this.btnDonXuatNhap.Size = new System.Drawing.Size(292, 71);
+            this.btnDonXuatNhap.TabIndex = 1;
+            this.btnDonXuatNhap.Text = "           Xuất nhập";
+            this.btnDonXuatNhap.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDonXuatNhap.UseVisualStyleBackColor = false;
+            this.btnDonXuatNhap.Click += new System.EventHandler(this.btnDonXuatHang_Click);
             // 
             // panel13
             // 
@@ -406,10 +406,10 @@
             this.btnDichVu.ForeColor = System.Drawing.Color.White;
             this.btnDichVu.Image = global::PKNK_CNPM.Properties.Resources.customer_service;
             this.btnDichVu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDichVu.Location = new System.Drawing.Point(1, -10);
+            this.btnDichVu.Location = new System.Drawing.Point(1, -3);
             this.btnDichVu.Name = "btnDichVu";
             this.btnDichVu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDichVu.Size = new System.Drawing.Size(292, 71);
+            this.btnDichVu.Size = new System.Drawing.Size(292, 61);
             this.btnDichVu.TabIndex = 1;
             this.btnDichVu.Text = "            Dịch vụ";
             this.btnDichVu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -433,10 +433,10 @@
             this.btnThuoc.ForeColor = System.Drawing.Color.White;
             this.btnThuoc.Image = global::PKNK_CNPM.Properties.Resources.medicine;
             this.btnThuoc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnThuoc.Location = new System.Drawing.Point(30, -12);
+            this.btnThuoc.Location = new System.Drawing.Point(30, -8);
             this.btnThuoc.Name = "btnThuoc";
             this.btnThuoc.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnThuoc.Size = new System.Drawing.Size(292, 71);
+            this.btnThuoc.Size = new System.Drawing.Size(292, 65);
             this.btnThuoc.TabIndex = 1;
             this.btnThuoc.Text = "            Thuốc";
             this.btnThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -460,10 +460,10 @@
             this.btnDoanhThu.ForeColor = System.Drawing.Color.White;
             this.btnDoanhThu.Image = global::PKNK_CNPM.Properties.Resources.money1;
             this.btnDoanhThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnDoanhThu.Location = new System.Drawing.Point(28, -13);
+            this.btnDoanhThu.Location = new System.Drawing.Point(28, -2);
             this.btnDoanhThu.Name = "btnDoanhThu";
             this.btnDoanhThu.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
-            this.btnDoanhThu.Size = new System.Drawing.Size(292, 71);
+            this.btnDoanhThu.Size = new System.Drawing.Size(292, 58);
             this.btnDoanhThu.TabIndex = 1;
             this.btnDoanhThu.Text = "            Doanh thu";
             this.btnDoanhThu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -704,9 +704,9 @@
             // panel19
             // 
             this.panel19.Controls.Add(this.btnTimKiem);
-            this.panel19.Location = new System.Drawing.Point(717, 27);
+            this.panel19.Location = new System.Drawing.Point(717, 44);
             this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(165, 54);
+            this.panel19.Size = new System.Drawing.Size(165, 37);
             this.panel19.TabIndex = 21;
             // 
             // btnTimKiem
@@ -719,7 +719,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(-8, -4);
+            this.btnTimKiem.Location = new System.Drawing.Point(-8, -13);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(174, 63);
@@ -958,7 +958,7 @@
         private System.Windows.Forms.Panel panel19;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Button btnDonXuatHang;
+        private System.Windows.Forms.Button btnDonXuatNhap;
         private System.Windows.Forms.Panel panel29;
         private System.Windows.Forms.Button btnThongKe;
         private System.Windows.Forms.Panel CustomerContainer;

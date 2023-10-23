@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.picFormLogin = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,6 +47,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.loading = new System.Windows.Forms.Panel();
+            this.loadingTimer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picFormLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -170,6 +173,7 @@
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = false;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.btnDangNhap.Enter += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // lblClose
             // 
@@ -236,7 +240,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(741, 653);
+            this.label7.Location = new System.Drawing.Point(741, 642);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(220, 16);
             this.label7.TabIndex = 16;
@@ -253,6 +257,21 @@
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
             // 
+            // loading
+            // 
+            this.loading.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.loading.Location = new System.Drawing.Point(0, 690);
+            this.loading.MaximumSize = new System.Drawing.Size(1277, 17);
+            this.loading.MinimumSize = new System.Drawing.Size(139, 17);
+            this.loading.Name = "loading";
+            this.loading.Size = new System.Drawing.Size(139, 17);
+            this.loading.TabIndex = 17;
+            // 
+            // loadingTimer
+            // 
+            this.loadingTimer.Interval = 15;
+            this.loadingTimer.Tick += new System.EventHandler(this.loadingTimer_Tick);
+            // 
             // frmLoginPage
             // 
             this.AcceptButton = this.btnDangNhap;
@@ -262,6 +281,7 @@
             this.BackgroundImage = global::PKNK_CNPM.Properties.Resources.Slide_16_9___1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1277, 707);
+            this.Controls.Add(this.loading);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -285,7 +305,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmLoginPage";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             ((System.ComponentModel.ISupportInitialize)(this.picFormLogin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -317,6 +337,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.Panel loading;
+        private System.Windows.Forms.Timer loadingTimer;
     }
 }
 

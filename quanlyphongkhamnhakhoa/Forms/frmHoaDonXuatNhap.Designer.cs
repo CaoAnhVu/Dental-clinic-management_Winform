@@ -156,8 +156,6 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -165,7 +163,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(517, 21);
+            this.btnTimKiem.Location = new System.Drawing.Point(899, 21);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(174, 36);
@@ -176,8 +174,6 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
             this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -185,7 +181,7 @@
             this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(505, 36);
+            this.txtTimKiem.Size = new System.Drawing.Size(887, 36);
             this.txtTimKiem.TabIndex = 20;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
