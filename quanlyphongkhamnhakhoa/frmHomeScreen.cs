@@ -21,7 +21,6 @@ namespace PKNK_CNPM
         bool customerCollapse;
         bool quanlyCollapse;
         bool settingCollapse;
-        bool accountCollapse;
         //fiedls
         private Random random;
         private Button currentButton;

@@ -44,28 +44,33 @@ namespace PKNK_CNPM.Item
         [Category("Custom Props")]
         public int SoLuong
         {
-            get { return int.Parse(txtSoLuong.Text); }
+            get { return txtSoLuong.Text != "" ? int.Parse(txtSoLuong.Text) : 0; }
         }
 
+        [Category("Custom Props")]
         public int GiamGia
         {
-            get { return int.Parse(txtGG.Text); }
+            get { return txtGG.Text != "" ? int.Parse(txtGG.Text) : 0; }
         }
 
+        [Category("Custom Props")]
         public decimal ThanhTien
         {
             get { return decimal.Parse(txtThanhTien.Text); }
         }
 
+        [Category("Custom Props")]
         public NhanVien NhanVien
         {
             get { return (NhanVien)cbBacSi.SelectedItem; }
         }
 
+        [Category("Custom Props")]
         public string MaLoaiThuThuat
         {
             get { return loaiThuThuat.MaLoaiThuThuat; }
         }
+        [Category("Custom Props")]
         public string MaThuThuat
         {
             get { return thuThuat.MaThuThuat; }

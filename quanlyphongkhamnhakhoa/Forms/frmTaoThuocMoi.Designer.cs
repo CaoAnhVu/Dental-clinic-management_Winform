@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.grpThemThuocMoi = new System.Windows.Forms.GroupBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dtmNgayHetHan = new System.Windows.Forms.DateTimePicker();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -37,7 +36,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnHuy = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.btnChonTep = new System.Windows.Forms.Button();
@@ -59,6 +57,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.grpThemThuocMoi.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -103,15 +103,6 @@
             this.grpThemThuocMoi.Size = new System.Drawing.Size(1246, 648);
             this.grpThemThuocMoi.TabIndex = 0;
             this.grpThemThuocMoi.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(925, 215);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 130);
-            this.pictureBox1.TabIndex = 44;
-            this.pictureBox1.TabStop = false;
             // 
             // dtmNgayHetHan
             // 
@@ -190,24 +181,6 @@
             this.btnHuy.TabIndex = 41;
             this.btnHuy.Text = "Hủy Bỏ";
             this.btnHuy.UseVisualStyleBackColor = false;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(203)))));
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Image = global::PKNK_CNPM.Properties.Resources.diskette;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(1063, 16);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnLuu.Size = new System.Drawing.Size(159, 57);
-            this.btnLuu.TabIndex = 40;
-            this.btnLuu.Text = "Lưu Lại";
-            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLuu.UseVisualStyleBackColor = false;
             // 
             // label15
             // 
@@ -414,6 +387,33 @@
             this.label1.Size = new System.Drawing.Size(289, 46);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thêm Thuốc Mới";
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(203)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Image = global::PKNK_CNPM.Properties.Resources.diskette;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(1063, 16);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnLuu.Size = new System.Drawing.Size(159, 57);
+            this.btnLuu.TabIndex = 40;
+            this.btnLuu.Text = "Lưu Lại";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox1.Location = new System.Drawing.Point(813, 215);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(186, 130);
+            this.pictureBox1.TabIndex = 44;
+            this.pictureBox1.TabStop = false;
             // 
             // frmTaoThuocMoi
             // 

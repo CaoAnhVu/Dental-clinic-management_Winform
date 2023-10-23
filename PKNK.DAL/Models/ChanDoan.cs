@@ -12,24 +12,25 @@ namespace PKNK.DAL.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ChanDoan()
         {
-            Bills = new HashSet<Bill>();
+            DonThuocs = new HashSet<DonThuoc>();
+            HoaDons = new HashSet<HoaDon>();
+            ThongTinLS = new HashSet<ThongTinL>();
         }
-
-        [Key]
-        [StringLength(10)]
-        public string MaChanDoan { get; set; }
 
         public int MaBN { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        public string MaThongTinLS { get; set; }
+        [Key]
+        public int MaChanDoan { get; set; }
 
         public virtual BenhNhan BenhNhan { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Bill> Bills { get; set; }
+        public virtual ICollection<DonThuoc> DonThuocs { get; set; }
 
-        public virtual ThongTinL ThongTinL { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<HoaDon> HoaDons { get; set; }
+
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ThongTinL> ThongTinLS { get; set; }
     }
 }

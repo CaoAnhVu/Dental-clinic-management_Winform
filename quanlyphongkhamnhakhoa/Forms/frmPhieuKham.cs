@@ -1,4 +1,5 @@
-﻿using PKNK.DAL.Models;
+﻿using PKNK.BUS.Servive;
+using PKNK.DAL.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,28 +14,52 @@ namespace PKNK_CNPM.Forms
 {
     public partial class frmPhieuKham : Form
     {
-        private List<ThongTinL> thongTins;
-        private double TongTien = 0, TongGiamGia;
-        public frmPhieuKham(List<ThongTinL> thongTins)
+        private readonly ThongTinLsServive thongTinLsServive = new ThongTinLsServive();
+        private readonly DonThuocService donThuocServive = new DonThuocService();
+
+        private int MaChuanDoan;
+        private List<ThongTinL> thongTinLamSan;
+        private List<DonThuoc> thongTinDonThuoc;
+        private double TongTienTT = 0,TongTienThuoc = 0,  TongGiamGia;
+        public frmPhieuKham(int maChuanDoan)
         {
             InitializeComponent();
-            this.thongTins = thongTins;
+            this.MaChuanDoan = maChuanDoan;
         }
 
-        private void setValue()
+        private void GetValue()
         {
-            foreach(ThongTinL i in thongTins)
+            thongTinLamSan = thongTinLsServive.FindByMaChuanDoan(MaChuanDoan);
+            thongTinDonThuoc = donThuocServive.FindByMaChuanDoan(MaChuanDoan);
+            // Set value ThuThuat
+            if (thongTinLamSan.Count != 0)
             {
-                TongTien += (double)(i.SoLuong * i.ThanhTien);
-                TongGiamGia += (double)(i.SoLuong * i.ThanhTien * (100 - i.GiamGia) / 100);
+                foreach (ThongTinL i in thongTinLamSan)
+                {
+                    TongTienTT += (double)(i.SoLuong * i.ThanhTien);
+                    TongGiamGia += (double)(i.SoLuong * i.ThanhTien * (100 - i.GiamGia) / 100);
+                }
             }
-            txtTongTien.Text = TongTien.ToString();
-            txtTienGiam.Text = (TongTien - TongGiamGia).ToString();
+            // Set value Thuoc
+            if (thongTinDonThuoc.Count != 0)
+            {
+                foreach (DonThuoc i in thongTinDonThuoc)
+                {
+                    TongTienThuoc += (double)(i.SoLuong * i.ThanhTien);
+                }
+            }
+        }
+
+        private void SetValue()
+        {
+            txtTongTien.Text = (TongTienThuoc + TongTienTT).ToString();
+            txtTienGiam.Text = (TongTienTT - TongGiamGia).ToString();
         }
 
         private void frmPhieuKham_Load(object sender, EventArgs e)
         {
-            setValue();
+            GetValue();
+            SetValue();
         }
     }
 }

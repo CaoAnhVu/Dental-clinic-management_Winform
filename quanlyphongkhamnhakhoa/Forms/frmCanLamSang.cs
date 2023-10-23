@@ -20,18 +20,23 @@ namespace PKNK_CNPM.FormCustomer
     {
         // Service -----------------------
         private readonly LoaiThuThuatService loaiThuThuatService = new LoaiThuThuatService();
-        private readonly ThuThuatService thuThuatService = new ThuThuatService();
+        private readonly ThongTinLsServive thongTinLsServive = new ThongTinLsServive();
+        private readonly DonThuocService donThuocService = new DonThuocService();
         private readonly NhanVienService nhanVienService = new NhanVienService();
+        private readonly ChanDoanService chuanDoanService = new ChanDoanService();
         private readonly ThuocService thuocService = new ThuocService();
         // -------------------------------
         private BenhNhan khachHang;
+        private ChanDoan chanDoan;
         private List<ThongTinL> thongTins = new List<ThongTinL>();
+        private List<DonThuoc> thuocs = new List<DonThuoc>();
+        // FUNCTION-----------------------
         public frmCanLamSang(BenhNhan khachHang)
         {
             this.khachHang = khachHang;
             InitializeComponent();
         }
-
+        
         private void populateThuThuatItems()
         {
             List<LoaiThuThuat> thuThuats = loaiThuThuatService.GetAll();
@@ -113,39 +118,114 @@ namespace PKNK_CNPM.FormCustomer
                 }
             }
         }
+        private void getThongTinThuoc()
+        {
+            for (int i = 0; i < flpThemThuoc.Controls.Count; i++)
+            {
+                if (flpThemThuoc.Controls[i] is DonThuocItem thuocItem)
+                {
+                    DonThuoc tt = new DonThuoc
+                    {
+                        MaThuoc = thuocItem.Thuoc.MaThuoc,
+                        GhiChu = thuocItem.GhiChu,
+                        SoLuong = thuocItem.SoLuong,
+                        ThanhTien = thuocItem.Thuoc.DonGia * thuocItem.SoLuong,
+                    };
+                    thuocs.Add(tt);
+                }
+            }
+        }
+        private void SetThongTinPanel()
+        {
+            if (flpThemThuThuat.Controls.Count == 0)
+                flpThemThuThuat.Controls.Add(new ThongTinItems());
+            if (flpThemThuoc.Controls.Count == 0)
+                flpThemThuoc.Controls.Add(new TTThuocItem());
+        }
+        // HANDER-------------------
+        private void frmCanLamSang_Load(object sender, EventArgs e)
+        {
+            populateNhanVienCombobox();
+            populateThuThuatItems();
+            populateThuocItems();
+            SetThongTinPanel();
+            loadValue();
+            chanDoan = new ChanDoan
+            {
+                MaChanDoan = chuanDoanService.GetUid(),
+                MaBN = int.Parse(txtMaKH.Text),
+            };
+            txtMaChuanDoan.Text = chanDoan.MaChanDoan.ToString();
+        }
+        // Click //
         void ThuocControl_Click(object sender, EventArgs e)
         {
             ThuocItem thuThuatItem = (ThuocItem)sender;
-            flpThemThuoc.Controls.Add(new ChiTietDonThuoc(thuThuatItem.UID, this.flpThemThuoc));
+            flpThemThuoc.Controls.Add(new DonThuocItem(thuThuatItem.UID, this.flpThemThuoc));
         }
         void ThuThuatControl_Click(object sender, EventArgs e) {
             ThuThuatItem thuThuatItem = (ThuThuatItem)sender;
-            if (flpThemThuThuat.Controls.Count == 0) 
-                flpThemThuThuat.Controls.Add(new ThongTinItems());
             flpThemThuThuat.Controls.Add(new TTThuThuatItem(thuThuatItem.LoaiThuThuat, this.flpThemThuThuat));
-        }
-        private void frmCanLamSang_Load(object sender, EventArgs e)
-        {
-            populateNhanVienCombobox(); 
-            populateThuThuatItems();
-            populateThuocItems();
-            loadValue();
         }
         private void btnHoSoPhongKham_Click(object sender, EventArgs e)
         {
             frmThemKhachHang frmThemKhach = new frmThemKhachHang(true, khachHang);
             frmThemKhach.ShowDialog();
         }
+        private void btnPhieuKham_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                getThongTinThuThuat();
+                getThongTinThuoc();
+                frmPhieuKham frm = new frmPhieuKham(chanDoan.MaChanDoan);
+                frm.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnLuu_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                getThongTinThuThuat();
+                getThongTinThuoc();
+                chuanDoanService.Add(chanDoan);
+                foreach (var item in thuocs)
+                {
+                    if (item != null)
+                    {
+                        item.MaChanDoan = chanDoan.MaChanDoan;
+                        donThuocService.Add(item);
+                    }
+                }
+                foreach (var item in thongTins)
+                {
+                    if (item != null)
+                    {
+                        item.MaChanDoan = chanDoan.MaChanDoan;
+                        thongTinLsServive.Add(item);
+                    }
+                }
+                MessageBox.Show("Lưu thành công!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
         private void btnDonThuoc_Click(object sender, EventArgs e)
         {
 
         }
-        private void button2_Click(object sender, EventArgs e)
+
+        private void btnDonThuoc_Click_1(object sender, EventArgs e)
         {
-            getThongTinThuThuat();
-            frmPhieuKham frm = new frmPhieuKham(thongTins);
-            MessageBox.Show(thongTins[0].ToString());
-            frm.ShowDialog();
+
         }
     }
 }

@@ -19,6 +19,6 @@ namespace PKNK.DAL.Models
 
         public DateTime Ngay { get; set; }
 
-        public virtual Bill Bill { get; set; }
+        public virtual HoaDon HoaDon { get; set; }
     }
 }
