@@ -31,12 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btnTimKiem = new System.Windows.Forms.Button();
-            this.txtTimKiem = new System.Windows.Forms.TextBox();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnTaiLai = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnThemKH = new System.Windows.Forms.Button();
             this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +39,12 @@
             this.colTienThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTienSauThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTienNo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.txtTimKiem = new System.Windows.Forms.TextBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThemKH = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -98,10 +98,64 @@
             this.dataGridView1.Size = new System.Drawing.Size(1179, 343);
             this.dataGridView1.TabIndex = 22;
             // 
+            // col
+            // 
+            this.col.HeaderText = "STT";
+            this.col.MinimumWidth = 6;
+            this.col.Name = "col";
+            this.col.Width = 50;
+            // 
+            // colMaHoaDon
+            // 
+            this.colMaHoaDon.HeaderText = "Mã hóa đơn";
+            this.colMaHoaDon.MinimumWidth = 6;
+            this.colMaHoaDon.Name = "colMaHoaDon";
+            this.colMaHoaDon.Width = 200;
+            // 
+            // colNgayLap
+            // 
+            this.colNgayLap.HeaderText = "Ngày lập";
+            this.colNgayLap.MinimumWidth = 6;
+            this.colNgayLap.Name = "colNgayLap";
+            this.colNgayLap.Width = 150;
+            // 
+            // colSoLuong
+            // 
+            this.colSoLuong.HeaderText = "SL";
+            this.colSoLuong.MinimumWidth = 6;
+            this.colSoLuong.Name = "colSoLuong";
+            this.colSoLuong.Width = 50;
+            // 
+            // colTienTruocThue
+            // 
+            this.colTienTruocThue.HeaderText = "Tiền trước thuế";
+            this.colTienTruocThue.MinimumWidth = 6;
+            this.colTienTruocThue.Name = "colTienTruocThue";
+            this.colTienTruocThue.Width = 200;
+            // 
+            // colTienThue
+            // 
+            this.colTienThue.HeaderText = "Tiền thuế";
+            this.colTienThue.MinimumWidth = 6;
+            this.colTienThue.Name = "colTienThue";
+            this.colTienThue.Width = 125;
+            // 
+            // colTienSauThue
+            // 
+            this.colTienSauThue.HeaderText = "Tiền sau thuế";
+            this.colTienSauThue.MinimumWidth = 6;
+            this.colTienSauThue.Name = "colTienSauThue";
+            this.colTienSauThue.Width = 200;
+            // 
+            // colTienNo
+            // 
+            this.colTienNo.HeaderText = "Tiền nợ";
+            this.colTienNo.MinimumWidth = 6;
+            this.colTienNo.Name = "colTienNo";
+            this.colTienNo.Width = 150;
+            // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnTimKiem.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
             this.btnTimKiem.FlatAppearance.BorderSize = 0;
             this.btnTimKiem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -109,7 +163,7 @@
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.Image = global::PKNK_CNPM.Properties.Resources.add1;
             this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTimKiem.Location = new System.Drawing.Point(517, 21);
+            this.btnTimKiem.Location = new System.Drawing.Point(899, 21);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(174, 36);
@@ -120,8 +174,6 @@
             // 
             // txtTimKiem
             // 
-            this.txtTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtTimKiem.BackColor = System.Drawing.SystemColors.Window;
             this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTimKiem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
@@ -129,7 +181,7 @@
             this.txtTimKiem.MaximumSize = new System.Drawing.Size(1070, 36);
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(505, 36);
+            this.txtTimKiem.Size = new System.Drawing.Size(887, 36);
             this.txtTimKiem.TabIndex = 20;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
@@ -189,62 +241,6 @@
             this.btnThemKH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemKH.UseVisualStyleBackColor = false;
             // 
-            // col
-            // 
-            this.col.HeaderText = "STT";
-            this.col.MinimumWidth = 6;
-            this.col.Name = "col";
-            this.col.Width = 50;
-            // 
-            // colMaHoaDon
-            // 
-            this.colMaHoaDon.HeaderText = "Mã hóa đơn";
-            this.colMaHoaDon.MinimumWidth = 6;
-            this.colMaHoaDon.Name = "colMaHoaDon";
-            this.colMaHoaDon.Width = 200;
-            // 
-            // colNgayLap
-            // 
-            this.colNgayLap.HeaderText = "Ngày lập";
-            this.colNgayLap.MinimumWidth = 6;
-            this.colNgayLap.Name = "colNgayLap";
-            this.colNgayLap.Width = 150;
-            // 
-            // colSoLuong
-            // 
-            this.colSoLuong.HeaderText = "SL";
-            this.colSoLuong.MinimumWidth = 6;
-            this.colSoLuong.Name = "colSoLuong";
-            this.colSoLuong.Width = 50;
-            // 
-            // colTienTruocThue
-            // 
-            this.colTienTruocThue.HeaderText = "Tiền trước thuế";
-            this.colTienTruocThue.MinimumWidth = 6;
-            this.colTienTruocThue.Name = "colTienTruocThue";
-            this.colTienTruocThue.Width = 200;
-            // 
-            // colTienThue
-            // 
-            this.colTienThue.HeaderText = "Tiền thuế";
-            this.colTienThue.MinimumWidth = 6;
-            this.colTienThue.Name = "colTienThue";
-            this.colTienThue.Width = 125;
-            // 
-            // colTienSauThue
-            // 
-            this.colTienSauThue.HeaderText = "Tiền sau thuế";
-            this.colTienSauThue.MinimumWidth = 6;
-            this.colTienSauThue.Name = "colTienSauThue";
-            this.colTienSauThue.Width = 200;
-            // 
-            // colTienNo
-            // 
-            this.colTienNo.HeaderText = "Tiền nợ";
-            this.colTienNo.MinimumWidth = 6;
-            this.colTienNo.Name = "colTienNo";
-            this.colTienNo.Width = 150;
-            // 
             // frmHoaDonXuatNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -255,6 +251,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Name = "frmHoaDonXuatNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Hóa Đơn Xuất Nhập";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

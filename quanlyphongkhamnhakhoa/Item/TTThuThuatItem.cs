@@ -22,6 +22,7 @@ namespace PKNK_CNPM.Item
         private LoaiThuThuat loaiThuThuat;
         private List<ThuThuat> thuThuatList;
         private ThuThuat thuThuat;
+        private FlowLayoutPanel flpThemThuThuat;
 
         #region Properties
         [Category("Custom Props")]
@@ -41,26 +42,47 @@ namespace PKNK_CNPM.Item
             get { return txtNoiDung.Text; }
         }
         [Category("Custom Props")]
-        public string SoLuong
+        public int SoLuong
         {
-            get { return txtSoLuong.Text; }
+            get { return txtSoLuong.Text != "" ? int.Parse(txtSoLuong.Text) : 0; }
         }
 
-        public string GiamGia
+        [Category("Custom Props")]
+        public int GiamGia
         {
-            get { return txtGG.Text; }
+            get { return txtGG.Text != "" ? int.Parse(txtGG.Text) : 0; }
         }
 
-        public NhanVien BacSi
+        [Category("Custom Props")]
+        public decimal ThanhTien
+        {
+            get { return decimal.Parse(txtThanhTien.Text); }
+        }
+
+        [Category("Custom Props")]
+        public NhanVien NhanVien
         {
             get { return (NhanVien)cbBacSi.SelectedItem; }
         }
+
+        [Category("Custom Props")]
+        public string MaLoaiThuThuat
+        {
+            get { return loaiThuThuat.MaLoaiThuThuat; }
+        }
+        [Category("Custom Props")]
+        public string MaThuThuat
+        {
+            get { return thuThuat.MaThuThuat; }
+        }
+
         #endregion
 
-        public TTThuThuatItem(LoaiThuThuat loaiThuThuat)
+        public TTThuThuatItem(LoaiThuThuat loaiThuThuat, FlowLayoutPanel flpThemThuThuat)
         {
             InitializeComponent();
             this.loaiThuThuat = loaiThuThuat;
+            this.flpThemThuThuat = flpThemThuThuat;
             thuThuatList = _ttService.FindTypeById(loaiThuThuat.MaLoaiThuThuat);
             thuThuat = thuThuatList[0];
         }
@@ -130,6 +152,24 @@ namespace PKNK_CNPM.Item
             if (txtGG.Text != "")
             {
                 SetValue();
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (flpThemThuThuat != null)
+            {
+                flpThemThuThuat.Controls.Remove(this);
+                this.Dispose();
+            }
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            if (flpThemThuThuat != null)
+            {
+                flpThemThuThuat.Controls.Remove(this);
+                this.Dispose();
             }
         }
     }

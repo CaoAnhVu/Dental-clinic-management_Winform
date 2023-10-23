@@ -30,6 +30,8 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.btnLuu = new System.Windows.Forms.Button();
+            this.btnHuy = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.rbNu = new System.Windows.Forms.RadioButton();
             this.rbNam = new System.Windows.Forms.RadioButton();
@@ -48,8 +50,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnLuu = new System.Windows.Forms.Button();
-            this.btnHuy = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,7 +82,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1178, 470);
+            this.groupBox1.Size = new System.Drawing.Size(1178, 484);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông Tin Nhân Viên";
@@ -92,7 +92,39 @@
             this.dtNgaySinh.Location = new System.Drawing.Point(746, 137);
             this.dtNgaySinh.Name = "dtNgaySinh";
             this.dtNgaySinh.Size = new System.Drawing.Size(374, 38);
-            this.dtNgaySinh.TabIndex = 23;
+            this.dtNgaySinh.TabIndex = 6;
+            // 
+            // btnLuu
+            // 
+            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(203)))));
+            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnLuu.ForeColor = System.Drawing.Color.White;
+            this.btnLuu.Image = global::PKNK_CNPM.Properties.Resources.diskette;
+            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLuu.Location = new System.Drawing.Point(935, 346);
+            this.btnLuu.Name = "btnLuu";
+            this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnLuu.Size = new System.Drawing.Size(159, 59);
+            this.btnLuu.TabIndex = 9;
+            this.btnLuu.Text = "Lưu Lại";
+            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLuu.UseVisualStyleBackColor = false;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
+            // 
+            // btnHuy
+            // 
+            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(95)))), ((int)(((byte)(99)))));
+            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnHuy.ForeColor = System.Drawing.Color.White;
+            this.btnHuy.Location = new System.Drawing.Point(798, 346);
+            this.btnHuy.Name = "btnHuy";
+            this.btnHuy.Size = new System.Drawing.Size(131, 59);
+            this.btnHuy.TabIndex = 1;
+            this.btnHuy.Text = "Hủy Bỏ";
+            this.btnHuy.UseVisualStyleBackColor = false;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // label5
             // 
@@ -110,7 +142,7 @@
             this.rbNu.Location = new System.Drawing.Point(847, 67);
             this.rbNu.Name = "rbNu";
             this.rbNu.Size = new System.Drawing.Size(66, 35);
-            this.rbNu.TabIndex = 21;
+            this.rbNu.TabIndex = 5;
             this.rbNu.TabStop = true;
             this.rbNu.Text = "Nữ";
             this.rbNu.UseVisualStyleBackColor = true;
@@ -121,7 +153,7 @@
             this.rbNam.Location = new System.Drawing.Point(746, 67);
             this.rbNam.Name = "rbNam";
             this.rbNam.Size = new System.Drawing.Size(84, 35);
-            this.rbNam.TabIndex = 20;
+            this.rbNam.TabIndex = 5;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
             this.rbNam.UseVisualStyleBackColor = true;
@@ -142,7 +174,7 @@
             this.cbChucDanh.Location = new System.Drawing.Point(201, 217);
             this.cbChucDanh.Name = "cbChucDanh";
             this.cbChucDanh.Size = new System.Drawing.Size(374, 39);
-            this.cbChucDanh.TabIndex = 18;
+            this.cbChucDanh.TabIndex = 3;
             // 
             // ngaySua
             // 
@@ -178,7 +210,7 @@
             this.txtDiaChi.Location = new System.Drawing.Point(746, 296);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(374, 38);
-            this.txtDiaChi.TabIndex = 2;
+            this.txtDiaChi.TabIndex = 8;
             // 
             // txtEmail
             // 
@@ -186,7 +218,7 @@
             this.txtEmail.Location = new System.Drawing.Point(746, 218);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(374, 38);
-            this.txtEmail.TabIndex = 2;
+            this.txtEmail.TabIndex = 7;
             // 
             // txtSDT
             // 
@@ -194,7 +226,7 @@
             this.txtSDT.Location = new System.Drawing.Point(201, 295);
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(374, 38);
-            this.txtSDT.TabIndex = 2;
+            this.txtSDT.TabIndex = 4;
             // 
             // txtMaNV
             // 
@@ -202,7 +234,7 @@
             this.txtMaNV.Location = new System.Drawing.Point(201, 69);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.Size = new System.Drawing.Size(374, 38);
-            this.txtMaNV.TabIndex = 2;
+            this.txtMaNV.TabIndex = 1;
             // 
             // label4
             // 
@@ -264,46 +296,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Mã nhân viên";
             // 
-            // btnLuu
-            // 
-            this.btnLuu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(22)))), ((int)(((byte)(203)))));
-            this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLuu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Image = global::PKNK_CNPM.Properties.Resources.diskette;
-            this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(935, 346);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnLuu.Size = new System.Drawing.Size(159, 59);
-            this.btnLuu.TabIndex = 1;
-            this.btnLuu.Text = "Lưu Lại";
-            this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLuu.UseVisualStyleBackColor = false;
-            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
-            // 
-            // btnHuy
-            // 
-            this.btnHuy.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(95)))), ((int)(((byte)(99)))));
-            this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHuy.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnHuy.ForeColor = System.Drawing.Color.White;
-            this.btnHuy.Location = new System.Drawing.Point(798, 346);
-            this.btnHuy.Name = "btnHuy";
-            this.btnHuy.Size = new System.Drawing.Size(131, 59);
-            this.btnHuy.TabIndex = 1;
-            this.btnHuy.Text = "Hủy Bỏ";
-            this.btnHuy.UseVisualStyleBackColor = false;
-            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
-            // 
             // frmThemNhanVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1202, 501);
             this.Controls.Add(this.groupBox1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "frmThemNhanVien";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm nhân viên mới";
             this.Load += new System.EventHandler(this.frmThemNhanVien_Load);
             this.groupBox1.ResumeLayout(false);

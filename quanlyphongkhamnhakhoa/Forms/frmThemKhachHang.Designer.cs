@@ -495,6 +495,7 @@ namespace PKNK_CNPM.Forms
             this.Controls.Add(this.label5);
             this.Controls.Add(this.groupBox2);
             this.Name = "frmThemKhachHang";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Thêm khách hàng";
             this.Load += new System.EventHandler(this.frmThemKhachHang_Load);
             this.groupBox2.ResumeLayout(false);

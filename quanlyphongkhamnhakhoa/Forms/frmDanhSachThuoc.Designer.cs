@@ -100,7 +100,7 @@
             this.btnTimKiem.Location = new System.Drawing.Point(-8, -3);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(119, 39);
-            this.btnTimKiem.TabIndex = 3;
+            this.btnTimKiem.TabIndex = 4;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.UseVisualStyleBackColor = false;
             // 
@@ -116,7 +116,7 @@
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(1070, 36);
-            this.txtTimKiem.TabIndex = 8;
+            this.txtTimKiem.TabIndex = 0;
             this.txtTimKiem.Text = "   Tìm kiếm...";
             // 
             // panel1
@@ -142,7 +142,7 @@
             this.btnTaiLai.Name = "btnTaiLai";
             this.btnTaiLai.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTaiLai.Size = new System.Drawing.Size(142, 58);
-            this.btnTaiLai.TabIndex = 3;
+            this.btnTaiLai.TabIndex = 2;
             this.btnTaiLai.Text = "  Tải Lại";
             this.btnTaiLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaiLai.UseVisualStyleBackColor = false;
@@ -186,7 +186,7 @@
             this.btnHuy.Location = new System.Drawing.Point(814, 27);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(96, 52);
-            this.btnHuy.TabIndex = 42;
+            this.btnHuy.TabIndex = 3;
             this.btnHuy.Text = "Hủy Bỏ";
             this.btnHuy.UseVisualStyleBackColor = false;
             // 
@@ -201,6 +201,7 @@
             this.Controls.Add(this.grpDanhSachThuoc);
             this.Controls.Add(this.label1);
             this.Name = "frmDanhSachThuoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Danh Sách Thuốc";
             this.Load += new System.EventHandler(this.frmDanhSachThuoc_Load);
             this.grpDanhSachThuoc.ResumeLayout(false);

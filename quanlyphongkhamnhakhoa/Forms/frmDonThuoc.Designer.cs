@@ -265,6 +265,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.groupBox1);
             this.Name = "frmDonThuoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đơn Thuốc";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

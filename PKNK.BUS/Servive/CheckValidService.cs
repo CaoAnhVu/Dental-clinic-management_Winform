@@ -10,27 +10,6 @@ namespace PKNK.BUS.Servive
 {
     public static class CheckValidService
     {
-        // Kí tự có dấu việt nam
-        private static readonly string[] VietnameseSigns = new string[]
-        {
-
-            "aAeEoOuUiIdDyY",
-            "áàạảãâấầậẩẫăắằặẳẵ",
-            "ÁÀẠẢÃÂẤẦẬẨẪĂẮẰẶẲẴ",
-            "éèẹẻẽêếềệểễ",
-            "ÉÈẸẺẼÊẾỀỆỂỄ",
-            "óòọỏõôốồộổỗơớờợởỡ",
-            "ÓÒỌỎÕÔỐỒỘỔỖƠỚỜỢỞỠ",
-            "úùụủũưứừựửữ",
-            "ÚÙỤỦŨƯỨỪỰỬỮ",
-            "íìịỉĩ",
-            "ÍÌỊỈĨ",
-            "đ",
-            "Đ",
-            "ýỳỵỷỹ",
-            "ÝỲỴỶỸ"
-        };
-
         // Kiểm tra email
         public static bool IsEmailValid(string emailAddress)
         {
@@ -41,26 +20,8 @@ namespace PKNK.BUS.Servive
         // Kiểm tra số điện thoại việt nam
         public static bool IsVietnamesePhoneNumber(string phoneNumber)
         {
-            string pattern = @"^(03|05|07|09)[0-9]{8}$";
+            string pattern = @"^(03|05|07|09|08)[0-9]{8}$";
             return Regex.IsMatch(phoneNumber, pattern);
-        }
-
-        // Đổi tiếng việt có dấu sang không dấu
-        public static string RemoveSign4VietnameseString(string str)
-        {
-            for (int i = 1; i < VietnameseSigns.Length; i++)
-            {
-                for (int j = 0; j < VietnameseSigns[i].Length; j++)
-                    str = str.Replace(VietnameseSigns[i][j], VietnameseSigns[0][i - 1]);
-            }
-            return str;
-        }
-
-        // Kiểm tra string có phải là số không
-        public static bool IsNumeric(this string text)
-        {
-            int test;
-            return int.TryParse(text, out test);
         }
     }
 }
