@@ -21,6 +21,17 @@ namespace PKNK.BUS.Servive
             return model.ThongTinLS.Where(p=> p.MaChanDoan == maChuanDoan).ToList();
         }
 
+        public decimal TongTienByMaChuanDoan(int maChuanDoan)
+        {
+            decimal res = 0;
+            List<ThongTinL> thongTinLs = FindByMaChuanDoan(maChuanDoan);
+            foreach (var i in thongTinLs)
+            {
+                res += i.ThanhTien;
+            }
+            return res;
+        }
+
         public void Add(ThongTinL l)
         {
             PKNK_ContextDB model = new PKNK_ContextDB();

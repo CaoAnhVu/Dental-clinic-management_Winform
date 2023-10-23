@@ -316,12 +316,12 @@ namespace PKNK_CNPM
 
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new frmDoanh(), sender);
+            OpenChildForm(new frmThongKeVatLieu(), sender);
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new frmThong(), sender);
+            OpenChildForm(new frmThongKe(), sender);
         }
 
         private void btnThongTinChung_Click(object sender, EventArgs e)

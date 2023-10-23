@@ -63,6 +63,7 @@
             this.cbLoaiTT.Name = "cbLoaiTT";
             this.cbLoaiTT.Size = new System.Drawing.Size(198, 36);
             this.cbLoaiTT.TabIndex = 75;
+            this.cbLoaiTT.SelectedIndexChanged += new System.EventHandler(this.cbLoaiTT_SelectedIndexChanged_1);
             // 
             // picXoa
             // 
@@ -97,6 +98,8 @@
             this.txtGG.Size = new System.Drawing.Size(48, 33);
             this.txtGG.TabIndex = 66;
             this.txtGG.Text = "0";
+            this.txtGG.TextChanged += new System.EventHandler(this.txtGG_TextChanged_1);
+            this.txtGG.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtGG_KeyPress_1);
             // 
             // txtSoLuong
             // 
@@ -108,6 +111,8 @@
             this.txtSoLuong.Size = new System.Drawing.Size(48, 34);
             this.txtSoLuong.TabIndex = 67;
             this.txtSoLuong.Text = "0";
+            this.txtSoLuong.TextChanged += new System.EventHandler(this.txtSoLuong_TextChanged_1);
+            this.txtSoLuong.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtSoLuong_KeyPress_1);
             // 
             // txtThanhTien
             // 

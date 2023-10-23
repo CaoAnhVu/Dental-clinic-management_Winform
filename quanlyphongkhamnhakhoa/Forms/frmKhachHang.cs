@@ -52,7 +52,7 @@ namespace PKNK_CNPM.Forms
 
         private void clearValue()
         {
-            txtMaBN.Text = txtTenBN.Text = txtSDT.Text = txtGioiTinh.Text = txtTuoi.Text = txtDiaChi.Text = "";
+            txtMaBN.Text = txtTenBN.Text = txtSDT.Text = txtGioiTinh.Text = txtNamSinh.Text = txtDiaChi.Text = "";
         }
         private void BindGrid(List<BenhNhan> list)
         {
@@ -98,7 +98,7 @@ namespace PKNK_CNPM.Forms
             txtTenBN.Text = row.Cells[1].Value.ToString();
             txtSDT.Text = row.Cells[2].Value.ToString();
             txtGioiTinh.Text = row.Cells[3].Value.ToString();
-            txtTuoi.Text = row.Cells[4].Value.ToString();
+            txtNamSinh.Text = String.Format("{0:dd/MM/yyyy}", row.Cells[4].Value);
             if (row.Cells[5].Value.ToString() != "")
                 txtDiaChi.Text = row.Cells[5].Value.ToString();
             khachHang = khachHangService.FindById(int.Parse(row.Cells[0].Value.ToString()));

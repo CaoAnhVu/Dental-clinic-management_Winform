@@ -49,9 +49,11 @@ namespace PKNK_CNPM.Forms
                 MaBN = khachHanh.MaBN.ToString(),
                 TenBN = khachHanh.TenBN,
                 SDT = khachHanh.SDT,
-                NamSinh = khachHanh.NgaySinh.ToString(),
+                NamSinh = String.Format("{0:dd/MM/yyyy}", khachHanh.NgaySinh),
                 DiaChi = khachHanh.DiaChi,
-                GioiTinh = khachHanh.GioiTinh ? "Nam" : "Nữ"
+                GioiTinh = khachHanh.GioiTinh ? "Nam" : "Nữ",
+                NgayTao = DateTime.Now.ToString(),
+                TongTien = total.ToString(),
             };
             List<HoaDonReport> hoaDonList = new List<HoaDonReport>();
             hoaDonList.Add(hoaDon);
@@ -64,11 +66,13 @@ namespace PKNK_CNPM.Forms
             List<ThongTinThuocReport> ttThuocReport = new List<ThongTinThuocReport>();
             foreach (DonThuoc i in ttThuocList)
             {
-                ThongTinThuocReport temp = new ThongTinThuocReport();
-                temp.TenDonThuoc = thuocService.SearchById(i.MaThuoc).TenThuoc;
-                temp.DonGia = i.DonGia.ToString();
-                temp.SoLuong = i.SoLuong.ToString();
-                temp.ThanhTien = i.ThanhTien.ToString();
+                ThongTinThuocReport temp = new ThongTinThuocReport
+                {
+                    TenDonThuoc = thuocService.SearchById(i.MaThuoc).TenThuoc,
+                    SoLuong = i.SoLuong.ToString(),
+                    ThanhTien = i.ThanhTien.ToString(),
+                    DonGia = i.Thuoc.DonGia.ToString(),
+                };
                 total += i.ThanhTien;
                 ttThuocReport.Add(temp);
             }

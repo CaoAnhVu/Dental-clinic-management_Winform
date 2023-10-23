@@ -80,7 +80,7 @@
             this.txtSDT = new System.Windows.Forms.TextBox();
             this.txtTrangThai = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
-            this.txtTuoi = new System.Windows.Forms.TextBox();
+            this.txtNamSinh = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -540,7 +540,7 @@
             this.panel3.Controls.Add(this.txtSDT);
             this.panel3.Controls.Add(this.txtTrangThai);
             this.panel3.Controls.Add(this.txtDiaChi);
-            this.panel3.Controls.Add(this.txtTuoi);
+            this.panel3.Controls.Add(this.txtNamSinh);
             this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.txtGioiTinh);
             this.panel3.Controls.Add(this.label11);
@@ -723,15 +723,15 @@
             this.txtDiaChi.Size = new System.Drawing.Size(426, 30);
             this.txtDiaChi.TabIndex = 28;
             // 
-            // txtTuoi
+            // txtNamSinh
             // 
-            this.txtTuoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTuoi.Enabled = false;
-            this.txtTuoi.Location = new System.Drawing.Point(836, 17);
-            this.txtTuoi.Multiline = true;
-            this.txtTuoi.Name = "txtTuoi";
-            this.txtTuoi.Size = new System.Drawing.Size(426, 30);
-            this.txtTuoi.TabIndex = 28;
+            this.txtNamSinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNamSinh.Enabled = false;
+            this.txtNamSinh.Location = new System.Drawing.Point(836, 17);
+            this.txtNamSinh.Multiline = true;
+            this.txtNamSinh.Name = "txtNamSinh";
+            this.txtNamSinh.Size = new System.Drawing.Size(426, 30);
+            this.txtNamSinh.TabIndex = 28;
             // 
             // label12
             // 
@@ -921,7 +921,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Button btnTimKiem;
-        private System.Windows.Forms.TextBox txtTuoi;
+        private System.Windows.Forms.TextBox txtNamSinh;
         private System.Windows.Forms.TextBox txtGioiTinh;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
