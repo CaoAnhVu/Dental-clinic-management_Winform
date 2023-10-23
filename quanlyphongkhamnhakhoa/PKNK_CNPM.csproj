@@ -134,6 +134,12 @@
     <Compile Include="Forms\HoaDon2.Designer.cs">
       <DependentUpon>HoaDon2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\ThemHoaDonXuatNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ThemHoaDonXuatNhap.Designer.cs">
+      <DependentUpon>ThemHoaDonXuatNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Item\DonThuocItem.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -212,12 +218,6 @@
     <Compile Include="Forms\frmDonThuoc.Designer.cs">
       <DependentUpon>frmDonThuoc.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\frmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmHoaDon.Designer.cs">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\frmHoaDonXuatNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -229,12 +229,6 @@
     </Compile>
     <Compile Include="Forms\frmTaoThuocMoi.Designer.cs">
       <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\frmThemHoaDonXuatNhap.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\frmThemHoaDonXuatNhap.Designer.cs">
-      <DependentUpon>frmThemHoaDonXuatNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\frmThemKhachHang.cs">
       <SubType>Form</SubType>
@@ -285,6 +279,9 @@
     <EmbeddedResource Include="Forms\HoaDon2.resx">
       <DependentUpon>HoaDon2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ThemHoaDonXuatNhap.resx">
+      <DependentUpon>ThemHoaDonXuatNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Item\DonThuocItem.resx">
       <DependentUpon>DonThuocItem.cs</DependentUpon>
     </EmbeddedResource>
@@ -324,17 +321,11 @@
     <EmbeddedResource Include="Forms\frmDonThuoc.resx">
       <DependentUpon>frmDonThuoc.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmHoaDon.resx">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmHoaDonXuatNhap.resx">
       <DependentUpon>frmHoaDonXuatNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmTaoThuocMoi.resx">
       <DependentUpon>frmTaoThuocMoi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\frmThemHoaDonXuatNhap.resx">
-      <DependentUpon>frmThemHoaDonXuatNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\frmThemKhachHang.resx">
       <DependentUpon>frmThemKhachHang.cs</DependentUpon>

@@ -18,6 +18,7 @@ namespace PKNK.DAL.Models
         public virtual DbSet<ChanDoan> ChanDoans { get; set; }
         public virtual DbSet<ChucDanh> ChucDanhs { get; set; }
         public virtual DbSet<DoanhThu> DoanhThus { get; set; }
+        public virtual DbSet<DonXuatNhap> DonXuatNhaps { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<LoaiThuThuat> LoaiThuThuats { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
@@ -96,6 +97,19 @@ namespace PKNK.DAL.Models
                 .IsFixedLength()
                 .IsUnicode(false);
 
+            modelBuilder.Entity<DonXuatNhap>()
+                .Property(e => e.DonGia)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<DonXuatNhap>()
+                .Property(e => e.ThanhTien)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<DonXuatNhap>()
+                .Property(e => e.MaNhanVien)
+                .IsFixedLength()
+                .IsUnicode(false);
+
             modelBuilder.Entity<HoaDon>()
                 .Property(e => e.ThanhTien)
                 .HasPrecision(19, 4);
@@ -127,7 +141,7 @@ namespace PKNK.DAL.Models
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.SoDienThoai)
-                .IsFixedLength();
+                .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.Email)
@@ -137,6 +151,11 @@ namespace PKNK.DAL.Models
                 .HasMany(e => e.BenhNhans)
                 .WithOptional(e => e.NhanVien)
                 .HasForeignKey(e => e.MaNV);
+
+            modelBuilder.Entity<NhanVien>()
+                .HasMany(e => e.DonXuatNhaps)
+                .WithRequired(e => e.NhanVien)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.TTCanLamSans)

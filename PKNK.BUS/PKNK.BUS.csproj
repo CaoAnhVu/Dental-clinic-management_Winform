@@ -98,6 +98,7 @@
     <Compile Include="Servive\ThuThuatService.cs" />
     <Compile Include="Servive\TTCanLamSangService.cs" />
     <Compile Include="Servive\TTLamSanServive.cs" />
+    <Compile Include="Servive\XuatNhapService.cs" />
     <Compile Include="SqlServerTypes\Loader.cs" />
   </ItemGroup>
   <ItemGroup>
