@@ -302,7 +302,7 @@ namespace PKNK_CNPM
 
         private void btnThuoc_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmTaoThuocMoi(), sender);
+            OpenChildForm(new frmDonThuoc(), sender);
         }
 
         private void btnDichVu_Click(object sender, EventArgs e)
@@ -322,7 +322,7 @@ namespace PKNK_CNPM
 
         private void btnThongTinChung_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmThongTinChung(), sender);
+            //OpenChildForm(new frmThong(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)

@@ -36,7 +36,6 @@
             this.panel18 = new System.Windows.Forms.Panel();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
-            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.tpThuoc = new System.Windows.Forms.TabPage();
             this.flpThuoc = new System.Windows.Forms.FlowLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
@@ -62,18 +61,19 @@
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btnInHoaDon = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
+            this.btnInHoaDon = new System.Windows.Forms.Button();
             this.btnDonThuoc = new System.Windows.Forms.Button();
+            this.pictureBox15 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tpThuThuat.SuspendLayout();
             this.panel18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.tpThuoc.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -97,7 +97,7 @@
             this.groupBox1.Controls.Add(this.txtTimKiem);
             this.groupBox1.Location = new System.Drawing.Point(12, 90);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1920, 963);
+            this.groupBox1.Size = new System.Drawing.Size(1920, 916);
             this.groupBox1.TabIndex = 37;
             this.groupBox1.TabStop = false;
             // 
@@ -111,7 +111,7 @@
             this.TabControl.Location = new System.Drawing.Point(15, 63);
             this.TabControl.Name = "TabControl";
             this.TabControl.SelectedIndex = 0;
-            this.TabControl.Size = new System.Drawing.Size(368, 878);
+            this.TabControl.Size = new System.Drawing.Size(368, 831);
             this.TabControl.TabIndex = 38;
             // 
             // tpThuThuat
@@ -123,7 +123,7 @@
             this.tpThuThuat.Location = new System.Drawing.Point(4, 37);
             this.tpThuThuat.Name = "tpThuThuat";
             this.tpThuThuat.Padding = new System.Windows.Forms.Padding(3);
-            this.tpThuThuat.Size = new System.Drawing.Size(360, 837);
+            this.tpThuThuat.Size = new System.Drawing.Size(360, 790);
             this.tpThuThuat.TabIndex = 1;
             this.tpThuThuat.Text = "Thủ thuật";
             // 
@@ -134,7 +134,7 @@
             this.flpThuThuat.AutoScroll = true;
             this.flpThuThuat.Location = new System.Drawing.Point(1, 1);
             this.flpThuThuat.Name = "flpThuThuat";
-            this.flpThuThuat.Size = new System.Drawing.Size(359, 840);
+            this.flpThuThuat.Size = new System.Drawing.Size(359, 793);
             this.flpThuThuat.TabIndex = 10;
             // 
             // panel18
@@ -167,16 +167,6 @@
             this.label35.Size = new System.Drawing.Size(91, 25);
             this.label35.TabIndex = 1;
             this.label35.Text = "Trám răng";
-            // 
-            // pictureBox15
-            // 
-            this.pictureBox15.Image = global::PKNK_CNPM.Properties.Resources._20200923_140404_562589_han_rang_max_1800x1800;
-            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox15.Name = "pictureBox15";
-            this.pictureBox15.Size = new System.Drawing.Size(119, 80);
-            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox15.TabIndex = 0;
-            this.pictureBox15.TabStop = false;
             // 
             // tpThuoc
             // 
@@ -225,7 +215,7 @@
             this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(415, 21);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1485, 916);
+            this.panel11.Size = new System.Drawing.Size(1485, 869);
             this.panel11.TabIndex = 3;
             // 
             // label4
@@ -246,7 +236,7 @@
             this.label3.BackColor = System.Drawing.Color.Snow;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(21, 545);
+            this.label3.Location = new System.Drawing.Point(21, 595);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 23);
             this.label3.TabIndex = 34;
@@ -260,7 +250,7 @@
             this.btnHSBN.ForeColor = System.Drawing.Color.White;
             this.btnHSBN.Location = new System.Drawing.Point(962, 59);
             this.btnHSBN.Name = "btnHSBN";
-            this.btnHSBN.Size = new System.Drawing.Size(226, 39);
+            this.btnHSBN.Size = new System.Drawing.Size(192, 39);
             this.btnHSBN.TabIndex = 30;
             this.btnHSBN.Text = "Hồ sơ bệnh nhân";
             this.btnHSBN.UseVisualStyleBackColor = false;
@@ -274,7 +264,7 @@
             this.btnPhieuKham.ForeColor = System.Drawing.Color.White;
             this.btnPhieuKham.Location = new System.Drawing.Point(962, 104);
             this.btnPhieuKham.Name = "btnPhieuKham";
-            this.btnPhieuKham.Size = new System.Drawing.Size(226, 39);
+            this.btnPhieuKham.Size = new System.Drawing.Size(192, 39);
             this.btnPhieuKham.TabIndex = 29;
             this.btnPhieuKham.Text = "Thanh toán";
             this.btnPhieuKham.UseVisualStyleBackColor = false;
@@ -364,9 +354,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.flpThemThuoc.AutoScroll = true;
             this.flpThemThuoc.BackColor = System.Drawing.Color.Snow;
-            this.flpThemThuoc.Location = new System.Drawing.Point(23, 571);
+            this.flpThemThuoc.Location = new System.Drawing.Point(23, 621);
             this.flpThemThuoc.Name = "flpThemThuoc";
-            this.flpThemThuoc.Size = new System.Drawing.Size(1444, 332);
+            this.flpThemThuoc.Size = new System.Drawing.Size(1444, 235);
             this.flpThemThuoc.TabIndex = 19;
             // 
             // flpThemThuThuat
@@ -377,7 +367,7 @@
             this.flpThemThuThuat.BackColor = System.Drawing.Color.Snow;
             this.flpThemThuThuat.Location = new System.Drawing.Point(23, 210);
             this.flpThemThuThuat.Name = "flpThemThuThuat";
-            this.flpThemThuThuat.Size = new System.Drawing.Size(1442, 311);
+            this.flpThemThuThuat.Size = new System.Drawing.Size(1442, 383);
             this.flpThemThuThuat.TabIndex = 18;
             // 
             // label39
@@ -412,7 +402,7 @@
             this.btnHoSoPhongKham.ForeColor = System.Drawing.Color.White;
             this.btnHoSoPhongKham.Location = new System.Drawing.Point(962, 14);
             this.btnHoSoPhongKham.Name = "btnHoSoPhongKham";
-            this.btnHoSoPhongKham.Size = new System.Drawing.Size(226, 39);
+            this.btnHoSoPhongKham.Size = new System.Drawing.Size(192, 39);
             this.btnHoSoPhongKham.TabIndex = 3;
             this.btnHoSoPhongKham.Text = "Hồ sơ cận lâm sàn";
             this.btnHoSoPhongKham.UseVisualStyleBackColor = false;
@@ -484,6 +474,16 @@
             this.panel1.Size = new System.Drawing.Size(266, 53);
             this.panel1.TabIndex = 37;
             // 
+            // panel10
+            // 
+            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel10.BackColor = System.Drawing.Color.Snow;
+            this.panel10.Controls.Add(this.btnDonThuoc);
+            this.panel10.Location = new System.Drawing.Point(1371, 31);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(266, 53);
+            this.panel10.TabIndex = 36;
+            // 
             // btnInHoaDon
             // 
             this.btnInHoaDon.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
@@ -503,16 +503,6 @@
             this.btnInHoaDon.UseVisualStyleBackColor = false;
             this.btnInHoaDon.Click += new System.EventHandler(this.btnInHoaDon_Click);
             // 
-            // panel10
-            // 
-            this.panel10.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel10.BackColor = System.Drawing.Color.Snow;
-            this.panel10.Controls.Add(this.btnDonThuoc);
-            this.panel10.Location = new System.Drawing.Point(1371, 31);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(266, 53);
-            this.panel10.TabIndex = 36;
-            // 
             // btnDonThuoc
             // 
             this.btnDonThuoc.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
@@ -531,6 +521,16 @@
             this.btnDonThuoc.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDonThuoc.UseVisualStyleBackColor = false;
             // 
+            // pictureBox15
+            // 
+            this.pictureBox15.Image = global::PKNK_CNPM.Properties.Resources._20200923_140404_562589_han_rang_max_1800x1800;
+            this.pictureBox15.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox15.Name = "pictureBox15";
+            this.pictureBox15.Size = new System.Drawing.Size(119, 80);
+            this.pictureBox15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox15.TabIndex = 0;
+            this.pictureBox15.TabStop = false;
+            // 
             // frmCanLamSang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -544,7 +544,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmCanLamSang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lâm sàn";
+            this.Text = "Cận lâm sàn";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCanLamSang_Load);
             this.groupBox1.ResumeLayout(false);
@@ -553,12 +553,12 @@
             this.tpThuThuat.ResumeLayout(false);
             this.panel18.ResumeLayout(false);
             this.panel18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.tpThuoc.ResumeLayout(false);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel10.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox15)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -70,7 +70,6 @@ namespace PKNK_CNPM.Forms
                     dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
                     dvgDanhSachKham.Rows[index].Cells[6].Value = i.NgaySinh;
                     dvgDanhSachKham.Rows[index].Cells[7].Value = i.DiaChi;
-                    dvgDanhSachKham.Rows[index].Cells[8].Value = i.TongTien;
                     dvgDanhSachKham.Rows[index].Cells[9].Value = i.DaThanhToan;
                     dvgDanhSachKham.Rows[index].Cells[10].Value = i.GhiChu;
                     //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;

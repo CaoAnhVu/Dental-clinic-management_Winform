@@ -376,7 +376,7 @@
             this.cbTieuDuong.Name = "cbTieuDuong";
             this.cbTieuDuong.Size = new System.Drawing.Size(125, 29);
             this.cbTieuDuong.TabIndex = 18;
-            this.cbTieuDuong.Text = "Tiểu đường";
+            this.cbTieuDuong.Text = "Tiêu đường";
             this.cbTieuDuong.UseVisualStyleBackColor = true;
             // 
             // checkBox11
@@ -606,9 +606,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.Location = new System.Drawing.Point(22, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(318, 37);
+            this.label4.Size = new System.Drawing.Size(265, 37);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Phiếu Khám Cận Lâm Sàn";
+            this.label4.Text = "Phiếu Khám Lâm Sàn";
             // 
             // frmKhamLamSan
             // 
@@ -619,7 +619,7 @@
             this.Controls.Add(this.panel11);
             this.Name = "frmKhamLamSan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cận lâm sàn";
+            this.Text = "Lâm sàn";
             this.Load += new System.EventHandler(this.frmKhamLamSan_Load_1);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
