@@ -80,10 +80,14 @@ namespace PKNK_CNPM.Forms
             }
         }
 
+        
+
         private void SetValue()
         {
             txtTongTien.Text = (TongTienThuoc + TongTienTT).ToString();
             txtTienGiam.Text = (TongTienTT - TongGiamGia).ToString();
+            txtKhachCanTra.Text = (TongTienTT + TongTienThuoc).ToString();
+            txtThanhToan.Text = (TongTienTT + TongTienThuoc).ToString();
         }
 
         private void frmPhieuKham_Load(object sender, EventArgs e)

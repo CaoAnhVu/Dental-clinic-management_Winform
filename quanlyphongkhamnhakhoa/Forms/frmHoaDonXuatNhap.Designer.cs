@@ -31,10 +31,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtgvHoaDon = new System.Windows.Forms.DataGridView();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnTaiLai = new System.Windows.Forms.Button();
-            this.btnThemKH = new System.Windows.Forms.Button();
             this.col = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNgayLap = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -42,6 +38,10 @@
             this.colTienTruocThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTienThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colTienSauThue = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.btnTaiLai = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnThemKH = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvHoaDon)).BeginInit();
             this.panel2.SuspendLayout();
@@ -93,6 +93,55 @@
             this.dtgvHoaDon.Size = new System.Drawing.Size(1179, 393);
             this.dtgvHoaDon.TabIndex = 22;
             // 
+            // col
+            // 
+            this.col.HeaderText = "Mã hóa đơn";
+            this.col.MinimumWidth = 6;
+            this.col.Name = "col";
+            this.col.Width = 150;
+            // 
+            // colMaHoaDon
+            // 
+            this.colMaHoaDon.HeaderText = "Nội dung";
+            this.colMaHoaDon.MinimumWidth = 6;
+            this.colMaHoaDon.Name = "colMaHoaDon";
+            this.colMaHoaDon.Width = 300;
+            // 
+            // colNgayLap
+            // 
+            this.colNgayLap.HeaderText = "Đơn vị tính";
+            this.colNgayLap.MinimumWidth = 6;
+            this.colNgayLap.Name = "colNgayLap";
+            this.colNgayLap.Width = 150;
+            // 
+            // colSoLuong
+            // 
+            this.colSoLuong.HeaderText = "Số lượng";
+            this.colSoLuong.MinimumWidth = 6;
+            this.colSoLuong.Name = "colSoLuong";
+            this.colSoLuong.Width = 125;
+            // 
+            // colTienTruocThue
+            // 
+            this.colTienTruocThue.HeaderText = "Đơn giá";
+            this.colTienTruocThue.MinimumWidth = 6;
+            this.colTienTruocThue.Name = "colTienTruocThue";
+            this.colTienTruocThue.Width = 125;
+            // 
+            // colTienThue
+            // 
+            this.colTienThue.HeaderText = "Thành tiền";
+            this.colTienThue.MinimumWidth = 6;
+            this.colTienThue.Name = "colTienThue";
+            this.colTienThue.Width = 150;
+            // 
+            // colTienSauThue
+            // 
+            this.colTienSauThue.HeaderText = "Tên nhân viên";
+            this.colTienSauThue.MinimumWidth = 6;
+            this.colTienSauThue.Name = "colTienSauThue";
+            this.colTienSauThue.Width = 200;
+            // 
             // panel2
             // 
             this.panel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -101,15 +150,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(127, 52);
             this.panel2.TabIndex = 10;
-            // 
-            // panel1
-            // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel1.Controls.Add(this.btnThemKH);
-            this.panel1.Location = new System.Drawing.Point(868, 12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 52);
-            this.panel1.TabIndex = 9;
             // 
             // btnTaiLai
             // 
@@ -125,11 +165,20 @@
             this.btnTaiLai.Name = "btnTaiLai";
             this.btnTaiLai.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTaiLai.Size = new System.Drawing.Size(142, 58);
-            this.btnTaiLai.TabIndex = 3;
+            this.btnTaiLai.TabIndex = 2;
             this.btnTaiLai.Text = "  Tải Lại";
             this.btnTaiLai.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTaiLai.UseVisualStyleBackColor = false;
             this.btnTaiLai.Click += new System.EventHandler(this.btnTaiLai_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.Controls.Add(this.btnThemKH);
+            this.panel1.Location = new System.Drawing.Point(868, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(201, 52);
+            this.panel1.TabIndex = 9;
             // 
             // btnThemKH
             // 
@@ -150,62 +199,6 @@
             this.btnThemKH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThemKH.UseVisualStyleBackColor = false;
             this.btnThemKH.Click += new System.EventHandler(this.btnThemKH_Click);
-            // 
-            // col
-            // 
-            this.col.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.col.HeaderText = "Mã hóa đơn";
-            this.col.MinimumWidth = 6;
-            this.col.Name = "col";
-            this.col.Width = 138;
-            // 
-            // colMaHoaDon
-            // 
-            this.colMaHoaDon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colMaHoaDon.HeaderText = "Nội dung";
-            this.colMaHoaDon.MinimumWidth = 6;
-            this.colMaHoaDon.Name = "colMaHoaDon";
-            this.colMaHoaDon.Width = 116;
-            // 
-            // colNgayLap
-            // 
-            this.colNgayLap.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colNgayLap.HeaderText = "Đơn vị tính";
-            this.colNgayLap.MinimumWidth = 6;
-            this.colNgayLap.Name = "colNgayLap";
-            this.colNgayLap.Width = 128;
-            // 
-            // colSoLuong
-            // 
-            this.colSoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colSoLuong.HeaderText = "Số lượng";
-            this.colSoLuong.MinimumWidth = 6;
-            this.colSoLuong.Name = "colSoLuong";
-            this.colSoLuong.Width = 114;
-            // 
-            // colTienTruocThue
-            // 
-            this.colTienTruocThue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colTienTruocThue.HeaderText = "Đơn giá";
-            this.colTienTruocThue.MinimumWidth = 6;
-            this.colTienTruocThue.Name = "colTienTruocThue";
-            this.colTienTruocThue.Width = 104;
-            // 
-            // colTienThue
-            // 
-            this.colTienThue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colTienThue.HeaderText = "Thành tiền";
-            this.colTienThue.MinimumWidth = 6;
-            this.colTienThue.Name = "colTienThue";
-            this.colTienThue.Width = 123;
-            // 
-            // colTienSauThue
-            // 
-            this.colTienSauThue.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.colTienSauThue.HeaderText = "Tên nhân viên";
-            this.colTienSauThue.MinimumWidth = 6;
-            this.colTienSauThue.Name = "colTienSauThue";
-            this.colTienSauThue.Width = 148;
             // 
             // frmHoaDonXuatNhap
             // 

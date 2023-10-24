@@ -379,5 +379,16 @@ namespace PKNK_CNPM
             }
         }
 
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtTimKiem.Text == "")
+                BindGrid(khachHangService.GetAll());
+            else
+            {
+                BindGrid(khachHangService.SearchByName(txtTimKiem.Text));
+            }
+        }
+
+      
     }
 }

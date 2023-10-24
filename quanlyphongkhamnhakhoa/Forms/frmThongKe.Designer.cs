@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.Title title1 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.label3 = new System.Windows.Forms.Label();
             this.chartThongKe = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.rbDtThang = new System.Windows.Forms.RadioButton();
@@ -45,39 +45,41 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(109, 66);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.label3.Location = new System.Drawing.Point(12, 25);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(108, 31);
+            this.label3.Size = new System.Drawing.Size(155, 45);
             this.label3.TabIndex = 1;
             this.label3.Text = "Thống kê";
             // 
             // chartThongKe
             // 
-            chartArea2.Name = "ChartArea1";
-            this.chartThongKe.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartThongKe.Legends.Add(legend2);
-            this.chartThongKe.Location = new System.Drawing.Point(115, 253);
+            chartArea1.Name = "ChartArea1";
+            this.chartThongKe.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartThongKe.Legends.Add(legend1);
+            this.chartThongKe.Location = new System.Drawing.Point(12, 190);
             this.chartThongKe.Name = "chartThongKe";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.LegendText = "Doanh thu";
-            series2.Name = "Series1";
-            this.chartThongKe.Series.Add(series2);
-            this.chartThongKe.Size = new System.Drawing.Size(1553, 540);
+            series1.ChartArea = "ChartArea1";
+            series1.Font = new System.Drawing.Font("Segoe UI", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            series1.Legend = "Legend1";
+            series1.LegendText = "Doanh thu";
+            series1.Name = "Series1";
+            this.chartThongKe.Series.Add(series1);
+            this.chartThongKe.Size = new System.Drawing.Size(1739, 696);
             this.chartThongKe.TabIndex = 2;
             this.chartThongKe.Text = "chart1";
-            title2.Name = "Title1";
-            title2.Text = "Thống kê doanh thu";
-            this.chartThongKe.Titles.Add(title2);
+            title1.Font = new System.Drawing.Font("Segoe UI", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            title1.Name = "Title1";
+            title1.Text = "Thống kê doanh thu";
+            this.chartThongKe.Titles.Add(title1);
             // 
             // rbDtThang
             // 
             this.rbDtThang.AutoSize = true;
             this.rbDtThang.Location = new System.Drawing.Point(6, 35);
             this.rbDtThang.Name = "rbDtThang";
-            this.rbDtThang.Size = new System.Drawing.Size(96, 20);
+            this.rbDtThang.Size = new System.Drawing.Size(132, 32);
             this.rbDtThang.TabIndex = 4;
             this.rbDtThang.TabStop = true;
             this.rbDtThang.Text = "Theo tháng";
@@ -89,9 +91,10 @@
             this.groupBox1.Controls.Add(this.rbDtQuy);
             this.groupBox1.Controls.Add(this.rbDtNam);
             this.groupBox1.Controls.Add(this.rbDtThang);
-            this.groupBox1.Location = new System.Drawing.Point(115, 186);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 105);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(739, 61);
+            this.groupBox1.Size = new System.Drawing.Size(739, 79);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Loại thống kê";
@@ -99,9 +102,9 @@
             // rbDtQuy
             // 
             this.rbDtQuy.AutoSize = true;
-            this.rbDtQuy.Location = new System.Drawing.Point(253, 35);
+            this.rbDtQuy.Location = new System.Drawing.Point(495, 33);
             this.rbDtQuy.Name = "rbDtQuy";
-            this.rbDtQuy.Size = new System.Drawing.Size(85, 20);
+            this.rbDtQuy.Size = new System.Drawing.Size(114, 32);
             this.rbDtQuy.TabIndex = 6;
             this.rbDtQuy.TabStop = true;
             this.rbDtQuy.Text = "Theo quý";
@@ -111,9 +114,9 @@
             // rbDtNam
             // 
             this.rbDtNam.AutoSize = true;
-            this.rbDtNam.Location = new System.Drawing.Point(132, 35);
+            this.rbDtNam.Location = new System.Drawing.Point(251, 33);
             this.rbDtNam.Name = "rbDtNam";
-            this.rbDtNam.Size = new System.Drawing.Size(89, 20);
+            this.rbDtNam.Size = new System.Drawing.Size(119, 32);
             this.rbDtNam.TabIndex = 5;
             this.rbDtNam.TabStop = true;
             this.rbDtNam.Text = "Theo năm";
@@ -124,12 +127,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Snow;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.chartThongKe);
             this.Controls.Add(this.label3);
             this.Name = "frmThongKe";
-            this.Text = "frmThongKe";
+            this.Text = "Thống Kê Doanh Thu";
             this.Load += new System.EventHandler(this.frmThongKe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartThongKe)).EndInit();
             this.groupBox1.ResumeLayout(false);

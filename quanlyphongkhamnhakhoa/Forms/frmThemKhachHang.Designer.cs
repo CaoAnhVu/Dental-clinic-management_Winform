@@ -32,6 +32,8 @@ namespace PKNK_CNPM.Forms
         {
             this.label5 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtXQuang = new System.Windows.Forms.TextBox();
             this.cbNhanVien = new System.Windows.Forms.ComboBox();
             this.label39 = new System.Windows.Forms.Label();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
@@ -63,8 +65,6 @@ namespace PKNK_CNPM.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
-            this.txtXQuang = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -124,6 +124,22 @@ namespace PKNK_CNPM.Forms
             this.groupBox2.TabIndex = 27;
             this.groupBox2.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(661, 201);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(85, 25);
+            this.label4.TabIndex = 43;
+            this.label4.Text = "X Quang";
+            // 
+            // txtXQuang
+            // 
+            this.txtXQuang.Location = new System.Drawing.Point(862, 198);
+            this.txtXQuang.Name = "txtXQuang";
+            this.txtXQuang.Size = new System.Drawing.Size(328, 32);
+            this.txtXQuang.TabIndex = 9;
+            // 
             // cbNhanVien
             // 
             this.cbNhanVien.Font = new System.Drawing.Font("Segoe UI", 12F);
@@ -131,7 +147,7 @@ namespace PKNK_CNPM.Forms
             this.cbNhanVien.Location = new System.Drawing.Point(818, 427);
             this.cbNhanVien.Name = "cbNhanVien";
             this.cbNhanVien.Size = new System.Drawing.Size(300, 36);
-            this.cbNhanVien.TabIndex = 41;
+            this.cbNhanVien.TabIndex = 12;
             // 
             // label39
             // 
@@ -153,7 +169,7 @@ namespace PKNK_CNPM.Forms
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(328, 32);
-            this.txtDiaChi.TabIndex = 3;
+            this.txtDiaChi.TabIndex = 4;
             // 
             // label1
             // 
@@ -178,7 +194,7 @@ namespace PKNK_CNPM.Forms
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnLuu.Size = new System.Drawing.Size(159, 45);
-            this.btnLuu.TabIndex = 16;
+            this.btnLuu.TabIndex = 13;
             this.btnLuu.Text = "Lưu Lại";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = false;
@@ -195,7 +211,7 @@ namespace PKNK_CNPM.Forms
             this.btnHuy.Location = new System.Drawing.Point(889, 534);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(131, 45);
-            this.btnHuy.TabIndex = 37;
+            this.btnHuy.TabIndex = 14;
             this.btnHuy.Text = "Hủy Bỏ";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -207,7 +223,7 @@ namespace PKNK_CNPM.Forms
             this.cbThieuNang.Location = new System.Drawing.Point(836, 364);
             this.cbThieuNang.Name = "cbThieuNang";
             this.cbThieuNang.Size = new System.Drawing.Size(184, 29);
-            this.cbThieuNang.TabIndex = 11;
+            this.cbThieuNang.TabIndex = 48;
             this.cbThieuNang.Text = "Thiểu năng trí tuệ";
             this.cbThieuNang.UseVisualStyleBackColor = true;
             // 
@@ -218,7 +234,7 @@ namespace PKNK_CNPM.Forms
             this.cbMauKhoDong.Location = new System.Drawing.Point(1033, 364);
             this.cbMauKhoDong.Name = "cbMauKhoDong";
             this.cbMauKhoDong.Size = new System.Drawing.Size(157, 29);
-            this.cbMauKhoDong.TabIndex = 9;
+            this.cbMauKhoDong.TabIndex = 48;
             this.cbMauKhoDong.Text = "Máu khó đông";
             this.cbMauKhoDong.UseVisualStyleBackColor = true;
             // 
@@ -229,7 +245,7 @@ namespace PKNK_CNPM.Forms
             this.cbDuongHuyet.Location = new System.Drawing.Point(836, 309);
             this.cbDuongHuyet.Name = "cbDuongHuyet";
             this.cbDuongHuyet.Size = new System.Drawing.Size(143, 29);
-            this.cbDuongHuyet.TabIndex = 8;
+            this.cbDuongHuyet.TabIndex = 48;
             this.cbDuongHuyet.Text = "Đường huyết";
             this.cbDuongHuyet.UseVisualStyleBackColor = true;
             // 
@@ -240,7 +256,7 @@ namespace PKNK_CNPM.Forms
             this.cbTimBamSinh.Location = new System.Drawing.Point(663, 364);
             this.cbTimBamSinh.Name = "cbTimBamSinh";
             this.cbTimBamSinh.Size = new System.Drawing.Size(147, 29);
-            this.cbTimBamSinh.TabIndex = 10;
+            this.cbTimBamSinh.TabIndex = 48;
             this.cbTimBamSinh.Text = "Tim bẩm sinh";
             this.cbTimBamSinh.UseVisualStyleBackColor = true;
             // 
@@ -251,7 +267,7 @@ namespace PKNK_CNPM.Forms
             this.cbHuyetAp.Location = new System.Drawing.Point(663, 309);
             this.cbHuyetAp.Name = "cbHuyetAp";
             this.cbHuyetAp.Size = new System.Drawing.Size(160, 29);
-            this.cbHuyetAp.TabIndex = 7;
+            this.cbHuyetAp.TabIndex = 48;
             this.cbHuyetAp.Text = "Huyết áp mạch";
             this.cbHuyetAp.UseVisualStyleBackColor = true;
             // 
@@ -280,7 +296,7 @@ namespace PKNK_CNPM.Forms
             this.dtpNgaySinh.Location = new System.Drawing.Point(251, 306);
             this.dtpNgaySinh.Name = "dtpNgaySinh";
             this.dtpNgaySinh.Size = new System.Drawing.Size(328, 32);
-            this.dtpNgaySinh.TabIndex = 4;
+            this.dtpNgaySinh.TabIndex = 5;
             // 
             // rbNu
             // 
@@ -299,7 +315,7 @@ namespace PKNK_CNPM.Forms
             this.rbNam.Location = new System.Drawing.Point(254, 366);
             this.rbNam.Name = "rbNam";
             this.rbNam.Size = new System.Drawing.Size(73, 29);
-            this.rbNam.TabIndex = 5;
+            this.rbNam.TabIndex = 6;
             this.rbNam.TabStop = true;
             this.rbNam.Text = "Nam";
             this.rbNam.UseVisualStyleBackColor = true;
@@ -310,7 +326,7 @@ namespace PKNK_CNPM.Forms
             this.rtbLyDo.Location = new System.Drawing.Point(251, 431);
             this.rtbLyDo.Name = "rtbLyDo";
             this.rtbLyDo.Size = new System.Drawing.Size(387, 148);
-            this.rtbLyDo.TabIndex = 6;
+            this.rtbLyDo.TabIndex = 11;
             this.rtbLyDo.Text = "";
             // 
             // txtSDT
@@ -321,7 +337,7 @@ namespace PKNK_CNPM.Forms
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(328, 32);
-            this.txtSDT.TabIndex = 2;
+            this.txtSDT.TabIndex = 3;
             // 
             // txtMaBaoHiem
             // 
@@ -332,7 +348,7 @@ namespace PKNK_CNPM.Forms
             this.txtMaBaoHiem.Multiline = true;
             this.txtMaBaoHiem.Name = "txtMaBaoHiem";
             this.txtMaBaoHiem.Size = new System.Drawing.Size(328, 32);
-            this.txtMaBaoHiem.TabIndex = 1;
+            this.txtMaBaoHiem.TabIndex = 8;
             // 
             // txtTenKH
             // 
@@ -342,7 +358,7 @@ namespace PKNK_CNPM.Forms
             this.txtTenKH.Multiline = true;
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.Size = new System.Drawing.Size(328, 32);
-            this.txtTenKH.TabIndex = 1;
+            this.txtTenKH.TabIndex = 2;
             // 
             // txtTenBaoHiem
             // 
@@ -352,7 +368,7 @@ namespace PKNK_CNPM.Forms
             this.txtTenBaoHiem.Multiline = true;
             this.txtTenBaoHiem.Name = "txtTenBaoHiem";
             this.txtTenBaoHiem.Size = new System.Drawing.Size(328, 32);
-            this.txtTenBaoHiem.TabIndex = 0;
+            this.txtTenBaoHiem.TabIndex = 7;
             // 
             // txtMaKH
             // 
@@ -361,7 +377,7 @@ namespace PKNK_CNPM.Forms
             this.txtMaKH.Multiline = true;
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(328, 32);
-            this.txtMaKH.TabIndex = 0;
+            this.txtMaKH.TabIndex = 1;
             // 
             // label19
             // 
@@ -446,22 +462,6 @@ namespace PKNK_CNPM.Forms
             this.label29.Size = new System.Drawing.Size(142, 25);
             this.label29.TabIndex = 0;
             this.label29.Text = "Mã khách hàng";
-            // 
-            // txtXQuang
-            // 
-            this.txtXQuang.Location = new System.Drawing.Point(862, 198);
-            this.txtXQuang.Name = "txtXQuang";
-            this.txtXQuang.Size = new System.Drawing.Size(328, 32);
-            this.txtXQuang.TabIndex = 42;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(661, 201);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(85, 25);
-            this.label4.TabIndex = 43;
-            this.label4.Text = "X Quang";
             // 
             // frmThemKhachHang
             // 

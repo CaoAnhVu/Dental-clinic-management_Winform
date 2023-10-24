@@ -40,6 +40,7 @@
             this.tpThuoc = new System.Windows.Forms.TabPage();
             this.flpThuoc = new System.Windows.Forms.FlowLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
+            this.btnCanLamSan = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnPhieuKham = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnCanLamSan = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.TabControl.SuspendLayout();
             this.tpThuThuat.SuspendLayout();
@@ -214,6 +214,20 @@
             this.panel11.Size = new System.Drawing.Size(1485, 869);
             this.panel11.TabIndex = 3;
             // 
+            // btnCanLamSan
+            // 
+            this.btnCanLamSan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
+            this.btnCanLamSan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCanLamSan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.btnCanLamSan.ForeColor = System.Drawing.Color.White;
+            this.btnCanLamSan.Location = new System.Drawing.Point(962, 12);
+            this.btnCanLamSan.Name = "btnCanLamSan";
+            this.btnCanLamSan.Size = new System.Drawing.Size(241, 39);
+            this.btnCanLamSan.TabIndex = 5;
+            this.btnCanLamSan.Text = "Hồ sơ cận lâm sàn";
+            this.btnCanLamSan.UseVisualStyleBackColor = false;
+            this.btnCanLamSan.Click += new System.EventHandler(this.btnCanLamSan_Click);
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -247,7 +261,7 @@
             this.btnPhieuKham.Location = new System.Drawing.Point(962, 63);
             this.btnPhieuKham.Name = "btnPhieuKham";
             this.btnPhieuKham.Size = new System.Drawing.Size(241, 39);
-            this.btnPhieuKham.TabIndex = 29;
+            this.btnPhieuKham.TabIndex = 6;
             this.btnPhieuKham.Text = "Thanh toán";
             this.btnPhieuKham.UseVisualStyleBackColor = false;
             this.btnPhieuKham.Click += new System.EventHandler(this.btnPhieuKham_Click);
@@ -259,7 +273,7 @@
             this.cbNhanVien.Location = new System.Drawing.Point(175, 67);
             this.cbNhanVien.Name = "cbNhanVien";
             this.cbNhanVien.Size = new System.Drawing.Size(300, 36);
-            this.cbNhanVien.TabIndex = 28;
+            this.cbNhanVien.TabIndex = 4;
             // 
             // label13
             // 
@@ -282,7 +296,7 @@
             this.txtMaKH.Multiline = true;
             this.txtMaKH.Name = "txtMaKH";
             this.txtMaKH.Size = new System.Drawing.Size(300, 32);
-            this.txtMaKH.TabIndex = 22;
+            this.txtMaKH.TabIndex = 3;
             // 
             // label12
             // 
@@ -305,7 +319,7 @@
             this.txtTenKH.Multiline = true;
             this.txtTenKH.Name = "txtTenKH";
             this.txtTenKH.Size = new System.Drawing.Size(296, 32);
-            this.txtTenKH.TabIndex = 20;
+            this.txtTenKH.TabIndex = 2;
             // 
             // flpThemThuoc
             // 
@@ -362,7 +376,7 @@
             this.txtMaChuanDoan.Location = new System.Drawing.Point(175, 13);
             this.txtMaChuanDoan.Name = "txtMaChuanDoan";
             this.txtMaChuanDoan.Size = new System.Drawing.Size(300, 30);
-            this.txtMaChuanDoan.TabIndex = 2;
+            this.txtMaChuanDoan.TabIndex = 1;
             // 
             // label11
             // 
@@ -395,20 +409,6 @@
             this.label1.TabIndex = 36;
             this.label1.Text = "Tạo mới phiếu khám";
             // 
-            // btnCanLamSan
-            // 
-            this.btnCanLamSan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(62)))), ((int)(((byte)(173)))));
-            this.btnCanLamSan.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCanLamSan.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnCanLamSan.ForeColor = System.Drawing.Color.White;
-            this.btnCanLamSan.Location = new System.Drawing.Point(962, 12);
-            this.btnCanLamSan.Name = "btnCanLamSan";
-            this.btnCanLamSan.Size = new System.Drawing.Size(241, 39);
-            this.btnCanLamSan.TabIndex = 36;
-            this.btnCanLamSan.Text = "Hồ sơ cận lâm sàn";
-            this.btnCanLamSan.UseVisualStyleBackColor = false;
-            this.btnCanLamSan.Click += new System.EventHandler(this.btnCanLamSan_Click);
-            // 
             // frmCanLamSang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -420,7 +420,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmCanLamSang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cận lâm sàn";
+            this.Text = "Cận Lâm Sàng";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCanLamSang_Load);
             this.groupBox1.ResumeLayout(false);

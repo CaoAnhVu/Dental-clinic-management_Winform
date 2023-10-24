@@ -36,11 +36,12 @@
             // 
             // reportViewer1
             // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "PKNK_CNPM.Reporting.rptHoaDon.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(12, 12);
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(776, 426);
+            this.reportViewer1.Size = new System.Drawing.Size(1094, 486);
             this.reportViewer1.TabIndex = 0;
             // 
             // thongTinLsReportBindingSource
@@ -51,11 +52,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1094, 486);
             this.Controls.Add(this.reportViewer1);
             this.Name = "frmHoaDon2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "HoaDon2";
+            this.Text = "Hóa Đơn ";
             this.Load += new System.EventHandler(this.HoaDon2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.thongTinLsReportBindingSource)).EndInit();
             this.ResumeLayout(false);

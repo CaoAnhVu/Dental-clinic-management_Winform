@@ -96,5 +96,7 @@ namespace PKNK_CNPM.Forms
                 txtThanhTien.Text = (decimal.Parse(txtDonGia.Text) * decimal.Parse(txtSL.Text)).ToString();
             }
         }
+
+       
     }
 }

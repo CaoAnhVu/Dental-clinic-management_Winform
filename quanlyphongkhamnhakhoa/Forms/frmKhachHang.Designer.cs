@@ -125,7 +125,7 @@
             this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
             this.txtTimKiem.Size = new System.Drawing.Size(590, 50);
-            this.txtTimKiem.TabIndex = 32;
+            this.txtTimKiem.TabIndex = 6;
             // 
             // label19
             // 
@@ -159,7 +159,7 @@
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(177, 70);
-            this.btnTimKiem.TabIndex = 1;
+            this.btnTimKiem.TabIndex = 7;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -506,7 +506,7 @@
             this.btnKhamLamSan.Name = "btnKhamLamSan";
             this.btnKhamLamSan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnKhamLamSan.Size = new System.Drawing.Size(301, 67);
-            this.btnKhamLamSan.TabIndex = 1;
+            this.btnKhamLamSan.TabIndex = 5;
             this.btnKhamLamSan.Text = "            Khám lâm sàn";
             this.btnKhamLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhamLamSan.UseVisualStyleBackColor = false;
@@ -535,7 +535,7 @@
             this.btnCanLamSan.Name = "btnCanLamSan";
             this.btnCanLamSan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnCanLamSan.Size = new System.Drawing.Size(301, 67);
-            this.btnCanLamSan.TabIndex = 1;
+            this.btnCanLamSan.TabIndex = 4;
             this.btnCanLamSan.Text = "            Cận lâm sàn";
             this.btnCanLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCanLamSan.UseVisualStyleBackColor = false;
@@ -549,7 +549,7 @@
             this.txtSDT.Multiline = true;
             this.txtSDT.Name = "txtSDT";
             this.txtSDT.Size = new System.Drawing.Size(426, 30);
-            this.txtSDT.TabIndex = 31;
+            this.txtSDT.TabIndex = 12;
             // 
             // txtDiaChi
             // 
@@ -559,7 +559,7 @@
             this.txtDiaChi.Multiline = true;
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.Size = new System.Drawing.Size(426, 30);
-            this.txtDiaChi.TabIndex = 28;
+            this.txtDiaChi.TabIndex = 14;
             // 
             // txtNamSinh
             // 
@@ -569,7 +569,7 @@
             this.txtNamSinh.Multiline = true;
             this.txtNamSinh.Name = "txtNamSinh";
             this.txtNamSinh.Size = new System.Drawing.Size(426, 30);
-            this.txtNamSinh.TabIndex = 28;
+            this.txtNamSinh.TabIndex = 13;
             // 
             // txtGioiTinh
             // 
@@ -579,13 +579,13 @@
             this.txtGioiTinh.Multiline = true;
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(426, 30);
-            this.txtGioiTinh.TabIndex = 29;
+            this.txtGioiTinh.TabIndex = 15;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label11.Location = new System.Drawing.Point(700, 79);
+            this.label11.Location = new System.Drawing.Point(708, 79);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(70, 25);
             this.label11.TabIndex = 26;
@@ -604,7 +604,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(689, 140);
+            this.label8.Location = new System.Drawing.Point(708, 141);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 25);
             this.label8.TabIndex = 27;
@@ -614,7 +614,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label9.Location = new System.Drawing.Point(700, 22);
+            this.label9.Location = new System.Drawing.Point(708, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(92, 25);
             this.label9.TabIndex = 26;
@@ -628,7 +628,7 @@
             this.txtTenBN.Multiline = true;
             this.txtTenBN.Name = "txtTenBN";
             this.txtTenBN.Size = new System.Drawing.Size(426, 30);
-            this.txtTenBN.TabIndex = 22;
+            this.txtTenBN.TabIndex = 11;
             // 
             // txtMaBN
             // 
@@ -638,7 +638,7 @@
             this.txtMaBN.Multiline = true;
             this.txtMaBN.Name = "txtMaBN";
             this.txtMaBN.Size = new System.Drawing.Size(426, 30);
-            this.txtMaBN.TabIndex = 23;
+            this.txtMaBN.TabIndex = 10;
             // 
             // label4
             // 
@@ -694,7 +694,7 @@
             this.btnSua.Name = "btnSua";
             this.btnSua.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnSua.Size = new System.Drawing.Size(142, 58);
-            this.btnSua.TabIndex = 4;
+            this.btnSua.TabIndex = 2;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = false;

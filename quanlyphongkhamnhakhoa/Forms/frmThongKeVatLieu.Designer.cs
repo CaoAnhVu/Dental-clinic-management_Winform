@@ -38,11 +38,13 @@
             // 
             // chartVaLieu
             // 
+            this.chartVaLieu.BackColor = System.Drawing.Color.Snow;
             chartArea1.Name = "ChartArea1";
             this.chartVaLieu.ChartAreas.Add(chartArea1);
+            this.chartVaLieu.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.chartVaLieu.Legends.Add(legend1);
-            this.chartVaLieu.Location = new System.Drawing.Point(12, 12);
+            this.chartVaLieu.Location = new System.Drawing.Point(0, 0);
             this.chartVaLieu.Name = "chartVaLieu";
             this.chartVaLieu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.None;
             series1.ChartArea = "ChartArea1";
@@ -50,11 +52,12 @@
             series1.Legend = "Legend1";
             series1.Name = "Series1";
             this.chartVaLieu.Series.Add(series1);
-            this.chartVaLieu.Size = new System.Drawing.Size(697, 589);
+            this.chartVaLieu.Size = new System.Drawing.Size(1151, 715);
             this.chartVaLieu.TabIndex = 8;
-            this.chartVaLieu.Text = "chart1";
+            this.chartVaLieu.Text = "Thống Kê Doanh Thu Thủ Thuật";
+            title1.Font = new System.Drawing.Font("Segoe UI", 13.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             title1.Name = "Title1";
-            title1.Text = "Thống kê vật liệu";
+            title1.Text = "Biểu Đồ Doanh Thu Thủ Thuật";
             this.chartVaLieu.Titles.Add(title1);
             // 
             // frmThongKeVatLieu
@@ -64,7 +67,7 @@
             this.ClientSize = new System.Drawing.Size(1151, 715);
             this.Controls.Add(this.chartVaLieu);
             this.Name = "frmThongKeVatLieu";
-            this.Text = "Thống kê vật liệu";
+            this.Text = " Doanh Thu Thủ Thuật";
             this.Load += new System.EventHandler(this.frmThongKeVatLieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chartVaLieu)).EndInit();
             this.ResumeLayout(false);

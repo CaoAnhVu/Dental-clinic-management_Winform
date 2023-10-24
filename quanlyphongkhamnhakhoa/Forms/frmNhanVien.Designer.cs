@@ -118,7 +118,7 @@
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnTimKiem.Size = new System.Drawing.Size(174, 63);
-            this.btnTimKiem.TabIndex = 19;
+            this.btnTimKiem.TabIndex = 5;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
@@ -422,7 +422,7 @@
             this.btnHuy.Location = new System.Drawing.Point(657, 26);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(124, 52);
-            this.btnHuy.TabIndex = 42;
+            this.btnHuy.TabIndex = 4;
             this.btnHuy.Text = "Hủy Bỏ";
             this.btnHuy.UseVisualStyleBackColor = false;
             // 

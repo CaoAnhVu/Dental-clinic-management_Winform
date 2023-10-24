@@ -68,5 +68,7 @@ namespace PKNK_CNPM.Forms
         {
             ThongKeTheoThuThuat();
         }
+
+        
     }
 }
