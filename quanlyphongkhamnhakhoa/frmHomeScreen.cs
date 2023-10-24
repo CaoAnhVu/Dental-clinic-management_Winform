@@ -1,4 +1,6 @@
-﻿using PKNK_CNPM;
+﻿using PKNK.BUS.Servive;
+using PKNK.DAL.Models;
+using PKNK_CNPM;
 using PKNK_CNPM.FormCustomer;
 using PKNK_CNPM.Forms;
 using PKNK_CNPM.FormsSetting;
@@ -11,12 +13,14 @@ using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Documents;
 using System.Windows.Forms;
 
 namespace PKNK_CNPM
 {
     public partial class frmHomeScreen : Form
     {
+
         bool sidebarExpand;
         bool customerCollapse;
         bool quanlyCollapse;
@@ -28,6 +32,7 @@ namespace PKNK_CNPM
         private int tempIndex;
         /*public object SiderbarTimer { get; private set; }*/
         //contruction
+        private readonly KhachHangService khachHangService = new KhachHangService();
         public frmHomeScreen()
         {
             this.WindowState = FormWindowState.Maximized;
@@ -36,6 +41,7 @@ namespace PKNK_CNPM
             btnCloseChildForm.Visible = false;
             this.Text = string.Empty;
             this.ControlBox = false;
+            BindGrid(khachHangService.GetAll());
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
         }
         //Drag form
@@ -123,12 +129,9 @@ namespace PKNK_CNPM
             btnQuanLy.BackColor = Color.FromArgb(55, 51, 76);
             btnSetting.BackColor = Color.FromArgb(55, 51, 76);
             btnDangXuat.BackColor = Color.FromArgb(55, 51, 76);
-            btnHoaDon.BackColor = Color.FromArgb(55, 51, 76);
             btnPhieuKham.BackColor = Color.FromArgb(55, 51, 76);
-            btnThuoc.BackColor = Color.FromArgb(55, 51, 76);
             btnThongKe.BackColor = Color.FromArgb(55, 51, 76);
             btnDoanhThu.BackColor = Color.FromArgb(55, 51, 76);
-            btnDichVu.BackColor = Color.FromArgb(55, 51, 76);
             btnDanhSachNhanVien.BackColor = Color.FromArgb(55, 51, 76);
             btnDonXuatNhap.BackColor = Color.FromArgb(55, 51, 76);
             if (currentButton != null)
@@ -198,8 +201,6 @@ namespace PKNK_CNPM
         //Set Timer các chức năng trong toolBar
         private void btnCustomer_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm(new PKNK_CNPM.Forms.FormCustomer(), sender);
-            //set timer interval to lowest to make it smoother 
             CustomerTimer.Start();
         }
 
@@ -296,7 +297,6 @@ namespace PKNK_CNPM
 
         private void btnHoaDon_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new frmHoaDon(), sender);
         }
 
         private void btnDonXuatHang_Click(object sender, EventArgs e)
@@ -304,29 +304,20 @@ namespace PKNK_CNPM
             OpenChildForm(new frmHoaDonXuatNhap(), sender);
         }
 
-        private void btnThuoc_Click(object sender, EventArgs e)
-        {
-            OpenChildForm(new frmDonThuoc(), sender);
-        }
-
-        private void btnDichVu_Click(object sender, EventArgs e)
-        {
-            //OpenChildForm(new frmCanLamSang(), sender);
-        }
 
         private void btnDoanhThu_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new frmDoanh(), sender);
+            OpenChildForm(new frmThongKeVatLieu(), sender);
         }
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new frmThong(), sender);
+            OpenChildForm(new frmThongKe(), sender);
         }
 
         private void btnThongTinChung_Click(object sender, EventArgs e)
         {
-            //OpenChildForm(new frmThong(), sender);
+            OpenChildForm(new frmThongTinChung(), sender);
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
@@ -339,6 +330,52 @@ namespace PKNK_CNPM
                 this.Close();
             }
             
+        }
+
+        private void btnPhieuKham_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new PKNK_CNPM.Forms.FormCustomer(), sender);
+            //set timer interval to lowest to make it smoother 
+        }
+
+        // NGODAT
+        private void BindGrid(List<BenhNhan> list)
+        {
+            try
+            {
+                dvgDanhSachKham.Rows.Clear();
+                foreach (BenhNhan i in list)
+                {
+                    if(i.NgayTao.Month == DateTime.Now.Month && i.NgayTao.Date == DateTime.Now.Date && i.NgayTao.Date.Year == DateTime.Now.Year)
+                    {
+                        int index = dvgDanhSachKham.Rows.Add();
+                        dvgDanhSachKham.Rows[index].Cells[0].Value = i.MaBN;
+                        dvgDanhSachKham.Rows[index].Cells[1].Value = i.TenBN;
+                        dvgDanhSachKham.Rows[index].Cells[2].Value = i.SDT;
+                        dvgDanhSachKham.Rows[index].Cells[3].Value = i.GioiTinh == true ? "Nam" : "Nữ";
+                        dvgDanhSachKham.Rows[index].Cells[4].Value = i.NgaySinh;
+                        if(i.NhanVien != null)
+                            dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
+                        dvgDanhSachKham.Rows[index].Cells[6].Value = i.DiaChi;
+                        dvgDanhSachKham.Rows[index].Cells[7].Value = i.NgayTao;
+                        dvgDanhSachKham.Rows[index].Cells[8].Value = i.DaThanhToan;
+                        dvgDanhSachKham.Rows[index].Cells[9].Value = i.GhiChu;
+                        //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
+                        dvgDanhSachKham.Rows[index].Cells[10].Value = i.HuyetApMach == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[11].Value = i.DuongHuyet == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[13].Value = i.MauKhoDong == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[14].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[15].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[16].Value = i.XQuang != "" ? "Có" : "Không";
+                        dvgDanhSachKham.Rows[index].Cells[17].Value = i.MaBaoHiem;
+                        dvgDanhSachKham.Rows[index].Cells[18].Value = i.Khac;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("BindGrid frmDanhSachNV Ex:" + ex.Message);
+            }
         }
 
     }

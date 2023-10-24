@@ -1,5 +1,6 @@
 ﻿using PKNK.BUS.Servive;
 using PKNK.DAL.Models;
+using PKNK_CNPM.FormCustomer;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,6 +16,7 @@ namespace PKNK_CNPM.Forms
     public partial class frmThemKhachHang : Form
     {
         private readonly KhachHangService benhNhanService = new KhachHangService();
+        private readonly NhanVienService nhanVienService = new NhanVienService();
         private bool isEdit = false;
         private BenhNhan khachHang;
         public frmThemKhachHang()
@@ -35,7 +37,7 @@ namespace PKNK_CNPM.Forms
 
         private bool checkValue()
         {
-            if (txtTenKH.Text != "" && txtMaKH.Text != "" && txtSDT.Text != "")
+            if (txtTenKH.Text != "" && txtSDT.Text != "")
             {
                 return true;
             }
@@ -61,7 +63,6 @@ namespace PKNK_CNPM.Forms
                     cbMauKhoDong.Checked = khachHang.MauKhoDong.Value;
                 if (khachHang.ThieuNangTriTue != null)
                     cbThieuNang.Checked = khachHang.ThieuNangTriTue.Value;
-                txtMaNV.Text = khachHang.MaNV;
                 dtpNgaySinh.Value = khachHang.NgaySinh.Value;
                 // Select item trong combobox
                 if (khachHang.GioiTinh == true)
@@ -69,48 +70,74 @@ namespace PKNK_CNPM.Forms
                 else
                     rbNu.Checked = true;
             }
+            else
+            {
+                txtMaKH.Enabled = false;
+            }
         }
+
+       
         //
         private void frmThemKhachHang_Load(object sender, EventArgs e)
         {
             loadValue();
+            populateNhanVienCombobox();
         }
+
+        private void populateNhanVienCombobox()
+        {
+            List<NhanVien> list = nhanVienService.GetAll();
+            cbNhanVien.DataSource = list;
+            cbNhanVien.DisplayMember = "TenNhanVien";
+            cbNhanVien.ValueMember = "MaNhanVien";
+        }
+
+        private void loadComboBox()
+        {
+            foreach (var item in cbNhanVien.Items)
+            {
+                if (((NhanVien)item).MaNhanVien == khachHang.MaNV)
+                {
+                    cbNhanVien.SelectedItem = item;
+                    break;
+                }
+            }
+        }
+
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
             {
-                BenhNhan existingBenhNhan = benhNhanService.GetAll().FirstOrDefault(p => p.MaBN == int.Parse(txtMaKH.Text));
                 // Hander valid
-                if (existingBenhNhan != null && !isEdit)
-                    throw new Exception("Mã nhân viên đã có!");
                 if (!checkValue())
                     throw new Exception("Chưa nhập đầy đủ thông tin!");
                 if (txtTenKH.Text.Length > 255)
                     throw new Exception("Tên nhân viên quá 255 kí tự!");
                 if (!CheckValidService.IsVietnamesePhoneNumber(txtSDT.Text))
                     throw new Exception("Số điện thoại không hợp lệ!");
-
+                NhanVien selectedNhanVien = (NhanVien)cbNhanVien.SelectedItem;
                 BenhNhan value = new BenhNhan()
                 {
-                    MaBN = int.Parse(txtMaKH.Text),
                     TenBN = txtTenKH.Text,
                     SDT = txtSDT.Text,
                     GioiTinh = rbNam.Checked == true ? true : false,
                     NgayTao = DateTime.Now,
-                    MaNV = txtMaNV.Text,
                     NgaySinh = (DateTime)dtpNgaySinh.Value,
                     DiaChi = txtDiaChi.Text,
                     GhiChu = rtbLyDo.Text,
-                    //MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
                     DuongHuyet = cbDuongHuyet.Checked,
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,
                     ThieuNangTriTue = cbDuongHuyet.Checked,
+                    MaNV = selectedNhanVien.MaNhanVien,
                 };
+              
+                
 
                 if (isEdit)
                 {
+                    value.MaBN = int.Parse(txtMaKH.Text);
                     benhNhanService.Update(value);
                     MessageBox.Show("Sửa khách hàng thành công!");
                 }

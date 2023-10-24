@@ -16,21 +16,22 @@ namespace PKNK_CNPM.Forms
     {
         private readonly TTLamSanServive thongTinLsServive = new TTLamSanServive();
         private readonly DonThuocService donThuocServive = new DonThuocService();
+        private readonly HoaDonService hoaDonService = new HoaDonService();
 
-        private int MaChuanDoan;
+        private ChanDoan chanDoan;
         private List<ThongTinL> thongTinLamSan;
         private List<DonThuoc> thongTinDonThuoc;
         private double TongTienTT = 0,TongTienThuoc = 0,  TongGiamGia;
-        public frmPhieuKham(int maChuanDoan)
+        public frmPhieuKham(ChanDoan chanDoan)
         {
             InitializeComponent();
-            this.MaChuanDoan = maChuanDoan;
+            this.chanDoan = chanDoan;
         }
 
         private void GetValue()
         {
-            thongTinLamSan = thongTinLsServive.FindByMaChuanDoan(MaChuanDoan);
-            thongTinDonThuoc = donThuocServive.FindByMaChuanDoan(MaChuanDoan);
+            thongTinLamSan = thongTinLsServive.FindByMaChuanDoan(chanDoan.MaChanDoan);
+            thongTinDonThuoc = donThuocServive.FindByMaChuanDoan(chanDoan.MaChanDoan);
             // Set value ThuThuat
             if (thongTinLamSan.Count != 0)
             {
@@ -47,6 +48,35 @@ namespace PKNK_CNPM.Forms
                 {
                     TongTienThuoc += (double)(i.SoLuong * i.ThanhTien);
                 }
+            }
+        }
+
+        private void btnLuuLai_Click(object sender, EventArgs e)
+        {
+
+            btnInHoaDon.Enabled = true;
+        }
+
+        private void XuatHoaDon()
+        {
+            HoaDon hoaDon = new HoaDon
+            {
+                Ngay = DateTime.Now,
+                ThanhTien = donThuocServive.TongTienByMaChuanDoan(chanDoan.MaChanDoan) + thongTinLsServive.TongTienByMaChuanDoan(chanDoan.MaChanDoan),
+                MaChanDoan = chanDoan.MaChanDoan,
+            };
+            hoaDonService.Add(hoaDon);
+        }
+
+        private void btnInHoaDon_Click(object sender, EventArgs e)
+        {
+            DialogResult res = MessageBox.Show("Bạn có muốn xuất hóa đơn không?", "Cảnh báo", MessageBoxButtons.YesNo);
+            if (res == DialogResult.Yes)
+            {
+                XuatHoaDon();
+                frmHoaDon2 frm = new frmHoaDon2(chanDoan);
+                frm.ShowDialog();
+                this.Close();
             }
         }
 

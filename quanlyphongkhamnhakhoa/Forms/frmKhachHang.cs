@@ -52,7 +52,7 @@ namespace PKNK_CNPM.Forms
 
         private void clearValue()
         {
-            txtMaBN.Text = txtTenBN.Text = txtSDT.Text = txtGioiTinh.Text = txtTuoi.Text = txtDiaChi.Text = "";
+            txtMaBN.Text = txtTenBN.Text = txtSDT.Text = txtGioiTinh.Text = txtNamSinh.Text = txtDiaChi.Text = "";
         }
         private void BindGrid(List<BenhNhan> list)
         {
@@ -65,23 +65,25 @@ namespace PKNK_CNPM.Forms
                     dvgDanhSachKham.Rows[index].Cells[0].Value = i.MaBN;
                     dvgDanhSachKham.Rows[index].Cells[1].Value = i.TenBN;
                     dvgDanhSachKham.Rows[index].Cells[2].Value = i.SDT;
-                    dvgDanhSachKham.Rows[index].Cells[3].Value = i.GioiTinh == true ? "Nam" : "Nữ" ;
-                    dvgDanhSachKham.Rows[index].Cells[4].Value = i.NgayTao;
-                    dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
-                    dvgDanhSachKham.Rows[index].Cells[6].Value = i.NgaySinh;
-                    dvgDanhSachKham.Rows[index].Cells[7].Value = i.DiaChi;
-                    dvgDanhSachKham.Rows[index].Cells[8].Value = i.TongTien;
-                    dvgDanhSachKham.Rows[index].Cells[9].Value = i.DaThanhToan;
-                    dvgDanhSachKham.Rows[index].Cells[10].Value = i.GhiChu;
+                    dvgDanhSachKham.Rows[index].Cells[3].Value = i.GioiTinh == true ? "Nam" : "Nữ";
+                    dvgDanhSachKham.Rows[index].Cells[4].Value = i.NgaySinh;
+                    if(i.NhanVien!= null)
+                    {
+                        dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
+                    }
+                    dvgDanhSachKham.Rows[index].Cells[6].Value = i.DiaChi;
+                    dvgDanhSachKham.Rows[index].Cells[7].Value = i.NgayTao;
+                    dvgDanhSachKham.Rows[index].Cells[8].Value = i.DaThanhToan;
+                    dvgDanhSachKham.Rows[index].Cells[9].Value = i.GhiChu;
                     //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
-                    dvgDanhSachKham.Rows[index].Cells[12].Value = i.HuyetApMach == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[13].Value = i.DuongHuyet == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[14].Value = i.MauKhoDong == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[15].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[16].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[17].Value = i.XQuang != "" ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[18].Value = i.MaBaoHiem;
-                    dvgDanhSachKham.Rows[index].Cells[19].Value = i.Khac;   
+                    dvgDanhSachKham.Rows[index].Cells[10].Value = i.HuyetApMach == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[11].Value = i.DuongHuyet == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[13].Value = i.MauKhoDong == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[14].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[15].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[16].Value = i.XQuang != "" ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[17].Value = i.MaBaoHiem;
+                    dvgDanhSachKham.Rows[index].Cells[18].Value = i.Khac;
                 }
             }
             catch (Exception ex)
@@ -98,7 +100,7 @@ namespace PKNK_CNPM.Forms
             txtTenBN.Text = row.Cells[1].Value.ToString();
             txtSDT.Text = row.Cells[2].Value.ToString();
             txtGioiTinh.Text = row.Cells[3].Value.ToString();
-            txtTuoi.Text = row.Cells[4].Value.ToString();
+            txtNamSinh.Text = String.Format("{0:dd/MM/yyyy}", row.Cells[4].Value);
             if (row.Cells[5].Value.ToString() != "")
                 txtDiaChi.Text = row.Cells[5].Value.ToString();
             khachHang = khachHangService.FindById(int.Parse(row.Cells[0].Value.ToString()));
@@ -187,32 +189,10 @@ namespace PKNK_CNPM.Forms
             }
         }
 
-        private void btnDonThuoc_Click(object sender, EventArgs e)
+        private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
-            if (khachHang != null)
-            {
-                frmDonThuoc frmDonThuoc = new frmDonThuoc();
-                frmDonThuoc.ShowDialog();
-                BindGrid(khachHangService.GetAll());
-            }
-            else
-            {
-                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
-            }
+
         }
 
-        private void btnInHoaDon_Click(object sender, EventArgs e)
-        {
-            if (khachHang != null)
-            {
-                frmHoaDon frmHoaDon = new frmHoaDon();
-                frmHoaDon.ShowDialog();
-                BindGrid(khachHangService.GetAll());
-            }
-            else
-            {
-                MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
-            }
-        }
     }
 }

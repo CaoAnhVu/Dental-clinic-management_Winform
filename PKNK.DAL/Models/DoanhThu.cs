@@ -13,12 +13,6 @@ namespace PKNK.DAL.Models
         [StringLength(10)]
         public string MaDoanhThu { get; set; }
 
-        [Required]
-        [StringLength(10)]
-        public string MaHoaDon { get; set; }
-
-        public DateTime Ngay { get; set; }
-
-        public virtual HoaDon HoaDon { get; set; }
+        public int MaHoaDon { get; set; }
     }
 }

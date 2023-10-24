@@ -18,11 +18,11 @@ namespace PKNK.DAL.Models
         public virtual DbSet<ChanDoan> ChanDoans { get; set; }
         public virtual DbSet<ChucDanh> ChucDanhs { get; set; }
         public virtual DbSet<DoanhThu> DoanhThus { get; set; }
+        public virtual DbSet<DonXuatNhap> DonXuatNhaps { get; set; }
         public virtual DbSet<HoaDon> HoaDons { get; set; }
         public virtual DbSet<LoaiThuThuat> LoaiThuThuats { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<ThongTinL> ThongTinLS { get; set; }
-        public virtual DbSet<ThongTinThuoc> ThongTinThuocs { get; set; }
         public virtual DbSet<Thuoc> Thuocs { get; set; }
         public virtual DbSet<ThuThuat> ThuThuats { get; set; }
         public virtual DbSet<TrangThai> TrangThais { get; set; }
@@ -97,24 +97,22 @@ namespace PKNK.DAL.Models
                 .IsFixedLength()
                 .IsUnicode(false);
 
-            modelBuilder.Entity<DoanhThu>()
-                .Property(e => e.MaHoaDon)
-                .IsFixedLength()
-                .IsUnicode(false);
+            modelBuilder.Entity<DonXuatNhap>()
+                .Property(e => e.DonGia)
+                .HasPrecision(18, 0);
 
-            modelBuilder.Entity<HoaDon>()
-                .Property(e => e.MaHoaDon)
+            modelBuilder.Entity<DonXuatNhap>()
+                .Property(e => e.ThanhTien)
+                .HasPrecision(18, 0);
+
+            modelBuilder.Entity<DonXuatNhap>()
+                .Property(e => e.MaNhanVien)
                 .IsFixedLength()
                 .IsUnicode(false);
 
             modelBuilder.Entity<HoaDon>()
                 .Property(e => e.ThanhTien)
                 .HasPrecision(19, 4);
-
-            modelBuilder.Entity<HoaDon>()
-                .HasMany(e => e.DoanhThus)
-                .WithRequired(e => e.HoaDon)
-                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<LoaiThuThuat>()
                 .Property(e => e.MaLoaiThuThuat)
@@ -143,7 +141,7 @@ namespace PKNK.DAL.Models
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.SoDienThoai)
-                .IsFixedLength();
+                .IsUnicode(false);
 
             modelBuilder.Entity<NhanVien>()
                 .Property(e => e.Email)
@@ -153,6 +151,11 @@ namespace PKNK.DAL.Models
                 .HasMany(e => e.BenhNhans)
                 .WithOptional(e => e.NhanVien)
                 .HasForeignKey(e => e.MaNV);
+
+            modelBuilder.Entity<NhanVien>()
+                .HasMany(e => e.DonXuatNhaps)
+                .WithRequired(e => e.NhanVien)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<NhanVien>()
                 .HasMany(e => e.TTCanLamSans)
@@ -176,18 +179,6 @@ namespace PKNK.DAL.Models
             modelBuilder.Entity<ThongTinL>()
                 .Property(e => e.MaLoaiThuThuat)
                 .IsFixedLength()
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ThongTinThuoc>()
-                .Property(e => e.MaThongTinThuoc)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ThongTinThuoc>()
-                .Property(e => e.MaThuoc)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<ThongTinThuoc>()
-                .Property(e => e.MaDonThuoc)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Thuoc>()
@@ -221,10 +212,6 @@ namespace PKNK.DAL.Models
                 .Property(e => e.MaTrangThai)
                 .IsFixedLength()
                 .IsUnicode(false);
-
-            modelBuilder.Entity<TTCanLamSan>()
-                .Property(e => e.MaPhieuKham)
-                .IsFixedLength();
 
             modelBuilder.Entity<TTCanLamSan>()
                 .Property(e => e.MaNV)

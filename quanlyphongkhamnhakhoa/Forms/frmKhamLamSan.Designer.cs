@@ -35,9 +35,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.rtbGhiChu = new System.Windows.Forms.RichTextBox();
-            this.btnSua = new System.Windows.Forms.Button();
             this.cbKhac2 = new System.Windows.Forms.CheckBox();
             this.cbDaDeoHam = new System.Windows.Forms.CheckBox();
             this.cbDaChinhNha = new System.Windows.Forms.CheckBox();
@@ -54,14 +52,11 @@
             this.cbThan = new System.Windows.Forms.CheckBox();
             this.cbDiUng = new System.Windows.Forms.CheckBox();
             this.cbGan = new System.Windows.Forms.CheckBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.label42 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.label38 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.btnInA4 = new System.Windows.Forms.Button();
             this.btnLuuLai = new System.Windows.Forms.Button();
             this.btnHoSoPhongKham = new System.Windows.Forms.Button();
             this.txtMaKH = new System.Windows.Forms.TextBox();
@@ -78,13 +73,10 @@
             this.panel11.BackColor = System.Drawing.Color.Snow;
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.txtMaPhieu);
-            this.panel11.Controls.Add(this.cbNhanVien);
             this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label3);
-            this.panel11.Controls.Add(this.btnXoa);
             this.panel11.Controls.Add(this.rtbGhiChu);
-            this.panel11.Controls.Add(this.btnSua);
             this.panel11.Controls.Add(this.cbKhac2);
             this.panel11.Controls.Add(this.cbDaDeoHam);
             this.panel11.Controls.Add(this.cbDaChinhNha);
@@ -101,18 +93,16 @@
             this.panel11.Controls.Add(this.cbThan);
             this.panel11.Controls.Add(this.cbDiUng);
             this.panel11.Controls.Add(this.cbGan);
-            this.panel11.Controls.Add(this.label41);
-            this.panel11.Controls.Add(this.label42);
             this.panel11.Controls.Add(this.label2);
             this.panel11.Controls.Add(this.label1);
             this.panel11.Controls.Add(this.label39);
             this.panel11.Controls.Add(this.label38);
             this.panel11.Controls.Add(this.label17);
-            this.panel11.Controls.Add(this.btnInA4);
             this.panel11.Controls.Add(this.btnLuuLai);
             this.panel11.Controls.Add(this.btnHoSoPhongKham);
             this.panel11.Controls.Add(this.txtMaKH);
             this.panel11.Controls.Add(this.txtTenKhachHang);
+            this.panel11.Controls.Add(this.cbNhanVien);
             this.panel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(8, 59);
@@ -185,26 +175,6 @@
             this.label3.TabIndex = 20;
             this.label3.Text = "Ghi chú khác";
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BackColor = System.Drawing.Color.DarkRed;
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Image = global::PKNK_CNPM.Properties.Resources.delete1;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(1077, 119);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(127, 39);
-            this.btnXoa.TabIndex = 22;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // rtbGhiChu
             // 
             this.rtbGhiChu.Location = new System.Drawing.Point(175, 499);
@@ -212,26 +182,6 @@
             this.rtbGhiChu.Size = new System.Drawing.Size(642, 125);
             this.rtbGhiChu.TabIndex = 8;
             this.rtbGhiChu.Text = "";
-            // 
-            // btnSua
-            // 
-            this.btnSua.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSua.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.btnSua.FlatAppearance.BorderSize = 0;
-            this.btnSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Image = global::PKNK_CNPM.Properties.Resources.add1;
-            this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(944, 119);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnSua.Size = new System.Drawing.Size(127, 39);
-            this.btnSua.TabIndex = 19;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSua.UseVisualStyleBackColor = false;
-            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // cbKhac2
             // 
@@ -439,30 +389,6 @@
             this.cbGan.Text = "Gan";
             this.cbGan.UseVisualStyleBackColor = true;
             // 
-            // label41
-            // 
-            this.label41.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label41.ForeColor = System.Drawing.Color.Black;
-            this.label41.Location = new System.Drawing.Point(1032, 685);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(172, 23);
-            this.label41.TabIndex = 17;
-            this.label41.Text = "Ngày sửa 26/10/2023";
-            // 
-            // label42
-            // 
-            this.label42.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label42.ForeColor = System.Drawing.Color.Black;
-            this.label42.Location = new System.Drawing.Point(846, 685);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(171, 23);
-            this.label42.TabIndex = 16;
-            this.label42.Text = "Ngày tạo 26/10/2023";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -528,21 +454,6 @@
             this.label17.Size = new System.Drawing.Size(144, 25);
             this.label17.TabIndex = 10;
             this.label17.Text = "Tên khách hàng";
-            // 
-            // btnInA4
-            // 
-            this.btnInA4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInA4.BackColor = System.Drawing.Color.Silver;
-            this.btnInA4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInA4.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold);
-            this.btnInA4.ForeColor = System.Drawing.Color.Black;
-            this.btnInA4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnInA4.Location = new System.Drawing.Point(860, 575);
-            this.btnInA4.Name = "btnInA4";
-            this.btnInA4.Size = new System.Drawing.Size(344, 70);
-            this.btnInA4.TabIndex = 10;
-            this.btnInA4.Text = "In khổ A4";
-            this.btnInA4.UseVisualStyleBackColor = false;
             // 
             // btnLuuLai
             // 
@@ -631,13 +542,10 @@
         #endregion
 
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.Label label42;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.Label label38;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button btnInA4;
         private System.Windows.Forms.Button btnLuuLai;
         private System.Windows.Forms.Button btnHoSoPhongKham;
         private System.Windows.Forms.TextBox txtMaKH;
@@ -662,8 +570,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RichTextBox rtbGhiChu;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ComboBox cbNhanVien;

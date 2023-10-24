@@ -14,5 +14,7 @@ namespace PKNK.BUS.Report
         public string GioiTinh { set; get; }
         public string DiaChi { set; get; }
         public string SDT { set; get; }
+        public string NgayTao { set; get; }
+        public string TongTien { set; get; }
     }
 }

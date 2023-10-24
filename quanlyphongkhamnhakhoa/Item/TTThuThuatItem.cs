@@ -113,7 +113,16 @@ namespace PKNK_CNPM.Item
             txtThanhTien.Text = (thuThuat.DonGia * int.Parse(txtSoLuong.Text) * (100 - int.Parse(txtGG.Text))/100).ToString();
         }
 
-        private void cbLoaiTT_SelectedIndexChanged(object sender, EventArgs e)
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            if (flpThemThuThuat != null)
+            {
+                flpThemThuThuat.Controls.Remove(this);
+                this.Dispose();
+            }
+        }
+
+        private void cbLoaiTT_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cbLoaiTT.SelectedIndex > 0)
             {
@@ -122,7 +131,7 @@ namespace PKNK_CNPM.Item
             }
         }
 
-        private void txtSoLuong_KeyPress(object sender, KeyPressEventArgs e)
+        private void txtSoLuong_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
@@ -130,7 +139,7 @@ namespace PKNK_CNPM.Item
             }
         }
 
-        private void txtSoLuong_TextChanged(object sender, EventArgs e)
+        private void txtSoLuong_TextChanged_1(object sender, EventArgs e)
         {
             if (txtSoLuong.Text != "")
             {
@@ -138,16 +147,7 @@ namespace PKNK_CNPM.Item
             }
         }
 
-        private void txtGG_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void txtGG_TextChanged(object sender, EventArgs e)
+        private void txtGG_TextChanged_1(object sender, EventArgs e)
         {
             if (txtGG.Text != "")
             {
@@ -155,21 +155,11 @@ namespace PKNK_CNPM.Item
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void txtGG_KeyPress_1(object sender, KeyPressEventArgs e)
         {
-            if (flpThemThuThuat != null)
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
             {
-                flpThemThuThuat.Controls.Remove(this);
-                this.Dispose();
-            }
-        }
-
-        private void pictureBox1_Click_1(object sender, EventArgs e)
-        {
-            if (flpThemThuThuat != null)
-            {
-                flpThemThuThuat.Controls.Remove(this);
-                this.Dispose();
+                e.Handled = true;
             }
         }
     }

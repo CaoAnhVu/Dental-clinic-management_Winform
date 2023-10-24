@@ -26,7 +26,6 @@ namespace PKNK_CNPM.FormCustomer
         public frmKhamLamSan(BenhNhan khachHang)
         {
             this.khachHang = khachHang;
-
             InitializeComponent();
         }
 
@@ -52,10 +51,7 @@ namespace PKNK_CNPM.FormCustomer
 
         private void loadValue()
         {
-            tTCanLamSan = ttCanLamSangService.FindByMaBN(khachHang.MaBN);
-            txtMaKH.Text = khachHang.MaBN.ToString();
-            txtTenKhachHang.Text = khachHang.TenBN.ToString();
-            txtMaPhieu.Text = tTCanLamSan.MaPhieuKham;
+            txtMaPhieu.Text = tTCanLamSan.MaPhieuKham.ToString();
             cbGan.Checked = tTCanLamSan.Gan.Value;
             cbTieuDuong.Checked = tTCanLamSan.TieuDuong.Value;
             cbThapKop.Checked = tTCanLamSan.ThapKhop.Value;
@@ -71,21 +67,18 @@ namespace PKNK_CNPM.FormCustomer
             rtbGhiChu.Text = tTCanLamSan.Khac;
         }
 
-        private void btnSua_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void frmKhamLamSan_Load_1(object sender, EventArgs e)
         {
             FillNhanVienCombobox(nhanVienService.GetAll());
-            loadValue();
-            loadComboBox();
+            tTCanLamSan = ttCanLamSangService.FindByMaBN(khachHang.MaBN);
+            if (tTCanLamSan != null)
+            {
+                loadValue();
+                loadComboBox();
+            }
+            txtMaKH.Text = khachHang.MaBN.ToString();
+            txtTenKhachHang.Text = khachHang.TenBN.ToString();
         }
 
         private void btnLuuLai_Click_1(object sender, EventArgs e)
@@ -100,7 +93,6 @@ namespace PKNK_CNPM.FormCustomer
 
                 TTCanLamSan value = new TTCanLamSan()
                 {
-                    MaPhieuKham = txtMaPhieu.Text,
                     MaBN = int.Parse(txtMaKH.Text),
                     MaNV = selectedNhanVien.MaNhanVien,
                     NgayTao = DateTime.Now,
@@ -120,7 +112,6 @@ namespace PKNK_CNPM.FormCustomer
                     Khac = rtbGhiChu.Text,
                 };
 
-                BenhNhan khachHang = khachHangService.FindById(int.Parse(txtMaKH.Text));
                 if(khachHang.MaTrangThai == "TT001")
                     khachHang.MaTrangThai = "TT002";
 
