@@ -54,6 +54,7 @@ namespace PKNK_CNPM.Forms
                 txtSDT.Text = khachHang.SDT;
                 txtDiaChi.Text = khachHang.DiaChi;
                 txtSDT.Text = khachHang.SDT;
+                txtXQuang.Text = khachHang.XQuang;
                 rtbLyDo.Text = khachHang.GhiChu;
                 if (khachHang.DuongHuyet != null)
                     cbDuongHuyet.Checked = khachHang.DuongHuyet.Value;
@@ -126,10 +127,11 @@ namespace PKNK_CNPM.Forms
                     NgaySinh = (DateTime)dtpNgaySinh.Value,
                     DiaChi = txtDiaChi.Text,
                     GhiChu = rtbLyDo.Text,
+                    XQuang = txtXQuang.Text,
                     DuongHuyet = cbDuongHuyet.Checked,
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,
-                    ThieuNangTriTue = cbDuongHuyet.Checked,
+                    ThieuNangTriTue = cbThieuNang.Checked,
                     MaNV = selectedNhanVien.MaNhanVien,
                 };
               
@@ -170,5 +172,7 @@ namespace PKNK_CNPM.Forms
                 this.Close();
             }
         }
+
+       
     }
 }

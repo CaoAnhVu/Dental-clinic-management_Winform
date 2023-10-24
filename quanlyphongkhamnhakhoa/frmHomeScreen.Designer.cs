@@ -82,6 +82,7 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DaThanhToan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TrangThai = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -634,6 +635,7 @@
             this.Column10,
             this.DiaChi,
             this.NgayTao,
+            this.Column1,
             this.DaThanhToan,
             this.GhiChu,
             this.TrangThai,
@@ -770,6 +772,13 @@
             this.NgayTao.MinimumWidth = 6;
             this.NgayTao.Name = "NgayTao";
             this.NgayTao.Width = 108;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Tổng Tiền";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
             // DaThanhToan
             // 
@@ -945,6 +954,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn DiaChi;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayTao;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn DaThanhToan;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
         private System.Windows.Forms.DataGridViewTextBoxColumn TrangThai;

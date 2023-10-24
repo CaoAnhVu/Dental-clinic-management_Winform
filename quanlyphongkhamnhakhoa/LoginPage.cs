@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.ImageList;
 
 namespace PKNK_CNPM
 {
@@ -86,6 +87,18 @@ namespace PKNK_CNPM
         private void clearValue()
         {
             txtUsername.Text = txtPassword.Text = "";
+        }
+
+        private void cbHideShow_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cbHideShow.Checked)
+            {
+                txtPassword.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                txtPassword.UseSystemPasswordChar = true;
+            }
         }
 
         

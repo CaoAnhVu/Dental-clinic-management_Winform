@@ -73,17 +73,18 @@ namespace PKNK_CNPM.Forms
                     }
                     dvgDanhSachKham.Rows[index].Cells[6].Value = i.DiaChi;
                     dvgDanhSachKham.Rows[index].Cells[7].Value = i.NgayTao;
-                    dvgDanhSachKham.Rows[index].Cells[8].Value = i.DaThanhToan;
-                    dvgDanhSachKham.Rows[index].Cells[9].Value = i.GhiChu;
+                    dvgDanhSachKham.Rows[index].Cells[8].Value = i.TongTien;
+                    dvgDanhSachKham.Rows[index].Cells[9].Value = i.DaThanhToan;
+                    dvgDanhSachKham.Rows[index].Cells[10].Value = i.GhiChu;
                     //dvgDanhSachKham.Rows[index].Cells[11].Value = i.TrangThai.TenTrangThai;
-                    dvgDanhSachKham.Rows[index].Cells[10].Value = i.HuyetApMach == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[11].Value = i.DuongHuyet == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[13].Value = i.MauKhoDong == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[14].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[15].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[16].Value = i.XQuang != "" ? "Có" : "Không";
-                    dvgDanhSachKham.Rows[index].Cells[17].Value = i.MaBaoHiem;
-                    dvgDanhSachKham.Rows[index].Cells[18].Value = i.Khac;
+                    dvgDanhSachKham.Rows[index].Cells[12].Value = i.HuyetApMach == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[13].Value = i.DuongHuyet == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[14].Value = i.MauKhoDong == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[15].Value = i.BenhTimBamSinh == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[16].Value = i.ThieuNangTriTue == true ? "Có" : "Không";
+                    dvgDanhSachKham.Rows[index].Cells[17].Value = i.XQuang;
+                    dvgDanhSachKham.Rows[index].Cells[18].Value = i.MaBaoHiem;
+                    dvgDanhSachKham.Rows[index].Cells[19].Value = i.Khac;
                 }
             }
             catch (Exception ex)

@@ -855,6 +855,8 @@
     <None Include="Resources\delete5.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\hidden.png" />
+    <None Include="Resources\hidden1.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

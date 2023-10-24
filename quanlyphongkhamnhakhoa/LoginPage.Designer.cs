@@ -49,6 +49,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.loading = new System.Windows.Forms.Panel();
             this.loadingTimer = new System.Windows.Forms.Timer(this.components);
+            this.cbHideShow = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.picFormLogin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -129,10 +130,9 @@
             this.txtUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsername.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtUsername.ForeColor = System.Drawing.Color.Black;
-            this.txtUsername.Location = new System.Drawing.Point(744, 218);
-            this.txtUsername.Multiline = true;
+            this.txtUsername.Location = new System.Drawing.Point(744, 229);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(307, 37);
+            this.txtUsername.Size = new System.Drawing.Size(307, 23);
             this.txtUsername.TabIndex = 1;
             // 
             // txtPassword
@@ -141,10 +141,9 @@
             this.txtPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtPassword.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.txtPassword.ForeColor = System.Drawing.Color.Black;
-            this.txtPassword.Location = new System.Drawing.Point(744, 320);
-            this.txtPassword.Multiline = true;
+            this.txtPassword.Location = new System.Drawing.Point(744, 331);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.Size = new System.Drawing.Size(307, 37);
+            this.txtPassword.Size = new System.Drawing.Size(292, 23);
             this.txtPassword.TabIndex = 2;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -272,6 +271,20 @@
             this.loadingTimer.Interval = 15;
             this.loadingTimer.Tick += new System.EventHandler(this.loadingTimer_Tick);
             // 
+            // cbHideShow
+            // 
+            this.cbHideShow.AutoSize = true;
+            this.cbHideShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(248)))), ((int)(((byte)(251)))));
+            this.cbHideShow.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F);
+            this.cbHideShow.ForeColor = System.Drawing.Color.Black;
+            this.cbHideShow.Location = new System.Drawing.Point(1042, 338);
+            this.cbHideShow.Name = "cbHideShow";
+            this.cbHideShow.Size = new System.Drawing.Size(62, 20);
+            this.cbHideShow.TabIndex = 18;
+            this.cbHideShow.Text = "Show";
+            this.cbHideShow.UseVisualStyleBackColor = false;
+            this.cbHideShow.CheckedChanged += new System.EventHandler(this.cbHideShow_CheckedChanged);
+            // 
             // frmLoginPage
             // 
             this.AcceptButton = this.btnDangNhap;
@@ -281,6 +294,7 @@
             this.BackgroundImage = global::PKNK_CNPM.Properties.Resources.Slide_16_9___1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1277, 707);
+            this.Controls.Add(this.cbHideShow);
             this.Controls.Add(this.loading);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -339,6 +353,7 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel loading;
         private System.Windows.Forms.Timer loadingTimer;
+        private System.Windows.Forms.CheckBox cbHideShow;
     }
 }
 
