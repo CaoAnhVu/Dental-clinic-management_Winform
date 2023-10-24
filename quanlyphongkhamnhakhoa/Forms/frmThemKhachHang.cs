@@ -76,6 +76,14 @@ namespace PKNK_CNPM.Forms
             }
         }
 
+       
+        //
+        private void frmThemKhachHang_Load(object sender, EventArgs e)
+        {
+            loadValue();
+            populateNhanVienCombobox();
+        }
+
         private void populateNhanVienCombobox()
         {
             List<NhanVien> list = nhanVienService.GetAll();
@@ -83,12 +91,19 @@ namespace PKNK_CNPM.Forms
             cbNhanVien.DisplayMember = "TenNhanVien";
             cbNhanVien.ValueMember = "MaNhanVien";
         }
-        //
-        private void frmThemKhachHang_Load(object sender, EventArgs e)
+
+        private void loadComboBox()
         {
-            loadValue();
-            populateNhanVienCombobox();
+            foreach (var item in cbNhanVien.Items)
+            {
+                if (((NhanVien)item).MaNhanVien == khachHang.MaNV)
+                {
+                    cbNhanVien.SelectedItem = item;
+                    break;
+                }
+            }
         }
+
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
@@ -101,7 +116,7 @@ namespace PKNK_CNPM.Forms
                     throw new Exception("Tên nhân viên quá 255 kí tự!");
                 if (!CheckValidService.IsVietnamesePhoneNumber(txtSDT.Text))
                     throw new Exception("Số điện thoại không hợp lệ!");
-
+                NhanVien selectedNhanVien = (NhanVien)cbNhanVien.SelectedItem;
                 BenhNhan value = new BenhNhan()
                 {
                     TenBN = txtTenKH.Text,
@@ -111,16 +126,18 @@ namespace PKNK_CNPM.Forms
                     NgaySinh = (DateTime)dtpNgaySinh.Value,
                     DiaChi = txtDiaChi.Text,
                     GhiChu = rtbLyDo.Text,
-                    //MaTrangThai = khachHang.MaTrangThai == "" ? "TT001" : khachHang.MaTrangThai,
                     DuongHuyet = cbDuongHuyet.Checked,
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,
                     ThieuNangTriTue = cbDuongHuyet.Checked,
-                    MaBaoHiem = txtMaBaoHiem.Text,
+                    MaNV = selectedNhanVien.MaNhanVien,
                 };
+              
+                
 
                 if (isEdit)
                 {
+                    value.MaBN = int.Parse(txtMaKH.Text);
                     benhNhanService.Update(value);
                     MessageBox.Show("Sửa khách hàng thành công!");
                 }

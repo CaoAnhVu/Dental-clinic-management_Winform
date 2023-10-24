@@ -31,11 +31,8 @@
             this.grpTatCa = new System.Windows.Forms.GroupBox();
             this.txtTimKiem = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.rbDaKhamLamSan = new System.Windows.Forms.RadioButton();
-            this.rbCanLamSan = new System.Windows.Forms.RadioButton();
             this.panel5 = new System.Windows.Forms.Panel();
             this.btnTimKiem = new System.Windows.Forms.Button();
-            this.rbDaKhamTongQuat = new System.Windows.Forms.RadioButton();
             this.dvgDanhSachKham = new System.Windows.Forms.DataGridView();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,8 +63,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnThemKH = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.btnKhamLamSan = new System.Windows.Forms.Button();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -76,10 +71,8 @@
             this.panel9 = new System.Windows.Forms.Panel();
             this.btnCanLamSan = new System.Windows.Forms.Button();
             this.txtSDT = new System.Windows.Forms.TextBox();
-            this.txtTrangThai = new System.Windows.Forms.TextBox();
             this.txtDiaChi = new System.Windows.Forms.TextBox();
             this.txtNamSinh = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.txtGioiTinh = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
@@ -99,7 +92,6 @@
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel9.SuspendLayout();
@@ -113,10 +105,7 @@
             this.grpTatCa.BackColor = System.Drawing.Color.Snow;
             this.grpTatCa.Controls.Add(this.txtTimKiem);
             this.grpTatCa.Controls.Add(this.label19);
-            this.grpTatCa.Controls.Add(this.rbDaKhamLamSan);
-            this.grpTatCa.Controls.Add(this.rbCanLamSan);
             this.grpTatCa.Controls.Add(this.panel5);
-            this.grpTatCa.Controls.Add(this.rbDaKhamTongQuat);
             this.grpTatCa.Controls.Add(this.dvgDanhSachKham);
             this.grpTatCa.Controls.Add(this.label2);
             this.grpTatCa.Controls.Add(this.txtTong);
@@ -148,28 +137,6 @@
             this.label19.TabIndex = 32;
             this.label19.Text = "Tìm kiếm theo tên";
             // 
-            // rbDaKhamLamSan
-            // 
-            this.rbDaKhamLamSan.AutoSize = true;
-            this.rbDaKhamLamSan.Location = new System.Drawing.Point(1048, 50);
-            this.rbDaKhamLamSan.Name = "rbDaKhamLamSan";
-            this.rbDaKhamLamSan.Size = new System.Drawing.Size(177, 29);
-            this.rbDaKhamLamSan.TabIndex = 32;
-            this.rbDaKhamLamSan.TabStop = true;
-            this.rbDaKhamLamSan.Text = "Đã khám lâm sàn";
-            this.rbDaKhamLamSan.UseVisualStyleBackColor = true;
-            // 
-            // rbCanLamSan
-            // 
-            this.rbCanLamSan.AutoSize = true;
-            this.rbCanLamSan.Location = new System.Drawing.Point(823, 86);
-            this.rbCanLamSan.Name = "rbCanLamSan";
-            this.rbCanLamSan.Size = new System.Drawing.Size(212, 29);
-            this.rbCanLamSan.TabIndex = 32;
-            this.rbCanLamSan.TabStop = true;
-            this.rbCanLamSan.Text = "Đã khám cận lâm sàn";
-            this.rbCanLamSan.UseVisualStyleBackColor = true;
-            // 
             // panel5
             // 
             this.panel5.Controls.Add(this.btnTimKiem);
@@ -197,18 +164,6 @@
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTimKiem.UseVisualStyleBackColor = false;
             this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
-            // 
-            // rbDaKhamTongQuat
-            // 
-            this.rbDaKhamTongQuat.AutoSize = true;
-            this.rbDaKhamTongQuat.Location = new System.Drawing.Point(823, 50);
-            this.rbDaKhamTongQuat.Name = "rbDaKhamTongQuat";
-            this.rbDaKhamTongQuat.Size = new System.Drawing.Size(194, 29);
-            this.rbDaKhamTongQuat.TabIndex = 32;
-            this.rbDaKhamTongQuat.TabStop = true;
-            this.rbDaKhamTongQuat.Text = "Đã khám tổng quát";
-            this.rbDaKhamTongQuat.UseVisualStyleBackColor = true;
-            this.rbDaKhamTongQuat.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // dvgDanhSachKham
             // 
@@ -508,15 +463,11 @@
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.Snow;
-            this.panel3.Controls.Add(this.panel7);
             this.panel3.Controls.Add(this.panel8);
-            this.panel3.Controls.Add(this.panel6);
             this.panel3.Controls.Add(this.panel9);
             this.panel3.Controls.Add(this.txtSDT);
-            this.panel3.Controls.Add(this.txtTrangThai);
             this.panel3.Controls.Add(this.txtDiaChi);
             this.panel3.Controls.Add(this.txtNamSinh);
-            this.panel3.Controls.Add(this.label12);
             this.panel3.Controls.Add(this.txtGioiTinh);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label14);
@@ -532,41 +483,12 @@
             this.panel3.Size = new System.Drawing.Size(1759, 297);
             this.panel3.TabIndex = 5;
             // 
-            // panel7
-            // 
-            this.panel7.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel7.Controls.Add(this.btnXoa);
-            this.panel7.Location = new System.Drawing.Point(1322, 83);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(134, 50);
-            this.panel7.TabIndex = 10;
-            // 
-            // btnXoa
-            // 
-            this.btnXoa.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnXoa.BackColor = System.Drawing.Color.DarkRed;
-            this.btnXoa.FlatAppearance.BorderSize = 0;
-            this.btnXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Image = global::PKNK_CNPM.Properties.Resources.delete5;
-            this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(-8, -7);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnXoa.Size = new System.Drawing.Size(141, 63);
-            this.btnXoa.TabIndex = 4;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // panel8
             // 
             this.panel8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel8.BackColor = System.Drawing.Color.White;
             this.panel8.Controls.Add(this.btnKhamLamSan);
-            this.panel8.Location = new System.Drawing.Point(1471, 81);
+            this.panel8.Location = new System.Drawing.Point(1287, 81);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(266, 52);
             this.panel8.TabIndex = 2;
@@ -595,7 +517,7 @@
             this.panel6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel6.Controls.Add(this.btnSua);
             this.panel6.Controls.Add(this.button2);
-            this.panel6.Location = new System.Drawing.Point(1322, 17);
+            this.panel6.Location = new System.Drawing.Point(1240, 39);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(134, 52);
             this.panel6.TabIndex = 9;
@@ -644,7 +566,7 @@
             this.panel9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel9.BackColor = System.Drawing.Color.Snow;
             this.panel9.Controls.Add(this.btnCanLamSan);
-            this.panel9.Location = new System.Drawing.Point(1471, 17);
+            this.panel9.Location = new System.Drawing.Point(1287, 17);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(266, 50);
             this.panel9.TabIndex = 5;
@@ -678,16 +600,6 @@
             this.txtSDT.Size = new System.Drawing.Size(426, 30);
             this.txtSDT.TabIndex = 31;
             // 
-            // txtTrangThai
-            // 
-            this.txtTrangThai.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTrangThai.Enabled = false;
-            this.txtTrangThai.Location = new System.Drawing.Point(838, 135);
-            this.txtTrangThai.Multiline = true;
-            this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(426, 30);
-            this.txtTrangThai.TabIndex = 28;
-            // 
             // txtDiaChi
             // 
             this.txtDiaChi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -708,21 +620,11 @@
             this.txtNamSinh.Size = new System.Drawing.Size(426, 30);
             this.txtNamSinh.TabIndex = 28;
             // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.label12.Location = new System.Drawing.Point(699, 138);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(96, 25);
-            this.label12.TabIndex = 26;
-            this.label12.Text = "Trạng thái";
-            // 
             // txtGioiTinh
             // 
             this.txtGioiTinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtGioiTinh.Enabled = false;
-            this.txtGioiTinh.Location = new System.Drawing.Point(154, 195);
+            this.txtGioiTinh.Location = new System.Drawing.Point(836, 136);
             this.txtGioiTinh.Multiline = true;
             this.txtGioiTinh.Name = "txtGioiTinh";
             this.txtGioiTinh.Size = new System.Drawing.Size(426, 30);
@@ -751,7 +653,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(7, 199);
+            this.label8.Location = new System.Drawing.Point(689, 140);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(84, 25);
             this.label8.TabIndex = 27;
@@ -820,6 +722,7 @@
             // panel4
             // 
             this.panel4.Controls.Add(this.label10);
+            this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.label7);
             this.panel4.Controls.Add(this.grpTatCa);
             this.panel4.Controls.Add(this.panel3);
@@ -870,7 +773,6 @@
             this.panel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
-            this.panel7.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel9.ResumeLayout(false);
@@ -906,14 +808,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSDT;
-        private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox txtTrangThai;
         private System.Windows.Forms.TextBox txtDiaChi;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label7;
@@ -942,9 +840,6 @@
         private System.Windows.Forms.Button btnKhamLamSan;
         private System.Windows.Forms.Panel panel9;
         private System.Windows.Forms.Button btnCanLamSan;
-        private System.Windows.Forms.RadioButton rbCanLamSan;
-        private System.Windows.Forms.RadioButton rbDaKhamTongQuat;
-        private System.Windows.Forms.RadioButton rbDaKhamLamSan;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox txtTimKiem;
     }

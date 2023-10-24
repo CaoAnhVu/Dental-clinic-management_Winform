@@ -67,7 +67,10 @@ namespace PKNK_CNPM.Forms
                     dvgDanhSachKham.Rows[index].Cells[2].Value = i.SDT;
                     dvgDanhSachKham.Rows[index].Cells[3].Value = i.GioiTinh == true ? "Nam" : "Nữ";
                     dvgDanhSachKham.Rows[index].Cells[4].Value = i.NgaySinh;
-                    dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
+                    if(i.NhanVien!= null)
+                    {
+                        dvgDanhSachKham.Rows[index].Cells[5].Value = i.NhanVien.TenNhanVien;
+                    }
                     dvgDanhSachKham.Rows[index].Cells[6].Value = i.DiaChi;
                     dvgDanhSachKham.Rows[index].Cells[7].Value = i.NgayTao;
                     dvgDanhSachKham.Rows[index].Cells[8].Value = i.DaThanhToan;
@@ -190,5 +193,6 @@ namespace PKNK_CNPM.Forms
         {
 
         }
+
     }
 }

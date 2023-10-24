@@ -73,7 +73,6 @@
             this.panel11.BackColor = System.Drawing.Color.Snow;
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.txtMaPhieu);
-            this.panel11.Controls.Add(this.cbNhanVien);
             this.panel11.Controls.Add(this.label5);
             this.panel11.Controls.Add(this.label12);
             this.panel11.Controls.Add(this.label3);
@@ -103,6 +102,7 @@
             this.panel11.Controls.Add(this.btnHoSoPhongKham);
             this.panel11.Controls.Add(this.txtMaKH);
             this.panel11.Controls.Add(this.txtTenKhachHang);
+            this.panel11.Controls.Add(this.cbNhanVien);
             this.panel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.panel11.ForeColor = System.Drawing.Color.White;
             this.panel11.Location = new System.Drawing.Point(8, 59);

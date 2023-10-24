@@ -246,5 +246,11 @@ namespace PKNK_CNPM.FormCustomer
         {
             
         }
+
+        private void btnCanLamSan_Click(object sender, EventArgs e)
+        {
+            frmKhamLamSan frmCanLamSang = new frmKhamLamSan(khachHang);
+            frmCanLamSang.ShowDialog();
+        }
     }
 }
