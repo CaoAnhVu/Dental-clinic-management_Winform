@@ -97,6 +97,7 @@ namespace PKNK_CNPM.FormsSetting
 
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+            btnTimKiem.ResetText();
             if(txtTimKiem.Text == "")
                 BindGrid(nhanVienService.GetAll());
             else

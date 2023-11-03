@@ -73,8 +73,9 @@ namespace PKNK.BUS.Servive
         {
             try
             {
+                // Sữ dụng PKNK_ContextDB
                 PKNK_ContextDB model = new PKNK_ContextDB();
-                return model.BenhNhans.Where(p => p.TenBN == name).ToList();
+                return model.BenhNhans.Where(p => p.TenBN.ToLower().Contains(name.ToLower())).ToList();
             }
             catch (Exception ex)
             {

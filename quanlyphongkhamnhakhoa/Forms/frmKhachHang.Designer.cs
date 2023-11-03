@@ -122,9 +122,8 @@
             // 
             this.txtTimKiem.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtTimKiem.Location = new System.Drawing.Point(6, 59);
-            this.txtTimKiem.Multiline = true;
             this.txtTimKiem.Name = "txtTimKiem";
-            this.txtTimKiem.Size = new System.Drawing.Size(590, 50);
+            this.txtTimKiem.Size = new System.Drawing.Size(590, 32);
             this.txtTimKiem.TabIndex = 6;
             // 
             // label19
