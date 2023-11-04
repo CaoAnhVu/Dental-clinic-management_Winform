@@ -162,9 +162,9 @@
             this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(43, 499);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 25);
+            this.label3.Size = new System.Drawing.Size(71, 25);
             this.label3.TabIndex = 20;
-            this.label3.Text = "Ghi chú khác";
+            this.label3.Text = "Ghi chú";
             // 
             // rtbGhiChu
             // 
@@ -390,7 +390,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(206, 25);
             this.label2.TabIndex = 6;
-            this.label2.Text = "Tiền sử bênh toàn thân";
+            this.label2.Text = "Tiền sử bệnh toàn thân";
             // 
             // label1
             // 
@@ -517,9 +517,9 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
             this.label4.Location = new System.Drawing.Point(22, 26);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(265, 37);
+            this.label4.Size = new System.Drawing.Size(281, 37);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Phiếu Khám Lâm Sàn";
+            this.label4.Text = "Phiếu Khám Lâm Sàng";
             // 
             // frmKhamLamSan
             // 
@@ -530,7 +530,7 @@
             this.Controls.Add(this.panel11);
             this.Name = "frmKhamLamSan";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Lâm sàn";
+            this.Text = "Khám lâm sàng";
             this.Load += new System.EventHandler(this.frmKhamLamSan_Load_1);
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();

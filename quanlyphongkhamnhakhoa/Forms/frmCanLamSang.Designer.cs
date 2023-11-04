@@ -224,7 +224,7 @@
             this.btnCanLamSan.Name = "btnCanLamSan";
             this.btnCanLamSan.Size = new System.Drawing.Size(241, 39);
             this.btnCanLamSan.TabIndex = 5;
-            this.btnCanLamSan.Text = "Hồ sơ cận lâm sàn";
+            this.btnCanLamSan.Text = "Hồ sơ lâm sàng";
             this.btnCanLamSan.UseVisualStyleBackColor = false;
             this.btnCanLamSan.Click += new System.EventHandler(this.btnCanLamSan_Click);
             // 
@@ -420,7 +420,7 @@
             this.Controls.Add(this.label2);
             this.Name = "frmCanLamSang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Cận Lâm Sàng";
+            this.Text = "Chẩn đoán";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.frmCanLamSang_Load);
             this.groupBox1.ResumeLayout(false);

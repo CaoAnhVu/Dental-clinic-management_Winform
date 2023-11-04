@@ -506,7 +506,7 @@
             this.btnKhamLamSan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnKhamLamSan.Size = new System.Drawing.Size(301, 67);
             this.btnKhamLamSan.TabIndex = 5;
-            this.btnKhamLamSan.Text = "            Khám lâm sàn";
+            this.btnKhamLamSan.Text = "           Chẩn đoán";
             this.btnKhamLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKhamLamSan.UseVisualStyleBackColor = false;
             this.btnKhamLamSan.Click += new System.EventHandler(this.btnKhamLamSan_Click);
@@ -535,7 +535,7 @@
             this.btnCanLamSan.Padding = new System.Windows.Forms.Padding(25, 0, 0, 0);
             this.btnCanLamSan.Size = new System.Drawing.Size(301, 67);
             this.btnCanLamSan.TabIndex = 4;
-            this.btnCanLamSan.Text = "            Cận lâm sàn";
+            this.btnCanLamSan.Text = "           Khám lâm sàng";
             this.btnCanLamSan.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCanLamSan.UseVisualStyleBackColor = false;
             this.btnCanLamSan.Click += new System.EventHandler(this.btnCanLamSan_Click);
