@@ -24,12 +24,14 @@ namespace PKNK_CNPM.Forms
             InitializeComponent();
         }
 
+        //Vũ
         private void FormCustomer_Load(object sender, EventArgs e)
         {
             LoadTheme();
             BindGrid(khachHangService.GetAll());
             setCount();
         }
+        //Vũ
         private void LoadTheme()
         {
             foreach (Control btns in this.Controls)
@@ -44,7 +46,7 @@ namespace PKNK_CNPM.Forms
                 }
             }
         }
-
+        //Vũ
         private void setCount()
         {
             txtTong.Text = khachHangService.GetAll().Count.ToString();
@@ -54,6 +56,7 @@ namespace PKNK_CNPM.Forms
         {
             txtMaBN.Text = txtTenBN.Text = txtSDT.Text = txtGioiTinh.Text = txtNamSinh.Text = txtDiaChi.Text = "";
         }
+        //Nam
         private void BindGrid(List<BenhNhan> list)
         {
             try
@@ -92,7 +95,7 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show("BindGrid frmDanhSachNV Ex:" + ex.Message);
             }
         }
-
+        //Cao Anh Vũ
         private void dvgDanhSachKham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = new DataGridViewRow();
@@ -120,7 +123,7 @@ namespace PKNK_CNPM.Forms
             BindGrid(khachHangService.GetAll());
             clearValue();
         }
-
+        //Vũ
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (khachHang != null)
@@ -135,7 +138,7 @@ namespace PKNK_CNPM.Forms
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+       /* private void btnXoa_Click(object sender, EventArgs e)
         {
             if (khachHang != null)
             {
@@ -150,8 +153,9 @@ namespace PKNK_CNPM.Forms
             {
                 MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
             }
-        }
+        }*/
 
+        //Nam
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             if (txtTimKiem.Text == "")
@@ -161,7 +165,7 @@ namespace PKNK_CNPM.Forms
                 BindGrid(khachHangService.SearchByName(txtTimKiem.Text));
             }
         }
-
+        //Vũ
         private void btnKhamLamSan_Click(object sender, EventArgs e)
         {
             if (khachHang != null)
@@ -175,7 +179,7 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show("Chưa chọn khách hàng dưới bản khách hàng!");
             }
         }
-
+        //Cao Anh Vũ
         private void btnCanLamSan_Click(object sender, EventArgs e)
         {
             if (khachHang != null)

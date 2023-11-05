@@ -21,7 +21,7 @@ namespace PKNK_CNPM.Forms
         {
             InitializeComponent();
         }
-
+        //Minh
         private bool checkValue()
         {
             if (txtDonGia.Text != "" && txtDVT.Text != "" && txtSL.Text != "" && rtbNoiDung.Text != "")
@@ -31,7 +31,7 @@ namespace PKNK_CNPM.Forms
             return false;
         }
 
-
+        //Minh
         private void btnHuy_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show("Dữ liệu chưa được lưu, Bạn có muốn thoát không?", "Hệ thống", MessageBoxButtons.YesNo);
@@ -40,7 +40,7 @@ namespace PKNK_CNPM.Forms
                 this.Close();
             }
         }
-
+        //Minh
         private void FillNhanVienCombobox(List<NhanVien> list)
         {
             list.Insert(0, new NhanVien());
@@ -48,7 +48,7 @@ namespace PKNK_CNPM.Forms
             this.cbNhanVien.DisplayMember = "TenNhanVien";
             this.cbNhanVien.ValueMember = "MaNhanVien";
         }
-
+        //Linh
         private void btnThem_Click(object sender, EventArgs e)
         {
             try
@@ -75,7 +75,7 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //Linh
         private void ThemHoaDonXuatNhap_Load(object sender, EventArgs e)
         {
             FillNhanVienCombobox(nhanVienService.GetAll());
@@ -88,7 +88,7 @@ namespace PKNK_CNPM.Forms
                 txtThanhTien.Text = (decimal.Parse(txtDonGia.Text) * decimal.Parse(txtSL.Text)).ToString();
             }
         }
-
+        //Minh
         private void txtSL_TextChanged(object sender, EventArgs e)
         {
             if (txtDonGia.Text != "" && txtSL.Text != "")

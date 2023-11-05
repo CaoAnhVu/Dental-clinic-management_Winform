@@ -27,7 +27,7 @@ namespace PKNK_CNPM.Forms
             InitializeComponent();
             this.chanDoan = chanDoan;
         }
-
+        //Đạt
         private void GetValue()
         {
             thongTinLamSan = thongTinLsServive.FindByMaChuanDoan(chanDoan.MaChanDoan);
@@ -51,12 +51,14 @@ namespace PKNK_CNPM.Forms
             }
         }
 
+        //Vũ
         private void btnLuuLai_Click(object sender, EventArgs e)
         {
 
             btnInHoaDon.Enabled = true;
         }
 
+        //Vũ
         private void XuatHoaDon()
         {
             HoaDon hoaDon = new HoaDon
@@ -68,6 +70,7 @@ namespace PKNK_CNPM.Forms
             hoaDonService.Add(hoaDon);
         }
 
+        //Vũ
         private void btnInHoaDon_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show("Bạn có muốn xuất hóa đơn không?", "Cảnh báo", MessageBoxButtons.YesNo);
@@ -81,7 +84,7 @@ namespace PKNK_CNPM.Forms
         }
 
         
-
+        //Nam
         private void SetValue()
         {
             txtTongTien.Text = (TongTienThuoc + TongTienTT).ToString();
@@ -90,6 +93,7 @@ namespace PKNK_CNPM.Forms
             txtThanhToan.Text = (TongTienTT + TongTienThuoc).ToString();
         }
 
+        //Nam
         private void frmPhieuKham_Load(object sender, EventArgs e)
         {
             GetValue();

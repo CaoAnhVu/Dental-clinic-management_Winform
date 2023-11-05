@@ -139,7 +139,7 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.btnTimKiem);
-            this.panel5.Location = new System.Drawing.Point(614, 59);
+            this.panel5.Location = new System.Drawing.Point(614, 49);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(181, 50);
             this.panel5.TabIndex = 8;
@@ -157,7 +157,7 @@
             this.btnTimKiem.Location = new System.Drawing.Point(1, -9);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTimKiem.Size = new System.Drawing.Size(177, 70);
+            this.btnTimKiem.Size = new System.Drawing.Size(185, 70);
             this.btnTimKiem.TabIndex = 7;
             this.btnTimKiem.Text = "Tìm kiếm";
             this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

@@ -14,6 +14,7 @@ using Microsoft.Reporting.WinForms;
 
 namespace PKNK_CNPM.Forms
 {
+    //all Bạn Ngô Đạt hỗ trợ thêm thanh toán
     public partial class frmHoaDon2 : Form
     {
         private readonly TTLamSanServive ttLsService = new TTLamSanServive();

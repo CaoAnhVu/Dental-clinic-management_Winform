@@ -18,6 +18,7 @@ using System.Windows.Forms;
 
 namespace PKNK_CNPM
 {
+    //All Cao Anh Vũ
     public partial class frmHomeScreen : Form
     {
 
@@ -172,7 +173,7 @@ namespace PKNK_CNPM
             if (sidebarExpand)
             {
                 //if siderbar is Expand, maximine
-                sidebar.Width -= 10;
+                sidebar.Width -= 20;
                 if (sidebar.Width == sidebar.MinimumSize.Width)
                 {
                     sidebarExpand = false;
@@ -183,7 +184,7 @@ namespace PKNK_CNPM
             else
             {
                 //if siderbar is Expand, minimine
-                sidebar.Width += 10;
+                sidebar.Width += 20;
                 if (sidebar.Width == sidebar.MaximumSize.Width)
                 {
                     sidebarExpand = true;

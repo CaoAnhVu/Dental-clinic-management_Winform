@@ -38,7 +38,7 @@ namespace PKNK_CNPM.FormCustomer
             this.khachHang = khachHang;
             InitializeComponent();
         }
-        
+        //Vũ
         private void populateThuThuatItems()
         {
             List<LoaiThuThuat> thuThuats = loaiThuThuatService.GetAll();
@@ -61,7 +61,7 @@ namespace PKNK_CNPM.FormCustomer
                 thuThuatItems[i].Click += new System.EventHandler(ThuThuatControl_Click);
             }
         }
-
+        //Vũ
         private void populateThuocItems()
         {
             List<Thuoc> thuocs = thuocService.GetAll();
@@ -82,7 +82,7 @@ namespace PKNK_CNPM.FormCustomer
                 thuocItems[i].Click += new System.EventHandler(ThuocControl_Click);
             }
         }
-
+        //Nam
         private void populateNhanVienCombobox()
         {
             List<NhanVien> list = nhanVienService.GetAll();
@@ -90,7 +90,7 @@ namespace PKNK_CNPM.FormCustomer
             cbNhanVien.DisplayMember = "TenNhanVien";
             cbNhanVien.ValueMember = "MaNhanVien";
         }
-
+        //Nam
         private void loadValue()
         {
             if(khachHang != null)
@@ -99,7 +99,7 @@ namespace PKNK_CNPM.FormCustomer
                 txtTenKH.Text = khachHang.TenBN;
             }
         }
-
+        //Vũ
         private void Luu()
         {
             try
@@ -130,7 +130,7 @@ namespace PKNK_CNPM.FormCustomer
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //Vũ
         private void getThongTinThuThuat()
         {
             for(int  i = 0; i < flpThemThuThuat.Controls.Count; i++)
@@ -151,6 +151,7 @@ namespace PKNK_CNPM.FormCustomer
                 }
             }
         }
+        //Vũ
         private void getThongTinThuoc()
         {
             for (int i = 0; i < flpThemThuoc.Controls.Count; i++)
@@ -168,6 +169,7 @@ namespace PKNK_CNPM.FormCustomer
                 }
             }
         }
+        //Ngô Văn Tiến Đạt
         private void XuatHoaDon()
         {
             HoaDon hoaDon = new HoaDon
@@ -247,6 +249,7 @@ namespace PKNK_CNPM.FormCustomer
             
         }
 
+        //Nam
         private void btnCanLamSan_Click(object sender, EventArgs e)
         {
             frmKhamLamSan frmCanLamSang = new frmKhamLamSan(khachHang);

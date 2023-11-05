@@ -489,7 +489,7 @@
             // 
             // sidebarTimer
             // 
-            this.sidebarTimer.Interval = 10;
+            this.sidebarTimer.Interval = 20;
             this.sidebarTimer.Tick += new System.EventHandler(this.sidebarTimer_Tick);
             // 
             // QuanlyTimer

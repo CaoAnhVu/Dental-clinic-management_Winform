@@ -28,7 +28,7 @@ namespace PKNK_CNPM.FormCustomer
             this.khachHang = khachHang;
             InitializeComponent();
         }
-
+        //Vũ
         private void FillNhanVienCombobox(List<NhanVien> list)
         {
             list.Insert(0, new NhanVien());
@@ -36,7 +36,7 @@ namespace PKNK_CNPM.FormCustomer
             this.cbNhanVien.DisplayMember = "TenNhanVien";
             this.cbNhanVien.ValueMember = "MaNhanVien";
         }
-
+        //Vũ
         private void loadComboBox()
         {
             foreach (var item in cbNhanVien.Items)
@@ -49,6 +49,7 @@ namespace PKNK_CNPM.FormCustomer
             }
         }
 
+        //Nam
         private void loadValue()
         {
             txtMaPhieu.Text = tTCanLamSan.MaPhieuKham.ToString();
@@ -67,7 +68,7 @@ namespace PKNK_CNPM.FormCustomer
             rtbGhiChu.Text = tTCanLamSan.Khac;
         }
 
-
+        //Vũ
         private void frmKhamLamSan_Load_1(object sender, EventArgs e)
         {
             FillNhanVienCombobox(nhanVienService.GetAll());
@@ -80,7 +81,7 @@ namespace PKNK_CNPM.FormCustomer
             txtMaKH.Text = khachHang.MaBN.ToString();
             txtTenKhachHang.Text = khachHang.TenBN.ToString();
         }
-
+        //Đạt
         private void btnLuuLai_Click_1(object sender, EventArgs e)
         {
             try
@@ -124,7 +125,7 @@ namespace PKNK_CNPM.FormCustomer
                 MessageBox.Show(ex.ToString());
             }
         }
-
+        //Vũ
         private void btnHoSoPhongKham_Click_1(object sender, EventArgs e)
         {
             if (khachHang != null)

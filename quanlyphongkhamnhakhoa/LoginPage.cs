@@ -21,7 +21,7 @@ namespace PKNK_CNPM
         {
             InitializeComponent();
         }
-
+        //Linh
         private void lblClose_Click(object sender, EventArgs e)
         {
             DialogResult res = MessageBox.Show("Bạn có muốn thoát ứng dụng này không?", "Cảnh báo", MessageBoxButtons.YesNo);
@@ -31,6 +31,7 @@ namespace PKNK_CNPM
                 MessageBox.Show("Thoát thành công!");
             }
         }
+        //Cao Anh Vũ
         private void loadingTimer_Tick(object sender, EventArgs e)
         {
             if (loadingExpand)
@@ -46,6 +47,7 @@ namespace PKNK_CNPM
             }
             
         }
+        //Vũ
         private void ShowHomeScreen()
         {
             frmHomeScreen f = new frmHomeScreen();
@@ -54,6 +56,7 @@ namespace PKNK_CNPM
             this.Hide();
 
         }
+        //Linh
         private void btnDangNhap_Click(object sender, EventArgs e)
         {
             loadingTimer.Tick += loadingTimer_Tick;
@@ -74,7 +77,7 @@ namespace PKNK_CNPM
                 loadingTimer.Stop();
             }
         }
-        
+        //Linh
         private bool checkValid()
         {
             if (!string.IsNullOrWhiteSpace(txtUsername.Text) && !string.IsNullOrWhiteSpace(txtPassword.Text))
@@ -83,12 +86,13 @@ namespace PKNK_CNPM
             }
             return false;
         }
-
+        //Linh
         private void clearValue()
         {
             txtUsername.Text = txtPassword.Text = "";
         }
 
+        //Nam
         private void cbHideShow_CheckedChanged(object sender, EventArgs e)
         {
             if (cbHideShow.Checked)

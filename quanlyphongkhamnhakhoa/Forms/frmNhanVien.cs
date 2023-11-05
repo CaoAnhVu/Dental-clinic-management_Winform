@@ -27,7 +27,7 @@ namespace PKNK_CNPM.FormsSetting
             BindGrid(nv);
             txtTong.Text = nv.Count.ToString();
         }
-
+        //Đạt
         private void BindGrid(List<NhanVien> list)
         {
             try
@@ -56,7 +56,7 @@ namespace PKNK_CNPM.FormsSetting
                 MessageBox.Show("BindGrid frmDanhSachNV Ex:" + ex.Message);
             }
         }
-
+        //Vũ
         private void dvgDanhSachKham_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = new DataGridViewRow();
@@ -67,7 +67,7 @@ namespace PKNK_CNPM.FormsSetting
             nhanVien = nhanVienService.FindById(row.Cells[0].Value.ToString());
 
         }
-
+        //Vũ
         private void btnSua_Click(object sender, EventArgs e)
         {
             if (nhanVien != null)
@@ -81,7 +81,7 @@ namespace PKNK_CNPM.FormsSetting
                 MessageBox.Show("Chưa chọn nhân viên dưới bản nhân viên!");
             }
         }
-
+        //Vũ
         private void btnThemNV_Click(object sender, EventArgs e)
         {
             frmThemNhanVien frmThemNhanVien = new frmThemNhanVien();
@@ -89,12 +89,13 @@ namespace PKNK_CNPM.FormsSetting
             BindGrid(nhanVienService.GetAll());
             txtTong.Text = nhanVienService.GetAll().Count.ToString(); // reset lại tổng nhân viên
         }
-
+        //Vũ
         private void btnTaiLai_Click(object sender, EventArgs e)
         {
             BindGrid(nhanVienService.GetAll());
         }
 
+        //Nam
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
             if(txtTimKiem.Text == "")
@@ -105,7 +106,7 @@ namespace PKNK_CNPM.FormsSetting
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+      /*  private void btnXoa_Click(object sender, EventArgs e)
         {
             if(nhanVien != null)
             {
@@ -120,6 +121,6 @@ namespace PKNK_CNPM.FormsSetting
             {
                 MessageBox.Show("Chưa chọn nhân viên dưới bản nhân viên!");
             }
-        }
+        }*/
     }
 }

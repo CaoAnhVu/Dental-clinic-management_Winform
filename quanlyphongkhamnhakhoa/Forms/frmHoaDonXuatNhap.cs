@@ -19,7 +19,7 @@ namespace PKNK_CNPM.Forms
         {
             InitializeComponent();
         }
-
+        //Vũ
         private void BindGrid(List<DonXuatNhap> list)
         {
             try
@@ -42,19 +42,19 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show("BindGrid frmHoaDonXuatNhap Ex:" + ex.Message);
             }
         }
-
+        //Nam
         private void btnThemKH_Click(object sender, EventArgs e)
         {
             ThemHoaDonXuatNhap frm = new ThemHoaDonXuatNhap();
             frm.ShowDialog();
             BindGrid(donXuat.GetAll());
         }
-
+        //Vũ
         private void btnTaiLai_Click(object sender, EventArgs e)
         {
             BindGrid(donXuat.GetAll());
         }
-
+        //Nam
         private void frmHoaDonXuatNhap_Load(object sender, EventArgs e)
         {
             BindGrid(donXuat.GetAll());

@@ -12,6 +12,7 @@ namespace PKNK_CNPM.FormCustomer.Controller
 {
     public partial class ThongTinItems : UserControl
     {
+        //all Vũ
         public ThongTinItems()
         {
             InitializeComponent();

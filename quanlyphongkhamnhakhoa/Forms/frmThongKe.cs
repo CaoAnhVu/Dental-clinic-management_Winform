@@ -21,7 +21,7 @@ namespace PKNK_CNPM.Forms
         {
             InitializeComponent();
         }
-
+        //Vũ
         private void DoanhThuThang()
         {
             chartThongKe.Series.Clear();
@@ -42,6 +42,7 @@ namespace PKNK_CNPM.Forms
             chartThongKe.Titles.Add(new Title("Biểu đồ Doanh thu tháng"));
             chartThongKe.Invalidate();
         }
+        //Ngô Đạt
         private void DoanhThuQuy()
         {
             chartThongKe.Series.Clear();
@@ -67,7 +68,7 @@ namespace PKNK_CNPM.Forms
             chartThongKe.Titles.Add(new Title("Biểu đồ Doanh thu quý"));
             chartThongKe.Invalidate();
         }
-
+        //Ngô Đạt
         private void DoanhThuNam()
         {
             chartThongKe.Series.Clear();
@@ -104,7 +105,7 @@ namespace PKNK_CNPM.Forms
             }
         }
 
-
+        //Nam
         private void rbDtThang_CheckedChanged(object sender, EventArgs e)
         {
             if (rbDtThang.Checked)
@@ -112,7 +113,7 @@ namespace PKNK_CNPM.Forms
                 DoanhThuThang();
             }
         }
-
+        //Nam
         private void rbDtNam_CheckedChanged(object sender, EventArgs e)
         {
             if (rbDtNam.Checked)
@@ -120,7 +121,7 @@ namespace PKNK_CNPM.Forms
                 DoanhThuNam();
             }
         }
-
+        //Nam
         private void rbDtQuy_CheckedChanged(object sender, EventArgs e)
         {
             if (rbDtQuy.Checked)

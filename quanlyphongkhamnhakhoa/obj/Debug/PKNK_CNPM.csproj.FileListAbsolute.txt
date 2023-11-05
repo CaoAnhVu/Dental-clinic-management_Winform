@@ -54,13 +54,11 @@ D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustome
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.ThuThuatItem.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DonThuocItem.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.frmCanLamSang.resources
-C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDonThuoc.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DonThuocItem.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.frmCanLamSang.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDonXuatNhap.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DanhSachThuocItem.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDanhSachThuoc.resources
-C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmTaoThuocMoi.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormCustomer.Controller.DanhSachThuocItem.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmDanhSachThuoc.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.Forms.frmHoaDonXuatNhap.resources
