@@ -68,7 +68,7 @@ namespace PKNK_CNPM.Forms
                 };
 
                 hoaDonService.Add(value);
-                MessageBox.Show("Thêm khách hàng thành công!");
+                MessageBox.Show("Thêm hóa đơn thành công!");
             }
             catch (Exception ex)
             {

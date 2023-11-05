@@ -64,6 +64,8 @@ namespace PKNK_CNPM.Forms
                     cbMauKhoDong.Checked = khachHang.MauKhoDong.Value;
                 if (khachHang.ThieuNangTriTue != null)
                     cbThieuNang.Checked = khachHang.ThieuNangTriTue.Value;
+                if (khachHang.BenhTimBamSinh != null)
+                    cbTimBamSinh.Checked = khachHang.BenhTimBamSinh.Value;
                 dtpNgaySinh.Value = khachHang.NgaySinh.Value;
                 // Select item trong combobox
                 if (khachHang.GioiTinh == true)
@@ -132,6 +134,7 @@ namespace PKNK_CNPM.Forms
                     HuyetApMach = cbDuongHuyet.Checked,
                     MauKhoDong = cbDuongHuyet.Checked,
                     ThieuNangTriTue = cbThieuNang.Checked,
+                    BenhTimBamSinh = cbTimBamSinh.Checked,
                     MaNV = selectedNhanVien.MaNhanVien,
                 };
               
