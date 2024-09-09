@@ -70,6 +70,7 @@
             this.groupBox1.Size = new System.Drawing.Size(1191, 448);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // dtgvHoaDon
             // 

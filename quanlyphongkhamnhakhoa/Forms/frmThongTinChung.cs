@@ -16,5 +16,10 @@ namespace PKNK_CNPM.Forms
         {
             InitializeComponent();
         }
+
+        private void frmThongTinChung_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

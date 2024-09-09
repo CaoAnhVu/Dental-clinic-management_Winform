@@ -24,7 +24,7 @@ namespace PKNK_CNPM.FormsSetting
         {
             InitializeComponent();
         }
-        //Minh
+        
         public frmThemNhanVien(bool isSave, NhanVien nhanVien)
         {
             InitializeComponent();
@@ -32,7 +32,7 @@ namespace PKNK_CNPM.FormsSetting
             this.nhanVien = nhanVien;
         }
         // FUNC
-        //Linh
+        
         private void clearValue()
         {
             txtTenNV.Text = txtMaNV.Text = txtSDT.Text = txtDiaChi.Text = txtEmail.Text = "";
@@ -46,7 +46,7 @@ namespace PKNK_CNPM.FormsSetting
             }
             return false;
         }
-        //Linh
+        
         private void FillChucDanhComboBox(List<ChucDanh> facultyList)
         {
             facultyList.Insert(0, new ChucDanh());
@@ -54,7 +54,7 @@ namespace PKNK_CNPM.FormsSetting
             this.cbChucDanh.DisplayMember = "TenChucDanh";
             this.cbChucDanh.ValueMember = "MaChucDanh";
         }
-        //Vũ
+        
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -109,7 +109,7 @@ namespace PKNK_CNPM.FormsSetting
                 MessageBox.Show(ex.Message);
             }
         }
-        //Minh
+        
         private void btnHuy_Click(object sender, EventArgs e)
         {
             if (checkValue())
@@ -125,7 +125,7 @@ namespace PKNK_CNPM.FormsSetting
                 this.Close();
             }
         }
-        //Vũ
+        
         private void frmThemNhanVien_Load(object sender, EventArgs e)
         {
             FillChucDanhComboBox(chucDanhService.GetAll());

@@ -10,6 +10,7 @@ namespace PKNK.BUS.Servive
 {
     public class HoaDonService
     {
+        //Ngô Đạt
         public List<HoaDon> GetAll()
         {
             PKNK_ContextDB model = new PKNK_ContextDB();

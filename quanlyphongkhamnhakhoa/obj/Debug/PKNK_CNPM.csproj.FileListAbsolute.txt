@@ -39,7 +39,6 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Deb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\PKNK.DAL.dll.config
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.xml
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.CopyComplete
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormsSetting.frmDanhSachNV.resources
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormsSetting.frmThemNhanVien.resources
 D:\workspace\CS\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.FormsSetting.frmDanhSachNV.resources
@@ -424,3 +423,4 @@ C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\De
 C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.CopyComplete
 C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.exe
 C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\quanlyphongkhamnhakhoa\obj\Debug\PKNK_CNPM.csproj.Up2Date

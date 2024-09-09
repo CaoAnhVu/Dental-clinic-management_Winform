@@ -70,6 +70,7 @@
             this.picFormLogin.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picFormLogin.TabIndex = 0;
             this.picFormLogin.TabStop = false;
+            this.picFormLogin.Click += new System.EventHandler(this.picFormLogin_Click);
             // 
             // pictureBox2
             // 

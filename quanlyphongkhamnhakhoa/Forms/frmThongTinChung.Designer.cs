@@ -66,6 +66,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "frmThongTinChung";
             this.Text = "Thông Tin Chung";
+            this.Load += new System.EventHandler(this.frmThongTinChung_Load);
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 

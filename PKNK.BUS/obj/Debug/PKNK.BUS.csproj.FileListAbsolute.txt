@@ -25,7 +25,6 @@ C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\EntityFrame
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.AssemblyReference.cache
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.CoreCompileInputs.cache
-C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.CopyComplete
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.dll
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.pdb
 C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\bin\Debug\SqlServerTypes\x64\msvcr120.dll
@@ -227,3 +226,4 @@ C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.c
 C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.CopyComplete
 C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.dll
 C:\Users\Admin\OneDrive\Documents\GitHub\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.pdb
+C:\Users\admin\source\c_sharp\PKNK_CNPM\PKNK_CNPM\PKNK.BUS\obj\Debug\PKNK.BUS.csproj.Up2Date

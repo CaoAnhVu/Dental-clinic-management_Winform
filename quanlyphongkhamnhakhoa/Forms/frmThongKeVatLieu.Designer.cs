@@ -59,6 +59,7 @@
             title1.Name = "Title1";
             title1.Text = "Biểu Đồ Doanh Thu Thủ Thuật";
             this.chartVaLieu.Titles.Add(title1);
+            this.chartVaLieu.Click += new System.EventHandler(this.chartVaLieu_Click);
             // 
             // frmThongKeVatLieu
             // 

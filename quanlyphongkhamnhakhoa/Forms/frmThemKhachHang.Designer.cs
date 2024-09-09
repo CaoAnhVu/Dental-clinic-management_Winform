@@ -135,6 +135,7 @@ namespace PKNK_CNPM.Forms
             // 
             // txtXQuang
             // 
+            this.txtXQuang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.txtXQuang.Location = new System.Drawing.Point(862, 198);
             this.txtXQuang.Name = "txtXQuang";
             this.txtXQuang.Size = new System.Drawing.Size(328, 32);

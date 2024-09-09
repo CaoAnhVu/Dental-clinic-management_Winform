@@ -18,7 +18,7 @@ namespace PKNK_CNPM.Forms
         {
             InitializeComponent();
         }
-        //Vũ/Nam hỗ trợ lẫn nhau và có sự giúp đỡ của bạn đạt
+        
         private void ThongKeTheoThuThuat()
         {
             // Tạo một Dictionary để lưu trữ doanh thu theo tên thu thủật
@@ -69,6 +69,9 @@ namespace PKNK_CNPM.Forms
             ThongKeTheoThuThuat();
         }
 
-        
+        private void chartVaLieu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

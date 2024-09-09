@@ -13,7 +13,7 @@ using System.Windows.Forms;
 
 namespace PKNK_CNPM.Forms
 {
-    // Linh
+    
     public partial class frmThemKhachHang : Form
     {
         private readonly KhachHangService benhNhanService = new KhachHangService();
@@ -44,7 +44,7 @@ namespace PKNK_CNPM.Forms
             }
             return false;
         }
-        //Nam
+        
         private void loadValue()
         {
             if (isEdit && khachHang != null)
@@ -81,7 +81,7 @@ namespace PKNK_CNPM.Forms
         }
 
        
-        //
+        
         private void frmThemKhachHang_Load(object sender, EventArgs e)
         {
             loadValue();
@@ -108,7 +108,7 @@ namespace PKNK_CNPM.Forms
             }
         }
 
-        //Vũ
+        
         private void btnLuu_Click(object sender, EventArgs e)
         {
             try
@@ -160,7 +160,7 @@ namespace PKNK_CNPM.Forms
                 MessageBox.Show(ex.Message);
             }
         }
-
+        
         private void btnHuy_Click(object sender, EventArgs e)
         {
             if (checkValue())

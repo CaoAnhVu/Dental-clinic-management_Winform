@@ -1,0 +1,786 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.bus\\report\\thongtinlsreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|solutionrelative:pknk.bus\\report\\thongtinlsreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.bus\\servive\\chandoanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|solutionrelative:pknk.bus\\servive\\chandoanservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.bus\\report\\hoadonreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|solutionrelative:pknk.bus\\report\\hoadonreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.bus\\servive\\thuthuatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|solutionrelative:pknk.bus\\servive\\thuthuatservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.bus\\servive\\ttlamsanservive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|solutionrelative:pknk.bus\\servive\\ttlamsanservive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.bus\\servive\\xuatnhapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9A68B6F1-C244-4BFE-AB31-0C1E05AA7749}|PKNK.BUS\\PKNK.BUS.csproj|solutionrelative:pknk.bus\\servive\\xuatnhapservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\baohiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\baohiem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\benhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\benhnhan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\chandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\chandoan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\chucdanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\chucdanh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\doanhthu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\donthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\donthuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\donxuatnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\donxuatnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\loaithuthuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\loaithuthuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\pknk_contextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\pknk_contextdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\thongtinl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\thongtinl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\thuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\thuoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\thuthuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\thuthuat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\trangthai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\trangthai.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\pknk.dal\\models\\ttcanlamsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22636C06-2C10-40AA-A57B-F21CDECB80E2}|PKNK.DAL\\PKNK.DAL.csproj|solutionrelative:pknk.dal\\models\\ttcanlamsan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\themecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\themecolor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\frmhomescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\frmhomescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\item\\danhsachthuocitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\item\\danhsachthuocitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\item\\danhsachthuocitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\item\\danhsachthuocitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\themhoadonxuatnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\themhoadonxuatnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\themhoadonxuatnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\themhoadonxuatnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\hoadon2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\hoadon2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\hoadon2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\hoadon2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthongtinchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthongtinchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthongtinchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthongtinchung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthongkevatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthongkevatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthongkevatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthongkevatlieu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthongke.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthemnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthemkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthemkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|c:\\users\\admin\\source\\c_sharp\\pknk_cnpm\\pknk_cnpm\\quanlyphongkhamnhakhoa\\forms\\frmthemkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8361BD63-2025-4C92-BD85-742965A2193B}|quanlyphongkhamnhakhoa\\PKNK_CNPM.csproj|solutionrelative:quanlyphongkhamnhakhoa\\forms\\frmthemkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 201,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3fd5e0cc-709a-4f8c-94c3-7f0f8dff5bb2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ThongTinLsReport.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Report\\ThongTinLsReport.cs",
+              "RelativeDocumentMoniker": "PKNK.BUS\\Report\\ThongTinLsReport.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Report\\ThongTinLsReport.cs",
+              "RelativeToolTip": "PKNK.BUS\\Report\\ThongTinLsReport.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:14:27.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HoaDonReport.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Report\\HoaDonReport.cs",
+              "RelativeDocumentMoniker": "PKNK.BUS\\Report\\HoaDonReport.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Report\\HoaDonReport.cs",
+              "RelativeToolTip": "PKNK.BUS\\Report\\HoaDonReport.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:14:11.085Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChanDoanService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\ChanDoanService.cs",
+              "RelativeDocumentMoniker": "PKNK.BUS\\Servive\\ChanDoanService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\ChanDoanService.cs",
+              "RelativeToolTip": "PKNK.BUS\\Servive\\ChanDoanService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:14:02.951Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ThuThuatService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\ThuThuatService.cs",
+              "RelativeDocumentMoniker": "PKNK.BUS\\Servive\\ThuThuatService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\ThuThuatService.cs",
+              "RelativeToolTip": "PKNK.BUS\\Servive\\ThuThuatService.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:57.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TTLamSanServive.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\TTLamSanServive.cs",
+              "RelativeDocumentMoniker": "PKNK.BUS\\Servive\\TTLamSanServive.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\TTLamSanServive.cs",
+              "RelativeToolTip": "PKNK.BUS\\Servive\\TTLamSanServive.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAA3wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:52.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "XuatNhapService.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\XuatNhapService.cs",
+              "RelativeDocumentMoniker": "PKNK.BUS\\Servive\\XuatNhapService.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.BUS\\Servive\\XuatNhapService.cs",
+              "RelativeToolTip": "PKNK.BUS\\Servive\\XuatNhapService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:48.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\Auth.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\Auth.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\Auth.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\Auth.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:44.794Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BaoHiem.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\BaoHiem.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\BaoHiem.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\BaoHiem.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\BaoHiem.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:38.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BenhNhan.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\BenhNhan.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\BenhNhan.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\BenhNhan.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\BenhNhan.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:32.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ChanDoan.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ChanDoan.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\ChanDoan.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ChanDoan.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\ChanDoan.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:26.321Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ChucDanh.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ChucDanh.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\ChucDanh.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ChucDanh.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\ChucDanh.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:21.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DoanhThu.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\DoanhThu.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\DoanhThu.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\DoanhThu.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\DoanhThu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:18.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DonThuoc.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\DonThuoc.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\DonThuoc.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\DonThuoc.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\DonThuoc.cs",
+              "ViewState": "AQIAACgAAAAAAAAAAADwvyMAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:13.155Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DonXuatNhap.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\DonXuatNhap.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\DonXuatNhap.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\DonXuatNhap.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\DonXuatNhap.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAgwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:07.972Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "HoaDon.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\HoaDon.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\HoaDon.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\HoaDon.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\HoaDon.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAA7wAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:13:03.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoaiThuThuat.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\LoaiThuThuat.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\LoaiThuThuat.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\LoaiThuThuat.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\LoaiThuThuat.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAkwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:12:51.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\NhanVien.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\NhanVien.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\NhanVien.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\NhanVien.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowD0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:12:20.401Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PKNK_ContextDB.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\PKNK_ContextDB.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\PKNK_ContextDB.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\PKNK_ContextDB.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\PKNK_ContextDB.cs",
+              "ViewState": "AQIAAOoAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:12:13.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ThongTinL.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ThongTinL.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\ThongTinL.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ThongTinL.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\ThongTinL.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAUwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:12:04.984Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Thuoc.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\Thuoc.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\Thuoc.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\Thuoc.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\Thuoc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:11:53.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ThuThuat.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ThuThuat.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\ThuThuat.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\ThuThuat.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\ThuThuat.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAswAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:11:43.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "TrangThai.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\TrangThai.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\TrangThai.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\TrangThai.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\TrangThai.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:11:39.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "TTCanLamSan.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\TTCanLamSan.cs",
+              "RelativeDocumentMoniker": "PKNK.DAL\\Models\\TTCanLamSan.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\PKNK.DAL\\Models\\TTCanLamSan.cs",
+              "RelativeToolTip": "PKNK.DAL\\Models\\TTCanLamSan.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:11:32.388Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Program.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Program.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Program.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:09:27.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Themecolor.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Themecolor.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Themecolor.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Themecolor.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Themecolor.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:09:20.356Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\LoginPage.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\LoginPage.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\LoginPage.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:08:32.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "LoginPage.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\LoginPage.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\LoginPage.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\LoginPage.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:08:29.275Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "frmHomeScreen.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\frmHomeScreen.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\frmHomeScreen.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\frmHomeScreen.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\frmHomeScreen.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:08:25.845Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DanhSachThuocItem.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAIA+wBoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:08:11.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "DanhSachThuocItem.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Item\\DanhSachThuocItem.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:08:07.241Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ThemHoaDonXuatNhap.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAEwFAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:55.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ThemHoaDonXuatNhap.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\ThemHoaDonXuatNhap.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:53.718Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "HoaDon2.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs",
+              "ViewState": "AQIAAFsAAAAAAAAAAAAYwCEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:46.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "HoaDon2.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\HoaDon2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:43.86Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "frmThongTinChung.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:40.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "frmThongTinChung.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThongTinChung.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:37.419Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "frmThongKeVatLieu.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:27.629Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "frmThongKeVatLieu.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThongKeVatLieu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:07:24.808Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "frmThongKe.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:06:48.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "frmThongKe.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThongKe.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:06:45.678Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "frmThemNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:05:24.233Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "frmThemNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThemNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:05:21.069Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "frmThemKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs",
+              "ViewState": "AQIAALMAAAAAAAAAAAAiwFYAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:04:53.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "frmThemKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs",
+              "RelativeDocumentMoniker": "quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs",
+              "ToolTip": "C:\\Users\\admin\\source\\c_sharp\\PKNK_CNPM\\PKNK_CNPM\\quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs [Design]",
+              "RelativeToolTip": "quanlyphongkhamnhakhoa\\Forms\\frmThemKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-09T02:04:51.784Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

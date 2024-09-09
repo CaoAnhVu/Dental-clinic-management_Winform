@@ -21,5 +21,10 @@ namespace PKNK_CNPM.FormCustomer.Controller
         {
 
         }
+
+        private void DanhSachThuocItem_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

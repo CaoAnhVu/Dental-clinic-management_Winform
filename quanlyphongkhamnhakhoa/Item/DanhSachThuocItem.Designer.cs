@@ -345,6 +345,7 @@
             this.Controls.Add(this.label4);
             this.Name = "DanhSachThuocItem";
             this.Size = new System.Drawing.Size(1210, 113);
+            this.Load += new System.EventHandler(this.DanhSachThuocItem_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picChinhSua)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picXoa)).EndInit();
